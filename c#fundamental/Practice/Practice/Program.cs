@@ -86,7 +86,7 @@ namespace Practice
                 }
             }
             // lay danh sách môn học:             
-            //lstInputScoring = lstInputScoring.Where(p => p.lstSubject.All(x => x.Name!=null)).OrderBy(h=>h.Student.Name).Distinct().ToList();
+            lstInputScoring = lstInputScoring.Where(p => p.lstSubject.All(x => x.Name!=null)).OrderBy(h=>h.Student.Name).Distinct().ToList();
             
             Console.WriteLine("Danh sách môn học");
             foreach (var item in lstInputScoring)
