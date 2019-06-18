@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "1229607",
+    "ThreadId": "540968",
+    "Html": "Hi.<br />\n<br />\nHow do you traduce this to vb.net sintax?<br />\n<pre><code>@model IEnumerable&lt;MvcMusicStore.Models.Genre&gt;\n@{\n    ViewBag.Title = &quot;Store&quot;;\n}\n&lt;h3&gt;Browse Genres&lt;/h3&gt;\n&lt;p&gt;\n    Select from @Model.Count()\ngenres:&lt;/p&gt;\n&lt;ul&gt;\n    @foreach (var genre in Model)\n    {\n        &lt;li&gt;@genre.Name&lt;/li&gt;\n    }\n&lt;/ul&gt;</code></pre>\n\n",
+    "PostedDate": "2014-04-02T12:17:09.11-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "1250797",
+    "ThreadId": "546898",
+    "Html": "Hi all,\r<br />\nI am following this MVC practise, and right now I have created a Shared folder with all the necessary file (_Layout.cshtml, Error.cshtml), I have added everything to Content Folder as well, but right now when I run the program I am NOT able to see any effects. I tried to remove my browser cache as well, but did not work.\r<br />\n<br />\nPlease help me in this regard.\r<br />\n<br />\nP.S: I am running vs2010, and MVC4, I have created an empty application NOT Web.<br />\n",
+    "PostedDate": "2014-05-29T03:43:39.897-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1265984",
+    "ThreadId": "546898",
+    "Html": "Hi guy, i'm trying to do the same thing, but, the same error is displayed, do you know how can i fix it?<br />\n",
+    "PostedDate": "2014-07-15T11:34:02.133-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1265997",
+    "ThreadId": "546898",
+    "Html": "I did too but I fixed it.\r<br />\n I created the file from scratch as instructed with the prescribed name in the Views AND then I had to add a _ViewStart.cshtml file; also in the Views directory that simply had:\r<br />\n<br />\n @{\r<br />\n   Layout = &quot;~/Views/Shared/_Layout.cshtml&quot;;   }\r<br />\n<br />\nin it. and then I was off and running. Then, I was off and running till step 5 where I can not create the StoreManagerController for the LIFE of me...\r<br />\n<br />\n But, anyhow... that's how to fix the _layout issue... Good Luck...<br />\n",
+    "PostedDate": "2014-07-15T12:08:56.833-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

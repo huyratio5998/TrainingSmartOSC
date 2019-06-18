@@ -1,0 +1,45 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Hi, thank you for providing great instruction of APS.NET MVC 2!\r\n\r\nNow I'm on page 103 and am trying to see validation error message.\r\nI created meta data class as just explained in pdf.\r\nBut when I leave title field blank and click \"Save\", it shows Japanese localized message not the string I set in meta data class.\r\n(Please see attached screen shot. The string means \"Value '' is invalid.\")\r\nI'm using Japanese version of VisualStudio2010. Is this the reason?\r\nHow can I display the string I specify in meta data class?\r\n",
+    "LastUpdatedDate": "2011-01-04T05:27:04.37-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "mvcmusicstore",
+    "ReportedDate": "2011-01-04T05:27:04.247-08:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Localized validation message is displayed",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 6622
+  },
+  "FileAttachments": [
+    {
+      "FileId": 193759,
+      "FileName": "ss.png",
+      "DownloadUrl": ".\\193759"
+    }
+  ],
+  "Comments": []
+}

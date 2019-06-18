@@ -1,0 +1,74 @@
+[
+  {
+    "Id": "947145",
+    "ThreadId": "404629",
+    "Html": "\r\n<p>Hello,</p>\r\n<p>I am both stuck and puzzled right now, as I don't have the slightest idea about what the Web SIte Administation tool is looking for as database. As Provider, he tells me the application is setup to use &quot;AspNetSqlProvider&quot;, but a search through\r\n the whole application does not find any match. Why is it not using the connections defined in Web.config?</p>\r\n<p>I am using VS 2012 with MVC 4.0 and .Net 4.5. I have been happy to manage to get there, and would certainly love to share my updated version of this very nice tutorial, but I need to get it to work before... :-)</p>\r\n<p>Should I try to create a blank site with Web application template, to see what is created and used as database by the Account Controller there?</p>\r\n<p>Thanks for any help,</p>\r\n<p>Bernard</p>\r\n",
+    "PostedDate": "2012-11-26T10:33:05.933-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "947152",
+    "ThreadId": "404629",
+    "Html": "\r\n<div>If your using MVC 4 you can't use administrator site to create roles and users. MVC 4 moves from a technology in MVC 3 called 'Membership Provider' to the newer technology called 'Simple Membership' in MvC 4. Jon Galloway has an article on this that should\r\n be easy to find with some of terms above.</div>\r\n<div><br>\r\n</div>\r\n<div>Dean<br>\r\n<br>\r\n<div>Director, International Study Programs / Asia</div>\r\n<div>EJH Group, LLC</div>\r\n</div>\r\n<div><br>\r\nOn Nov 26, 2012, at 1:33 PM, &quot;BernardG&quot; &lt;<a href=\"mailto:notifications@codeplex.com\">notifications@codeplex.com</a>&gt; wrote:<br>\r\n<br>\r\n</div>\r\n<blockquote type=\"cite\">\r\n<div>\r\n<p>From: BernardG</p>\r\n<div id=\"ThreadNotificationPostBody\">\r\n<p>Hello,</p>\r\n<p>I am both stuck and puzzled right now, as I don't have the slightest idea about what the Web SIte Administation tool is looking for as database. As Provider, he tells me the application is setup to use &quot;AspNetSqlProvider&quot;, but a search through the whole\r\n application does not find any match. Why is it not using the connections defined in Web.config?</p>\r\n<p>I am using VS 2012 with MVC 4.0 and .Net 4.5. I have been happy to manage to get there, and would certainly love to share my updated version of this very nice tutorial, but I need to get it to work before... :-)</p>\r\n<p>Should I try to create a blank site with Web application template, to see what is created and used as database by the Account Controller there?</p>\r\n<p>Thanks for any help,</p>\r\n<p>Bernard</p>\r\n</div>\r\n</div>\r\n</blockquote>\r\n",
+    "PostedDate": "2012-11-26T10:40:02.4-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "947177",
+    "ThreadId": "404629",
+    "Html": "\r\n<blockquote style=\"border:solid .1em #ccc; font-style:italic; margin:.25em 1em 0 1em; padding:0 .25em 0 .25em\">\r\n<strong>3v3rhart wrote:</strong><br>\r\n<div>If your using MVC 4 you can't use administrator site to create roles and users. MVC 4 moves from a technology in MVC 3 called 'Membership Provider' to the newer technology called 'Simple Membership' in MvC 4. Jon Galloway has an article on this that should\r\n be easy to find with some of terms above.</div>\r\n<div></div>\r\n<div>Dean</div>\r\n</blockquote>\r\n<p>Thank you Dean, as I am all new to this (as you can guess, after all I am following a tutorial.... :-) ) I did not had the slightest idea. I'll find jon Galloway article and continue working on this. It's a pretty good first approach to MVC and Razor, and\r\n I do like it. I have done a little bit of PHP MVC, a while ago, and this is so much easier!</p>\r\n<p>Bernard</p>\r\n",
+    "PostedDate": "2012-11-26T11:02:05.26-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "947210",
+    "ThreadId": "404629",
+    "Html": "\r\n<div>Hi Bernard - </div>\r\n<div><br>\r\n</div>\r\n<div>Actually, I'm on the same step - about a day ahead of you. I'm still stuck on this step, so if you come up with the exact answer, please let me know.</div>\r\n<div><br>\r\n</div>\r\n<div>The good news is that the fix is one line of code - or pretty close to it.</div>\r\n<div><br>\r\n</div>\r\n<div>I'm away from computer at the moment, or I would write more.</div>\r\n<div><br>\r\n</div>\r\n<div>Good luck!</div>\r\n<div><br>\r\n<div>Director, International Study Programs / Asia</div>\r\n<div>EJH Group, LLC</div>\r\n</div>\r\n<div><br>\r\nOn Nov 26, 2012, at 2:02 PM, &quot;BernardG&quot; &lt;<a href=\"mailto:notifications@codeplex.com\">notifications@codeplex.com</a>&gt; wrote:<br>\r\n<br>\r\n</div>\r\n<blockquote type=\"cite\">\r\n<div>\r\n<p>From: BernardG</p>\r\n<div id=\"ThreadNotificationPostBody\">\r\n<blockquote style=\"border:solid .1em #ccc; font-style:italic; margin:.25em 1em 0 1em; padding:0 .25em 0 .25em\">\r\n<strong>3v3rhart wrote:</strong><br>\r\n<div>If your using MVC 4 you can't use administrator site to create roles and users. MVC 4 moves from a technology in MVC 3 called 'Membership Provider' to the newer technology called 'Simple Membership' in MvC 4. Jon Galloway has an article on this that should\r\n be easy to find with some of terms above.</div>\r\n<div></div>\r\n<div>Dean</div>\r\n</blockquote>\r\n<p>Thank you Dean, as I am all new to this (as you can guess, after all I am following a tutorial.... :-) ) I did not had the slightest idea. I'll find jon Galloway article and continue working on this. It's a pretty good first approach to MVC and Razor, and\r\n I do like it. I have done a little bit of PHP MVC, a while ago, and this is so much easier!</p>\r\n<p>Bernard</p>\r\n</div>\r\n</div>\r\n</blockquote>\r\n",
+    "PostedDate": "2012-11-26T12:06:12.257-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "947626",
+    "ThreadId": "404629",
+    "Html": "\r\n<blockquote style=\"border:solid .1em #ccc; font-style:italic; margin:.25em 1em 0 1em; padding:0 .25em 0 .25em\">\r\n<strong>3v3rhart wrote:</strong><br>\r\n<div>Hi Bernard -</div>\r\n<div>Actually, I'm on the same step - about a day ahead of you. I'm still stuck on this step, so if you come up with the exact answer, please let me know.</div>\r\n<div>The good news is that the fix is one line of code - or pretty close to it.</div>\r\n<div>I'm away from computer at the moment, or I would write more.</div>\r\n<div>Good luck!</div>\r\n<div><br>\r\n<div>Director, International Study Programs / Asia</div>\r\n<div>EJH Group, LLC</div>\r\n</div>\r\n<div><br>\r\nOn Nov 26, 2012, at 2:02 PM, &quot;BernardG&quot; &lt;<a href=\"mailto:notifications@codeplex.com\">notifications@codeplex.com</a>&gt; wrote:<br>\r\n<br>\r\n</div>\r\n</blockquote>\r\n<p>Good to know, thanks! I managed to make it work yesterday night with a dummy application created just for that. I am going to port to MVC MusicStore later today, while I am blogging on this in the same time (in french, sorry, but code is universal...). My\r\n blog is <a title=\"http://www.bgsoftfactory.fr\" href=\"http://www.bgsoftfactory.fr\" target=\"_blank\">\r\nhttp://www.bgsoftfactory.fr</a> . I'll post here as soon as my blog post is online.</p>\r\n<p>In fact, you can use ASP .NET Configuration tool to seed a user and pasword with MVC 4.0 and MS SQL Compact 4.0. More on this later and in my blog...</p>\r\n",
+    "PostedDate": "2012-11-27T05:17:47.08-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "947852",
+    "ThreadId": "404629",
+    "Html": "\r\n<p>Sorry for the trouble. Yes, it's a little more difficult to configure users since the Visual Studio user administration pages don't work with Simple Membership. I created and configured users in code (as BernardG suggested) in the MVC 4 version of the tutorial:&nbsp;http://mvcmusicstore.codeplex.com/SourceControl/changeset/view/e274968f2827#MvcMusicStore%2fApp_Start%2fAppConfig.cs</p>\r\n<p>The code for the MVC 4 version is complete, just working on finishing up the documentation.</p>\r\n",
+    "PostedDate": "2012-11-27T10:35:33.587-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "950840",
+    "ThreadId": "404629",
+    "Html": "\r\n<p>Hi Jon,</p>\r\n<p>Good to know there is an upcoming version of your great tutorial for MVC 4. Meanwhile (and this might be of interest to you) I found\r\n<a title=\"ErikEJ\" href=\"http://erikej.blogspot.fr/2012/11/sql-server-compact-merge-replication.html\">\r\nErikEJ blog</a>, he created a membership provider for SQL Server Compact 4.0: <a title=\"http://erikej.blogspot.fr/2010/08/sql-server-compact-40-aspnet-membership.html\" href=\"http://erikej.blogspot.fr/2010/08/sql-server-compact-40-aspnet-membership.html\">\r\nhttp://erikej.blogspot.fr/2010/08/sql-server-compact-40-aspnet-membership.htm</a>l</p>\r\n<p>You can get it with NuGet: Install-Package ErikEJ.SqlCeMembership. I think it's just what the doctor ordered :-) as then, you can actually configure your security with Visual Studio administration pages!</p>\r\n",
+    "PostedDate": "2012-12-03T15:05:42.743-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "951851",
+    "ThreadId": "404629",
+    "Html": "\r\n<blockquote style=\"border:solid .1em #ccc; font-style:italic; margin:.25em 1em 0 1em; padding:0 .25em 0 .25em\">\r\n<strong>BernardG wrote:</strong><br>\r\n<p>Hi Jon,</p>\r\n<p>Good to know there is an upcoming version of your great tutorial for MVC 4. Meanwhile (and this might be of interest to you) I found\r\n<a title=\"ErikEJ\" href=\"http://erikej.blogspot.fr/2012/11/sql-server-compact-merge-replication.html\">\r\nErikEJ blog</a>, he created a membership provider for SQL Server Compact 4.0: <a title=\"http://erikej.blogspot.fr/2010/08/sql-server-compact-40-aspnet-membership.html\" href=\"http://erikej.blogspot.fr/2010/08/sql-server-compact-40-aspnet-membership.html\">\r\nhttp://erikej.blogspot.fr/2010/08/sql-server-compact-40-aspnet-membership.htm</a>l</p>\r\n<p>You can get it with NuGet: Install-Package ErikEJ.SqlCeMembership. I think it's just what the doctor ordered :-) as then, you can actually configure your security with Visual Studio administration pages!</p>\r\n</blockquote>\r\n<p>Hi Jon,</p>\r\n<p>When will version 4 be available? I was also stuck at step 7 and removed the whole project in fury before finding this post. So I look forward to start over again... :)</p>\r\n",
+    "PostedDate": "2012-12-05T11:46:46.323-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "958688",
+    "ThreadId": "404629",
+    "Html": "\r\n<p>Also interested in an MVC 4 update to this tutorial.</p>\r\n",
+    "PostedDate": "2012-12-19T12:43:47.133-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

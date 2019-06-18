@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "1422810",
+    "ThreadId": "636681",
+    "Html": "Hello I'm learning with this tutorial, I have problema with the database,  I have copied the file MvcMusicStore.sdf under the folder App_Data. \r<br />\n<br />\nI have copied the connection String into the web.config\r<br />\n<br />\nwhen I run the apliccation I get the error: \r<br />\n<br />\nNo Entity Framework provider for ADO.NET provider met the invariable name 'System.Data.SqlServerCe.4.0'\r<br />\n<br />\nAny idea?\r<br />\n<br />\nThanks<br />\n",
+    "PostedDate": "2015-05-04T11:39:08.36-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

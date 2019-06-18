@@ -1,0 +1,50 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "Data",
+      "DisplayName": "Data"
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 2,
+    "Custom": null,
+    "Description": "This blog post explains how it is done - http://stevesmithblog.com/blog/entity-framework-invalid-object-name-dbo-albums/",
+    "LastUpdatedDate": "2017-11-28T07:20:36.717-08:00",
+    "PlannedForRelease": "MVC Music Store v2.1",
+    "ReleaseVisibleToPublic": true,
+    "Priority": {
+      "Name": "High",
+      "Severity": 150,
+      "Id": 3
+    },
+    "ProjectName": "mvcmusicstore",
+    "ReportedDate": "2011-04-06T15:21:32.397-07:00",
+    "Status": {
+      "Name": "Resolved",
+      "Id": 7
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Invalid object name 'dbo.Genres' ...",
+    "Type": {
+      "Name": "Task",
+      "Id": 2
+    },
+    "VoteCount": 1,
+    "Id": 6636
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "hey what's wrong if I cant see\nusing System.Data.Entity.ModelConfiguration.Conventions.Edm.Db;",
+      "PostedDate": "2011-04-13T14:16:18.747-07:00",
+      "Id": 34144
+    },
+    {
+      "Message": "Automatically pluralizing table names before looking for them is ridiculous, especially making the option of not doing so, so difficult.  Microsoft needs to change this behavior!",
+      "PostedDate": "2011-06-01T09:16:06.453-07:00",
+      "Id": 36764
+    }
+  ]
+}

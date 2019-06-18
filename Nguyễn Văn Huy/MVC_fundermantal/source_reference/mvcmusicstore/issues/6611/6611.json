@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "The first line of the 2nd paragraph reads:  \"A MasterPage template is a layout file that is typically shared by all controllers in a site.\"   \r\n\r\nShouldn't this read:  \"A MasterPage template is a layout file that is typically shared by all views in a site.\"\r\n\r\nThanks,\r\nMathew",
+    "LastUpdatedDate": "2017-11-28T07:20:36.717-08:00",
+    "PlannedForRelease": "MVC Music Store v2.0",
+    "ReleaseVisibleToPublic": true,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "mvcmusicstore",
+    "ReportedDate": "2010-10-10T16:48:22.787-07:00",
+    "Status": {
+      "Name": "Resolved",
+      "Id": 7
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Mistake in PDF document v1.0 p.20",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 6611
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

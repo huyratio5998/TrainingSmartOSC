@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "574223",
+    "ThreadId": "248091",
+    "Html": "\r\n<p>I think many would be using the EFCodeFirst to hook up your model to an existing database.</p>\r\n<p>I played around with connecting to another copy of the MvcMusicStore Db. The one created by the MvcMusicStore-create.sql script, and in my setup placed as a SQL2008R2 Db on my SQL2008R2 Server instead of the local SQLExpress instance.</p>\r\n<p>One lesson learned here, which perhaps warrants a paragraph in the PDF tutorial, is that:</p>\r\n<p>By convention, the EFCodeFirst - when hooking up to an existing Db - is looking for a Connection String\r\n<strong>Name</strong> that is the <strong>same</strong> as the Model Context Class name.</p>\r\n<p>What I experienced was that the solution would compile, and when trying to navigate to the Store, it would give you various cryptic error messages.</p>\r\n<p>That's what you get for straying outside of the beaten template turorial path.</p>\r\n<p>I guess many of us would have a tendency to do that, just to get kicked by lack of knowledge about the various conventions applied to the MVC development platform.</p>\r\n<p>Regards</p>\r\n<p>borge</p>\r\n",
+    "PostedDate": "2011-03-01T23:12:47.617-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

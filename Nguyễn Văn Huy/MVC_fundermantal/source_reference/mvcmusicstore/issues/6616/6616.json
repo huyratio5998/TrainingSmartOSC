@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Steps to reproduce:\r\n\r\nIn .NET 3.5 in login of register screen, leave some fields empty and press enter.\r\nValidation error Text like\r\n\r\nThe UserName field is required. \r\n\r\nappears.\r\nThis message cannot localized: I replaced all occurances of \"is required\" text with localized message, but this message still appears in english. \r\n\r\nHow to localize this validation message ?",
+    "LastUpdatedDate": "2010-11-25T12:55:11.413-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "mvcmusicstore",
+    "ReportedDate": "2010-11-25T12:52:21.76-08:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "The ... field is required validation message cannot localized",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 6616
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

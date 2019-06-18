@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "982379",
+    "ThreadId": "428276",
+    "Html": "\r\n<p>All right&nbsp;something doesn't goes as it should be.....</p>\r\n<p>&nbsp;</p>\r\n<p>After changing the string into Actioresult in the StoreController for Browse and Details the&nbsp;</p>\r\n<p>&nbsp;browser shows in the store only the text&nbsp;&quot;Hello from Store.Index()&quot; no views or what so ever???</p>\r\n<p>&nbsp;</p>\r\n<p>After creating an Model class for Genre and Album I still get the same string&nbsp;&nbsp;&quot;Hello from Store.Index()&quot;</p>\r\n<p>&nbsp;</p>\r\n<p>I think that in the Store.controller were we have to change the public string to ActionResult there was no explanation about the Get: /Store/&nbsp;public string Index()&nbsp; &nbsp; &nbsp; &nbsp; {&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; return &quot;Hello from\r\n Store.Index()&quot;;&nbsp; &nbsp; &nbsp; &nbsp; }</p>\r\n<p>&nbsp;</p>\r\n<p>I have done everything that has been explained but still......or didn't I put the cursor in the right place by creating the index.cshtml, I believe I did after checking it again....</p>\r\n<p>&nbsp;</p>\r\n<p><strong style=\"color:#ff0000\">PLEASE HELP ME TO SOLVE THIS!!!</strong></p>\r\n",
+    "PostedDate": "2013-01-02T10:20:04.063-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

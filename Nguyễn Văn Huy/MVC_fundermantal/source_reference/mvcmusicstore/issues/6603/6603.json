@@ -1,0 +1,61 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 3,
+    "Custom": null,
+    "Description": "hi, Jon.\r\nI have problem on the Album template.\r\nOn the page 53 of your tutorial. We need to modify the Album template.\r\nI followed the steps, and wrote the code(Please check the attachment)\r\nbut it said:\r\nError\t3\t'MvcMusicStore.Models.Album' does not contain a definition for 'Album' and no extension method 'Album' accepting a first argument of type 'MvcMusicStore.Models.Album' could be found (are you missing a using directive or an assembly reference?)\td:\\Study\\MVC2\\MvcMusicStore\\MvcMusicStore\\Views\\Shared\\EditorTemplates\\Album.ascx\t7\t39\tMvcMusicStore\r\nError\t1\t'MvcMusicStore.Models.Album' does not contain a definition for 'Artists' and no extension method 'Artists' accepting a first argument of type 'MvcMusicStore.Models.Album' could be found (are you missing a using directive or an assembly reference?)\td:\\Study\\MVC2\\MvcMusicStore\\MvcMusicStore\\Views\\Shared\\EditorTemplates\\Album.ascx\t7\t68\tMvcMusicStore\r\nError\t2\t'MvcMusicStore.Models.Album' does not contain a definition for 'Genres' and no extension method 'Genres' accepting a first argument of type 'MvcMusicStore.Models.Album' could be found (are you missing a using directive or an assembly reference?)\td:\\Study\\MVC2\\MvcMusicStore\\MvcMusicStore\\Views\\Shared\\EditorTemplates\\Album.ascx\t7\t92\tMvcMusicStore\r\nI tried to use using statement, but it did not work. Please help me out. Thanks!\r\n\r\n\r\n",
+    "LastUpdatedDate": "2010-07-09T10:36:27.267-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "mvcmusicstore",
+    "ReportedDate": "2010-07-03T09:42:02.597-07:00",
+    "Status": {
+      "Name": "Resolved",
+      "Id": 7
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "problem of Album template",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 2,
+    "Id": 6603
+  },
+  "FileAttachments": [
+    {
+      "FileId": 130390,
+      "FileName": "Album.ascx",
+      "DownloadUrl": ".\\130390"
+    }
+  ],
+  "Comments": [
+    {
+      "Message": "I added the code on page 52 and then I get an error on this code and the page does not display\n<%: Html.EditorFor(model => model.Album,\n                new { Artists = Model.Artists, Genres = Model.Genres }) \n\n",
+      "PostedDate": "2010-07-03T12:14:57.49-07:00",
+      "Id": 13799
+    },
+    {
+      "Message": "I've figured it out myself.\nI misunderstood to modify the wrong view.\nI should modify the Edit page template not the /shared/EditorTemplates/Album.ascx\nby putting the code in the right view, the website works ok.\nThanks for the great tutorial. ",
+      "PostedDate": "2010-07-06T02:29:32.323-07:00",
+      "Id": 13862
+    },
+    {
+      "Message": "I'm marking this as fixed based on your comment stating that this was due to modifying the wrong view.",
+      "PostedDate": "2010-07-09T10:36:27.267-07:00",
+      "Id": 14454
+    }
+  ]
+}

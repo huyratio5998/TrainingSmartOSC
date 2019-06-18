@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "697501",
+    "ThreadId": "279259",
+    "Html": "\r\n<p>Hi. I have dun the step &quot;<strong>Updating the Store Index to query the database</strong>&quot; from Part 4 of the tutorial. I run the application but in section Store is no Genres list shown. I'm getting &quot;<strong>Select from 0 genres:</strong>&quot;.</p>\r\n<p>I have open the MusicStore.sdf file, but the table Genres is empty.</p>\r\n",
+    "PostedDate": "2011-11-13T02:27:40.217-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1309339",
+    "ThreadId": "279259",
+    "Html": "I am having the same problem, however, mine is a result of having connected to a remote SQL DB that was created from the script supplied. I have no problem when I connect to the local DB file. Any one have a solution or suggestion?<br />\n",
+    "PostedDate": "2014-09-30T12:10:30.2-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

@@ -1,0 +1,45 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 1,
+    "Custom": null,
+    "Description": "Hi,\r\n\r\nAfter creating the Administrator user (Page No 86-86) and applying the [Authorize] attribtue, when I browse to /StoreManager I get a Account/Login in the address bar of the browser instead of Account/LogOn.\r\n\r\nGoogling the above issue gives many solutions. For me adding a \r\n<add key=\"enableSimpleMembership\" value =\"false\"> under appSettings in web.config  worked.\r\n",
+    "LastUpdatedDate": "2013-04-29T09:25:00.39-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "mvcmusicstore",
+    "ReportedDate": "2012-02-16T03:49:13.457-08:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Account/Login instead of Account/LogOn",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 2,
+    "Id": 6674
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "This worked for me as well - thanks very much for posting this at Codeplex.\n\nI have to say I am quite ambivalent about the MVC music store. The concept and scope of this example is excellent. For the most part the instructions are clear, if a bit verbose. However the implementation leaves much to be desivered. The examples are full of errors. The author has not bothered to respond to the many (legitimate) questions regarding his code. See the dozens of comments on each page. Some of them are legitimate.\n\nThis is declared as a \"simple\" application. And it is. However, if it is so simple , why did the author make so many mistakes. \n\nAn example like this is worth doing. If it is worth doing, it is worth doing well. I give an \"A\" for concept and design, and an \"D-\" for implementation and support.",
+      "PostedDate": "2013-04-29T09:24:39.44-07:00",
+      "Id": 98796
+    }
+  ]
+}

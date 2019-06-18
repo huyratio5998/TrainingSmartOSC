@@ -1,0 +1,45 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "Closing - problem was not having MVC 3 Tools Update installed",
+    "ClosedDate": "2011-04-23T10:55:25.627-07:00",
+    "CommentCount": 1,
+    "Custom": null,
+    "Description": "C:\\Users\\eric\\Downloads\\MvcMusicStore-v3.0\\MvcMusicStore-Completed\\MvcMusicStore\\MvcMusicStore.csproj : error  : The project file 'C:\\Users\\eric\\Downloads\\MvcMusicStore-v3.0\\MvcMusicStore-Completed\\MvcMusicStore\\MvcMusicStore.csproj' cannot be opened.\r\n\r\nThe project type is not supported by this installation.\r\n",
+    "LastUpdatedDate": "2011-04-23T10:55:25.627-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "mvcmusicstore",
+    "ReportedDate": "2011-04-21T05:28:27.31-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Can't open project using Visual Studio 2010 ??",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 6643
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Nevermind, I'm a dope, forgot to install the MVC 3 Tools Upgrade.\n",
+      "PostedDate": "2011-04-21T05:29:56.54-07:00",
+      "Id": 34596
+    }
+  ]
+}

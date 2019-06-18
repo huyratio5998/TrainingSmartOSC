@@ -1,0 +1,90 @@
+[
+  {
+    "Id": "832558",
+    "ThreadId": "354646",
+    "Html": "\r\n<p>I am working with MVCMusicStore App but i am getting error while running the application.</p>\r\n<p>i.e.&nbsp;Unable to find the requested .Net Framework Data Provider. &nbsp;It may not be installed. &nbsp;</p>\r\n<p>the above error is coming when i make a request to http://localhost:1040/Store</p>\r\n<p>could anybody resolve this problem?</p>\r\n",
+    "PostedDate": "2012-05-05T12:20:45.407-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "832785",
+    "ThreadId": "354646",
+    "Html": "<p>I have the same issue.</p>\r\n<p>Any help would be appreciated.</p>\r\n<p>[ Visual Studio 2010 - SP1Rel // .NET Framework 4.0.30319 ]</p>",
+    "PostedDate": "2012-05-06T17:46:40.833-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "832787",
+    "ThreadId": "354646",
+    "Html": "<p>This is usually due to not having the prerequisites installed. See the \"Installing the software\" section here: <a href=\"http://www.asp.net/mvc/tutorials/mvc-music-store/mvc-music-store-part-1\">http://www.asp.net/mvc/tutorials/mvc-music-store/mvc-music-store-part-1</a></p>\r\n<p>There are some earlier discussions with the same question, e.g. <a href=\"http://mvcmusicstore.codeplex.com/discussions/277370\">http://mvcmusicstore.codeplex.com/discussions/277370</a></p>\r\n<p>Let me know if you still see this error after verifying that you've got the required software installed.</p>\r\n<p>- Jon</p>",
+    "PostedDate": "2012-05-06T17:51:47.467-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "832823",
+    "ThreadId": "354646",
+    "Html": "<p>I've installed all the pre-requisites&nbsp;and I still get the same error.&nbsp;</p>",
+    "PostedDate": "2012-05-06T21:56:09.317-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "832828",
+    "ThreadId": "354646",
+    "Html": "\r\n<div style=\"direction:ltr; font-family:Tahoma; color:#000000; font-size:10pt\">\r\n<p>Can you run the completed application code (included in the main download at <a href=\"http://mvcmusicstore.codeplex.com/\">\r\nhttp://mvcmusicstore.codeplex.com/</a>) and see if you get the same error? That will let us know if the problem is in your application's code or if it's a problem with installed software.</p>\r\n<p></p>\r\n<div style=\"font-family:Times New Roman; color:#000000; font-size:16px\">\r\n<hr tabindex=\"-1\">\r\n<div id=\"divRpF747837\" style=\"direction:ltr\"><font color=\"#000000\" size=\"2\" face=\"Tahoma\"><b>From:</b> dego [notifications@codeplex.com]<br>\r\n<b>Sent:</b> Sunday, May 06, 2012 9:56 PM<br>\r\n<b>To:</b> Jon Galloway<br>\r\n<b>Subject:</b> Re: Unable to find the requested .Net Framework Data Provider. It may not be installed. [mvcmusicstore:354646]<br>\r\n</font><br>\r\n</div>\r\n<div></div>\r\n<div>\r\n<p>From: dego</p>\r\n<div id=\"ThreadNotificationPostBody\">\r\n<p>I've installed all the pre-requisites and I still get the same error. </p>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n",
+    "PostedDate": "2012-05-06T22:15:58.9-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "832832",
+    "ThreadId": "354646",
+    "Html": "<p>I did run the completed code and the same error occurs</p>",
+    "PostedDate": "2012-05-06T22:21:38.947-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "832833",
+    "ThreadId": "354646",
+    "Html": "\r\n<div style=\"direction:ltr; font-family:Tahoma; color:#000000; font-size:10pt\">\r\n<p>Can you try running the Web Platform Installer for VS2010<a></a> SP1<a></a>? It should check to make sure you've got the necessesary<a></a> prereqs<a></a>:\r\n<a href=\"http://www.microsoft.com/web/gallery/install.aspx?appid=VWDorVS2010SP1Pack\">\r\nhttp://www.microsoft.com/web/gallery/install.aspx?appid=VWDorVS2010SP1Pack</a></p>\r\n<div style=\"font-family:Times New Roman; color:#000000; font-size:16px\">\r\n<hr tabindex=\"-1\">\r\n<div id=\"divRpF662412\" style=\"direction:ltr\"><font color=\"#000000\" size=\"2\" face=\"Tahoma\"><b>From:</b> dego [notifications@codeplex.com]<br>\r\n<b>Sent:</b> Sunday, May 06, 2012 10:21 PM<br>\r\n<b>To:</b> Jon Galloway<br>\r\n<b>Subject:</b> Re: Unable to find the requested .Net Framework Data Provider. It may not be installed. [mvcmusicstore:354646]<br>\r\n</font><br>\r\n</div>\r\n<div></div>\r\n<div>\r\n<p>From: dego</p>\r\n<div id=\"ThreadNotificationPostBody\">\r\n<p>I did run the completed code and the same error occurs</p>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n",
+    "PostedDate": "2012-05-06T22:23:58.917-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "833006",
+    "ThreadId": "354646",
+    "Html": "<p>Ive installed&nbsp;<span>&nbsp;Web Platform Installer for VS2010</span><a></a><span>&nbsp;SP1 twice. Any suggestions are appreciated.</span></p>",
+    "PostedDate": "2012-05-07T09:02:53.347-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "841259",
+    "ThreadId": "354646",
+    "Html": "<p>I was able to solve the same problem:</p>\r\n<p><a href=\"http://stackoverflow.com/questions/6508516/asp-net-mvc-3-unable-to-find-the-requested-net-framework-data-provider\">http://stackoverflow.com/questions/6508516/asp-net-mvc-3-unable-to-find-the-requested-net-framework-data-provider</a></p>\r\n<p>However, I have a similar MVC 2 project and it is working just fine without applying this. Not sure if this is related with MVC 3 only.</p>",
+    "PostedDate": "2012-05-26T11:08:31.167-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "842087",
+    "ThreadId": "354646",
+    "Html": "<p>Thank you so much&nbsp;<a class=\"UserProfileLink\" href=\"http://www.codeplex.com/site/users/view/jemunsayac\">jemunsayac</a>. That worked!</p>",
+    "PostedDate": "2012-05-29T07:38:12.03-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "851378",
+    "ThreadId": "354646",
+    "Html": "\r\n<p>Thanks you so much jemunsayac...it worked!</p>\r\n",
+    "PostedDate": "2012-06-20T00:36:32.013-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

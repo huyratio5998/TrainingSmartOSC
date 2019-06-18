@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "482062",
+    "ThreadId": "224016",
+    "Html": "<p>I do not understand the following&nbsp; and also where does the code for the next bit go.</p>\r\n<p>Note that as soon as you finish typing the period after the word Model, Visual Studio&rsquo;s IntelliSense feature kicks in and supplies you with a list of possible values. You can just select &ldquo;NumberOfGenres&rdquo; off the list rather than typing it in.</p>\r\n<p><span style=\"color:#ff0000\">The code I do not understand in within this </span></p>\r\n<p><br>Next we&rsquo;ll list the Genres in the list with a foreach loop, like this:<br>&lt;ul&gt; &lt;% foreach (string genreName in Model.Genres) { %&gt;<br>&lt;li&gt; &lt;%: genreName %&gt;<br>&lt;/li&gt; &lt;% } %&gt;<br>&lt;/ul&gt;</p>\r\n<p>&nbsp;</p>\r\n<p>What page is the next bit of code on?</p>\r\n<p>&nbsp;</p>\r\n<p>Thank you</p>\r\n<p>LadyDee</p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2010-08-18T15:01:34.29-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "487090",
+    "ThreadId": "224016",
+    "Html": "<p>That's on the Store Index view. The complete markup is shown lower on that page (p. 26). Sorry for the slow reply - hope you've already got it sorted out by now.</p>",
+    "PostedDate": "2010-08-31T10:33:05.51-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "490398",
+    "ThreadId": "224016",
+    "Html": "<p>I was able to get that to work, now I am unsure of how to do the part in the pdf from page 30-23.&nbsp; Thank you LadyDee</p>",
+    "PostedDate": "2010-09-07T14:38:48.04-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

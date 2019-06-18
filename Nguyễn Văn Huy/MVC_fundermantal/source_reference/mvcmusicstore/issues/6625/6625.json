@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "On Page 95 in the PDF-doc one should click the button in Solution Explorer. I dit it ... another .NET-Development Server started up.\r\nBut when accessing the site I was redirected to\r\n\r\nhttp://localhost:2991/asp.netwebadminfiles/error.aspx\r\n\r\nany ideas on this?",
+    "LastUpdatedDate": "2011-01-29T09:15:49.67-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "mvcmusicstore",
+    "ReportedDate": "2011-01-29T09:15:49.67-08:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "ASP.NET Configuration Site redirects to error message",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 6625
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

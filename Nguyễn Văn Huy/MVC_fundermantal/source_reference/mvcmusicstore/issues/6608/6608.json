@@ -1,0 +1,51 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "This appears to have been a user mistake in entering the code, as explained in the comment:\n\nThe markup you've got in your Browse.aspx page should be in the Index.aspx page instead. The StoreBrowseViewModel doesn't have a list of Genres, since the Browse page shows a list of Albums in one Genre.",
+    "ClosedDate": "2011-04-06T15:17:07.1-07:00",
+    "CommentCount": 1,
+    "Custom": null,
+    "Description": "Hi Mate\r\n\r\nI am working on the MvcMusicStore Tutorial, i want to browse the list of each genre so that i can see the details, but always get the following error\r\n\r\nError\t1\t'MvcMusicStore.ViewModels.StoreBrowseViewModel' does not contain a definition for 'Genres' and no extension method 'Genres' accepting a first argument of type 'MvcMusicStore.ViewModels.StoreBrowseViewModel' could be found (are you missing a using directive or an assembly reference?)\t\r\n\r\ni have applied the USING directive as it has been illustrated on the tutorial, but still getting error.\r\n\r\nI have attached the Browse page so that you can see the error",
+    "LastUpdatedDate": "2011-04-06T15:17:07.1-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "mvcmusicstore",
+    "ReportedDate": "2010-07-29T12:00:24.937-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Problem on how to Browse the List of Genre (Mvc Music Store Tutorial)",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 2,
+    "Id": 6608
+  },
+  "FileAttachments": [
+    {
+      "FileId": 139251,
+      "FileName": "Browse.aspx",
+      "DownloadUrl": ".\\139251"
+    }
+  ],
+  "Comments": [
+    {
+      "Message": "The markup you've got in your Browse.aspx page should be in the Index.aspx page instead. The StoreBrowseViewModel doesn't have a list of Genres, since the Browse page shows a list of Albums in one Genre.\n\nCan you let me know which page of the tutorial you're on?",
+      "PostedDate": "2010-08-31T10:18:09.527-07:00",
+      "Id": 15620
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+[
+  {
+    "Id": "1123842",
+    "ThreadId": "468779",
+    "Html": "While Creating the StoreManager Controller..this error is occuring... plz help..<br />\n",
+    "PostedDate": "2013-11-15T02:33:20.973-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1227227",
+    "ThreadId": "468779",
+    "Html": "I have the same error as I clicked Add  to create StoreManagerController. I have commented out the connectionString but get the same error. I would appreciate any suggestion to the solution of this problem. Thanks, Nkokwuc<br />\n",
+    "PostedDate": "2014-03-27T00:53:42.713-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1238738",
+    "ThreadId": "468779",
+    "Html": "its the connectionString 's problem. just replace the said ConnString with the default one, create the controller, and undo the replace.<br />\nreplace the <br />\n&lt;connectionStrings&gt;<br />\n<pre><code>&lt;add name=&quot;MusicStoreEntities&quot;\n connectionString=&quot;Data Source=|DataDirectory|MvcMusicStore.sdf&quot;\n providerName=&quot;System.Data.SqlServerCe.4.0&quot;/&gt;</code></pre>\n\n&lt;/connectionStrings&gt;<br />\n<br />\nwith somthing similar this one:<br />\n  &lt;connectionStrings&gt;<br />\n<pre><code>&lt;add name=&quot;DefaultConnection&quot; providerName=&quot;System.Data.SqlClient&quot; connectionString=&quot;Data Source=(LocalDb)\\v11.0;Initial Catalog=aspnet-MvcMusicStore-20140428000250;Integrated Security=SSPI;AttachDBFilename=|DataDirectory|\\aspnet-MvcMusicStore-20140428000250.mdf&quot; /&gt;</code></pre>\n\n&lt;/connectionStrings&gt;<br />\n<br />\nor something similar.its the Provider 's problem I think<br />\n",
+    "PostedDate": "2014-04-28T04:14:03.617-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1266005",
+    "ThreadId": "468779",
+    "Html": "Oh boy.       VisualStudio2010/ MVC4 /EF6.1.1<br />\n<br />\n Chapter 5 - I am unable to create the <strong>StoreManagerController</strong> successfully(at all). I have tried <strong>ALL</strong> the posted fixes; Primarily to - Delete/comment out/create a dummy   Connection string and/or reloading Nuget package via command line -<br />\nPM &gt; Install-Package EntityFramework<br />\n'EntityFramework 6.1.1' already installed.<br />\nMvcMusicStore already has a reference to 'EntityFramework 6.1.1'.<br />\n<br />\n<br />\nAnybody else got any suggestions ?<br />\nCan ya just manually create(copy) it from zip file and ? add any necessary webconfigs ? What would be missing, where's the real problem...  Thanks<br />\n",
+    "PostedDate": "2014-07-15T12:37:29.133-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1274505",
+    "ThreadId": "468779",
+    "Html": "Hi Edwards,\r<br />\nThe solution is simple:<br />\n<ol>\n<li>Make sure your connection String is okay</li>\n<li>\nCreate StoreManagerController before you install NuGet Packages.... (if you need to install any). If you have installed any package you might likely repeat the process. \r<br />\nHope this will help <br />\n</li>\n</ol>\n",
+    "PostedDate": "2014-07-20T08:35:08.083-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

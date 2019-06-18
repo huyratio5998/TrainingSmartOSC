@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "624972",
+    "ThreadId": "260673",
+    "Html": "\r\n<p>Hello everyone,</p>\r\n<p>I looked at the discussions, apparently I am the only one (for the moment) concerned about this problem.</p>\r\n<p>Here the details :</p>\r\n<p>1 - I am using visual studio 2010</p>\r\n<p>2-&nbsp; I installed MVC 3 plugin (downloaded from microsoft web site) because it was not included with the visual studio 2010</p>\r\n<p>3 - I am following the tutorial Version&nbsp; 3.0b (4/28/2011)</p>\r\n<p>4- On page 24, i tried to add my first view by right clicking within the index action method in the HomeController.cs</p>\r\n<p>==&gt; Visual studio crashes ...</p>\r\n<p>Problem Details</p>\r\n<p>Problem signature:<br>\r\n&nbsp; Problem Event Name:&nbsp;&nbsp;&nbsp; APPCRASH<br>\r\n&nbsp; Application Name:&nbsp;&nbsp;&nbsp; devenv.exe<br>\r\n&nbsp; Application Version:&nbsp;&nbsp;&nbsp; 10.0.30319.1<br>\r\n&nbsp; Application Timestamp:&nbsp;&nbsp;&nbsp; 4ba1fab3<br>\r\n&nbsp; Fault Module Name:&nbsp;&nbsp;&nbsp; kernel32.dll<br>\r\n&nbsp; Fault Module Version:&nbsp;&nbsp;&nbsp; 6.1.7601.17514<br>\r\n&nbsp; Fault Module Timestamp:&nbsp;&nbsp;&nbsp; 4ce7baf9<br>\r\n&nbsp; Exception Code:&nbsp;&nbsp;&nbsp; c0000005<br>\r\n&nbsp; Exception Offset:&nbsp;&nbsp;&nbsp; 0001139d<br>\r\n&nbsp; OS Version:&nbsp;&nbsp;&nbsp; 6.1.7601.2.1.0.256.1<br>\r\n&nbsp; Locale ID:&nbsp;&nbsp;&nbsp; 2057<br>\r\n<br>\r\nAdditional information about the problem:<br>\r\n&nbsp; LCID:&nbsp;&nbsp;&nbsp; 1033</p>\r\n<p>In fact, it craches everytime I double-click some elements in the view folder.</p>\r\n<p>Any ideas ? I'd really like to finish this tutorial :)</p>\r\n<p>Thanks a lot</p>\r\n<p>T.</p>\r\n<p>&nbsp;</p>\r\n",
+    "PostedDate": "2011-06-08T14:08:45.6-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "626275",
+    "ThreadId": "260673",
+    "Html": "<p>I haven't seen that before, and it's definitely not expcted. Can you make sure you've got the prerequisites correctly installed? The best way to do that is to install the WebPI package from <a href=\"http://www.microsoft.com/web/gallery/install.aspx?appid=VWDorVS2010SP1Pack\">http://www.microsoft.com/web/gallery/install.aspx?appid=VWDorVS2010SP1Pack</a></p>",
+    "PostedDate": "2011-06-10T22:57:03.62-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "627383",
+    "ThreadId": "260673",
+    "Html": "<p>Hi,</p>\r\n<p>Thanks for the tip. I built up a virtual machine :</p>\r\n<p style=\"padding-left: 30px;\">- Same O.S</p>\r\n<p style=\"padding-left: 30px;\">- Same anti virus config</p>\r\n<p style=\"padding-left: 30px;\">- Same visual studio express version without SP1</p>\r\n<p>I installed MVC3 using the link you have given and it works !!!</p>\r\n<p>I think the problem was that I had installed SP1 directly as a stand alone package. It's kind of weird to not be able to install packages separately</p>\r\n<p>Anyway, thanks a lot</p>\r\n<p>T.</p>",
+    "PostedDate": "2011-06-14T02:42:49.897-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

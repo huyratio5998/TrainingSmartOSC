@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "1048585",
+    "ThreadId": "444961",
+    "Html": "One instruction is mentioned  first time on page 89; “ Next, add an Order class (Order.cs) with the following code”. The same instruction  is then repeated  at page 121: “ Right-click on the Models folder and add a class named Order”. If there is only one Order.cs, then the 2nd  instruction should be: “Open the file Order.cs”. Or, perhaps there may be two files named the same: Order.cs. Please clarify this confusion.\r<br />\n<br />\nThank you<br />\n",
+    "PostedDate": "2013-05-25T03:54:12.583-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "507109",
+    "ThreadId": "230872",
+    "Html": "<p>Hello friends!</p>\r\n<p>I have a problem with my database server configuration so that&nbsp; I cannot create the Entity Data Model.</p>\r\n<p>I'm using MS Visual Studio 2010 and MS SQL Server 2008 with default instance name MSSQLSERVER.</p>\r\n<p>&nbsp;</p>\r\n<p>When I tried to open MvcMusicStore.mdf using Server Explorer window, I got Server Explorer Error...</p>\r\n<p>&quot;A network-related or instance-specific error occurred while establishing a connection to SQL Server.The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 25 - Connection string is not valid).&quot;</p>\r\n<p>&nbsp;</p>\r\n<p>And here is the entity connection string:</p>\r\n<p>metadata=res://*/Models.StoreDB.csdl|res://*/Models.StoreDB.ssdl|res://*/Models.StoreDB.msl;provider=System.Data.SqlClient;provider connection string=&quot;Data Source=.\\MSSQLSERVER;AttachDbFilename=|DataDirectory|\\MvcMusicStore.mdf;Integrated Security=True;User Instance=True&quot;</p>\r\n<p>&nbsp;</p>\r\n<p>I checked SQL Server Instance Name on Tools &gt; Options &gt; Database Tools &gt; Data Connections and I found it correct (MSSQLSERVER).</p>\r\n<p>Thank you for your information. I'm really appreciate it.</p>",
+    "PostedDate": "2010-10-14T01:21:04.597-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "507902",
+    "ThreadId": "230872",
+    "Html": "<p>There are two options for setting up the database. You can attach to a database file using SQL Server Express, which is normally installed with Visual Studio 2010, or you can use an&nbsp;instance of SQL Server 2008. Right now you've got a mix of both - you're attaching to a database file but using an instance of SQL Server 2008.</p>\r\n<p>If you have SQL Server Express installed, you should be able to change your connection string to:<br>metadata=res://*/Models.StoreDB.csdl|res://*/Models.StoreDB.ssdl|res://*/Models.StoreDB.msl;provider=System.Data.SqlClient;provider connection string=&quot;Data Source=.\\<strong>SQLEXPRESS</strong>;AttachDbFilename=|DataDirectory|\\MvcMusicStore.mdf;Integrated Security=True;User Instance=True&quot;</p>\r\n<p>Alternatively, you can run the SQL Create Scripts (included in the latest download zip and linked to on the home page of the project: <a href=\"http://mvcmusicstore.codeplex.com\">http://mvcmusicstore.codeplex.com</a>) to create a database on your MSSQLSERVER instance. In that case, your connection string would probably look like:<br><span>metadata=res://*/Models.StoreDB.csdl|res://*/Models.StoreDB.ssdl|res://*/Models.StoreDB.msl;provider=System.Data.SqlClient;provider connection string=&quot;Data Source=.\\<strong>MSSQLSERVER</strong>;Database=MvcMusicStore;Integrated Security=True;&quot;</span></p>\r\n<p><span>More information on connection strings here: <a href=\"http://connectionstrings.com/sql-server-2008\">http://connectionstrings.com/sql-server-2008</a></span></p>",
+    "PostedDate": "2010-10-15T10:34:07.65-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

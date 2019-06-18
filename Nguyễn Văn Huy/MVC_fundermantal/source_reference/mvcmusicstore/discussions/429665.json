@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "987020",
+    "ThreadId": "429665",
+    "Html": "\r\n<p>Wonderful basic tutorial. I really enjoyed going through it. It is not very basic in the sense that I had to face a couple of configuration issues which were not mentioned even in the document. Since I have been into .NET development for some time now so\r\n I could sort out those issues myself.</p>\r\n<p>The only thing which I couldn't resolve (or perhaps I didn't bother to resolve) was a design issue in views/home/index.cshtml and views/store/browse.cshtml views. The list of albums is displaying below the 'Genre' menu bar instead of showing on its right.</p>\r\n<p>But still, thanks for the tutorial.</p>\r\n<p>Sumit Mehta</p>\r\n<p>http://www.sumitmehta.net</p>\r\n",
+    "PostedDate": "2013-01-15T05:10:45.5-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

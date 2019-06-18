@@ -1,0 +1,114 @@
+[
+  {
+    "Id": "549757",
+    "ThreadId": "241884",
+    "Html": "\r\n<p>*** Using MVC3 Version ***</p>\r\n<p>When attempting to view the /Store/ page after following the steps to setup the database using code-first with the entity framework, I am presented with an error: &quot;Invalid object name 'dbo.Genres'.&quot; &nbsp;I am, unfortunately, not terribly well versed in\r\n SQL/database mechanics, and am having a difficult time finding the source of this error. &nbsp;I've checked and double checked the code to ensure that it matches the tutorial code (ignoring the case mismatch in the initialization and then use of the MusicStoreEntities\r\n object named storeDB), to no avail. &nbsp;I've searched the web for Invalid object name dbo.* errors, and the results have not proven helpful so far. &nbsp;There is a mention of an older database in the comments section, with a table called Genre, instead\r\n of Genres, but this did not help to clear up my confusion, as the code does not seem to be looking for a table named Genres, it is merely absorbing the Genre tableset into an object attribute of sorts called Genres. &nbsp;If this is the case, it would make\r\n sense to have a Genre table versus a Genres table, which the database reflects when viewed in the Server Explorer. &nbsp;Thank you for taking the time to read over this. &nbsp;Please advise.</p>\r\n<p>Thank You,</p>\r\n<p>Scooter</p>\r\n",
+    "PostedDate": "2011-01-14T23:41:19.687-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "549761",
+    "ThreadId": "241884",
+    "Html": "\r\n<p>EF Code First has a default&nbsp;PluralizingTableNameConvention which assumes the Genre information will be in a table named Genres. If you're getting an error that says Invalid object name dbo.Genres, EF is looking for the correct table and not finding\r\n it. Can you open the database to see if that table exists? Are you using Web Dev 2010 Express or Visual Studio 2010?</p>\r\n",
+    "PostedDate": "2011-01-15T00:03:25.537-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "549762",
+    "ThreadId": "241884",
+    "Html": "\r\n<p>I am using VS2010. &nbsp;I am able to view the table structure using Server Explorer. &nbsp;The table is called Genre, and is not pluralized. &nbsp;Is there a way to force EF to skip the default pluralization?</p>\r\n<p>--Scooter</p>\r\n",
+    "PostedDate": "2011-01-15T00:07:48.48-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "549765",
+    "ThreadId": "241884",
+    "Html": "\r\n<p>You can turn off the pluralizing name convention by overriding the OnModelCreating method as explained here:&nbsp;<a href=\"http://social.msdn.microsoft.com/Forums/en-ie/adonetefx/thread/719f3e4d-073b-49fe-9968-945acde27bb7\">http://social.msdn.microsoft.com/Forums/en-ie/adonetefx/thread/719f3e4d-073b-49fe-9968-945acde27bb7</a></p>\r\n<p>Another option is to rename the table names to plural.</p>\r\n",
+    "PostedDate": "2011-01-15T00:21:26.527-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "549766",
+    "ThreadId": "241884",
+    "Html": "\r\n<p>Thanks! &nbsp;The override method worked.</p>\r\n<p>-- Scooter</p>\r\n",
+    "PostedDate": "2011-01-15T00:24:54.56-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "557618",
+    "ThreadId": "241884",
+    "Html": "\r\n<p>Can someone please describe a full procedure or way to overiding that method I am confused and I want to know the way to do it in VS2010</p>\r\n<p>I see the entire <span style=\"font-size:small\"><span style=\"font-family:Calibri\">System.Data.Entity.ModelConfiguration.Conventions.Edm.Db namespace&nbsp;&nbsp; in referenc eof my project but is there a way to edit or change them?<br>\r\n</span></span></p>\r\n",
+    "PostedDate": "2011-01-30T08:16:20.473-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "557623",
+    "ThreadId": "241884",
+    "Html": "\r\n<blockquote style=\"border:solid .1em #ccc; font-style:italic; margin:.25em 1em 0 1em; padding:0 .25em 0 .25em\">\r\n<strong>scooterwadsworth wrote:</strong><br>\r\n<p>Thanks! &nbsp;The override method worked.</p>\r\n<p>-- Scooter</p>\r\n</blockquote>\r\n<p>Can someone please describe a full procedure or way to overiding that method I am confused and I want to know the way to do it in VS2010</p>\r\n<p>I see the entire <span style=\"font-size:small\"><span style=\"font-family:Calibri\">System.Data.Entity.ModelConfiguration.Conventions.Edm.Db namespace&nbsp;&nbsp; in referenc eof my project but is there a way to edit or change them?</span></span></p>\r\n<p><span style=\"font-size:small\"><span style=\"font-family:Calibri\">Can you descibe the way in visual studio to do it?</span></span></p>\r\n<p><span style=\"font-size:small\"><span style=\"font-family:Calibri\">thanks<br>\r\n</span></span></p>\r\n",
+    "PostedDate": "2011-01-30T08:43:43.967-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "591960",
+    "ThreadId": "241884",
+    "Html": "<p>This blog post explains how it is done - <a href=\"http://stevesmithblog.com/blog/entity-framework-invalid-object-name-dbo-albums/\">http://stevesmithblog.com/blog/entity-framework-invalid-object-name-dbo-albums/</a></p>",
+    "PostedDate": "2011-04-05T05:51:40.927-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "593146",
+    "ThreadId": "241884",
+    "Html": "This discussion has been copied to a work item. Click <a href=\"http://mvcmusicstore.codeplex.com/workitem/6636\">here</a> to go to the work item and continue the discussion.",
+    "PostedDate": "2011-04-06T15:21:32.507-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "596538",
+    "ThreadId": "241884",
+    "Html": "<p>What's wrong when my App cant find...</p>\n<pre style=\"text-align: left; line-height: 12pt; background-color: white; margin: 0em; width: 100%; font-family: 'Courier New',courier,monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;\"><span style=\"color: #0000ff;\">using</span> System.Data.Entity.ModelConfiguration.Conventions.Edm.Db;<br /><br /></pre>",
+    "PostedDate": "2011-04-13T05:59:44.003-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "623004",
+    "ThreadId": "241884",
+    "Html": "<p>I want to note that this error can also happen if you have pre-defined your database.&nbsp; For example, if you are developming with SQL developer edition, you usually create the database using the sql manager and then set the connection string.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The proper way is to only define the connection string, but make sure the database doesn't exist at all.&nbsp; When you start the mvc3 app, EF code first will create the database and a table called dbo.EdmMetaData.</p>",
+    "PostedDate": "2011-06-04T12:01:31.597-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "688713",
+    "ThreadId": "241884",
+    "Html": "<p>I think that's out-dated. I found this worked:</p>\r\n<p>&nbsp;</p>\r\n<div style=\"color: black; background-color: white;\">\r\n<pre>\r\n        <span style=\"color: blue;\">protected</span> <span style=\"color: blue;\">override</span> <span style=\"color: blue;\">void</span> OnModelCreating(DbModelBuilder dbModelBuilder)\r\n        {\r\n            dbModelBuilder.Conventions.Remove&lt;PluralizingTableNameConvention&gt;();\r\n        }\r\n</pre>\r\n</div>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2011-10-24T18:30:35.733-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "847228",
+    "ThreadId": "241884",
+    "Html": "<p>Where did you read the steps to set up the database</p>\r\n<p>I am runtime compile error on Genre not being defines as an entity</p>",
+    "PostedDate": "2012-06-10T14:48:43.633-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "847759",
+    "ThreadId": "241884",
+    "Html": "<p>@stevensrf1 This tutorial uses Entity Framework Code First, which automatically creates the database based on the entity classes. You shouldn't need to do anything to set up the database.</p>",
+    "PostedDate": "2012-06-11T23:45:51.237-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

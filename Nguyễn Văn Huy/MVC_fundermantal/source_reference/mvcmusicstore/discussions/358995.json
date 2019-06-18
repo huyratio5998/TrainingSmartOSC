@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "846942",
+    "ThreadId": "358995",
+    "Html": "\r\n<p>If I change the StoreController Details method input parameter name from id to idd, as shown below, a browser exception occurs when mapping to Store/Details/5</p>\r\n<p>public string Details(int idd)<br>\r\n{<br>\r\n&nbsp;&nbsp; string message = &quot;Store.Details, IDD = &quot; &#43; idd;<br>\r\n&nbsp;&nbsp;&nbsp; return message;<br>\r\n}</p>\r\n<p>&nbsp;</p>\r\n<p>How come this happens? If the parameter name is id then the mapping works. Why does the parameter have to be named id to work?</p>\r\n",
+    "PostedDate": "2012-06-09T09:58:05.273-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "847762",
+    "ThreadId": "358995",
+    "Html": "<p>@stevensrf1 The default route in ASP.NET MVC uses a parameter named id. The tutorial explains this in part 2:</p>\r\n<p><em>ASP.NET MVC lets us easily do this without having to configure anything. ASP.NET MVC&rsquo;s default routing convention is to treat the segment of a URL after the action method name as a parameter named &ldquo;ID&rdquo;. If your action method has a parameter named ID then ASP.NET MVC will automatically pass the URL segment to you as a parameter.&nbsp;</em></p>\r\n<p>The default route is defined in global.asax.cs</p>\r\n<div style=\"color: black; background-color: white;\">\r\n<pre>routes.MapRoute(\r\n\tname: <span style=\"color: #a31515;\">\"Default\"</span>,\r\n\turl: <span style=\"color: #a31515;\">\"{controller}/{action}/{id}\"</span>,\r\n\tdefaults: <span style=\"color: blue;\">new</span> { controller = <span style=\"color: #a31515;\">\"Home\"</span>, action = <span style=\"color: #a31515;\">\"Index\"</span>, id = UrlParameter.Optional }\r\n);\r\n</pre>\r\n</div>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2012-06-11T23:50:54.957-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "1004797",
+    "ThreadId": "434006",
+    "Html": "I noticed that for the Create method in the StoreManager Controller, the HTTPPost Action Method is also named Create (same as the Get method), but for the Delete method, the HTTPPost Action method is named DeleteConfirmed with an ActionName parameter set to &quot;Delete&quot; (which I assume is referencing the Get method). Is there a reason for this? When would you use which style? Any ideas?<br />\n",
+    "PostedDate": "2013-02-21T10:15:59.577-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1023078",
+    "ThreadId": "434006",
+    "Html": "This due to how Method Overload works and how it is evaluated by de CLR.<br />\n<pre><code>public ActionResult Delete(Model id);\n\n[HttpPost]\npublic ActionResult Delete(Model id);</code></pre>\n\nThe above is what you want to avoid. The basic rule is that when overloading, the implicit agreement is that the signatures of both need to be different from each other. For instance, by having different arguments: <br />\n<pre><code>public ActionResult Delete();\n\n[HttpPost]\npublic ActionResult Delete(Model id);</code></pre>\n\nThough, chances are that your functionality demands the same arguments. The workaround is to rename one of the methods, and annotate a custom action name. So in this case a POST request which is fired at <em>app/controller/delete/</em> is actually properly interpreted by the CLR. ASP Scaffolding takes that into account and automatically appends an actionname annotation.<br />\n<pre><code>[HttpPost, ActionName(&quot;Delete&quot;)]\npublic ActionResult DeleteConfirmed(Model id)</code></pre>\n\n",
+    "PostedDate": "2013-03-29T17:10:29.887-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

@@ -1,0 +1,55 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "Documentation",
+      "DisplayName": "Documentation"
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 3,
+    "Custom": null,
+    "Description": "Delete function is not working when you confirm delete.",
+    "LastUpdatedDate": "2017-11-28T07:20:36.717-08:00",
+    "PlannedForRelease": "MVC Music Store v2.0",
+    "ReleaseVisibleToPublic": true,
+    "Priority": {
+      "Name": "Medium",
+      "Severity": 100,
+      "Id": 2
+    },
+    "ProjectName": "mvcmusicstore",
+    "ReportedDate": "2010-07-21T16:34:26.88-07:00",
+    "Status": {
+      "Name": "Resolved",
+      "Id": 7
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Delete is not working",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 2,
+    "Id": 6607
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Can you please supply more information? The delete function should work - I'm not sure if it's a database or application problem based on your information.",
+      "PostedDate": "2010-07-23T22:24:06.113-07:00",
+      "Id": 14684
+    },
+    {
+      "Message": "This happen if i complete page 59 and run the application.\nI guess something with return View(\"Deleted\") page 59.\nAlbum is deleted though. When i change the return task to Redirect. It works.",
+      "PostedDate": "2010-09-23T22:37:32.377-07:00",
+      "Id": 16373
+    },
+    {
+      "Message": "There is an error while trying to access Deleted view. Like page not found. Seems that i need to create Action for Deleted to solve it.",
+      "PostedDate": "2010-11-16T06:14:22.603-08:00",
+      "Id": 18548
+    }
+  ]
+}

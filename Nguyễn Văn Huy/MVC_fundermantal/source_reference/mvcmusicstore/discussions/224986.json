@@ -1,0 +1,58 @@
+[
+  {
+    "Id": "485361",
+    "ThreadId": "224986",
+    "Html": "<p>The original view StoreManager\\Index.aspx had &lt;%@ Import Namespace=&quot;MvcMusicStore.Helpers&quot; %&gt; in it but your version has not. The Html.Truncate was causing an error so I put this import namespace in but that gave an error saying that the namespace does not exist, but I have the folder Helpers with HtmlHelpers.cs in it. Is there some other other way you have implemented it?</p>\r\n<p>&nbsp;</p>\r\n<p>Many thanks</p>",
+    "PostedDate": "2010-08-26T12:47:20.187-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "486137",
+    "ThreadId": "224986",
+    "Html": "<p>I have found the problem the namespace declaration for HtmlHelpers.cs should be &quot;MvcMusicStore.Helpers&quot; and you do not need the &lt;%@ Import Namespace=&quot;MvcMusicStore.Helpers&quot;%&gt; in Index.aspx if the namespace is added in the web.config</p>\r\n<p>Chris</p>",
+    "PostedDate": "2010-08-29T08:35:27.487-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "487088",
+    "ThreadId": "224986",
+    "Html": "<p>Yes - I'm changing that in the next release of the tutorial to move the helpers&nbsp;namespace reference&nbsp;into the web.config.</p>",
+    "PostedDate": "2010-08-31T10:30:48.99-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "498385",
+    "ThreadId": "224986",
+    "Html": "<p>John,</p>\r\n<p>Very nice tutorial. But I am facing some problems following it to the word. May be it is because I am using Visual Studio 2008. Anyway so far it's going good.</p>\r\n<p>The reason for this note is : I did not understand, what you are going to change in the next release and why, because, things are fine as per the tutorial in the HtmlHelper&nbsp;aspect. Moving the import statement from view-page to web.config is not necessary from the MVC tutorial point of view. Maybe I have misunderstood this post or Chris.</p>\r\n<p>Would appreciate a clarification if time permits.</p>\r\n<p>Also there are other steps which were missing from the tutorial. May be they are due to VS2010/2008 difference. If you are interested, I will list them out for you.</p>\r\n<p>Respectfully,</p>\r\n<p>Tushar G. Walavalkar</p>",
+    "PostedDate": "2010-09-25T05:50:45.34-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "498435",
+    "ThreadId": "224986",
+    "Html": "\r\n<div><font size=2 face=Arial>Hi Tushar</font></div>\r\n<div><font size=2 face=Arial></font> </div>\r\n<div><font size=2 face=Arial>You are right that you do not need to put the \r\nnamespace into the web.config but if you do it saves adding it to every screen \r\nor class that uses it. I think this is a feature of VS2010. I really like this \r\nfeature as it gives you a single place to look for your namespaces.</font></div>\r\n<div><font size=2 face=Arial></font> </div>\r\n<div><font size=2 face=Arial>Chris</font></div>\r\n<div style=\"font:10pt Tahoma\">\r\n<div><br></div>\r\n<div style=\"background:#f5f5f5\">\r\n<div style=\"font-color:black\"><b>From:</b> [email removed] </div>\r\n<div><b>Sent:</b> Saturday, September 25, 2010 1:50 PM</div>\r\n<div><b>To:</b> [email removed] \r\n</div>\r\n<div><b>Subject:</b> Re: Helper Html.Truncate does not compile \r\n[mvcmusicstore:224986]</div></div></div>\r\n<div><br></div>\r\n\r\n\r\n<p>From: tushargw</p>\r\n<div id=ThreadNotificationPostBody>\r\n<p>John,</p>\r\n<p>Very nice tutorial. But I am facing some problems following it to the word. \r\nMay be it is because I am using Visual Studio 2008. Anyway so far it's going \r\ngood.</p>\r\n<p>The reason for this note is : I did not understand, what you are going to \r\nchange in the next release and why, because, things are fine as per the tutorial \r\nin the HtmlHelper aspect. Moving the import statement from view-page to \r\nweb.config is not necessary from the MVC tutorial point of view. Maybe I have \r\nmisunderstood this post or Chris.</p>\r\n<p>Would appreciate a clarification if time permits.</p>\r\n<p>Also there are other steps which were missing from the tutorial. May be they \r\nare due to VS2010/2008 difference. If you are interested, I will list them out \r\nfor you.</p>\r\n<p>Respectfully,</p>\r\n<p>Tushar G. Walavalkar</p></div>\r\n",
+    "PostedDate": "2010-09-25T12:22:25.357-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "498465",
+    "ThreadId": "224986",
+    "Html": "<p>Chris, Tushar -</p>\r\n<p>Right, both ways work. The web.config approach is a little cleaner for two reasons:</p>\r\n<ul>\r\n<li>You can use your helper in all your views without having to add an import statement</li>\r\n<li>If you put all&nbsp;several helpers in one namespace, you can use them all in all your views without any import statements</li>\r\n</ul>\r\n<p>This has actually been available since ASP.NET 2.0, if you can believe it: <a href=\"http://msdn.microsoft.com/en-us/library/ms164642.aspx\">http://msdn.microsoft.com/en-us/library/ms164642.aspx</a></p>\r\n<p>- Jon</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2010-09-25T16:55:21.13-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "498479",
+    "ThreadId": "224986",
+    "Html": "<p>Jon (sorry about John earlier),</p>\r\n<p>Glad to know that I didn't misunderstand.</p>\r\n<p>Yes this feature has been around since ASP.NET 2.0 but VS2005 intellisense had issues coming up with right entities in the list when you put the namespace in web.config. Compilation worked fine. Never checked&nbsp;the same&nbsp;in VS2008. But just thought it easier, for the intellisense to work, to put it on the page. Hopefully VS2010 does it better.</p>\r\n<p>- Tushar G. Walavalkar</p>",
+    "PostedDate": "2010-09-25T19:03:19.283-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

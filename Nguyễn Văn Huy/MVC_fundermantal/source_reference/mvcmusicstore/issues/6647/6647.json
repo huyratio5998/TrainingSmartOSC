@@ -1,0 +1,45 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 1,
+    "Custom": null,
+    "Description": "True enough. It's just the guide states \"We'll be using the SQL Server Compact (also free) to host the database.\"\r\n\r\nSince some users may be pushing this out to a server, either before or after they tweak it to their own needs, it might be worth making some mention of SQL Express, even if it's just in passing in Part 7 / Membership and Authorization.\r\n\r\n(And for those intermediate users reviewing the tutorial to see if it effectively negates the need for beginner's ASP.NET MVC books, you don't get their hopes up that Compact Edition can now handle membership. ;) )",
+    "LastUpdatedDate": "2011-10-16T03:57:11.727-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "mvcmusicstore",
+    "ReportedDate": "2011-04-25T19:58:48.553-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Isn't SQL Server Express still required?",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 2,
+    "Id": 6647
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "I agree with the comments in the discussion section (\"http://mvcmusicstore.codeplex.com/discussions/255115\"). Although the document states the software to use, it would be good to have a note on getting this setup with MS Express due to MS CE not being compatible with the membership provider would be beneficial.\n\nThanks for adding the Work Item Jon.\n",
+      "PostedDate": "2011-10-16T03:57:11.727-07:00",
+      "Id": 47048
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "I just tried to do the MvcMusicStore sample and I tried to use a completed sample, which breaks when you try to add an album to a cart. Further investigation has shown that file \"MvcMusicStore-v3.0\\MvcMusicStore-Completed\\MvcMusicStore\\Views\\ShoppingCart\\Index.cshtml\" contains <script> reference to jquery of version 1.4.4 but jquery 1.5.1 is included in the sample, so this reference in this file should be updated to 1.5.1",
+    "LastUpdatedDate": "2012-08-26T08:55:50.753-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "mvcmusicstore",
+    "ReportedDate": "2012-08-26T08:55:50.753-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "wrong version of jquery referenced in the completed sample",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 6683
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

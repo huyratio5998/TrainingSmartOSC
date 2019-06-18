@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "869174",
+    "ThreadId": "370267",
+    "Html": "\r\n<p>Validation of the decimal Album.Price works fine as long as my Windows Regional language settings is English. In Dutch it becomes impossible to pass validation because the decimal seperator is a comma in stead of a dot. The UI displays decimal numbers correctly\r\n with the comma as dec. seperator, but validation fails. Even if I try entering a number with a dot as decimal seperator validation fails.</p>\r\n<p>I tried setting Windows Regional settings to English and then forced the current culture to dutch by adding the following to global.asax:</p>\r\n<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; protected void Session_Start()<br>\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {<br>\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Thread.CurrentThread.CurrentCulture = CultureInfo.CreateSpecificCulture(&quot;nl-NL&quot;);<br>\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Thread.CurrentThread.CurrentUICulture = new CultureInfo(&quot;nl-NL&quot;);<br>\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</p>\r\n<p>Now I would expect decimal numbers in the UI&nbsp; to be formatted according to Dutch rules but that does not work either.</p>\r\n<p>Is there a solution for this issue? If not, MVC out of the box is completely useless for many non-english users...</p>\r\n",
+    "PostedDate": "2012-07-16T01:17:50.843-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

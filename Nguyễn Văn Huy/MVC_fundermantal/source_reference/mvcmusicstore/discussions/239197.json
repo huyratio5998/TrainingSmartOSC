@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "539111",
+    "ThreadId": "239197",
+    "Html": "\r\n<p>I've been playing around with MVC, and realized that this simple project could be made to be even more simple and concise with the inclusion of the Razor view-engine with MVC 3.</p>\r\n<p>Any plans to update this project?</p>\r\n",
+    "PostedDate": "2010-12-21T19:41:26.92-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "539520",
+    "ThreadId": "239197",
+    "Html": "\r\n<p>Absolutely - I'm working on an update which will be available when MVC 3 is released.</p>\r\n",
+    "PostedDate": "2010-12-22T12:18:57.877-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "539566",
+    "ThreadId": "239197",
+    "Html": "\r\n<p>Hey, thanks! &nbsp;Sounds awesome, the Razor view-engine will make this very awesome!</p>\r\n",
+    "PostedDate": "2010-12-22T13:42:24.63-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

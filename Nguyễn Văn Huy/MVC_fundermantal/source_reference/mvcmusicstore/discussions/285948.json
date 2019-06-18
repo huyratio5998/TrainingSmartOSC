@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "724351",
+    "ThreadId": "285948",
+    "Html": "\r\n<p>Hi,</p>\r\n<p>Was wondering; Trying to expand a bit on this wonderful example app by adding an image to the album class. I tried using&nbsp;&nbsp;</p>\r\n<p></p>\r\n<pre><div style=\"color:black; background-color:white\"><pre><span style=\"color:blue\">public</span> HttpPostedFileBase Image { <span style=\"color:blue\">get</span>; <span style=\"color:blue\">set</span>; }\r\n</pre>\r\n</div>\r\n<br></pre>\r\n<p></p>\r\n<p>but I can't figure out how to populate this via SampleData.cs.</p>\r\n<p>I also get a &quot;value cannot be null&quot; run-time error with this after adding the above in Album.cs class. I believe it's because I haven't populated it via SampleData.cs or that it cannot convert it to a list? Here it goes:</p>\r\n<p></p>\r\n<div style=\"color:black; background-color:white\">\r\n<pre>        <span style=\"color:blue\">private</span> List&lt;Album&gt; GetTopSellingAlbums(<span style=\"color:blue\">int</span> count)\r\n        {\r\n            <span style=\"color:blue\">return</span> storeDB.Albums\r\n                .OrderByDescending(a =&gt; a.OrderDetails.Count())\r\n                .Take(count)\r\n                .ToList();\r\n        }\r\n</pre>\r\n</div>\r\n<p></p>\r\n<p>Any help much appreciated!</p>\r\n<p>Thanks,</p>\r\n<p>Polis.</p>\r\n",
+    "PostedDate": "2012-01-12T09:25:30.683-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

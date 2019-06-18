@@ -1,0 +1,50 @@
+[
+  {
+    "Id": "551543",
+    "ThreadId": "242317",
+    "Html": "\r\n<p>I ran through the tutorial which has been very helpful in understanding MVC. &nbsp;The PDF is wonderfully complete, thanks for putting it together.</p>\r\n<p>After creating and checking out a cart, I noticed that all the fields in OrderDetail were filled in except Quantity, which was 0. &nbsp;I think the problem is that&nbsp;<strong>CreateOrder</strong> in the ShoppingCart model should set\r\n<strong>OrderDetail.Quantity =&nbsp;cartItem.Count</strong>. &nbsp;</p>\r\n<p>Is this the correct fix?</p>\r\n<div style=\"color:black; background-color:white\">\r\n<pre>      <span style=\"color:blue\">public</span> <span style=\"color:blue\">int</span> CreateOrder(Order order)\r\n        {\r\n            <span style=\"color:blue\">decimal</span> orderTotal = 0;\r\n\r\n            <span style=\"color:blue\">var</span> cartItems = GetCartItems();\r\n\r\n            <span style=\"color:green\">//Iterate the items in the cart, adding Order Details for each</span>\r\n            <span style=\"color:blue\">foreach</span> (<span style=\"color:blue\">var</span> cartItem <span style=\"color:blue\">in</span> cartItems)\r\n            {\r\n                <span style=\"color:blue\">var</span> orderDetails = <span style=\"color:blue\">new</span> OrderDetail\r\n                {\r\n                    AlbumId = cartItem.AlbumId,\r\n                    OrderId = order.OrderId,\r\n                    UnitPrice = cartItem.Album.Price,\r\n                    <span style=\"text-decoration:underline\">Quantity= cartItem.Count</span>\r\n                };\r\n\r\n                storeDB.OrderDetails.AddObject(orderDetails);\r\n\r\n                orderTotal &#43;= (cartItem.Count * cartItem.Album.Price);\r\n            }\r\n\r\n            <span style=\"color:green\">//Save the order</span>\r\n            storeDB.SaveChanges();\r\n\r\n            <span style=\"color:green\">//Empty the shopping cart</span>\r\n            EmptyCart();\r\n\r\n            <span style=\"color:green\">//Return the OrderId as a confirmation number</span>\r\n            <span style=\"color:blue\">return</span> order.OrderId;\r\n        }\r\n</pre>\r\n</div>\r\n<p>&nbsp;</p>\r\n",
+    "PostedDate": "2011-01-18T14:55:29.873-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "555964",
+    "ThreadId": "242317",
+    "Html": "\r\n<p>Yes, that's correct. It looks like you were using the 1.0 release of the tutorial, as this fix is included in the 2.0 release.</p>\r\n",
+    "PostedDate": "2011-01-26T17:19:22.447-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "559046",
+    "ThreadId": "242317",
+    "Html": "\r\n<p>Hi Jon,<br>\r\nI've run into several issues related to the CreatorOrder function I need your help with.<br>\r\nFirst... just an FYI for going forward the,&nbsp;&nbsp; storeDB.OrderDetails.Add(orderDetails);&nbsp; line is not present in either the completed code or in the version 2 of the tutorial.<br>\r\nAlso on page 128 there is a reference to&nbsp;&nbsp;&nbsp; storeDB.AddToOrders(order);&nbsp;&nbsp; that should be&nbsp;&nbsp;&nbsp; storeDB.Orders.Add(order);&nbsp;&nbsp; Most everyone has resolved these two issues on their own but there is one that I've seen\r\n several people comment on but I haven't seen anyone come up with what looks like the correct way to solve the issue.<br>\r\nAnd that would be getting the total in the order table to update. I'm still looking for a solution but any help you can provide would be appreciated.</p>\r\n<p>Thanks again Jon for the great tutorial&nbsp;</p>\r\n<div id=\"x__mcePaste\" style=\"width:1px; height:1px; overflow:hidden; top:0px; left:-10000px\">\r\n&#65279;</div>\r\n",
+    "PostedDate": "2011-02-01T15:47:21.543-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "565906",
+    "ThreadId": "242317",
+    "Html": "<p>Any luck resolving this issue?</p>",
+    "PostedDate": "2011-02-14T07:52:27.4-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "593212",
+    "ThreadId": "242317",
+    "Html": "<p>@madisonJames - Thanks - I've made these corrections for the next release</p>\n<p>@justSteve - Which issue are you asking about? There are several listed here.</p>",
+    "PostedDate": "2011-04-06T17:38:27.747-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "720324",
+    "ThreadId": "242317",
+    "Html": "<p>Hi, i have been following the MVC tutorial and I'm wondering if the shopping cart can be altered in such a way to allow more quantities to be added in the cart. Instead of having to go back to the Products page and clicking the album again to increase quantity.</p>\r\n<p>How do i allow shopping cart to insert more quantity?</p>",
+    "PostedDate": "2012-01-04T07:31:32.63-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

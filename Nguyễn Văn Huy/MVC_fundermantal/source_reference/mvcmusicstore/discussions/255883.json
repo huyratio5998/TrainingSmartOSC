@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "605508",
+    "ThreadId": "255883",
+    "Html": "<p>First off, Jon, thanks for the amazing tutorial. &nbsp;This has been a great experience so far!</p>\n<p>I have a question: &nbsp;In the ShoppingCart class (section 8 of tutorial), you explicitly say we're going to use session, but that it's bad (and I concur). &nbsp;Like most developers who work on production systems, session is simply not an option for me. &nbsp;So as I  was looking at adapting this model to use cookies, I noticed this in your code comments:</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p>\n<div style=\"color: black; background-color: white;\">\n<pre>        <span style=\"color: green;\">// We're using HttpContextBase to allow access to cookies.</span>\n        <span style=\"color: blue;\">public</span> <span style=\"color: blue;\">string</span> GetCartId(HttpContextBase context)\n        {\n            <span style=\"color: blue;\">if</span> (context.Session[CartSessionKey] == <span style=\"color: blue;\">null</span>)\n            {\n               ...\n                    <span style=\"color: green;\">// Send tempCartId back to client as a cookie</span>\n                    context.Session[CartSessionKey] = tempCartId.ToString();\n</pre>\n</div>\n<p>&nbsp;</p>\n<p>So, am I missing something? &nbsp;Is the manner in which you're using session somehow using cookies? &nbsp;Is this load-balancer safe? &nbsp;</p>\n<p>I guess I'm just confused. &nbsp;I haven't used session since the ASP days, and based on your comments I'm wondering if I'm confused about the implementation.</p>\n<p>Thanks in advance,</p>\n<p>JJ</p>",
+    "PostedDate": "2011-05-01T08:00:57.147-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "611220",
+    "ThreadId": "255883",
+    "Html": "This discussion has been copied to a work item. Click <a href=\"http://mvcmusicstore.codeplex.com/workitem/6652\">here</a> to go to the work item and continue the discussion.",
+    "PostedDate": "2011-05-11T13:22:52.28-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "611228",
+    "ThreadId": "255883",
+    "Html": "<p>You're right - It looks like that comment is inaccurate - we're just saving to Session. It shouldn't be a big deal to change this to use cookies, although I haven't tested that. We'd replace <em>context.Session[CartSessionKey]</em> with&nbsp;<em>context.Response.Cookies[CartSessionKey]</em> and <em>context.Response.Cookies[CartSessionKey]</em>.</p>\r\n<p>Remember to check the AccountController, since it also deals with anonymous carts. If you search for CartSessionKey, you should find all references pretty easily.</p>",
+    "PostedDate": "2011-05-11T13:31:37.23-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

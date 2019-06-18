@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "I got the message : \"EntityType 'Album' has no key defined. Define the key for this EntityType.\" when I try to create a new controller. Is it necessary to add  the KeyAttribute in the Album Class ? What if there is no key column in Data table , what should I do ?",
+    "LastUpdatedDate": "2013-12-24T05:44:27.003-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Unassigned",
+      "Severity": 0,
+      "Id": 0
+    },
+    "ProjectName": "mvcmusicstore",
+    "ReportedDate": "2013-12-19T06:33:12.46-08:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Does it require the key when adding Controller with entity",
+    "Type": {
+      "Name": "Unassigned",
+      "Id": 5
+    },
+    "VoteCount": 2,
+    "Id": 6693
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

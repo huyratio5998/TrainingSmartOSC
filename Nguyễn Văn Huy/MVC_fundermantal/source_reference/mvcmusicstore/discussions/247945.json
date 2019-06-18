@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "573652",
+    "ThreadId": "247945",
+    "Html": "\r\n<p>Background: For the past 15 years I been on the sideline of web application development, mostly reading about the various platforms and tools.<br>\r\nI decided ASP.NET MVC was the platform - read: Vertical Cliff Face - to climb.<br>\r\nI am excited about MVC3 and the inclusion of Razor view syntax.<br>\r\nAnd I am thoroughly enjoying learning MVC3 with the works by studying the mvc music store.</p>\r\n<p>Question: When creating the Details.cshtml store view we get this code for free:</p>\r\n<p>@model MvcMusicStore.Models.Album<br>\r\n<br>\r\n@{<br>\r\n&nbsp;&nbsp;&nbsp; ViewBag.Title = &quot;Details&quot;;<br>\r\n}<br>\r\n<br>\r\n&lt;h2&gt;Title&lt;/h2&gt;</p>\r\n<p>And to call the Title Album property from the Album object, we simply use this razor syntax:</p>\r\n<p>&lt;h2&gt;Album: @Model.Title&lt;/h2&gt;</p>\r\n<p>Why the capital M in @Model.Title and not @model.Title&nbsp; ?????</p>\r\n<p>This might be very intuitive for people familiar with C# and conventions used in C#.</p>\r\n<p>Now, I am new to C# as well -</p>\r\n<p>I have been trying to google for a primer of the Razor syntax.</p>\r\n<p>MSDN does not seem to have one.</p>\r\n<p>I could spend another hour googling.</p>\r\n<p>Perhaps there are friendly people here that would care to respond?</p>\r\n<p>Regards,<br>\r\nborge (Newbie, intranet vb programmer trying to re-define himself!)</p>\r\n",
+    "PostedDate": "2011-02-28T20:47:19.657-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "574100",
+    "ThreadId": "247945",
+    "Html": "<p>borge -&nbsp;</p>\r\n<p>Glad you're enjoying the tutorial!</p>\r\n<p>The @model is a directive which sets the Model type for the view. It's similar to what you'd see in a &lt;% Page %&gt; declaration at the top of an ASPX page. Model is a property of the page which allows accessing information in the view. They're related, but not the same thing.</p>\r\n<p>There are a few primers on the Razor syntax:</p>\r\n<ul>\r\n<li>There's a long-ish overview in the WebMatrix tutorials here:&nbsp;<a href=\"http://www.asp.net/webmatrix/tutorials/2-introduction-to-asp-net-web-programming-using-the-razor-syntax\">http://www.asp.net/webmatrix/tutorials/2-introduction-to-asp-net-web-programming-using-the-razor-syntax</a></li>\r\n<li>Phil Haack has compiled a quick reference here:&nbsp;<a href=\"http://haacked.com/archive/2011/01/06/razor-syntax-quick-reference.aspx\">http://haacked.com/archive/2011/01/06/razor-syntax-quick-reference.aspx</a></li>\r\n</ul>\r\n<p>The best advice I can give you on Razor is to avoid thinking of it as another programming language to be learned. Think about it as a lightweight syntax that allows you to execute code within a view, using .NET languages that have been around for a long time.</p>",
+    "PostedDate": "2011-03-01T14:21:44.42-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "574216",
+    "ThreadId": "247945",
+    "Html": "<p>jon,</p>\r\n<p>Thanks for the reply, and the links to go and learn more.<br />borge</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2011-03-01T22:53:17.97-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

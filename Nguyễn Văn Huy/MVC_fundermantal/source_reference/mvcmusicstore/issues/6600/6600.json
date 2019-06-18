@@ -1,0 +1,55 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "SQL Scripts were added to the project as requested.",
+    "ClosedDate": "2010-07-02T14:32:21.9-07:00",
+    "CommentCount": 3,
+    "Custom": "",
+    "Description": "I get the error \"Logon Failed for user 'mycomputer\\myusername'.\" when attempting to create a connection to the provided database in the source code. As mentioned on another post, it would be great to have SQL Server scripts to avoid these kinds of issues. Either that, or specify an 'sa' password or setup a dummy user or something so people can modify the connection string and get in.",
+    "LastUpdatedDate": "2010-07-02T14:33:43.267-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "mvcmusicstore",
+    "ReportedDate": "2010-05-16T19:19:33.797-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Logon Failed for user 'mycomputer\\myusername'.",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 6600
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Um, yeah, this post has been here for three days. The tutorial is useless without being able to use the database. Perhaps I'm gonna have to give this project a 1 star rating if I don't get a response soon.",
+      "PostedDate": "2010-05-18T16:54:08.953-07:00",
+      "Id": 12503
+    },
+    {
+      "Message": "Finally got the stupid thing to work. No thanks to anyone who's actually maintaining this project. Turns out, on Windows Vista, you need to start SQL Server Management Studio as an Administrator. My problem was, this was the default with Visual Studio 2008 to say hey, do you want to run this (E.g. UAC). However, with Visual Studio 2010, you no longer get that prompt. Well, you don't need to open SQL Server Management Studio as Administartor, necessarily, but you do in order to attach this database. Now, I upgraded to Windows 7 last week, and I decided to try it today. Well, It worked, because Windows 7 is sooooo much better than Windows Vista...by a long shot! This ticket can be closed.",
+      "PostedDate": "2010-05-31T07:09:45.563-07:00",
+      "Id": 12737
+    },
+    {
+      "Message": "Very sorry for the slow response - I was travelling a lot over the past few months giving MVC training and wasn't able to keep up with it. I've added SQL scripts to the project as you requested.",
+      "PostedDate": "2010-07-02T14:33:43.267-07:00",
+      "Id": 13787
+    }
+  ]
+}

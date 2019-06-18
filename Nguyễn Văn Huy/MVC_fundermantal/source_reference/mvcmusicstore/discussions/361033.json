@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "854009",
+    "ThreadId": "361033",
+    "Html": "\r\n<p>Hello,</p>\r\n<p>&nbsp;</p>\r\n<p>I am making my way through the Music Store tutorial.&nbsp; I am now in pages 44-48, trying to link the sample database to the MVC code.&nbsp; When I run the code and browse to localhost../Store, I get this message:</p>\r\n<p>&nbsp;</p>\r\n<p><strong>SqlException was unhandled by user code</strong></p>\r\n<p>&quot;The file &quot;\\\\....\\\\my drive \\ MvcMusicStore\\App_Data\\MvcMusicStore2.mdf&quot; is on a network path that is not supported for database files.<br>\r\nCREATE DATABASE failed. Some file names listed could not be created. Check related errors.&quot;</p>\r\n<p>I don't see any other errors.</p>\r\n<p>&nbsp;</p>\r\n<p>I tried to follow the tutorial closely, although I did have to install EntityFramework using the Project Manager Console (and install PowerShell).&nbsp; I am using Windows XP and Visual Studio 2010 Premium.&nbsp; My machine has MS SQL 2008 and SQL Express.</p>\r\n<p>&nbsp;</p>\r\n<p>Any ideas? Thanks, Jason</p>\r\n<p>(I tried to create a database as described in another thread here, but I got a permissions error!)</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>\r\n",
+    "PostedDate": "2012-06-26T12:35:07.707-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

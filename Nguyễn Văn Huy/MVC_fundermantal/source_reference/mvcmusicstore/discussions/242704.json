@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "553020",
+    "ThreadId": "242704",
+    "Html": "\r\n<p>when I try to open the solution in VS2010, I get '<span style=\"font-family:Consolas; font-size:xx-small\"><span style=\"font-family:Consolas; font-size:xx-small\">The project type is not supported by this installation' error. any ideas?</span></span></p>\r\n",
+    "PostedDate": "2011-01-20T23:57:45.527-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "553026",
+    "ThreadId": "242704",
+    "Html": "\r\n<p>Assuming you are using the latest 2.0 release, do you have ASP.NET MVC 3 installed? It's a separate install, available here:&nbsp;<a href=\"http://www.microsoft.com/web/gallery/install.aspx?appid=MVC3\">http://www.microsoft.com/web/gallery/install.aspx?appid=MVC3</a></p>\r\n",
+    "PostedDate": "2011-01-21T00:13:03.003-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "635928",
+    "ThreadId": "263531",
+    "Html": "\r\n<p>There is a small error in the code.</p>\r\n<p>The code references jquery-1.4.4.min.js, but the jQuery which is in the Scripts folder is jquery-1.5.1.min.js.</p>\r\n",
+    "PostedDate": "2011-07-01T03:32:28.393-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "680606",
+    "ThreadId": "263531",
+    "Html": "<p>Correct - Rick Anderson Microsoft</p>",
+    "PostedDate": "2011-10-05T17:54:28.167-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

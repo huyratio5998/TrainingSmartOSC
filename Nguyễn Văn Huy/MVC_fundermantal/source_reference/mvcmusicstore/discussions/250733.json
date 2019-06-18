@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "584565",
+    "ThreadId": "250733",
+    "Html": "\r\n<p>Hi,</p>\r\n<p>It looks like the script that sets up the database, in case you are not using SQLEXPRESS as your engine, is incorrect. It sets up all table names in singular, where the application sample code expects all the table names to be in plural.</p>\r\n<p>The script also starts with a whole lot of DROPs, that generate errors of course if you start with an empty database. Can I suggest that there are IF EXISTS put around that?</p>\r\n<p>Cheers,</p>\r\n<p>Gerard</p>\r\n",
+    "PostedDate": "2011-03-22T12:21:57.827-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "589248",
+    "ThreadId": "250733",
+    "Html": "<p>@gerardvandeven</p>\r\n<p>If you are using SQL Server then you can add the following to the end of your entities class to resolve the use of&nbsp;singular table names created by the SQL script</p>\r\n<div style=\"color: black; background-color: white;\">\r\n<pre><span style=\"color: blue;\">Protected</span> <span style=\"color: blue;\">Overrides</span> <span style=\"color: blue;\">Sub</span> OnModelCreating(<span style=\"color: blue;\">ByVal</span> modelBuilder <span style=\"color: blue;\">As</span> ModelBuilder)\r\n        modelBuilder.Conventions.Remove(Of PluralizingTableNameConvention)()\r\n\r\n           <span style=\"color: blue;\">End</span> <span style=\"color: blue;\">Sub</span>\r\n</pre>\r\n</div>\r\n<p>&nbsp;</p>\r\n<p>This is in VB but it is very similar in C#</p>",
+    "PostedDate": "2011-03-30T23:35:05.77-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "593219",
+    "ThreadId": "250733",
+    "Html": "This discussion has been copied to a work item. Click <a href=\"http://mvcmusicstore.codeplex.com/workitem/6641\">here</a> to go to the work item and continue the discussion.",
+    "PostedDate": "2011-04-06T17:59:36.737-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

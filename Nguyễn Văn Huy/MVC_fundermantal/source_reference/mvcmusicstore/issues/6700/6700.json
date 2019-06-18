@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "I got stuck at part 4 of tutorial. Even tho app doesn't crash, when i click \"Store\" i get 0 genre. What could be causing the problem ? I have updated both web.config files (one global and one in view folder), but still nothing.",
+    "LastUpdatedDate": "2014-05-20T10:38:15.55-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Unassigned",
+      "Severity": 0,
+      "Id": 0
+    },
+    "ProjectName": "mvcmusicstore",
+    "ReportedDate": "2014-05-20T10:38:15.55-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "DB appears to be empty",
+    "Type": {
+      "Name": "Unassigned",
+      "Id": 5
+    },
+    "VoteCount": 1,
+    "Id": 6700
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

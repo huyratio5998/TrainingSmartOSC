@@ -1,0 +1,60 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 4,
+    "Custom": null,
+    "Description": "There are no tests in this app. I can't point people to use MusicStore as reference mainly because of this. \r\nIt doesn't matter \"what you can do with MVC in under 1000 lines of c# code!\" if the code isn't testable. \r\nEven worse, at several points in the guide it says \"To test this out, run the application and browse to...\"\r\nIn a nutshell, I don't think tests are optional, and if the code isn't testable it's not even very useful as demo code...",
+    "LastUpdatedDate": "2011-09-02T19:57:00.053-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "mvcmusicstore",
+    "ReportedDate": "2011-08-08T10:52:43.167-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "No tests",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 6662
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Teaching unit testing is beyond the scope of this tutorial. As it is, it's already around 150 pages and teaches a lot of concepts, so including additional content on testing is outside of that scope. I realize you won't like that answer, but this is more of a hello world tutorial which focuses on learning the basics of ASP.NET MVC at a framework level, not a course in computer programming. \n\nThat said, there is an additional lab that teaches unit testing against the MVC Music Store here: http://trainingkit.webcamps.ms/AspNetMvc.htm . I would like to integrate with that better in the future. This is an open source project, and I'd be happy for any contributions or specific recommendations.\n\nIf you're looking for an application with acceptance tests, see Project Silk (http://silk.codeplex.com/) or the list of content under Unit Testing in ASP.NET MVC Applications http://msdn.microsoft.com/en-us/library/gg416510(v=VS.98).aspx There are also of course some great books which focus on test-first development, notably Test-Drive ASP.NET MVC from Prag Pub: http://pragprog.com/book/jmasp/test-drive-asp-net-mvc\n\nA minor point - there are many meanings for the word \"test\" in web application development. In addition to unit tests, there are integration tests, and acceptance / approval tests. While some *user interface* tests can be automated, manual testing is sometimes more appropriate (see the Selenium documentation for more: http://seleniumhq.org/docs/01_introducing_selenium.html). In that broader context, I disagree with your disagreement over the use of phrases like \"To test this out...\" as manual testing is absolutely a form of testing (obviously it's not as productive as an automated unit test when possible).",
+      "PostedDate": "2011-09-02T15:22:01.347-07:00",
+      "Id": 43839
+    },
+    {
+      "Message": "Thanks for the pointers Jon, and I apologize if my original message was a bit aggresive.",
+      "PostedDate": "2011-09-02T16:08:01.19-07:00",
+      "Id": 43841
+    },
+    {
+      "Message": "No offence taken at all - it's a very valid question, and something I struggled with when working on the tutorial. I'm open for suggestions - thinking a follow-on lab at the end of the tutorial might be the best way to integrate. Thoughts?",
+      "PostedDate": "2011-09-02T17:07:33.103-07:00",
+      "Id": 43843
+    },
+    {
+      "Message": "How about a \"where to go from here\" section in the Conclusions at the end of the PDF pointing among other things to the training kit you mentioned.",
+      "PostedDate": "2011-09-02T19:57:00.053-07:00",
+      "Id": 43845
+    }
+  ]
+}

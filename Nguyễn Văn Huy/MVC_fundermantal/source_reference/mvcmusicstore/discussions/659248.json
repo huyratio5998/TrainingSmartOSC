@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "1487554",
+    "ThreadId": "659248",
+    "Html": "I want to rewrite the code so that instead of reading from data base directly, the code read through  a web service. So what I guess is that simply I should update the functions like EmptyCart, GetCartItems, GetCount, GetTotal in ShoppingCart Model and both the AddToCart and RemoveFromCart functions in ShoppingCartController and ShoppingCart Model. Correct?<br />\n",
+    "PostedDate": "2016-11-07T23:23:17.76-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

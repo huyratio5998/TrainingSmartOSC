@@ -1,0 +1,42 @@
+[
+  {
+    "Id": "864610",
+    "ThreadId": "366190",
+    "Html": "\r\n<p>Maybe I've missed it elsewhere, but I'm trying to get the MVC Music Store tutorial to work with SQL Server 2008, NOT the express edition, NOT CE, the big ol' robust SQL Server 2008.</p>\r\n<p>Just a note for Jon G: Not all of us can easily install Express or CE on our workstations at work; it would be extremely helpful to have a direct link to a path for utilizing SQL Server with the tutorial as well.&nbsp; (Also, considering this will likely\r\n be the path taken in both development and production environments in enterprise situations, it's just good to know how without having to go through about three dozen extra steps, reinstalling various products, and generally ripping out what hair is left before\r\n giving up in frustration.&nbsp; It's&nbsp;a good tutorial; PLEASE let us complete it.)</p>\r\n<p>Here is the error from VS2010:</p>\r\n<p>Model compatibility cannot be checked because the database does not contain model metadata. Ensure that IncludeMetadataConvention has been added to the DbModelBuilder conventions.</p>\r\n<p>My provider in my connection string is System.Data.SqlClient.&nbsp; I'm using Windows authentication for now, as it's in a dev environment.</p>\r\n<p>Any help this direction would be appreciated!</p>\r\n",
+    "PostedDate": "2012-07-13T07:12:44.887-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "894620",
+    "ThreadId": "366190",
+    "Html": "<p>I also need to use this tutorial with SQL Server 2008.</p>\r\n<p>Here are the exact steps I took to make it work.</p>\r\n<p>1. Create a SQL Server 2008 database called MvcMusicStore.</p>\r\n<p>2. Find the SQL script MvcMusicStore-Create in the MvcMusicStore-Assets\\Data folder.</p>\r\n<p>3. Edit the script and change all the table names to plural. For example, change Album to Albums, OrderDetail to OrderDetails, etc. (or you can rename the tables after they are created).</p>\r\n<p>4. In SQL Server Management Studio, run the script.</p>\r\n<p>5. In the project code, in global.asax change this line as follows:</p>\r\n<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; //System.Data.Entity.Database.SetInitializer(new MvcMusicStore.Models.SampleData());<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; System.Data.Entity.Database.SetInitializer&lt;MvcMusicStore.Models.MusicStoreEntities&gt;(null);</p>\r\n<p>6. In your web.config &lt;connectionStrings&gt; section, add a connection string to your new database as follow:</p>\r\n<p>&nbsp;&nbsp;&nbsp; &lt;remove name=\"MusicStoreEntities\"/&gt;<br />&nbsp;&nbsp;&nbsp; &lt;add name=\"MusicStoreEntities\" connectionString=\"Server=myserver;Database=MvcMusicStore;UID=myusername;Password=mypassword;\" providerName=\"System.Data.SqlClient\" /&gt;</p>\r\n<p>That's what worked for me and should get you going. There are some other tweaks I had to make to get it to run properly. The jquery version was 1.4.4 in the code, but the version supplied in the scripts folder was jquery-1.5.1.js.... little things like that.</p>\r\n<p>Hope that helps!</p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2012-08-02T05:23:42.183-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "899741",
+    "ThreadId": "366190",
+    "Html": "<p>I would have appreciated a note about configuring to work with a full SQL Server installation too. I'm not sure it would have spared me the ridiculous amount of time I've spent trying to get it to work. Unfortunately, I modified the web.config in the Views folder and then banged my head against the wall trying to figure out why a perfectly good connection string wasn't working. Who knew there was more than one web.config file in MVC? Not me. Anyway, it's not that hard to get working if the connection string is in the right web.config.</p>",
+    "PostedDate": "2012-08-15T19:18:59.167-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "929592",
+    "ThreadId": "366190",
+    "Html": "<p>@pfwhitworth﻿﻿﻿ ﻿﻿- Did you follow the tutorial with SQL Server 2008, or did you just get the completed version running under it?</p>",
+    "PostedDate": "2012-10-19T12:43:40.017-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1007145",
+    "ThreadId": "366190",
+    "Html": "I was able to create this db with the code by adding this in my asax...above the setInitializer<br />\n<pre><code>        Database.SetInitializer&lt;MusicStoreEntities&gt;(null);\n</code></pre>\n\nAlso make sure the db is not created, this code creates the db itself for you, I had an empty db and was getting the above error.<br />\n<br />\nHope this helps someone.<br />\n",
+    "PostedDate": "2013-02-26T11:10:50.137-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

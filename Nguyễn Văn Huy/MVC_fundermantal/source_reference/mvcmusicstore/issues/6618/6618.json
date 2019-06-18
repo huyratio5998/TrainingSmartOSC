@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Steps to reproduce:\r\n\r\n1. create subdirectory in web site, like demo and deply application to this directory in .NET 3.5\r\n\r\n2. Run application by typing  http://localhost/demo\r\n\r\nObserved:\r\n\r\ngenerated urls start with site root, not from demo . aspx files contain absolute urls like /Site\r\n\r\nHow to fix this so that multiple applications can hosted in same site ?",
+    "LastUpdatedDate": "2010-11-26T07:58:20.547-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "mvcmusicstore",
+    "ReportedDate": "2010-11-26T07:58:20.547-08:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Multiple applications cannot run in same site (urls broken)",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 6618
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

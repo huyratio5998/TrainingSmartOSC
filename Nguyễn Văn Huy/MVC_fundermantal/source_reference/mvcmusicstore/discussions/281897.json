@@ -1,0 +1,42 @@
+[
+  {
+    "Id": "707779",
+    "ThreadId": "281897",
+    "Html": "\r\n<p><em>Hello all and Happy Holidays,</em></p>\r\n<p><em>After I edit an item and click save,&nbsp;I get the following error:</em></p>\r\n<p><em>&nbsp;&quot;<strong>Store update, insert, or delete statement affected an unexpected number of rows (0). Entities may have been modified or deleted since entities were loaded. Refresh ObjectStateManager entries</strong>.&quot;&nbsp;</em></p>\r\n<p><em>&nbsp;This happens when I run the tutorial I typed in and when I run the completed tutorial project that is included in the zip download.&nbsp; I am using version 3.0 of the tutorial, Visual Studie 2010 and MVC 3.&nbsp; I am also getting some first chance\r\n concurrencyExceptions in the&nbsp;output window of VS2010.</em></p>\r\n<p><em>Can someone point me in the right direction?&nbsp; Please ask if you need more information from me.</em></p>\r\n<p><em>Thanks to the developer(s) for this tutorial, it's very well written and informative.</em></p>\r\n<p><em>&nbsp;</em></p>\r\n<p><em>Thanks again,</em></p>\r\n<p><em>MyComputerTec</em></p>\r\n",
+    "PostedDate": "2011-12-05T13:47:15.247-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "717484",
+    "ThreadId": "281897",
+    "Html": "<p>I have the same problem... How can I manage the concurrency issue?</p>",
+    "PostedDate": "2011-12-27T08:31:21.23-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "717806",
+    "ThreadId": "281897",
+    "Html": "<p>I having the problem before, I added the line below in edit.cshtml and it works...</p>\r\n<p>@Html.HiddenFor(model =&gt; model.SalesId)</p>",
+    "PostedDate": "2011-12-28T02:14:00.747-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "717845",
+    "ThreadId": "281897",
+    "Html": "<p>can you send me the whole cshtml file? I can't find any model.SalesId in the code.. and the cshtml is the same from the completed MVC Music store project dowanload from codeplex</p>",
+    "PostedDate": "2011-12-28T05:35:59.927-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "718109",
+    "ThreadId": "281897",
+    "Html": "<p>That is my sample apps for sales table only, so I use SalesId as the primary key...</p>\n<p>I not able to log in, I got alot on connection... haven't figure out yet...</p>",
+    "PostedDate": "2011-12-28T17:32:55.667-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

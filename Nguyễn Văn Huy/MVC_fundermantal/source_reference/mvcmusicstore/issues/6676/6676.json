@@ -1,0 +1,45 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 1,
+    "Custom": null,
+    "Description": "Im at the part where you have justed modifed the Scaffolded View after creating the StoreManagerController.\r\n\r\nI click edit and get \" Microsoft JScript runtime error: 'jQuery' is undefined \"\r\nDetails works fine but edit gives me that error\r\n\r\nIdeas? as far as I know I haven't changed any JavaScript and I've only copy pasted code from the tutorial\r\n\r\nEdit: Creating gives the same error too",
+    "LastUpdatedDate": "2012-03-01T08:48:21.283-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "mvcmusicstore",
+    "ReportedDate": "2012-02-24T02:06:28.573-08:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Microsoft JScript runtime error: 'jQuery' is undefined after clicking on edit in the StoreManager",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 6676
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "I believe this is caused by an incorrectly registered version of jQuery (in _Layout.cshtml).  There are three places (I believe) where jQuery version \"1.4.4\" is shown, but the correct version that is included in the project is \"1.5.1\".  Just change the version # and the issue should go away.",
+      "PostedDate": "2012-03-01T08:48:21.283-08:00",
+      "Id": 56918
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "1054185",
+    "ThreadId": "446372",
+    "Html": "Hello,<br />\n<br />\nI've been following this tutorial pretty closely. I've copied and pasted every section of code. But for some reason, I can not get the Remove from Cart link to work.<br />\n<br />\nWhen I click on the Remove from Cart link, nothing happens. The page stays exactly the same, and no &quot;[album name] has been removed from your shopping cart&quot; message appears.<br />\n<br />\nWould anyone be able to help me with this? Any suggestions would be greatly appreciated. I've been stuck for awhile.<br />\n<br />\nedit:<br />\nI tried downloading the full, completed MVC music store project (link provided in the first part of the tutorial.) I tried to use the &quot;remove from cart&quot; link while running the project in the completed tutorial, and it still doesn't remove items from my cart. I'm beginning to think that some areas of this tutorial is outdated, which is why the &quot;remove from cart&quot; link is not working.<br />\n<br />\nI'm using VS2012.<br />\n",
+    "PostedDate": "2013-06-07T14:50:03.22-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1062755",
+    "ThreadId": "446372",
+    "Html": "Try change to jquery-1.5.1.min.js in views/shoppingcart/index.cshtml<br />\n",
+    "PostedDate": "2013-06-29T05:06:27.727-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

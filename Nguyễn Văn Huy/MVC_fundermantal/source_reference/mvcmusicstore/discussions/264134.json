@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "638267",
+    "ThreadId": "264134",
+    "Html": "<p>Throughout the MvcMusicStore tutorial, there are links to download the tutorial as a PDF.</p>\n<p>For example, on this page&nbsp;<a href=\"http://www.asp.net/mvc/tutorials/mvc-music-store-part-5\">http://www.asp.net/mvc/tutorials/mvc-music-store-part-5</a></p>\n<p>There are two links on each section of the tutorial, one in the summary in the main column, and one on the right, in the sidebar under \"ASP.NET MVC Music Store Downloads\"</p>\n<p>The top link points to version 3.0b of the tutorial in PDF, but the link on the right points to version 2.0. &nbsp;I marked up a screen capture here:&nbsp;<a title=\"http://i.imgur.com/N2Na6.png\" href=\"http://i.imgur.com/N2Na6.png\" target=\"_blank\">http://i.imgur.com/N2Na6.png</a> &nbsp;The red box is the old version, green is the new.</p>\n<p>&nbsp;</p>\n<p>This normally wouldn't be a big deal, until you're through about half of the tutorial, finding a handful of bugs along the way - and then finally realizing that you're using an out of date tutorial - when a newer, better version exists.</p>\n<p>Hope this helps - hope it gets fixed. ;-)</p>",
+    "PostedDate": "2011-07-06T10:44:34.61-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "639138",
+    "ThreadId": "264134",
+    "Html": "<p>Thanks so much for taking the time to let me know. Will definitely get this fixed, sorry for the frustration it's caused.</p>",
+    "PostedDate": "2011-07-07T17:01:06.797-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

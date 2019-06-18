@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "There is a mistake in Page 60 of the tutorial. It says that \"We don't need the Details controller actions, so we can delete both Delete methods.\" it seems wrong. the correct mean is you should delete the Details action only, not include the Delete method.",
+    "LastUpdatedDate": "2017-11-28T07:20:36.717-08:00",
+    "PlannedForRelease": "MVC Music Store v2.0",
+    "ReleaseVisibleToPublic": true,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "mvcmusicstore",
+    "ReportedDate": "2010-12-23T16:55:52.67-08:00",
+    "Status": {
+      "Name": "Resolved",
+      "Id": 7
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "There is a mistake in Page 60 of the tutorial",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 2,
+    "Id": 6621
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

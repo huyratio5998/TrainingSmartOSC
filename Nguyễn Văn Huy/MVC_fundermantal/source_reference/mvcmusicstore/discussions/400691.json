@@ -1,0 +1,34 @@
+[
+  {
+    "Id": "932025",
+    "ThreadId": "400691",
+    "Html": "\r\n<p>I've nearly completed part 4, gotten to the following part</p>\r\n<p>&nbsp;</p>\r\n<div style=\"color:black; background-color:white\">\r\n<pre><span style=\"color:blue\">public</span> ActionResult Index()\r\n{\r\n    <span style=\"color:blue\">var</span> genres = storeDB.Genres.ToList();\r\n    <span style=\"color:blue\">return</span> View(genres);\r\n }</pre>\r\n<pre><br></pre>\r\n<pre>When I try to run the app, i get the following unhandled exception, can't figure out what's causing it:</pre>\r\n</div>\r\n<h2><em>A route named 'Default' is already in the route collection. Route names must be unique.<br>\r\nParameter name: name</em></h2>\r\n<table width=\"100%\" bgcolor=\"#ffffcc\">\r\n<tbody>\r\n<tr>\r\n<td><code>\r\n<pre>Line 23:             routes.IgnoreRoute(&quot;{resource}.axd/{*pathInfo}&quot;);\r\nLine 24: \r\n<span style=\"color:red\">Line 25:             routes.MapRoute(\r\n</span>Line 26:                 &quot;Default&quot;, // Route name\r\nLine 27:                 &quot;{controller}/{action}/{id}&quot;, // URL with parameters</pre>\r\n</code></td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n<p>anyone have any ideas on how to resolve? great tutorials otherwise.</p>\r\n",
+    "PostedDate": "2012-10-24T14:53:18.453-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "932031",
+    "ThreadId": "400691",
+    "Html": "<p>Apologies for the state of the above posting!</p>",
+    "PostedDate": "2012-10-24T14:56:31.49-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "934098",
+    "ThreadId": "400691",
+    "Html": "<p>j'ai exactement le m&ecirc;me probl&egrave;me. La configuration du serveur peut elle jouer dans ce cas? (D&eacute;butant)</p>\r\n<p>I Have the same problem. server configuration can have &nbsp;role in this case ? (rookie)</p>",
+    "PostedDate": "2012-10-30T01:38:11.36-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "934170",
+    "ThreadId": "400691",
+    "Html": "<p>The problem (for me) was caused by calling RegisterRoutes twice in Application_Start in Global.asax.cs.</p>\r\n<p>I typed the code, as it appeared on the tutorial, into Application_Start - without realising that RegisterRoutes was already in there.</p>\r\n<p>Simply remove one of the RegsiterRoutes. It resolved the issue for me.</p>",
+    "PostedDate": "2012-10-30T05:36:35.88-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

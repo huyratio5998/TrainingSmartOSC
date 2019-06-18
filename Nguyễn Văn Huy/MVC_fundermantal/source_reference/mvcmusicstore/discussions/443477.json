@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "1042825",
+    "ThreadId": "443477",
+    "Html": "I'm trying to get through part 8 of the MvcMusicStore.<br />\n<br />\nI've done all the required coding but when I click the 'Add To Cart' button, I get an error message:<br />\n<br />\nNullReferenceException was unhandled by user code<br />\nObject reference not set to an instance of an object.<br />\n<br />\nIn the debugger it's saying the error is in index.cshtml (views\\shoppingCart) line 53, col 6 ch 6.<br />\n<br />\nSeems to be having issues with the &quot;@foreach (var item in Model.CartItems)<br />\n<br />\nWondering if anyone can shed anylight on the situation.. have had a look at the completed code and it's exactly the same as what's in there.<br />\n<br />\nThanks.<br />\n",
+    "PostedDate": "2013-05-13T07:10:50.427-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1343068",
+    "ThreadId": "443477",
+    "Html": "I am having exactly the same issue.  It seems to be that the Cart object in CartItems does not have an Album object value.\r<br />\nThe CartItem exists but EF does not seem to be populating the Album\r<br />\n<br />\nFrom AddToCart method in ShppingCart model:<br />\n<pre><code>  cartItem = new Cart\n                {\n                    AlbumId = album.StoreAlbumId,\n                    CartId = ShoppingCartId,\n                    Count = 1,\n                    DateCreated = DateTime.Now\n                };</code></pre>\n\nCannot see where the EF will load this in later :<br />\n<pre><code>public List&lt;Cart&gt; GetCartItems()\n{\nreturn storeDB.StoreCarts.Where(cart =&gt; cart.CartId == ShoppingCartId).ToList();\n}</code></pre>\n\nIf anyone has an answer please do enlighten me\r<br />\nThanks\r<br />\n(Simon)<br />\n",
+    "PostedDate": "2015-01-18T11:40:24.237-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

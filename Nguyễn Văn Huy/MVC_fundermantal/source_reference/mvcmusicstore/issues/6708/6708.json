@@ -1,0 +1,55 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 3,
+    "Custom": null,
+    "Description": "The first stop in the Part of the tutorial is to create a new controller named StoreManagerController with the following options:\r\n\r\nTemplate:\r\nController with read/write actions and views, using Entity Framework\r\n\r\nModel Class:\r\nAlbum (MvcMusicStore.Models)\r\n\r\nData Context Class:\r\nMusicStoreEntities (MvcMusicStore.Model)\r\n\r\nI have followed the tutorial step by step and have not run into any errors except when I try and create this Controller. \r\n\r\nThe error that I am getting is as follows:\r\n![Image](https://static.wixstatic.com/media/43dfde_8f9bda47830f421caa5a4506db165152.png/v1/fill/w_450,h_195,al_c/43dfde_8f9bda47830f421caa5a4506db165152.png)\r\n\r\nAny help with this would be great as I am really trying to learn as much as I can with this tutorial and can't seem to get past this part. ",
+    "LastUpdatedDate": "2017-03-08T06:37:32.613-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Unassigned",
+      "Severity": 0,
+      "Id": 0
+    },
+    "ProjectName": "mvcmusicstore",
+    "ReportedDate": "2016-03-19T20:05:28.987-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Part 5 - Edit Forms Using Scaffolding",
+    "Type": {
+      "Name": "Unassigned",
+      "Id": 5
+    },
+    "VoteCount": 1,
+    "Id": 6708
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "I am facing the same problem, so pls guide us.",
+      "PostedDate": "2016-06-01T02:32:19.95-07:00",
+      "Id": 199850
+    },
+    {
+      "Message": "I am facing the exact problem, so please help.",
+      "PostedDate": "2017-03-08T06:10:52.277-08:00",
+      "Id": 207680
+    },
+    {
+      "Message": "I am also a problem during addition of StoreManagerController. After i Set the options for the Add Controller dialog as in pdf on pg.55 and click on ADD i receive the following error..\n\nError Popup:\n\nUnable to retrieve Metadata for 'MVCMusicStore.Models.Album'. Using the same DbCompiledModel to create contexts against different types of database servers is not supported. Instead, create a separate DbCompiledModel for each type of server being used.\n",
+      "PostedDate": "2017-03-08T06:37:32.613-08:00",
+      "Id": 207681
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 1,
+    "Custom": "",
+    "Description": "When adding in AccountController, AccountModel, ViewModels, Errors are thrown for multiple membership functions. I also tried importing the files directly from the sample project for membership, but still receive the same errors.",
+    "LastUpdatedDate": "2012-02-20T13:07:40-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "mvcmusicstore",
+    "ReportedDate": "2010-05-11T13:47:06.287-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Error on Account Integration",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 2,
+    "Id": 6599
+  },
+  "FileAttachments": [
+    {
+      "FileId": 121648,
+      "FileName": "errors.jpg",
+      "DownloadUrl": ".\\121648"
+    }
+  ],
+  "Comments": [
+    {
+      "Message": "That error shows that you don't have a reference to System.Web.ApplicationServices, which is odd because that's included in a default ASP.NET MVC 2 Empty Web Application. Can you try adding that reference and see if that fixes it?",
+      "PostedDate": "2010-07-02T14:23:43.54-07:00",
+      "Id": 13786
+    }
+  ]
+}

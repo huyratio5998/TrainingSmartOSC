@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "690071",
+    "ThreadId": "277370",
+    "Html": "\r\n<p>Hi,</p>\r\n<p>&nbsp;I have downloaded the MVC3 example of Music Store.But when i try to run the Same example on my System i get the error.Error:Unable to find the requested .Net Framework Data Provider. &nbsp;It may not be installed.</p>\r\n<p>What changes do i have to make to make it work on my system.There is no issue of Connection String I guess,I also have Sql Express.</p>\r\n<p>Please Suggest.</p>\r\n",
+    "PostedDate": "2011-10-26T23:47:43.23-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "691172",
+    "ThreadId": "277370",
+    "Html": "<p>Both SQL Server Compact and SQL Server Express are required for this release - it'll hopefully be changed on the next release, but the application code use SQL Server Compact while the ASP.NET Membership system requires SQL Server Express.</p>\r\n<p>The installation prerequisites section should have made sure you had both databases installed, but you can get SQL Server Compact two ways:</p>\r\n<ul>\r\n<li>You can install SQL Server Compact here: <a href=\"http://www.microsoft.com/download/en/details.aspx?id=17876\">http://www.microsoft.com/download/en/details.aspx?id=17876</a></li>\r\n<li>You can add SQL Server Compact to your project using NuGet - add the SqlServerCompact package</li>\r\n</ul>",
+    "PostedDate": "2011-10-29T12:05:42.97-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "841269",
+    "ThreadId": "277370",
+    "Html": "<p>&nbsp;</p>\r\n<p>I was able to solve the same problem:</p>\r\n<p><a href=\"http://stackoverflow.com/questions/6508516/asp-net-mvc-3-unable-to-find-the-requested-net-framework-data-provider\">http://stackoverflow.com/questions/6508516/asp-net-mvc-3-unable-to-find-the-requested-net-framework-data-provider</a></p>\r\n<p>However, I have a similar MVC 2 project and it is working just fine without applying this. Not sure if this is related with MVC 3 only.</p>",
+    "PostedDate": "2012-05-26T11:48:15.163-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

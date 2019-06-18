@@ -1,0 +1,50 @@
+[
+  {
+    "Id": "803126",
+    "ThreadId": "346707",
+    "Html": "\r\n<p>var genres = storeDB.Genres.ToList();</p>\r\n<p>&nbsp;</p>\r\n<p>I keep getting this error &quot;Unable to find the requested .Net Framework Data Provider. &nbsp;It may not be installed.&quot;&nbsp;</p>\r\n<p>&nbsp;</p>\r\n<p>I do have all the components installed though and this should not be happening! Really need help here as this is driving me nuts!</p>\r\n<p>&nbsp;</p>\r\n<p>Thank you</p>\r\n",
+    "PostedDate": "2012-02-29T05:32:15.76-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "803127",
+    "ThreadId": "346707",
+    "Html": "<p>I did read somewhere that there is a problem with the 64bit version of server with this&nbsp;particular error, could this be solved from that view point?&nbsp;</p>",
+    "PostedDate": "2012-02-29T05:33:23.607-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "804966",
+    "ThreadId": "346707",
+    "Html": "<p>I got the same error as you and i also have win7 64bit version ... How do you solve this problem ?</p>",
+    "PostedDate": "2012-03-03T12:16:45.487-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "823608",
+    "ThreadId": "346707",
+    "Html": "<p>I am running into the exact same problem.</p>\r\n<p>Has no one figured out a solution to this since march??</p>",
+    "PostedDate": "2012-04-13T13:01:43.333-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "824299",
+    "ThreadId": "346707",
+    "Html": "<p>Do you have <a href=\"http://www.microsoft.com/download/en/details.aspx?id=17876\" target=\"_blank\">SQL Server Compact Edition</a>, installed ?</p>",
+    "PostedDate": "2012-04-16T02:44:59.997-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "824556",
+    "ThreadId": "346707",
+    "Html": "<p>I did, it was actually the 4.0 .net framework that I was missing. I worked instantly after I installed software</p>",
+    "PostedDate": "2012-04-16T13:19:40.377-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

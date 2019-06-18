@@ -1,0 +1,42 @@
+[
+  {
+    "Id": "547047",
+    "ThreadId": "241225",
+    "Html": "\r\n<p>Hello,</p>\r\n<p>Im new to the world of ASP.net and windows hosting, I've recently purchased a windows host so i can begin learning asp.net and im having some issues.</p>\r\n<p>I have completed the tutorial and it works perfectly on my local PC, but my issue start when i want to publish it on my remote server, Im having serious issues getting it to connect to the database, I had hoped that simply uploading the app_data file with\r\n the website would be enough, but it throws a network error message stating it can't connect. If you could write a quick addition to the tutorial with information for deployment or something similar that would be very helpful!</p>\r\n<p>Thanks,</p>\r\n<p>Ben</p>\r\n",
+    "PostedDate": "2011-01-10T18:35:37.643-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "547434",
+    "ThreadId": "241225",
+    "Html": "\r\n<p>The application is using a local instance of SQL Server Express, so your hosting account will need to support that for the database to work in App_Data. If not, you can install a copy of the database using the SQL Scripts found in the /Data folder of the\r\n Assets zip that's included in the download.</p>\r\n",
+    "PostedDate": "2011-01-11T10:48:06.777-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "547681",
+    "ThreadId": "241225",
+    "Html": "\r\n<p>Im guessing i need to go and learn about connection strings and how to write them and such then :)</p>\r\n",
+    "PostedDate": "2011-01-11T17:15:22.537-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "547687",
+    "ThreadId": "241225",
+    "Html": "\r\n<p>A great reference for connection strings is at&nbsp;<a href=\"http://connectionstrings.com/\">http://connectionstrings.com/</a>&nbsp;</p>\r\n<p>Your hosting company may have information about that in their database setup area as well.</p>\r\n",
+    "PostedDate": "2011-01-11T17:36:04.253-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "605214",
+    "ThreadId": "241225",
+    "Html": "<p>I have similar problem. I've managed to use MSSql 2008 database on my hosting provider's server. Everything is working ok, just admin authorization is not working. Is there anything else that I have to do, to make the authorization working?</p>\r\n<p>&nbsp;</p>\r\n<p>Thanks, Matic</p>",
+    "PostedDate": "2011-04-30T04:00:11.823-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

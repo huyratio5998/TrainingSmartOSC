@@ -1,0 +1,164 @@
+[
+  {
+    "Id": "0",
+    "Name": "MVC Music Store v2.1",
+    "DevelopmentStatus": "Stable",
+    "Description": "This is a minor update release to the MVC Music Store tutorial which corrects some typos and common problems in the 2.0 release. This tutorial is updated for ASP.NET MVC 3 and Entity Framework Code-First, and contains fixes and improvements based on feedback and common questions from previous releases.\n\nThe main download, MvcMusicStore-v2.1.zip, contains everything you need to build the sample application, including\n* A detailed tutorial document in PDF format\n* Assets you will need to build the project, including images, a stylesheet, and a pre-populated database\n* The completed code for the project which shows you how your application will look when finished (this is helpful in case you get stuck)\n\nYou can also download the assets and PDF document separately if desired.\n\nThis tutorial and application are built for Visual Web Developer 2010 or Visual Studio 2010, running against SQL Server Express. A T-SQL create script is available in the Assets folder in case you would prefer to use your own instance of SQL Server 2005 or 2008. The schema in the T-SQL script will only work with the 2.0 and later releases, as the tables have been renamed to pluralize them so they work better with Entity Framework. However, the recommended path is to follow the tutorial and use SQL Express if at all possible.",
+    "ReleasedDatge": "0001-01-01T00:00:00",
+    "ModifiedDate": "2011-04-18T16:28:52.52-07:00",
+    "Files": [
+      {
+        "Id": "ff0b4ac3-f9ed-4990-a675-5c423c709f87",
+        "FileName": "MvcMusicStore-v2.1.zip",
+        "Url": "./0/ff0b4ac3-f9ed-4990-a675-5c423c709f87",
+        "Type": "Source Code",
+        "UploadDate": "2011-04-06T20:21:42.037-07:00"
+      },
+      {
+        "Id": "ed4b8066-adc5-402e-81d4-a7c7f5786968",
+        "FileName": "MVC Music Store - Tutorial - v2.1.pdf",
+        "Url": "./0/ed4b8066-adc5-402e-81d4-a7c7f5786968",
+        "Type": "Documentation",
+        "UploadDate": "2011-04-06T18:32:41.173-07:00"
+      },
+      {
+        "Id": "df4e09d5-97b8-4e85-bb4d-1b40a4a218ac",
+        "FileName": "MvcMusicStore-Assets.zip",
+        "Url": "./0/df4e09d5-97b8-4e85-bb4d-1b40a4a218ac",
+        "Type": "Source Code",
+        "UploadDate": "2011-04-06T18:32:41.55-07:00"
+      }
+    ]
+  },
+  {
+    "Id": "1",
+    "Name": "MVC Music Store v2.0",
+    "DevelopmentStatus": "Stable",
+    "Description": "This is the 2.0 release of the MVC Music Store Tutorial. This tutorial is updated for ASP.NET MVC 3 and Entity Framework Code-First, and contains fixes and improvements based on feedback and common questions from previous releases.\n\nThe main download, MvcMusicStore-v2.0.zip, contains everything you need to build the sample application, including \n* A detailed tutorial document in PDF format \n* Assets you will need to build the project, including images, a stylesheet, and a pre-populated database \n* The completed code for the project which shows you how your application will look when finished (this is helpful in case you get stuck)\n\nYou can also download the assets and PDF document separately if desired.\n\nThis tutorial and application are built for Visual Web Developer 2010 or Visual Studio 2010, running against SQL Server Express. A T-SQL create script is available in the Assets folder in case you would prefer to use your own instance of SQL Server 2008.",
+    "ReleasedDatge": "0001-01-01T00:00:00",
+    "ModifiedDate": "2011-01-15T00:41:15.357-08:00",
+    "Files": [
+      {
+        "Id": "32b529ec-f9e6-40bb-b780-8d91ee4767be",
+        "FileName": "MvcMusicStore-v2.0.zip",
+        "Url": "./1/32b529ec-f9e6-40bb-b780-8d91ee4767be",
+        "Type": "Source Code",
+        "UploadDate": "2011-01-15T00:41:13.42-08:00"
+      },
+      {
+        "Id": "63988dc0-630d-4b62-957d-44b5c0e9fe88",
+        "FileName": "MVC Music Store - Tutorial - v2.0.pdf",
+        "Url": "./1/63988dc0-630d-4b62-957d-44b5c0e9fe88",
+        "Type": "Documentation",
+        "UploadDate": "2011-01-13T08:32:22.94-08:00"
+      },
+      {
+        "Id": "3e4014a7-8f48-4bae-8ea3-9abe18e823c5",
+        "FileName": "MvcMusicStore-Assets.zip",
+        "Url": "./1/3e4014a7-8f48-4bae-8ea3-9abe18e823c5",
+        "Type": "Source Code",
+        "UploadDate": "2011-01-15T00:41:14.31-08:00"
+      }
+    ]
+  },
+  {
+    "Id": "2",
+    "Name": "MVC Music Store v1.0",
+    "DevelopmentStatus": "Stable",
+    "Description": "This is the 1.0 release of the MVC Music Store Tutorial. This tutorial is updated based on feedback and common questions from the 0.8 beta release.\n\nThe main download, *MvcMusicStore-v1.0.zip*, contains everything you need to build the sample application, including\n* A detailed tutorial document in PDF format\n* Assets you will need to build the project, including images, a stylesheet, and a pre-populated database\n* The completed code for the project which shows you how your application will look when finished (this is helpful in case you get stuck)\n\nYou can also download the assets and PDF document separately if desired.\n\nThis tutorial and application are built for Visual Web Developer 2010 or Visual Studio 2010, running against SQL Server Express. A T-SQL create script is available in the Assets folder in case you would prefer to use your own instance of SQL Server 2008.",
+    "ReleasedDatge": "0001-01-01T00:00:00",
+    "ModifiedDate": "2010-10-12T16:56:51.24-07:00",
+    "Files": [
+      {
+        "Id": "27fee71c-67be-4b06-bdc4-6960c9148a60",
+        "FileName": "MvcMusicStore-v1.0.zip",
+        "Url": "./2/27fee71c-67be-4b06-bdc4-6960c9148a60",
+        "Type": "Source Code",
+        "UploadDate": "2010-10-12T16:56:49.38-07:00"
+      },
+      {
+        "Id": "bef97634-5ead-431d-a002-5c2cfdd8b150",
+        "FileName": "MVC Music Store - Tutorial - v1.0.pdf",
+        "Url": "./2/bef97634-5ead-431d-a002-5c2cfdd8b150",
+        "Type": "Documentation",
+        "UploadDate": "2010-10-12T16:56:49.787-07:00"
+      },
+      {
+        "Id": "d583e140-662e-47ce-a2dd-97a32f7c9bb9",
+        "FileName": "MvcMusicStore-Assets.zip",
+        "Url": "./2/d583e140-662e-47ce-a2dd-97a32f7c9bb9",
+        "Type": "Source Code",
+        "UploadDate": "2010-10-08T11:58:13.06-07:00"
+      }
+    ]
+  },
+  {
+    "Id": "3",
+    "Name": "MVC Music Store v0.8",
+    "DevelopmentStatus": "Beta",
+    "Description": "This is the initial release of the MVC Music Store Tutorial. Download contains source and a tutorial document in PDF format.",
+    "ReleasedDatge": "0001-01-01T00:00:00",
+    "ModifiedDate": "2010-05-12T15:39:30.203-07:00",
+    "Files": [
+      {
+        "Id": "282f3a65-0c03-4db6-90a2-ad653ccace3f",
+        "FileName": "MvcMusicStore-v0.8.zip",
+        "Url": "./3/282f3a65-0c03-4db6-90a2-ad653ccace3f",
+        "Type": "Source Code",
+        "UploadDate": "2010-04-29T12:48:52.11-07:00"
+      },
+      {
+        "Id": "d5da5ae1-6f28-4824-9e55-c189ebed2049",
+        "FileName": "MVC Music Store - Tutorial - v0.8.pdf",
+        "Url": "./3/d5da5ae1-6f28-4824-9e55-c189ebed2049",
+        "Type": "Documentation",
+        "UploadDate": "2010-05-12T15:39:29.733-07:00"
+      }
+    ]
+  },
+  {
+    "Id": "4",
+    "Name": "MVC Music Store v3.0b",
+    "DevelopmentStatus": "Stable",
+    "Description": "This is a major update to the MVC Music Store tutorial for the ASP.NET MVC 3 Tools Update. This tutorial covers ASP.NET MVC 3, Entity Framework Code-First, SQL Server Compact, and demonstrates the Scaffolding features included in the Tools Update.\n\nThe main download, MvcMusicStore-v3.0.zip, contains everything you need to build the sample application, including\n* A detailed tutorial document in PDF format\n* Assets you will need to build the project, including images, a stylesheet, and sample data\n* The completed code for the project which shows you how your application will look when finished (this is helpful in case you get stuck)\n\nYou can also download the assets and PDF document separately if desired.\n\n!! Required software\nThis tutorial and application are built for Visual Web Developer 2010 SP1 or Visual Studio 2010 SP1, running against SQL Server Compact. Instructions on installing the software requirements are included in the tutorial.\n\n!! Database support\nThis tutorial is written for SQL Server Compact. \n\nIf you decide to use another database (e.g. SQL Server instance, SQL Server Express, etc.), some files have been included for your convenience, but they come with very limited support. \n* A T-SQL create script is available in the Assets folder in case you would prefer to use your own instance of SQL Server 2005 or 2008. The schema in the T-SQL script will only work with the 2.0 and later releases, as the tables have been renamed to pluralize them so they work better with Entity Framework. \n* MDF files are included for SQL Server Express support / attaching to a SQL Server instance.\n\n_However, the recommended path is to follow the tutorial and use SQL Compact if at all possible._",
+    "ReleasedDatge": "0001-01-01T00:00:00",
+    "ModifiedDate": "2011-05-11T13:03:15.29-07:00",
+    "Files": [
+      {
+        "Id": "42627da3-1d2b-4e2c-9810-db51566c2240",
+        "FileName": "MvcMusicStore-v3.0.zip",
+        "Url": "./4/42627da3-1d2b-4e2c-9810-db51566c2240",
+        "Type": "Source Code",
+        "UploadDate": "2011-04-28T18:14:44.083-07:00"
+      },
+      {
+        "Id": "c6b50c80-1cd2-4566-84ef-9587c6a16640",
+        "FileName": "MVC Music Store - Tutorial - v3.0.pdf",
+        "Url": "./4/c6b50c80-1cd2-4566-84ef-9587c6a16640",
+        "Type": "Documentation",
+        "UploadDate": "2011-04-28T18:12:58.053-07:00"
+      },
+      {
+        "Id": "7db5e16f-48b4-45d0-8710-18c135ac7ef6",
+        "FileName": "MvcMusicStore-Assets.zip",
+        "Url": "./4/7db5e16f-48b4-45d0-8710-18c135ac7ef6",
+        "Type": "Source Code",
+        "UploadDate": "2011-04-13T07:38:15.613-07:00"
+      },
+      {
+        "Id": "0a7e6d00-9c68-4ce4-96d9-5c6719c876b1",
+        "FileName": "MvcMusicStore-SavePoints.zip",
+        "Url": "./4/0a7e6d00-9c68-4ce4-96d9-5c6719c876b1",
+        "Type": "Source Code",
+        "UploadDate": "2011-04-29T10:26:54.05-07:00"
+      },
+      {
+        "Id": "d0ca870b-63fd-4c70-b905-93edca2e5ded",
+        "FileName": "MvcMusicStore-v3.0-VB.NET.zip",
+        "Url": "./4/d0ca870b-63fd-4c70-b905-93edca2e5ded",
+        "Type": "Source Code",
+        "UploadDate": "2011-05-11T13:03:13.93-07:00"
+      }
+    ]
+  }
+]

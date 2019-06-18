@@ -1,0 +1,18 @@
+﻿
+@model IEnumerable<Practice.Models.Genre>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+<p>select from @Model.Count()</p>
+<ul>
+    @foreach (var x in Model)
+    {
+        //<li><a href="~/Views/Store?genres=@x.Name">@x.Name</a></li>
+        <li>@Html.ActionLink(x.Name,"Store",new { genre=x.Name})</li>
+
+    }
+</ul>
+

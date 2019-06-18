@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "1237235",
+    "ThreadId": "543125",
+    "Html": "j'ai essayé de faire se tutoriel mais avec visual 2012 \r<br />\nquand j'ai crée le premier contrôleur a l’exécution j'ai  un erreur <br />\nErreur du serveur dans l'application '/'.\r<br />\n<br />\nLa ressource est introuvable.\r<br />\n<br />\nDescription : HTTP 404. La ressource recherchée (ou l'une de ses dépendances) a peut-être été supprimée ou renommée ou bien elle n'est plus disponible temporairement. Vérifiez l'URL ci-après et assurez-vous qu'elle est correcte. \r<br />\n<br />\nURL demandée: /\r<br />\n<br />\nInformations sur la version : Version Microsoft .NET Framework :4.0.30319; Version ASP.NET :4.0.30319.18446<br />\n",
+    "PostedDate": "2014-04-23T13:12:54.457-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

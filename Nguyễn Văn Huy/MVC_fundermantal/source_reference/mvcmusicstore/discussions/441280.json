@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "1034471",
+    "ThreadId": "441280",
+    "Html": "Dears,\r<br />\n<br />\nI followed all the tutorial. However, when I try to add to cart; i get the following error :<br />\n<blockquote>\nUnhandled exception at line 48, column 5 in http://localhost:xxxxx/ShoppingCart/AddToCart/x<br />\n</blockquote>\n0x800a1391 - Erreur d’exécution JavaScript: « $ » est indéfini<br />\n",
+    "PostedDate": "2013-04-23T04:55:41.34-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

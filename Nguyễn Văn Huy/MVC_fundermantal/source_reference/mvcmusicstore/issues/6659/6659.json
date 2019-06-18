@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "There is no implementation for the case where you don't use the \"FREE\" promo code. I.e. just returns the view of the current page. If you do provide the same implementation for the case without the promo code, you cannot add the Order object to the store before cart.CreateOrder as order.total is calculated and assigned in that method.\r\n\r\nCould probably do the following in ShoppingCart.CreateOrder:\r\n\r\n            // Set the order's total to the orderTotal count\r\n            order.Total = orderTotal;\r\n\r\n            // Save the order\r\n            storeDB.Orders.Add(order);\r\n            storeDB.SaveChanges();\r\n\r\nAnd remove the following from ChecoutController.AddressAndPayment:\r\n\r\n                //Save Order\r\n                storeDB.Orders.Add(order);\r\n                storeDB.SaveChanges();",
+    "LastUpdatedDate": "2011-07-12T05:59:55.603-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "mvcmusicstore",
+    "ReportedDate": "2011-07-12T05:59:55.603-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Checkout doesn't work if not using FREE promo code.",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 6659
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

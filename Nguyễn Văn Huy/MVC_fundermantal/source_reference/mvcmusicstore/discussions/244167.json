@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "558794",
+    "ThreadId": "244167",
+    "Html": "\r\n<p>Hello. I am totally new to asp so my question might be stupid. I created new controller so I can browse/update/delete orders in my store. If someone purchase two or more items, it takes two rows in database to store data. When I am going to 'details' view\r\n I can only display one of the purchased items. When im trying to use foreach loop I am getting this error: &quot;<span style=\"font-family:Arial,Helvetica,Geneva,SunSans-Regular,sans-serif\">foreach statement cannot operate on variables of type 'ss.Models.OrderDetail'\r\n because 'ss.Models.OrderDetail' does not contain a public definition for 'GetEnumerator'&quot;. Any advice how can I display all the purchased items? I tried to use List view instead of Details but I failed.</span></p>\r\n<p><br>\r\nI have one more problem here, 'Total' value is displaying correctly while checkout, but it is not saved into database unlike other values (NULL). Is it well known problem or just me?</p>\r\n<p>I used v.1.0 Tutorial.</p>\r\n<p>Sorry for my bad English, hope you can understand the text above. Thanks</p>\r\n",
+    "PostedDate": "2011-02-01T09:26:19.713-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "823582",
+    "ThreadId": "244167",
+    "Html": "<p>Hi Kruszyna, i had the same problem like you about Total attribute in order table or class :) i found solution. Before</p>\n<p>DBCONTEXT.SaveChanges() in CreateOrder procedure, you have to put :</p>\n<p>DBCONTEXT.Entry(order).State = System.Data.EntityState.Modified;</p>",
+    "PostedDate": "2012-04-13T11:45:34.133-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

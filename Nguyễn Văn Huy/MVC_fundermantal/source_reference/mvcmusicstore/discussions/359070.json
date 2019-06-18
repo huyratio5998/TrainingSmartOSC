@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "847122",
+    "ThreadId": "359070",
+    "Html": "\r\n<p>Just dropping SampleData.cs into project gives following compile error<br>\r\nError&nbsp;1&nbsp;The type 'MvcMusicStore.Models.MusicStoreEntities' cannot be used as type parameter 'TContext' in the generic type or method 'System.Data.Entity.DropCreateDatabaseIfModelChanges&lt;TContext&gt;'. There is no implicit reference conversion from\r\n 'MvcMusicStore.Models.MusicStoreEntities' to 'System.Data.Entity.DbContext'.</p>\r\n",
+    "PostedDate": "2012-06-10T09:44:57.027-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "847769",
+    "ThreadId": "359070",
+    "Html": "<p>The SampleData.cs database initializer depends on the entity classes being defined exactly as listed in the tutorial. Can you verify that your MusicStoreEntities class looks like this? Note that some of these entities are added later in the tutorial - the important part is that the entities class is named correctly, implements DbContext, and has the DbSet properties as shown below:</p>\r\n<div style=\"color: black; background-color: white;\">\r\n<pre><span style=\"color: blue;\">using</span> System.Data.Entity;\r\n\r\n<span style=\"color: blue;\">namespace</span> MvcMusicStore.Models {\r\n    <span style=\"color: blue;\">public</span> <span style=\"color: blue;\">class</span> MusicStoreEntities : DbContext {\r\n        <span style=\"color: blue;\">public</span> DbSet&lt;Album&gt; Albums { <span style=\"color: blue;\">get</span>; <span style=\"color: blue;\">set</span>; }\r\n        <span style=\"color: blue;\">public</span> DbSet&lt;Genre&gt; Genres { <span style=\"color: blue;\">get</span>; <span style=\"color: blue;\">set</span>; }\r\n        <span style=\"color: blue;\">public</span> DbSet&lt;Artist&gt; Artists { <span style=\"color: blue;\">get</span>; <span style=\"color: blue;\">set</span>; }\r\n        <span style=\"color: blue;\">public</span> DbSet&lt;Cart&gt; Carts { <span style=\"color: blue;\">get</span>; <span style=\"color: blue;\">set</span>; }\r\n        <span style=\"color: blue;\">public</span> DbSet&lt;Order&gt; Orders { <span style=\"color: blue;\">get</span>; <span style=\"color: blue;\">set</span>; }\r\n        <span style=\"color: blue;\">public</span> DbSet&lt;OrderDetail&gt; OrderDetails { <span style=\"color: blue;\">get</span>; <span style=\"color: blue;\">set</span>; }\r\n\r\n    }\r\n}\r\n\r\n</pre>\r\n</div>",
+    "PostedDate": "2012-06-12T00:12:54.703-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

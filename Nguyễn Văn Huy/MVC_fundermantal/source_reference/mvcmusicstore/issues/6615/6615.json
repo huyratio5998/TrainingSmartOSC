@@ -1,0 +1,60 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 4,
+    "Custom": null,
+    "Description": "It would be very helpful to convert the C# app to VB.NET for general availability.\r\n\r\n",
+    "LastUpdatedDate": "2017-11-28T07:20:36.717-08:00",
+    "PlannedForRelease": "MVC Music Store v2.1",
+    "ReleaseVisibleToPublic": true,
+    "Priority": {
+      "Name": "Medium",
+      "Severity": 100,
+      "Id": 2
+    },
+    "ProjectName": "mvcmusicstore",
+    "ReportedDate": "2010-11-17T03:15:16.833-08:00",
+    "Status": {
+      "Name": "Active",
+      "Id": 2
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "MVC Music Store for VB.NET?",
+    "Type": {
+      "Name": "Task",
+      "Id": 2
+    },
+    "VoteCount": 2,
+    "Id": 6615
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "I'd like to do this if I can find time, and would be happy if anyone else wants to help out. Would that still be useful if the app is converted but the tutorial isn't?",
+      "PostedDate": "2010-11-22T14:01:08.057-08:00",
+      "Id": 18920
+    },
+    {
+      "Message": "I'd be happy to contribute to this effort.  Please let me know how to get involved.  Thanks.",
+      "PostedDate": "2010-11-30T11:18:44.003-08:00",
+      "Id": 19251
+    },
+    {
+      "Message": "@smithderekm (and anyone else) I'd love help on that. You can convert portions of the site and upload them. We could also fork the code for a VB.NET version. Who's interested?",
+      "PostedDate": "2011-01-14T10:58:18.173-08:00",
+      "Id": 26655
+    },
+    {
+      "Message": "I've created a vb.net fork. I started with a fork on this project (https://hg01.codeplex.com/forks/coderdennis/mvcmusicstorevb), but moved the fork to its own CodePlex project at http://vbmvcmusicstore.codeplex.com \n\nIt's now complete for version 2.1 and I'll be merging in the version 3.0 changes next. I'd love to have some help as I haven't started modifying the text of the tutorial yet. I learned a lot by just going through the tutorial to get the code to this point.",
+      "PostedDate": "2011-04-23T00:49:04.477-07:00",
+      "Id": 34694
+    }
+  ]
+}

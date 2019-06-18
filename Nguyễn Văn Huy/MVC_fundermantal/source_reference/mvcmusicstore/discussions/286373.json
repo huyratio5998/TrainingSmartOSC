@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "726152",
+    "ThreadId": "286373",
+    "Html": "\r\n<p>Following the MvcMusicStore 2.0,</p>\r\n<p>When a user proceeds to checkout he is shown the AddressAndPayment page where he needs to enter his shipping information.</p>\r\n<p>What i'm interested in doing is to add a drop down list for Country to display a list of countries for the user to select from, instead of a textbox.</p>\r\n<p>Any ideas on how to accomplish this?</p>\r\n<p>&nbsp;</p>\r\n<p>Feedback is much appreciated. Thank you in advance.</p>\r\n",
+    "PostedDate": "2012-01-16T22:00:00.037-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "726207",
+    "ThreadId": "286373",
+    "Html": "\r\n<div>You should be able to follow the same pattern that the Genre and Artist dropdowns on the Edit form use:\r\n<a href=\"http://www.asp.net/mvc/tutorials/mvc-music-store/mvc-music-store-part-5\">\r\nhttp://www.asp.net/mvc/tutorials/mvc-music-store/mvc-music-store-part-5</a></div>\r\n<div></div>\r\n<div>Look in the section titled The Create Action Methods.<br>\r\n</div>\r\n<div>On Mon, Jan 16, 2012 at 10:00 PM, kaneXtreme <span dir=\"ltr\">&lt;<a href=\"mailto:notifications@codeplex.com\">notifications@codeplex.com</a>&gt;</span> wrote:<br>\r\n<blockquote style=\"margin:0px 0px 0px 0.8ex; padding-left:1ex; border-left-color:rgb(204,204,204); border-left-width:1px; border-left-style:solid\">\r\n<div>\r\n<p>From: kaneXtreme</p>\r\n<div>\r\n<p>Following the MvcMusicStore 2.0,</p>\r\n<p>When a user proceeds to checkout he is shown the AddressAndPayment page where he needs to enter his shipping information.</p>\r\n<p>What i'm interested in doing is to add a drop down list for Country to display a list of countries for the user to select from, instead of a textbox.</p>\r\n<p>Any ideas on how to accomplish this?</p>\r\n<p></p>\r\n<p>Feedback is much appreciated. Thank you in advance.</p>\r\n</div>\r\n<div>\r\n<p>Read the <a href=\"http://mvcmusicstore.codeplex.com/discussions/286373#post726152\" target=\"_blank\">\r\nfull discussion online</a>.</p>\r\n<p>To add a post to this discussion, reply to this email (<a href=\"mailto:mvcmusicstore@discussions.codeplex.com?subject=[mvcmusicstore:286373]\" target=\"_blank\">mvcmusicstore@discussions.codeplex.com</a>)</p>\r\n<p>To start a new discussion for this project, email <a href=\"mailto:mvcmusicstore@discussions.codeplex.com\" target=\"_blank\">\r\nmvcmusicstore@discussions.codeplex.com</a></p>\r\n<p>You are receiving this email because you subscribed to this discussion on CodePlex. You can\r\n<a href=\"https://mvcmusicstore.codeplex.com/subscriptions/thread/project/edit\" target=\"_blank\">\r\nunsubscribe or change your settings</a> on codePlex.com.</p>\r\n<p>Please note: Images and attachments will be removed from emails. Any posts to this discussion will also be available online at\r\n<a href=\"http://codeplex.com\" target=\"_blank\">codeplex.com</a></p>\r\n</div>\r\n</div>\r\n</blockquote>\r\n</div>\r\n<br>\r\n",
+    "PostedDate": "2012-01-17T00:22:43.337-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "729699",
+    "ThreadId": "286373",
+    "Html": "<p>Thanks for the reply Jon. Appreciate it much.&nbsp;</p>\n<p>Will try it :)</p>",
+    "PostedDate": "2012-01-23T20:39:32.253-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

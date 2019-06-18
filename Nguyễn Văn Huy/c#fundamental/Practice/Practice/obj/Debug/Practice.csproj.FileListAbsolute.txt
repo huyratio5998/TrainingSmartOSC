@@ -1,0 +1,7 @@
+A:\SmartOSC\Training\c#fundamental\Practice\Practice\bin\Debug\Practice.exe.config
+A:\SmartOSC\Training\c#fundamental\Practice\Practice\bin\Debug\Practice.exe
+A:\SmartOSC\Training\c#fundamental\Practice\Practice\bin\Debug\Practice.pdb
+A:\SmartOSC\Training\c#fundamental\Practice\Practice\obj\Debug\Practice.csprojAssemblyReference.cache
+A:\SmartOSC\Training\c#fundamental\Practice\Practice\obj\Debug\Practice.csproj.CoreCompileInputs.cache
+A:\SmartOSC\Training\c#fundamental\Practice\Practice\obj\Debug\Practice.exe
+A:\SmartOSC\Training\c#fundamental\Practice\Practice\obj\Debug\Practice.pdb

@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "604967",
+    "ThreadId": "255732",
+    "Html": "\r\n<p>I just added a few updates to the Version 3 release and upgrade it from Beta to Stable. The main change was in fixing a typo on the connection string in Part 4. I've also added chapter save points, which show how the code should look at the end of each chapter.\r\n That should be helpful if you get stuck, or if you want to pick up at the beginning of a chapter.</p>\r\n<p>Thanks for all the great project feedback!</p>\r\n",
+    "PostedDate": "2011-04-29T10:38:18.76-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

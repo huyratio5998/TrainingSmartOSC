@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "678209",
+    "ThreadId": "274262",
+    "Html": "\r\n<p>Hi everyone,</p>\r\n<p>First of all I want to thank you for this great project that personnally I found very usefull and allowed me to work with the ASP.NET MVC and the EF which I belive are two great pieces that lacks to the .NET Framework and finally there ae here!</p>\r\n<p>&nbsp;</p>\r\n<p>1) Now I followed you sample, but when I arrived to the StoreManagerController, I find that the view does not include the dropdownlist of ArtistId, and the Index action in the controller does only contain:&nbsp;<span style=\"color:#ff0000\">db.Albums.Include(a\r\n =&gt; a.Genre); (.Include(a =&gt; a.Artist) was not included)</span></p>\r\n<p>2) I thinked that EF Code First pattern consists in creating classes (that have tables corrspondance), and that when we run the application, the DataBase is created on the fly? Is that true? If yes, i did'nt find any database created. So haw does it works,\r\n all that staff is on the memory?</p>\r\n<p>3) If we wanted to work with EF but ommitting the Code First pattern, i.e we have an existing DataBase and we want to work with this DataBase and create classes that maps to theses tables, how can I do this?</p>\r\n<p>4) When membership security is a good choice, and in a real world environement, how could I create the ASP.NET Memebership DataBase ?</p>\r\n<p>&nbsp;</p>\r\n<p>Thank you very much!</p>\r\n",
+    "PostedDate": "2011-09-29T07:46:55.333-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

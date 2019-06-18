@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "I'm using Visual Studio 2010 Professional, NET framework 4.0  and MVC 2 to develop and test new Mvc Music Store application.\r\n\r\nAttached file show a red, wavering line under the word 'Compare' in AccountModels.cs\r\n\r\nThe following line gave me \"The type or namespace name 'Compare' could not be found. (Are you missing a using directive or an assembly reference) ?\"\r\n\r\n [Compare(\"NewPassword\", ErrorMessage = \"The new password and confirmation password do not match.\")]\r\n\r\nWhat cause it? Is there a other attribute other than Compare I can try ? Is there a way to work around ?\r\n\r\nPlease advice...\r\n\r\n \r\n\r\n\r\n\r\n\r\n",
+    "LastUpdatedDate": "2015-10-14T12:09:34.037-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Unassigned",
+      "Severity": 0,
+      "Id": 0
+    },
+    "ProjectName": "mvcmusicstore",
+    "ReportedDate": "2015-10-14T12:09:34.037-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "password compare",
+    "Type": {
+      "Name": "Unassigned",
+      "Id": 5
+    },
+    "VoteCount": 1,
+    "Id": 6706
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

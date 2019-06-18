@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "when creating index view of shopping cart in music store example error is\r\nThe model item passed into the dictionary is of type 'Music.ViewModels.ShoppingCartViewModel', but this dictionary requires a model item of type 'System.Collections.Generic.IEnumerable`1[Music.ViewModels.ShoppingCartViewModel]'.\r\nthe view model is :\r\npublic class ShoppingCartViewModel\r\n{\r\npublic List<Cart> CartItems { get; set; }\r\npublic decimal CartTotal { get; set; }\r\n}\r\nin shopping cart controller:\r\n public ActionResult Index()\r\n        {\r\n            var cart = ShoppingCart.GetCart(this.HttpContext);\r\n            // Set up our ViewModel\r\n            var viewModel = new ShoppingCartViewModel\r\n            {\r\n                CartItems = cart.GetCartItems(),\r\n                CartTotal = cart.GetTotal()\r\n            };\r\n            // Return the view\r\n            return View(viewModel);\r\n            \r\n        }\r\nis anythin need to modify in viewmodel.please reply me.",
+    "LastUpdatedDate": "2014-03-22T04:12:23.107-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Unassigned",
+      "Severity": 0,
+      "Id": 0
+    },
+    "ProjectName": "mvcmusicstore",
+    "ReportedDate": "2014-03-22T04:11:14.2-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "music store example error in creating shopping cart index view",
+    "Type": {
+      "Name": "Unassigned",
+      "Id": 5
+    },
+    "VoteCount": 1,
+    "Id": 6699
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

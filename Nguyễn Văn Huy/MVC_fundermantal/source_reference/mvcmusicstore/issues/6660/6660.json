@@ -1,0 +1,55 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "Closed as submitter reported issue was due to typo on their part",
+    "ClosedDate": "2011-09-02T13:48:04.37-07:00",
+    "CommentCount": 3,
+    "Custom": null,
+    "Description": "After following the steps to add the database, I ran the application and got the following error when I went to /Store\r\n\r\n\r\nOne or more validation errors were detected during model generation:\r\n\r\nSystem.Data.Edm.EdmEntityType: : EntityType 'Album' has no key defined. Define the key for this EntityType.\r\nSystem.Data.Edm.EdmEntitySet: EntityType: EntitySet �Albums� is based on type �Album� that has no keys defined.\r\n\r\nDescription: An unhandled exception occurred during the execution of the current web request. Please review the stack trace for more information about the error and where it originated in the code. \r\n\r\nException Details: System.Data.Entity.ModelConfiguration.ModelValidationException: One or more validation errors were detected during model generation:\r\n\r\nSystem.Data.Edm.EdmEntityType: : EntityType 'Album' has no key defined. Define the key for this EntityType.\r\nSystem.Data.Edm.EdmEntitySet: EntityType: EntitySet �Albums� is based on type �Album� that has no keys defined.\r\n\r\n\r\nSource Error: \r\n\r\n\r\nLine 17:         public ActionResult Index()\r\nLine 18:         {\r\nLine 19:             var genres = storeDB.Genres.ToList();\r\nLine 20:             return View(genres);\r\nLine 21:         }\r\n \r\nAt this point, my album class looks as follows\r\nusing System;\r\nusing System.Collections.Generic;\r\nusing System.Linq;\r\nusing System.Web;\r\nusing System.ComponentModel.DataAnnotations;\r\n\r\nnamespace MvcMusicStore.Models\r\n{\r\n    public class Album\r\n    {\r\n        public Album AlbumId { get; set; }\r\n        public int GenreId { get; set; }\r\n        public int ArtistId { get; set; }\r\n        public string Title { get; set; }\r\n        public decimal Price { get; set; }\r\n        public string AlbumArtUrl { get; set; }\r\n\r\n        public Genre Genre { get; set; }\r\n        public Artist Artist { get; set; }\r\n    }\r\n}",
+    "LastUpdatedDate": "2013-10-13T17:13:33.783-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "mvcmusicstore",
+    "ReportedDate": "2011-07-30T12:41:39.327-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Error first time Running Application After Adding Entity Framework System.Data.Edm.EdmEntityType: : EntityType 'Album' has no key defined. Define the key for this EntityType. ",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 6660
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Nevermind I realized AlbumId was the wrong type. My bad.",
+      "PostedDate": "2011-07-30T12:44:30.763-07:00",
+      "Id": 40926
+    },
+    {
+      "Message": "where did you get the steps to add the database\nI am getting runtime errors in step 4 on Genre not being an entity",
+      "PostedDate": "2012-06-10T14:49:53.54-07:00",
+      "Id": 67706
+    },
+    {
+      "Message": "I had the same problem, but mine was of a different cause.\nI got the error trying to follow Chapter 4 of Professional asp.net mvc 4.\n\nPreviously, I had ran a NuGet on a package that previously installed a different Album Class\n(that didn't have an id property).\nIt had also put it not in Models, but in Samples, after the book had stressed that models were always in the Models folder, I didn't think to look there.\nBuilding the solution detected the error for me.\n\nSolution:\nI had to delete that other Album class before creating the StoreManagerController.",
+      "PostedDate": "2013-10-13T17:13:33.783-07:00",
+      "Id": 118298
+    }
+  ]
+}

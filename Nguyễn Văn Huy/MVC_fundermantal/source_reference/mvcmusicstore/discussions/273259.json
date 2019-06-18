@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "674469",
+    "ThreadId": "273259",
+    "Html": "\r\n<p>It appears that the AccountController.cs used in the Assets folder for 3.0b doesn't match the same thing in the code directory.&nbsp; Looks like the Assets didn't include the checked in code from 4/18.&nbsp; A minor nit is also the difference in sort order\r\n of SampleData.cs.</p>\r\n<p>Different files:</p>\r\n<p>Controllers\\AccountController.cs - release includes call to MigrateShoppingCart, assets does not</p>\r\n<p>Models\\SampleData.cs - release has different order of album data (&quot;The Best of Men At Work&quot; is first)</p>\r\n",
+    "PostedDate": "2011-09-20T16:27:41.92-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

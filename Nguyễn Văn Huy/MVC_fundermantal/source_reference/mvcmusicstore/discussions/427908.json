@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "981253",
+    "ThreadId": "427908",
+    "Html": "\r\n<p>Hi All,</p>\r\n<p>&nbsp;</p>\r\n<p>I tried to create an Class in models by right clicking it but I cannot select class it is not selectable only Controllers.</p>\r\n<p>Isn't that weard?</p>\r\n<p>&nbsp;</p>\r\n",
+    "PostedDate": "2012-12-28T05:05:14.217-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "981255",
+    "ThreadId": "427908",
+    "Html": "\r\n<p>Stupid me..... I forgot to select Stop debugging :(</p>\r\n<p>Sorry</p>\r\n",
+    "PostedDate": "2012-12-28T05:11:51.953-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "981268",
+    "ThreadId": "427908",
+    "Html": "\r\n<div>This may have been because you haven't closed debugging session.<br>\r\n<br>\r\n<div>Director, International Study Programs / Asia</div>\r\n<div>EJH Group, LLC</div>\r\n</div>\r\n<div><br>\r\nOn Dec 28, 2012, at 8:05 AM, &quot;mducrocq68&quot; &lt;<a href=\"mailto:notifications@codeplex.com\">notifications@codeplex.com</a>&gt; wrote:<br>\r\n<br>\r\n</div>\r\n<blockquote type=\"cite\">\r\n<div>\r\n<p>From: mducrocq68</p>\r\n<div id=\"ThreadNotificationPostBody\">\r\n<p>Hi All,</p>\r\n<p></p>\r\n<p>I tried to create an Class in models by right clicking it but I cannot select class it is not selectable only Controllers.</p>\r\n<p>Isn't that weard?</p>\r\n<p></p>\r\n</div>\r\n</div>\r\n</blockquote>\r\n",
+    "PostedDate": "2012-12-28T05:30:29.503-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

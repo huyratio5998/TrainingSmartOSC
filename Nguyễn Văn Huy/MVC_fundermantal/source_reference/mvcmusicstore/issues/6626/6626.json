@@ -1,0 +1,55 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 3,
+    "Custom": null,
+    "Description": "If you try to run fresh new vanilla build of new MVCMusicStore v2.0 in Firefox 3+, the contents part doesn't ever shows up. While looking at the issue, it seems problem in CSS.\r\n\r\nQuick workaround will be removing/commenting-out the \"overflow:hidden\" property from #main style in Site.css. While doing this, it mess up home page a little. But people can get the idea.",
+    "LastUpdatedDate": "2017-11-28T07:20:36.717-08:00",
+    "PlannedForRelease": "MVC Music Store v2.1",
+    "ReleaseVisibleToPublic": true,
+    "Priority": {
+      "Name": "Medium",
+      "Severity": 100,
+      "Id": 2
+    },
+    "ProjectName": "mvcmusicstore",
+    "ReportedDate": "2011-01-30T10:03:27.02-08:00",
+    "Status": {
+      "Name": "Resolved",
+      "Id": 7
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "MVCMusicStore v2.0 doesn't show up contents part in Firefox",
+    "Type": {
+      "Name": "Task",
+      "Id": 2
+    },
+    "VoteCount": 3,
+    "Id": 6626
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "The same happens to me. The workaround helps a little. Thks!\nI hope this can be solved soon.",
+      "PostedDate": "2011-03-18T05:27:05.23-07:00",
+      "Id": 31139
+    },
+    {
+      "Message": "Will get this in next release",
+      "PostedDate": "2011-03-25T00:30:10.35-07:00",
+      "Id": 31742
+    },
+    {
+      "Message": "The fix I'm adding to the next release is to float #main left, like this:\n\n#main\n{\n\toverflow: hidden;\n\tpadding: 0 0 15px 10px;\n\tfloat: left;\n}",
+      "PostedDate": "2011-04-06T14:50:12.883-07:00",
+      "Id": 33675
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "1011106",
+    "ThreadId": "435561",
+    "Html": "I get the below error at<br />\n <br />\n var genres = storeDB.Genres.ToList&lt;Genre&gt;();<br />\n<br />\n&quot;The Provider incompatible Exception was unhandled by the User Code&quot;<br />\n<br />\n&quot;The provider did not return a ProviderManifestToken string&quot;<br />\n<br />\n<br />\nI am using SQL Server 2008 <br />\n<br />\n<br />\nI am using the below connection string and when I run MvcMusicStore  &lt;add name=&quot;MvcMusicStoreEntities&quot;<br />\n<pre><code>  connectionString=&quot;Provider=SQLServer.Data.Client;Server=L-156026047;Initial Catalog=MvcMusicStore;Integrated Security=True&quot;/&gt;</code></pre>\n\n&lt;/connectionStrings&gt;<br />\n<br />\nI also tried<br />\n<br />\n &lt;add name=&quot;MvcMusicStoreEntities&quot;<br />\n<pre><code>  connectionString=&quot;Provider=SQLNCLI10;server=L-156026047;Integrated Security=True;Initial Catalog=MvcMusicStore;&quot;/&gt;</code></pre>\n\n&lt;/connectionStrings&gt;<br />\n<br />\n<br />\nPlease help.<br />\n",
+    "PostedDate": "2013-03-06T03:33:37.45-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

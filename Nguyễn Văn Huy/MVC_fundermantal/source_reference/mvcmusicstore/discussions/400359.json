@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "930652",
+    "ThreadId": "400359",
+    "Html": "\r\n<p>Hi&nbsp;I have&nbsp;been following the tutorial up to page 83 of the pdf document&nbsp;but when i try to create an&nbsp;admin user with the ASP.NET website administration tool. I get the follwoing response on clicking the security tab.</p>\r\n<p>There is a problem with your selected data store. This can be caused by an invalid server name or credentials, or by insufficient permission. It can also be caused by the role manager feature not being enabled. Click the button below to be redirected to\r\n a page where you can choose a new data store. <br>\r\n<br>\r\n<span id=\"content_content_exceptionMessageLabel0\">The following message may help in diagnosing the problem:\r\n</span><span id=\"content_content_exceptionMessageLabel1\" style=\"font-weight:bold\">Unable to connect to SQL Server database.</span></p>\r\n<p><span style=\"font-weight:bold\">I am using sqlcompact 4.0 as datastore.</span></p>\r\n",
+    "PostedDate": "2012-10-22T12:50:50.203-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

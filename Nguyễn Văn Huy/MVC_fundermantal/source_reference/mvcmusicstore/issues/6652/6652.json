@@ -1,0 +1,45 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 1,
+    "Custom": null,
+    "Description": "I have a question:  In the ShoppingCart class (section 8 of tutorial), you explicitly say we're going to use session, but that it's bad (and I concur).  Like most developers who work on production systems, session is simply not an option for me.  So as I  was looking at adapting this model to use cookies, I noticed this in your code comments:\r\n\r\n        // We're using HttpContextBase to allow access to cookies.\r\n        public string GetCartId(HttpContextBase context)\r\n        {\r\n            if (context.Session[CartSessionKey] == null)\r\n            {\r\n               ...\r\n                    // Send tempCartId back to client as a cookie\r\n                    context.Session[CartSessionKey] = tempCartId.ToString();\r\n\r\n\r\n \r\n\r\nSo, am I missing something?  Is the manner in which you're using session somehow using cookies?  Is this load-balancer safe?  \r\n\r\nI guess I'm just confused.  I haven't used session since the ASP days, and based on your comments I'm wondering if I'm confused about the implementation.\r\n\r\nThanks in advance,\r\n\r\nJJ",
+    "LastUpdatedDate": "2017-11-28T07:20:36.717-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "mvcmusicstore",
+    "ReportedDate": "2011-05-11T13:22:52.157-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Review / remove comment about using cookies",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 6652
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "So have you found your answer yet? I worked my shopping cart using MvcMusicStore tutorial and now on my production server the item doesn't get deleted when i click \"remove from cart\".\nI thought it was ajax or jQuery problem since my jQuery lightbox is not working on the production environment too.\nBut its actually a session/cookie problem?",
+      "PostedDate": "2012-01-13T23:03:43.163-08:00",
+      "Id": 52688
+    }
+  ]
+}

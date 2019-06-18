@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "998071",
+    "ThreadId": "432354",
+    "Html": "Hello I have been following this exellent tutorial and I am now stuck. There are similar threads on chapter 4 within the last few weeks but I decided to start a new thread as it seems that each person has a different Problem. I did a little research and I found some solutions on the one error I am getting: \r<br />\n<br />\n&quot;Unable to find the Requested .Net Framework Data Provider . It May not be Installed&quot;.<br />\n\r<br />\nHere is what I found so far.<br />\n<a href=\"http://social.msdn.microsoft.com/Forums/en-US/vseditor/thread/7b4f353b-77fd-427c-976b-5968abc88c13/\" rel=\"nofollow\">http://social.msdn.microsoft.com/Forums/en-US/vseditor/thread/7b4f353b-77fd-427c-976b-5968abc88c13/</a>\r<br />\n<br />\nThe following line of code seems to be the culprit. \r<br />\n<br />\nUnable to find the requested .Net Framework Data Provider.  It may not be installed. \r<br />\nDescription: An unhandled exception occurred during the execution of the current web request. Please review the stack trace for more information about the error and where it originated in the code. \r<br />\n<br />\nException Details: System.ArgumentException: Unable to find the requested .Net Framework Data Provider.  It may not be installed.\r<br />\n<br />\nSource Error: \r<br />\n<br />\n<br />\nLine 16:         public ActionResult Index()\r<br />\nLine 17:         {\r<br />\nLine 18:             var genres = storeDB.Genres.ToList();\r<br />\n<br />\n \r<br />\nIf you have found a workaround or know of the fundamental or underlying cuase of this errror I would greatly appreciate your help. I can send my entire code if necessary. I am using VS 2010 and .NET Version 4. Thank you for your valuable time. <br />\n",
+    "PostedDate": "2013-02-07T10:00:20.61-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

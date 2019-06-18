@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "565705",
+    "ThreadId": "245922",
+    "Html": "<p>I've changed all my image filetype to .gif because it seems that for some reason it only supports this image type.</p>\n<p>Now the size of my pictures are not all 100x75 like the placeholder.gif</p>\n<p>Even if they are, they're too small.</p>\n<p>So my question is;</p>\n<p><span style=\"white-space: pre;\"> </span>What are the things that i should change in .css to make the images appear to be the size i want them to be?</p>",
+    "PostedDate": "2011-02-14T00:45:31.607-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

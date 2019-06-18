@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "519006",
+    "ThreadId": "233942",
+    "Html": "\r\n<p>Am new to ASP.NET</p>\r\n<p>When&nbsp;going through the tutorial have noticed that there is some difference when&nbsp;working in VS 2010 vs using VS 2008, so have been trying to do&nbsp;work it in both so&nbsp;can understand the diffences&nbsp;and&nbsp;have been able to work through\r\n the&nbsp;difference so far up to pg 80&nbsp;&nbsp;</p>\r\n<div style=\"color:black; background-color:white\">\r\n<pre><span style=\"background-color:yellow\">&lt;%=</span> Html.EditorFor(model =&gt; model.Album,\r\n                new { Artists = Model.Artists, Genres = Model.Genres })--<span style=\"background-color:yellow\">%&gt;</span>\r\n</pre>\r\n</div>\r\n<p>and get the following error</p>\r\n<p><strong>Compiler Error Message: </strong>CS1928: 'System.Web.Mvc.HtmlHelper&lt;MvcMusicStore.ViewModels.StoreManagerViewModel&gt;' does not contain a definition for 'EditorFor' and the best extension method overload 'System.Web.Mvc.Html.EditorExtensions.EditorFor&lt;TModel,TValue&gt;(System.Web.Mvc.HtmlHelper&lt;TModel&gt;,\r\n System.Linq.Expressions.Expression&lt;System.Func&lt;TModel,TValue&gt;&gt;, string)' has some invalid arguments</p>\r\n<p>I assuming this is another issues based on 3.5 vs 4, because&nbsp;it appears that&nbsp;EditorFor is not available in 3.5.</p>\r\n<p>If using 3.5 what would someone use instead of EditorFor?</p>\r\n",
+    "PostedDate": "2010-11-08T13:53:53.427-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

@@ -1,0 +1,34 @@
+[
+  {
+    "Id": "1053785",
+    "ThreadId": "446268",
+    "Html": "HI ,\r<br />\n<br />\nas I follow the tutorial step by step online , I dont get the layout.cshtml file automatically under my project's shared folder ,\r<br />\nI am a complete novice to this world :)\r<br />\nwhen I add the layout file by myself and copy the code to it , the output is not customized as in the tutorial ...\r<br />\nplz help me out !!!<br />\n",
+    "PostedDate": "2013-06-06T15:40:29.823-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1265986",
+    "ThreadId": "446268",
+    "Html": "I'm getting the same problem... Using VS 2013 Express for Web and MVC 4<br />\n",
+    "PostedDate": "2014-07-15T11:39:18.937-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1265993",
+    "ThreadId": "446268",
+    "Html": "I did too but I fixed it.<br />\n I created the file from scratch as instructed with the prescribed  name in the Views AND then I had to add a _ViewStart.cshtml file; also in the Views directory that simply had:<br />\n<br />\n   @{<br />\n<pre><code>   Layout = &quot;~/Views/Shared/_Layout.cshtml&quot;;   }\n</code></pre>\n\nin it. and then I was off and running. Then, I was off and running till step 5 where I can not create the StoreManagerController for the LIFE of me...<br />\n<br />\nBut, anyhow... that's how to fix the _layout issue...   Good Luck...<br />\n",
+    "PostedDate": "2014-07-15T12:03:56.36-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1266246",
+    "ThreadId": "446268",
+    "Html": "Yes, i do it too, and work it, thanks guy!<br />\n",
+    "PostedDate": "2014-07-16T06:23:45.493-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

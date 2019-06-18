@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "922962",
+    "ThreadId": "398348",
+    "Html": "\r\n<p>i have a large number of products and if i really dont apply paging ,the browse page will be way to crowded with data.</p>\r\n<p>so im looking for a way to apply paging at the browse action in the storecontroller.</p>\r\n<p>i tried something like this but it wont even work</p>\r\n<p>&nbsp;</p>\r\n<pre><span style=\"color:blue\">public</span> ActionResult Browse(<span style=\"color:blue\">string</span> genre, int? page) {<br><br>const int pageSize = 10;<br>&nbsp;<span style=\"color:green\">// Retrieve Genre and its Associated Albums from database</span>\r\n            <span style=\"color:blue\">var</span> genreModel = storeDB.Genres.Include(<span style=\"color:#a31515\">&quot;Albums&quot;</span>)\r\n                .Single(g =&gt; g.Name == genre);<br>var paginatedoutput = genreModel.Skip((page ?? 0) * pageSize).Take(pageSize).ToList();<br><br>&nbsp;<span style=\"color:blue\">return</span> View(paginatedoutput);\r\n        }</pre>\r\n",
+    "PostedDate": "2012-10-06T21:18:50.57-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

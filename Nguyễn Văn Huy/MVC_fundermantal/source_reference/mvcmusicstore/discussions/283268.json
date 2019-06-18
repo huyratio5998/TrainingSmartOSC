@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "713427",
+    "ThreadId": "283268",
+    "Html": "\r\n<p>I just downloaded your tutorial and source and am excited to go through it. I've just started learning MVC and it seems great but I'm still quite confused with the whole ordeal. I have a new project coming up for an e-commerce site and would like to use\r\n this technology for it's development. What I'm wondering is, would using EF and CodeFirst be a good option? Is it scalable and does it allow changes to be implemented easily?</p>\r\n",
+    "PostedDate": "2011-12-16T14:55:53.597-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "713456",
+    "ThreadId": "283268",
+    "Html": "It depends what kind of scale you're talking about and what you need the data layer to do. There are large sites running on EF and CodeFirst, including the NuGet.org site (which also handles the entire NuGet package feed).\r\n<div><br>\r\n</div>\r\n<div>EF does add some (albeit small) overhead since it's doing things like change tracking, handling relationships, etc. If you need to optimize further, you have two good options: (1) you can tweak EF to use stored proceudres or views for some specific high-throughput\r\n areas (2) you can use a micro-orm like Dapper (used on StackOverflow.com) or Massive which does less but does it faster.</div>\r\n<div><br>\r\n</div>\r\n<div>I highly recommend building and performance testing rather than making guesses at the beginning. You can use the Repository pattern to abstract your data access so that moving from or optimizing EF is easy should you need to.<br>\r\n<br>\r\n<div>On Fri, Dec 16, 2011 at 2:56 PM, Phenomin <span dir=\"ltr\">&lt;<a href=\"mailto:notifications@codeplex.com\">notifications@codeplex.com</a>&gt;</span> wrote:<br>\r\n<blockquote style=\"margin:0 0 0 .8ex; border-left:1px #ccc solid; padding-left:1ex\">\r\n<div>\r\n<p>From: Phenomin</p>\r\n<div>\r\n<p>I just downloaded your tutorial and source and am excited to go through it. I've just started learning MVC and it seems great but I'm still quite confused with the whole ordeal. I have a new project coming up for an e-commerce site and would like to use\r\n this technology for it's development. What I'm wondering is, would using EF and CodeFirst be a good option? Is it scalable and does it allow changes to be implemented easily?</p>\r\n</div>\r\n<div>\r\n<p>Read the <a href=\"http://mvcmusicstore.codeplex.com/discussions/283268#post713427\" target=\"_blank\">\r\nfull discussion online</a>.</p>\r\n<p>To add a post to this discussion, reply to this email (<a href=\"mailto:mvcmusicstore@discussions.codeplex.com?subject=[mvcmusicstore:283268]\" target=\"_blank\">mvcmusicstore@discussions.codeplex.com</a>)</p>\r\n<p>To start a new discussion for this project, email <a href=\"mailto:mvcmusicstore@discussions.codeplex.com\" target=\"_blank\">\r\nmvcmusicstore@discussions.codeplex.com</a></p>\r\n<p>You are receiving this email because you subscribed to this discussion on CodePlex. You can\r\n<a href=\"https://mvcmusicstore.codeplex.com/subscriptions/thread/project/edit\" target=\"_blank\">\r\nunsubscribe or change your settings</a> on codePlex.com.</p>\r\n<p>Please note: Images and attachments will be removed from emails. Any posts to this discussion will also be available online at\r\n<a href=\"http://codeplex.com\" target=\"_blank\">codeplex.com</a></p>\r\n</div>\r\n</div>\r\n</blockquote>\r\n</div>\r\n<br>\r\n</div>\r\n",
+    "PostedDate": "2011-12-16T16:21:13.467-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

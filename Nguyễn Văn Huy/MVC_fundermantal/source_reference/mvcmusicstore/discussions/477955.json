@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "1142149",
+    "ThreadId": "477955",
+    "Html": "I am at Part 6: Using Data Annotations for Model Validation for MVC Music store application\r<br />\nserver validation is done in model and client side validation is validation built in, requiring no additional work whatsoever. Server side validation is working but client side is not \r<br />\n<br />\nSomebody please help<br />\n",
+    "PostedDate": "2013-12-25T01:49:08.093-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1347968",
+    "ThreadId": "477955",
+    "Html": "Hi,\r<br />\n<br />\nI had the same issue and figured out it is because I use Visual Studio 2013 Community. As I first landed on this page and was disappointed not to find a solution, here is mine for those about to &quot;follow&quot; ;-)\r<br />\n<br />\nIt seems that on an empty project (which this tutorial uses) VS2013 doesn't include the needed javascript files for client-side validation (and of course doesn't link them up correctly).\r<br />\n<br />\nIn Detail you need:<br />\n<ul>\n<li>jquery.validate-vsdoc.js</li>\n<li>jquery.validate.js</li>\n<li>jquery.validate.min.js</li>\n<li>jquery.validate.unobstrusive.js</li>\n<li>\njquery.validate.unobstrusive.min.js\r<br />\n(not sure if the validate.*.mins wouldn't suffice either)<br />\n</li>\n</ul>\nThe easiest way to set it up is by using the Packet-Manager (nuget) -&gt; Tools -&gt; NuGet Packet Manager -&gt;Packet Manager Console and then:<br />\n<ul>\n<li>Install-Package jQuery.Validation.Unobtrusive.Native.MVC5</li>\n<li>\nInstall-Package Microsoft.jQuery.Unobtrusive.Validation -Version 3.2.2<br />\n</li>\n</ul>\nAfterwards you should update jquery.validate via -&gt; Tools -&gt; NuGet Packet Manager -&gt; Manage NuGet Packages for Solution. Left Sidebar under Update.\r<br />\nThat is because Range Validation is broken in jquery.validate version 10.0.2 (?) which is the one delivered with VS.\r<br />\n<br />\nNow you just add:<br />\n<pre><code>&lt;script src=&quot;~/Scripts/jquery.validate.js&quot;&gt;&lt;/script&gt;\n&lt;script src=&quot;~/Scripts/jquery.validate.unobtrusive.js&quot;&gt;&lt;/script&gt;</code></pre>\n\nto ~/Views/shared/_Layout.cshtml AFTER the part where JQuery itself is included.\r<br />\n<br />\nMind you, this is probably the &quot;quick and dirty&quot; way, because the validation-Scripts are now included in EVERY view.\r<br />\n<br />\nThe way VS2013 does it on a non empty MVC-Solution is by building bundles and rendering validation-Scripts only on Views with an actual input-form. What it does there automatically, would require you to manually alter 4 files plus any view you want to validate and install System.Web.Optimizations via NuGet\r<br />\nNonetheless I did just that for &quot;fun&quot; and could post that solution if you or anyone else is interested.\r<br />\n<br />\nGreetings\r<br />\n<br />\nDaniel<br />\n",
+    "PostedDate": "2015-02-01T06:31:59.413-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

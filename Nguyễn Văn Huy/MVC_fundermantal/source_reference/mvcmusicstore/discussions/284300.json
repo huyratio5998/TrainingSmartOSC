@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "717684",
+    "ThreadId": "284300",
+    "Html": "\r\n<p>&#65279;db.SaveChanges();</p>\r\n<p>return RedirectToAction(&quot;Index&quot;)&#65279;</p>\r\n<p>How can i display message like &quot;Record @model.id Created&quot; in the index page or the create page itself?&#65279;</p>\r\n",
+    "PostedDate": "2011-12-27T18:36:21.997-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

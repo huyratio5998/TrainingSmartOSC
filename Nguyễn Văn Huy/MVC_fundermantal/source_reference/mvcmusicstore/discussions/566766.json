@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "1302327",
+    "ThreadId": "566766",
+    "Html": "Hello,\r<br />\n<br />\nI try to create a new Controller named <strong><em>StoreManagerController</em></strong> but I have an Error message \r<br />\nUnable to retrieve metadata for &quot;MvcMusicStore.Models.Album&quot;. Using the same DbCompilerModel to create contexts against different types of database servers is not supported. Instead, create a separate DbCompilerModel for each type of server being used.\r<br />\n<br />\nwhat should I do?<br />\n",
+    "PostedDate": "2014-09-08T01:32:44.66-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1313169",
+    "ThreadId": "566766",
+    "Html": "Try this:\r<br />\n<br />\nIn your Web.config comment out the entire &lt;connectionStrings&gt; tag. You should be able to add the controller now and then uncomment your &lt;connectionStrings&gt; tag once the controller is added.<br />\n",
+    "PostedDate": "2014-10-14T08:19:01.61-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

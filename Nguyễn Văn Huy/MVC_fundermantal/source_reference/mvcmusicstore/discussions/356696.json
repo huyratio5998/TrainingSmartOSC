@@ -1,0 +1,34 @@
+[
+  {
+    "Id": "839393",
+    "ThreadId": "356696",
+    "Html": "\r\n<p>In part 7 in tutorial mvcmusicstore i have problem to login. i have created an admin account and when i try to login it just stays at the login page, it should jump to the storemanager page but nothing happens. the link is http://localhost:52302/Account/LogOn?ReturnUrl=%2fstoremanager.&nbsp;</p>\r\n<p>&nbsp;</p>\r\n<p>Peter</p>\r\n",
+    "PostedDate": "2012-05-22T06:56:34.683-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "839451",
+    "ThreadId": "356696",
+    "Html": "<p>Peter -</p>\r\n<p>I recommend that you set a breakpoint in the AccountControllerLogon LogOn(LogOnModel model, <span style=\"color: blue;\">string</span> returnUrl) method and debug. Hopefully you should see if and why the authentication request is failing.</p>\r\n<p>- Jon</p>",
+    "PostedDate": "2012-05-22T08:42:48.897-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "840873",
+    "ThreadId": "356696",
+    "Html": "<p>Thanks for your comment, i have tried to debug and it jumps into</p>\r\n<p>---</p>\r\n<p><span style=\"font-family: Consolas; color: #0000ff; font-size: x-small;\"><span style=\"font-family: Consolas; color: #0000ff; font-size: x-small;\"><span style=\"font-family: Consolas; color: #0000ff; font-size: x-small;\"><span style=\"font-family: Consolas; color: #0000ff; font-size: x-small;\"><span style=\"font-family: Consolas; color: #0000ff; font-size: x-small;\"><span style=\"font-family: Consolas; color: #0000ff; font-size: x-small;\"><span style=\"font-family: Consolas; color: #0000ff; font-size: x-small;\"><font face=\"Consolas\" size=\"2\" color=\"#0000ff\">\r\n<p>if</p>\r\n</font></span></span></span><span style=\"font-family: Consolas; font-size: x-small;\"><span style=\"font-family: Consolas; font-size: x-small;\">(Url.IsLocalUrl(returnUrl) &amp;&amp; returnUrl.Length &gt; 1 &amp;&amp; returnUrl.StartsWith(</span></span><span style=\"font-family: Consolas; color: #a31515; font-size: x-small;\"><span style=\"font-family: Consolas; color: #a31515; font-size: x-small;\"><span style=\"font-family: Consolas; color: #a31515; font-size: x-small;\">\"/\"</span></span></span><span style=\"font-family: Consolas; font-size: x-small;\"> <span style=\"font-family: Consolas; font-size: x-small;\">)<span style=\"font-family: Consolas; font-size: x-small;\"> &amp;&amp; !returnUrl.StartsWith</span></span></span></span></span></span></span>\r\n<p><span style=\"font-family: Consolas; font-size: x-small;\"><span style=\"font-family: Consolas; font-size: x-small;\"><span style=\"font-family: Consolas; font-size: x-small;\">(</span></span></span><span style=\"font-family: Consolas; color: #a31515; font-size: x-small;\"><span style=\"font-family: Consolas; color: #a31515; font-size: x-small;\"><span style=\"font-family: Consolas; color: #a31515; font-size: x-small;\">\"//\"</span></span></span><span style=\"font-family: Consolas; font-size: x-small;\"><span style=\"font-family: Consolas; font-size: x-small;\">) &amp;&amp; !returnUrl.StartsWith(</span></span><span style=\"font-family: Consolas; color: #a31515; font-size: x-small;\"><span style=\"font-family: Consolas; color: #a31515; font-size: x-small;\"><span style=\"font-family: Consolas; color: #a31515; font-size: x-small;\">\"/\\\\\"</span></span></span><span style=\"font-family: Consolas; font-size: x-small;\"> <span style=\"font-family: Consolas; font-size: x-small;\">)) </span></span></p>\r\n</p>\r\n<p>\r\n<p>\r\n<p>{</p>\r\n</p>\r\n</p>\r\n<p><span style=\"font-family: Consolas; color: #0000ff; font-size: x-small;\"><span style=\"font-family: Consolas; color: #0000ff; font-size: x-small;\"><span style=\"font-family: Consolas; color: #0000ff; font-size: x-small;\">return</span></span></span><span style=\"font-family: Consolas; font-size: x-small;\"> <span style=\"font-family: Consolas; font-size: x-small;\">Redirect(returnUrl);\r\n<p>\r\n<p>}</p>\r\n<p>---</p>\r\n<p><span style=\"font-family: Consolas; font-size: x-small;\"></span>then its just jumps back to the login page. i am not a debugger pro so if you push me forward with your thoughts. The returnurl is /storemanager . Could it be something wrong there. To me it looks right.</p>\r\n</p>\r\n</span></span></p>",
+    "PostedDate": "2012-05-25T04:14:03.017-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1084110",
+    "ThreadId": "356696",
+    "Html": "Hi there,<br />\n<br />\nI have exactly the same problem. while debugging it does not redirect to StoreManager! although the logon is successful. I am wondering if this is a problem with the code that I have written, as I tried to recreate the project! When I run the Mvc Music Store app it reaches the StoreManager after log on process, although my code and the original code are exactly the same!<br />\nCould you please help me on this?<br />\n<br />\nThanks<br />\nA. <br />\n",
+    "PostedDate": "2013-08-23T04:57:38.197-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

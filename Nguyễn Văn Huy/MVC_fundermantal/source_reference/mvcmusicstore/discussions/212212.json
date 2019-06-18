@@ -1,0 +1,66 @@
+[
+  {
+    "Id": "441296",
+    "ThreadId": "212212",
+    "Html": "<p>It will be great if you could release the mdf in SQL 2005 compliant version.</p>\r\n<p>I understand that the tutorial is meant for VS 2010 , but I am using Vs 2008 and have SQL 2005.</p>",
+    "PostedDate": "2010-05-10T20:38:57.777-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "441320",
+    "ThreadId": "212212",
+    "Html": "<p>Yes, this makes sense. Someone else had asked that I just include SQL scripts, would that be sufficient?</p>",
+    "PostedDate": "2010-05-10T22:54:55.517-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "443581",
+    "ThreadId": "212212",
+    "Html": "That would be great to have SQL Scripts.",
+    "PostedDate": "2010-05-16T19:16:21.39-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "447338",
+    "ThreadId": "212212",
+    "Html": "<p>I've uploaded SQL Scripts: <a href=\"http://mvcmusicstore.codeplex.com/SourceControl/changeset/view/9299484ae233#MvcMusicStore-Create.sql\">http://mvcmusicstore.codeplex.com/SourceControl/changeset/view/9299484ae233#MvcMusicStore-Create.sql</a></p>\r\n<p>Let me know if you have problems with them - I scripted with SQL 2005 compatibility.</p>",
+    "PostedDate": "2010-05-25T15:16:58.403-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "521827",
+    "ThreadId": "212212",
+    "Html": "\r\n<p>Errors occured when I excuted the script in MvcMusicStore-Create.sql on SQL Express 2005. I need some help because i use sql server 2005.</p>\r\n<p><span style=\"font-size:xx-small\"></p>\r\n<p>Msg 911, Level 16, State 1, Line 1</p>\r\n<p>Could not locate entry in sysdatabases for database 'MvcMusicStore'. No entry found with that name. Make sure that the name is entered correctly.</p>\r\n<p>Msg 3728, Level 16, State 1, Line 1</p>\r\n<p>'FK_Cart_Album' is not a constraint.</p>\r\n<p>Msg 3727, Level 16, State 0, Line 1</p>\r\n<p>Could not drop constraint. See previous errors.</p>\r\n<p>Msg 3728, Level 16, State 1, Line 1</p>\r\n<p>'FK__InvoiceLi__Invoi__2F10007B' is not a constraint.</p>\r\n<p>Msg 3727, Level 16, State 0, Line 1</p>\r\n<p>Could not drop constraint. See previous errors.</p>\r\n<p>Msg 3728, Level 16, State 1, Line 1</p>\r\n<p>'FK_InvoiceLine_Album' is not a constraint.</p>\r\n<p>Msg 3727, Level 16, State 0, Line 1</p>\r\n<p>Could not drop constraint. See previous errors.</p>\r\n<p>Msg 3728, Level 16, State 1, Line 1</p>\r\n<p>'FK__Album__ArtistId__276EDEB3' is not a constraint.</p>\r\n<p>Msg 3727, Level 16, State 0, Line 1</p>\r\n<p>Could not drop constraint. See previous errors.</p>\r\n<p>Msg 3728, Level 16, State 1, Line 1</p>\r\n<p>'FK_Album_Genre' is not a constraint.</p>\r\n<p>Msg 3727, Level 16, State 0, Line 1</p>\r\n<p>Could not drop constraint. See previous errors</p>\r\n</span>\r\n<p></p>\r\n",
+    "PostedDate": "2010-11-14T12:46:15.037-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "648145",
+    "ThreadId": "212212",
+    "Html": "<p>&nbsp;</p>\r\n<p>Msg 102, Level 15, State 1, Line 1Incorrect syntax near '﻿'.Msg 4902, Level 16, State 1, Line 1Cannot find the object \"dbo.Album\" because it does not exist or you do not have permissions.Msg 4902, Level 16, State 1, Line 1Cannot find the object \"dbo.Album\" because it does not exist or you do not have permissions.Msg 4902, Level 16, State 1, Line 1Cannot find the object \"dbo.Cart\" because it does not exist or you do not have permissions.Msg 4902, Level 16, State 1, Line 1Cannot find the object \"dbo.OrderDetail\" because it does not exist or you do not have permissions.Msg 4902, Level 16, State 1, Line 1Cannot find the object \"dbo.OrderDetail\" because it does not exist or you do not have permissions.Msg 4902, Level 16, State 1, Line 1Cannot find the object \"dbo.Cart\" because it does not exist or you do not have permissions.Msg 3701, Level 11, State 5, Line 1Cannot drop the table 'dbo.Cart', because it does not exist or you do not have permission.Msg 4902, Level 16, State 1, Line 1Cannot find the object \"dbo.OrderDetail\" because it does not exist or you do not have permissions.Msg 4902, Level 16, State 1, Line 1Cannot find the object \"dbo.OrderDetail\" because it does not exist or you do not have permissions.Msg 3701, Level 11, State 5, Line 1Cannot drop the table 'dbo.OrderDetail', because it does not exist or you do not have permission.Msg 4902, Level 16, State 1, Line 1Cannot find the object \"dbo.Album\" because it does not exist or you do not have permissions.Msg 4902, Level 16, State 1, Line 1Cannot find the object \"dbo.Album\" because it does not exist or you do not have permissions.Msg 4902, Level 16, State 1, Line 1Cannot find the object \"dbo.Album\" because it does not exist or you do not have permissions.Msg 3701, Level 11, State 5, Line 1Cannot drop the table 'dbo.Album', because it does not exist or you do not have permission.Msg 3701, Level 11, State 5, Line 1Cannot drop the table 'dbo.Artist', because it does not exist or you do not have permission.Msg 3701, Level 11, State 5, Line 1Cannot drop the table 'dbo.Genre', because it does not exist or you do not have permission.Msg 3701, Level 11, State 5, Line 1</p>",
+    "PostedDate": "2011-07-27T01:58:07.613-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "648147",
+    "ThreadId": "212212",
+    "Html": "<p>second run</p>\r\n<p>Msg 102, Level 15, State 1, Line 1Incorrect syntax near '﻿'.Msg 3728, Level 16, State 1, Line 1'FK_Cart_Album' is not a constraint.Msg 3727, Level 16, State 0, Line 1Could not drop constraint. See previous errors.Msg 3728, Level 16, State 1, Line 1'FK__InvoiceLi__Invoi__2F10007B' is not a constraint.Msg 3727, Level 16, State 0, Line 1Could not drop constraint. See previous errors.Msg 3728, Level 16, State 1, Line 1'FK_InvoiceLine_Album' is not a constraint.Msg 3727, Level 16, State 0, Line 1Could not drop constraint. See previous errors.Msg 3728, Level 16, State 1, Line 1'FK__Album__ArtistId__276EDEB3' is not a constraint.Msg 3727, Level 16, State 0, Line 1Could not drop constraint. See previous errors.Msg 3728, Level 16, State 1, Line 1'FK_Album_Genre' is not a constraint.Msg 3727, Level 16, State 0, Line 1Could not drop constraint. See previous errors.</p>",
+    "PostedDate": "2011-07-27T01:58:47.233-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "648151",
+    "ThreadId": "212212",
+    "Html": "<p>sql server 2008 r2 enterprise</p>\r\n<p>ConnectionStrings also have errors,can't use sql server.but only use sql ce4,shit.</p>",
+    "PostedDate": "2011-07-27T02:02:14.45-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "I updated my store index to query database from\r\n{\r\n            var categories = new List<Category>\r\n            {\r\n                new Category { CategoryName = \"Cameras\"},\r\n                new Category { CategoryName = \"Camcorders\"},\r\n                new Category { CategoryName = \"Lenses\"},\r\n                new Category { CategoryName = \"Printers\"},\r\n                new Category { CategoryName = \"Filters/Accessories\"},\r\n                new Category { CategoryName = \"Memory\"},\r\n            };\r\n            return View(categories);\r\n       }\r\nwith the code\r\n\r\npublic ActionResult Index()\r\n{\r\n    var genres = storeDB.Genres.ToList();\r\n    return View(genres);\r\n }\r\n when I keyed in the “/Store” URL,\r\nit says Selecting form 0 genres, I cant see any of my listed genres any more. Does it mean its not calling into my database. how do i rectify this problem?\r\n\r\n",
+    "LastUpdatedDate": "2012-07-04T22:56:42.107-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "mvcmusicstore",
+    "ReportedDate": "2012-07-04T22:56:42.107-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Updating the Store Index to query the database",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 6680
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

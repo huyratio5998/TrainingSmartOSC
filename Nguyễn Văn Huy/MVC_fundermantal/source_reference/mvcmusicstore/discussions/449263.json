@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "1065371",
+    "ThreadId": "449263",
+    "Html": "Hi,\r<br />\n<br />\nWas wondering if anyone could clarify this for me... Been walking through this tutorial and I don't understand the difference between the Browse and Details methods. I know one takes a string and the other an int as arguments but in the tutorial, we go to /Store/Details/5 for the Details and for the Browse method, /Store/Browse?Genre=Disco\r<br />\n<br />\nAnyone know the difference and why we can't go to /Store/Browse/Disco instead of passing it as a querystring parameter.\r<br />\n<br />\nCheers<br />\n",
+    "PostedDate": "2013-07-07T17:47:16.213-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

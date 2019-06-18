@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "548641",
+    "ThreadId": "241609",
+    "Html": "\r\n<p>Hi erveryone, I'm new to ASP.NET and I was trying to understand the principles of the new MVC 2 inclued in visual studio.</p>\r\n<p>Let me explain my view of the MVC aplications first, and then I write my doubt.</p>\r\n<p>Traditionaly the MVC pattern is desinged to keep the aplication separated in different layers and the order of the layers was View-Controller-Model-Dao, I mean the user access to a View through the controller, makes an action (for example &quot;Create an album&quot;\r\n ) then the data of the album goes to the controller, it creates a new <strong>Album object\r\n</strong>(with the parameters like &quot;title, genre ...) and then the object goes to the DAO layer which insert it in the database.</p>\r\n<p>But I noticed that this way of working is not used&nbsp;in this MVC Music Store, for example in StoreManagerController class It receives the HttpPost data and calls to&nbsp;<strong>storeDB.AddToAlbums(album)</strong>; and then<strong>&nbsp;storeDB.SaveChanges();&nbsp;</strong>directly\r\n in this class.</p>\r\n<p>As I said before I'm new with this so maybe I'm wrong, but I know the basics of MVC pattern and I think this is not being followed in this example or at least not being followed strictly.</p>\r\n<p>So, can someone explain or write his point of view with this?</p>\r\n<p>Is this example the correct way of working with MVC pattern?&nbsp;Maybe making these two instructions in a new class, for example AlbumDAO.cs in a method like\r\n<strong>addAlbum(Album album</strong>) makes it more &quot;&quot;&quot; traditional MVC pattern &quot;&quot;&quot;&quot; ??</p>\r\n<p>Thanks in advance</p>\r\n",
+    "PostedDate": "2011-01-13T05:08:59.75-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

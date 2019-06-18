@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "In the asp.net mv3 sample the the Hello from Store.Details() string does not appear in browser when switching to the /Store/Details.\r\n\r\nThe other two string appear. \r\nWhen I run the debugger it always seems to be the third address I type in.\r\nFor example if the first address type  \r\n/Store  the browser displays  “Hello from Store.Index()”.\r\n\r\nWhen I change the address to ./Store/Browse the browser displays \"Hello from Store.Browse()\".\r\n\r\nNext When I change the address to ./Store/Details the browser still displays \"Hello from Store.Browse()\".\r\n\r\n\r\nHOW COME “Hello from Store.Details()” is not displayed in browser\r\n\r\nsee web address\r\nhttp://msdn.microsoft.com/en-us/vs2010trainingcourse_aspnetmvc3fundamentals_topic3\r\n\r\nfor source code",
+    "LastUpdatedDate": "2012-05-01T10:37:50.227-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "mvcmusicstore",
+    "ReportedDate": "2012-05-01T10:37:50.227-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Hello from Store.Details() not being displayed  in browser Excersie 2 Task 3",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 6678
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

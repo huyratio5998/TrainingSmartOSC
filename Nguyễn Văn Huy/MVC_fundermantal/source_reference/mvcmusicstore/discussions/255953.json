@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "605735",
+    "ThreadId": "255953",
+    "Html": "\r\n<p>In Section 8, we add an Order class as public partial class Order, then we do it again in section 9 with ShoppingCart with literally no reference to it (I actually missed it the first time) or explanation as to why we do it or what it&nbsp;achieves.</p>\r\n<p>Can someone explain this?</p>\r\n<p>Thanks in advance,</p>\r\n<p>JJ</p>\r\n",
+    "PostedDate": "2011-05-02T00:16:11.65-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "611241",
+    "ThreadId": "255953",
+    "Html": "<p>That used to be required before using Entity Framework Code First to allow placing annotations on the model. In the old version, the EF model was generated using the Database First designer, and we&nbsp;used a partial class so that the annotations wouldn't be overwritten if the model was regenerated.</p>\r\n<p>That's no longer required with Code First, and the partials will be removed in the next update - Issue here: <a href=\"http://mvcmusicstore.codeplex.com/workitem/6642\">http://mvcmusicstore.codeplex.com/workitem/6642</a></p>",
+    "PostedDate": "2011-05-11T14:11:42.31-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

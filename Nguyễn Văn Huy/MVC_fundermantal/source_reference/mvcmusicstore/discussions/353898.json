@@ -1,0 +1,42 @@
+[
+  {
+    "Id": "829695",
+    "ThreadId": "353898",
+    "Html": "\r\n<p>Hi, I am following instructions in pdf file, starting page 47 where EF is introduced. When runing the application, I am getting the following error</p>\r\n<p><strong>An error occurred while executing the command definition. See the inner exception for details.</strong></p>\r\n<p>Digging into the error, I discovered that the generated sql query is quering a table &quot;Genres&quot; instead of &quot;Genre&quot;. I created The tables using the provided sql file against sql server 2008.</p>\r\n<p>1st question, why EF uses the plural of the table name (Genres and&nbsp;not&nbsp;Genre)&nbsp;whereas we have indicated &nbsp;&quot;public DbSet&lt;Genre&gt; Genre { get; set; }&quot; in class MusicStoreEntities.</p>\r\n<p>I renamed table to genres, code worked. I would like to understand that renaming table would not impact the other exercises, 2nd can not understand or how EF or why it is adding the &quot;s&quot; tpo the table name.</p>\r\n<p>&nbsp;</p>\r\n",
+    "PostedDate": "2012-04-28T08:44:47.387-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "839080",
+    "ThreadId": "353898",
+    "Html": "<p>I am having the exact same problem. Why is the entity framework adding a \"s\" to the end of dbo.Genre table?</p>",
+    "PostedDate": "2012-05-21T12:52:48.757-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "839112",
+    "ThreadId": "353898",
+    "Html": "<p>By default, Entity Framework pluralizes classes when determining the table name, so Genre class will be placed in Genres table. There's a blog post which explains this information here: ttp://stevesmithblog.com/blog/entity-framework-invalid-object-name-dbo-albums/</p>\r\n<p>Are you using the latest release of MVC Music Store? This should be fixed in the newer scripts.</p>",
+    "PostedDate": "2012-05-21T13:34:22.67-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "840850",
+    "ThreadId": "353898",
+    "Html": "\r\n<p>I ran into this problem and after looking over the tutorial to see if I had copied in something incorrectly I came to this site hoping for some information. This seems to be the same error I am getting, but I don't know how to change the table names as is\r\n suggested by one person. If I try and open a table properties I cannot edit, but can only see the table name. How would I change the properties, or better yet is there a better way to overcome this error?</p>\r\n<p>Also the link posted by jongalloway seems to be broken.</p>\r\n<p>&nbsp;Edit: I found a link which described how to change a table name.</p>\r\n<p>&#65279;&#65279;&#65279;<a href=\"http://msdn.microsoft.com/en-US/library/bw5xhetd(v=vs.80\">http://msdn.microsoft.com/en-US/library/bw5xhetd(v=vs.80</a>)</p>\r\n<p>I hope nobody minds that I linked this since it is a Microsoft site; though it won't give you the site direcly it should lead you to it, or you could just google or bing the phrase &quot;how change table name visual studio&quot; or some similar thing.</p>\r\n<p>Note: When &quot;right clicking on table&quot; to select the properties of it, make sure you click to the right side (no directly on the columns).</p>\r\n",
+    "PostedDate": "2012-05-25T03:06:12.687-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "841272",
+    "ThreadId": "353898",
+    "Html": "\r\n<p>I was able to solve the same problem by including the database name into the connectiontionstring.</p>\r\n<p>e.g. &nbsp;</p>\r\n<p>&lt;add name=&quot;MvcMusicStore&quot; connectionString=&quot;Data Source=.\\SQLEXPRESS;<strong>InitialCatalog=MvcMusicStore</strong>;Integrated Security=True&quot; providerName=&quot;System.Data.SqlClient&quot;/&gt;</p>\r\n<p><em><strong>- OR -&nbsp;</strong></em></p>\r\n<p>You can also directly map the table name by overriding &quot;OnModelCreating&quot; from your DBContext class.&nbsp;</p>\r\n<p>e.g. &nbsp; &nbsp; &nbsp; &nbsp;</p>\r\n<p><strong>protected override void OnModelCreating(DbModelBuilder modelBuilder) &nbsp; &nbsp; &nbsp; &nbsp;</strong></p>\r\n<p><strong>{ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;//modelBuilder.Entity&lt;Album&gt;().ToTable(&quot;Album&quot;); &nbsp; &nbsp; &nbsp; &nbsp;}</strong></p>\r\n",
+    "PostedDate": "2012-05-26T12:02:44.17-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

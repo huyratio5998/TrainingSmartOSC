@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "Data",
+      "DisplayName": "Data"
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Hi,\r\n\r\nIt looks like the script that sets up the database, in case you are not using SQLEXPRESS as your engine, is incorrect. It sets up all table names in singular, where the application sample code expects all the table names to be in plural.\r\n\r\nThe script also starts with a whole lot of DROPs, that generate errors of course if you start with an empty database. Can I suggest that there are IF EXISTS put around that?\r\n\r\nCheers,\r\n\r\nGerard",
+    "LastUpdatedDate": "2017-11-28T07:20:36.717-08:00",
+    "PlannedForRelease": "MVC Music Store v2.1",
+    "ReleaseVisibleToPublic": true,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "mvcmusicstore",
+    "ReportedDate": "2011-04-06T17:59:36.677-07:00",
+    "Status": {
+      "Name": "Resolved",
+      "Id": 7
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "SQL Script should include IF EXISTS statements around DROP calls",
+    "Type": {
+      "Name": "Task",
+      "Id": 2
+    },
+    "VoteCount": 1,
+    "Id": 6641
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

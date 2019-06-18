@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "847202",
+    "ThreadId": "359108",
+    "Html": "\r\n<p>After fixing the SampleData class&nbsp; more&nbsp;errors occur with entities</p>\r\n<p>At runtime the following errors occur</p>\r\n<h2><em>One or more validation errors were detected during model generation:<br>\r\n<br>\r\nSystem.Data.Edm.EdmEntityType: : EntityType 'Genre' has no key defined. Define the key for this EntityType.<br>\r\nSystem.Data.Edm.EdmEntitySet: EntityType: EntitySet �Genres� is based on type �Genre� that has no keys defined.<br>\r\n</em></h2>\r\n<p><span style=\"font-family:Arial,Helvetica,Geneva,SunSans-Regular,sans-serif\"><strong>Description:\r\n</strong>An unhandled exception occurred during the execution of the current web request. Please review the stack trace for more information about the error and where it originated in the code.\r\n<br>\r\n<br>\r\n<strong>Exception Details: </strong>System.Data.Entity.ModelConfiguration.ModelValidationException: One or more validation errors were detected during model generation:<br>\r\n<br>\r\nSystem.Data.Edm.EdmEntityType: : EntityType 'Genre' has no key defined. Define the key for this EntityType.<br>\r\nSystem.Data.Edm.EdmEntitySet: EntityType: EntitySet �Genres� is based on type �Genre� that has no keys defined.<br>\r\n<br>\r\n<br>\r\n<strong>Source Error:</strong> <br>\r\n<br>\r\n</span></p>\r\n<table width=\"100%\" bgcolor=\"#ffffcc\">\r\n<tbody>\r\n<tr>\r\n<td><code>\r\n<pre>Line 35:     //    new Genre { Name = &quot;Rock&quot;} \r\nLine 36:     //};\r\n<span style=\"color:#ff0000\">Line 37:             var genres = storeDB.Genres.ToList();\r\n</span>Line 38:             return View(genres); \r\nLine 39: </pre>\r\n</code></td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n<p><span style=\"font-family:Arial,Helvetica,Geneva,SunSans-Regular,sans-serif\"><br>\r\n<strong>Source File: </strong>D:\\mvc\\MvcMusicStoreDemo\\MvcMusicStore\\MvcMusicStore\\Controllers\\StoreController.cs<strong> Line:\r\n</strong>37 <br>\r\n<br>\r\n<strong>Stack Trace:</strong> <br>\r\n<br>\r\n</span></p>\r\n<table width=\"100%\" bgcolor=\"#ffffcc\">\r\n<tbody>\r\n<tr>\r\n<td><code>\r\n<pre>[ModelValidationException: One or more validation errors were detected during model generation:\r\n\r\n\tSystem.Data.Edm.EdmEntityType: : EntityType 'Genre' has no key defined. Define the key for this EntityType.\r\n\tSystem.Data.Edm.EdmEntitySet: EntityType: EntitySet �Genres� is based on type �Genre� that has no keys defined.\r\n]\r\n   System.Data.Entity.ModelConfiguration</pre>\r\n</code></td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n",
+    "PostedDate": "2012-06-10T13:37:52.02-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "847770",
+    "ThreadId": "359108",
+    "Html": "<p>Can you make sure that your Genre class has a GenreId that's defined exactly like this?</p>\r\n<div style=\"color: black; background-color: white;\">\r\n<pre><span style=\"color: blue;\">public</span> <span style=\"color: blue;\">int</span>      GenreId     { <span style=\"color: blue;\">get</span>; <span style=\"color: blue;\">set</span>; }</pre>\r\n</div>\r\n<p>Note that spelling is important, since Entity Framework Code First uses conventions to find the key based on the class name and properties.</p>",
+    "PostedDate": "2012-06-12T00:15:54.527-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

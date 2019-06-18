@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "688720",
+    "ThreadId": "277065",
+    "Html": "\r\n<p>I am trying to add more albums to the SampleData.cs class as well as change the picture to a new gif picture. &nbsp;It changes in the class but when I rebuild it and run it again none of the changes are implemented on the website.</p>\r\n<p>Is there a way of changing the info from the class itself without doing it on the website in the Storemanager page?&nbsp;</p>\r\n",
+    "PostedDate": "2011-10-24T18:53:55.623-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "691168",
+    "ThreadId": "277065",
+    "Html": "<p>I'm not completely clear on what you're doing - are you just adding more albums without changing the data structure at all? If so, you can do that a few ways:</p>\r\n<ul>\r\n<li>You should be able to add more items to SampleData.cs, but remember that the data in SampleData is only added if the data model changes or if the database doesn't exist. You can expand the App_Data folder and delete database file. The database will be created when you next run the app.</li>\r\n<li>You can modify the data in the table using Visual Studio's data tooling - see <a href=\"http://weblogs.asp.net/scottgu/archive/2011/01/11/vs-2010-sp1-and-sql-ce.aspx\">Scott Guthrie's blog post</a>, look for the part where it says \"Step 4: Populate with data\"</li>\r\n<li>You can programatically add data - look at the controller code in StoreManager / Create - you can do the same thing in App_Start for a one-time data modification.</li>\r\n</ul>",
+    "PostedDate": "2011-10-29T11:48:37.36-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "691187",
+    "ThreadId": "277065",
+    "Html": "<font color=\"black\" size=\"3\" face=\"Times New Roman, Times, serif\">I tried to expand the App_Data folder but to no avail. I would only open in Windows Explorer and there were 3 files:\r\n<div><br>\r\n</div>\r\n<div>ASPNETDB SQL SERVER Database Primary Data File</div>\r\n<div>aspnetdb_log SQL Server Database Transaction Log File</div>\r\n<div>and the musicstore sdf file</div>\r\n<div><br>\r\n</div>\r\n<div>I could not delete the ASPNETDB at first but even when I was able to it did not apply the changes.</div>\r\n<div><br>\r\n</div>\r\n<div>My primary goal was to add actual images for the album art. I added the images to the images folder and changed the file path in the SampleData.cs file and left the rest with the original placeholder.gif image. I am not sure what I did but when I originally\r\n changed about 10 of them in the SampleData.cs file, after playing around a bit they were changed. Now I have changed more and the images in the SampleData.cs file and when I run it the pictures are still the same placeholder images. I want to be able to add\r\n an album or update it from the SampleData.cs file as well as from the website.</div>\r\n<div><br>\r\n</div>\r\n<div>Thank you for your time and help, it is greatly appreciated.<br>\r\n<br>\r\n<br>\r\n<div style=\"font-family:arial,helvetica; font-size:10pt; color:black\">-----Original Message-----<br>\r\nFrom: jongalloway &lt;notifications@codeplex.com&gt;<br>\r\nTo: nreid2701 &lt;nreid2701@aol.com&gt;<br>\r\nSent: Sat, Oct 29, 2011 10:48 am<br>\r\nSubject: Re: Adding more albums to the SampleData.cs MVC 3 MusicStore [mvcmusicstore:277065]<br>\r\n<br>\r\n<div id=\"AOLMsgPart_1_1e283228-ae1d-469a-a305-b18c7bb7cd52\">\r\n<div>From: jongalloway</div>\r\n<div id=\"ThreadNotificationPostBody\">\r\n<div>I'm not completely clear on what you're doing - are you just adding more albums without changing the data structure at all? If so, you can do that a few ways:</div>\r\n<ul>\r\n<li>You should be able to add more items to SampleData.cs, but remember that the data in SampleData is only added if the data model changes or if the database doesn't exist. You can expand the App_Data folder and delete database file. The database will be created\r\n when you next run the app. </li><li>You can modify the data in the table using Visual Studio's data tooling - see\r\n<a target=\"_blank\">Scott Guthrie's blog post</a>, look for the part where it says &quot;Step 4: Populate with data&quot;\r\n</li><li>You can programatically add data - look at the controller code in StoreManager / Create - you can do the same thing in App_Start for a one-time data modification.\r\n</li></ul>\r\n</div>\r\n<div>To add a post to this discussion, reply to this email (<a>mvcmusicstore@discussions.codeplex.com</a>)</div>\r\n<div>To start a new discussion for this project, email <a>mvcmusicstore@discussions.codeplex.com</a></div>\r\n<div>You are receiving this email because you subscribed to this discussion on CodePlex. You can\r\n<a target=\"_blank\">unsubscribe</a> on CodePlex.com.</div>\r\n<div>Please note: Images and attachments will be removed from emails. Any posts to this discussion will also be available online at CodePlex.com</div>\r\n</div>\r\n</div>\r\n</div>\r\n<div></div>\r\n</font>",
+    "PostedDate": "2011-10-29T13:52:37.317-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

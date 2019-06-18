@@ -1,0 +1,45 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 1,
+    "Custom": null,
+    "Description": "The website from the tutorial walkthrough works fine when running in my VS2010 IDE but when I publish it to IIS 7.5 running on a Windows 7 box it encounters problems.\r\n\r\nIn the VS2010 IDE, I published the application to a file system location other than where the development code is. In IIS 7.5 I ADDED a new application under the Default Web Site. I set the path of this to be the folder containing the published code.  I set the application pool to be ASP.NET v4.0. This application pool is set to Integrated Pipeline Mode and has an Identity of LocalSystem.\r\n\r\nProblems when browsing the published application are as follows:\r\n(1)- when browsing to http://127.0.0.1/MvcMusicStore  the home page will come up but  WITHOUT displaying the main Music Sale background image, the header image and the \"top selling albums\"  have no art and the album items are rammed together\r\n(2)- when selecting a genre ... which takes the app to http://127.0.0.1/MvcMusicStore/Store/Browse?Genre=Metal  - a similar problem is occuring -  the \"top selling albums\"  have no art and the album items are rammed together\r\n(3)- clicking the Store navigation link both give the same error: HTTP Error 404.0 - Not Found - Requested URL http://127.0.0.1:80/Store/ - Physical Path C:\\inetpub\\wwwroot\\Store\\ \r\n(4)- clicking the Store navigation link both give the same error: HTTP Error 404.0 - Not Found - Requested URL http://127.0.0.1:80/StoreManager/ - Physical Path C:\\inetpub\\wwwroot\\StoreManager\\ \r\n(5) clicking the Home navigation link takes me to http://127.0.0.1/  which displays the IIS7 Welcome page\r\n\r\n ",
+    "LastUpdatedDate": "2010-11-30T13:53:17.817-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "mvcmusicstore",
+    "ReportedDate": "2010-11-26T10:51:28.13-08:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "deploy to IIS 7 solution",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 6619
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "The solution to make this work in IIS 7 was to create a WEBSITE and assign it a separate port instead of setting it up as an application under the default web site.",
+      "PostedDate": "2010-11-30T13:53:17.817-08:00",
+      "Id": 19268
+    }
+  ]
+}

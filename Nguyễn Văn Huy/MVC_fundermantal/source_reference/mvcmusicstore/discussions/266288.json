@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "646427",
+    "ThreadId": "266288",
+    "Html": "\r\n<p>ha all,</p>\r\n<p>i downloaded the last version of this tuturial.</p>\r\n<p>in page 63 , I write &nbsp;to StoreManager below code&nbsp;,</p>\r\n<p>// GET: /StoreManager/</p>\r\n<p>public ViewResult Index(){</p>\r\n<p>var albums = db.Albums.Include(a =&gt; a.Genre).Include(a =&gt; a.Artist);</p>\r\n<p>return View(albums.ToList());</p>\r\n<p>}</p>\r\n<p>but that is an error ,it said that &quot;db.Albums.Include(&quot;String&quot;).Include(&quot;string&quot;);</p>\r\n<p>but (a=&gt;a.Genre AND a=&gt;a.Artist) is not string .</p>\r\n<p><span title=\"Click for alternate translations\">What</span>&nbsp;<span title=\"Click for alternate translations\">solution</span>&nbsp;<span title=\"Click for alternate translations\">do you</span>&nbsp;<span title=\"Click for alternate translations\">suggest</span><span title=\"Click for alternate translations\">?</span></p>\r\n",
+    "PostedDate": "2011-07-23T01:11:52.79-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "646533",
+    "ThreadId": "266288",
+    "Html": "Can you post the full error message?<br>\r\n<br>\r\n<div>On Sat, Jul 23, 2011 at 1:11 AM, hamed_hossani <span dir=\"ltr\">&lt;<a href=\"mailto:notifications@codeplex.com\">notifications@codeplex.com</a>&gt;</span> wrote:<br>\r\n<blockquote style=\"margin:0 0 0 .8ex; border-left:1px #ccc solid; padding-left:1ex\">\r\n<div>\r\n<p>From: hamed_hossani</p>\r\n<div>\r\n<p>ha all,</p>\r\n<p>i downloaded the last version of this tuturial.</p>\r\n<p>in page 63 , I write to StoreManager below code ,</p>\r\n<p>// GET: /StoreManager/</p>\r\n<p>public ViewResult Index(){</p>\r\n<p>var albums = db.Albums.Include(a =&gt; a.Genre).Include(a =&gt; a.Artist);</p>\r\n<p>return View(albums.ToList());</p>\r\n<p>}</p>\r\n<p>but that is an error ,it said that &quot;db.Albums.Include(&quot;String&quot;).Include(&quot;string&quot;);</p>\r\n<p>but (a=&gt;a.Genre AND a=&gt;a.Artist) is not string .</p>\r\n<p><span title=\"Click for alternate translations\">What</span> <span title=\"Click for alternate translations\">\r\nsolution</span> <span title=\"Click for alternate translations\">do you</span> <span title=\"Click for alternate translations\">\r\nsuggest</span><span title=\"Click for alternate translations\">?</span></p>\r\n</div>\r\n<div>\r\n<p>Read the <a href=\"http://mvcmusicstore.codeplex.com/discussions/266288#post646427\" target=\"_blank\">\r\nfull discussion online</a>.</p>\r\n<p>To add a post to this discussion, reply to this email (<a href=\"mailto:mvcmusicstore@discussions.codeplex.com?subject=[mvcmusicstore:266288]\" target=\"_blank\">mvcmusicstore@discussions.codeplex.com</a>)</p>\r\n<p>To start a new discussion for this project, email <a href=\"mailto:mvcmusicstore@discussions.codeplex.com\" target=\"_blank\">\r\nmvcmusicstore@discussions.codeplex.com</a></p>\r\n<p>You are receiving this email because you subscribed to this discussion on CodePlex. You can\r\n<a href=\"https://mvcmusicstore.codeplex.com/subscriptions/thread/project/edit\" target=\"_blank\">\r\nunsubscribe or change your settings</a> on codePlex.com.</p>\r\n<p>Please note: Images and attachments will be removed from emails. Any posts to this discussion will also be available online at\r\n<a href=\"http://codeplex.com\" target=\"_blank\">codeplex.com</a></p>\r\n</div>\r\n</div>\r\n</blockquote>\r\n</div>\r\n<br>\r\n",
+    "PostedDate": "2011-07-23T09:32:38.36-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

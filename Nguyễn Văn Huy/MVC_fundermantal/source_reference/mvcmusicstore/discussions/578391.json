@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "1345211",
+    "ThreadId": "578391",
+    "Html": "In case this is useful for anyone, I modified the GetCartId method to use cookies instead of session.<br />\n\r<br />\n@jongalloway commented somewhere in this discussion area about how to do this but there were a few subtle changes here and there that needed to be made (namely using Response(write the cookie) and Request(read the cookie) at the appropriate time &amp; reading/writing to .Value property of the cookie).\r<br />\n<br />\nThis seems to work for me.  In checking the cookies/values in my browser (Firefox &gt; tools &gt; options &gt; privacy &gt; Show cookies) the cookie sets fine for anonymous and an auth user. <br />\n\r<br />\nIf anybody sees any glaring coding no-nos or if this code is outdated please feel free to post.\r<br />\n<br />\n~Mike<br />\n<pre><code>        public string GetCartId(HttpContextBase context)\n        {\n            // Checks to see if cookie exists\n            if (context.Request.Cookies[CartSessionKey] == null)\n            {\n                // If no cookie exists check for logged in user name and assign it to cookie value\n                if (!string.IsNullOrWhiteSpace(context.User.Identity.Name))\n                {\n                    //assign cookie value of the username\n                    context.Response.Cookies[CartSessionKey].Value = context.User.Identity.Name;\n                }\n                // If the user is anonymous assign a random guid to cookie value\n                else\n                {\n                    Guid tempCartId = Guid.NewGuid();\n                    //assign cookie the value of the Guid\n                    context.Response.Cookies[CartSessionKey].Value = tempCartId.ToString();\n                }\n            }\n            //return whatever value was set in the cookie\n            return context.Request.Cookies[CartSessionKey].Value.ToString();\n        }</code></pre>\n\n",
+    "PostedDate": "2015-01-22T13:39:41.697-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

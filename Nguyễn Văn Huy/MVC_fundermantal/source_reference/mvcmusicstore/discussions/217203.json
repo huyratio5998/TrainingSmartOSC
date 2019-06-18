@@ -1,0 +1,34 @@
+[
+  {
+    "Id": "459499",
+    "ThreadId": "217203",
+    "Html": "<p>It looks like the author got tired of the process towards the end as some errors and omissions appear to sneak in.&nbsp;</p>\r\n<p>Namely:</p>\r\n<p>Page 73/74: The text 'introduces' two additional classes (ShoppingCartViewModel and a ShoppingCart), whereas the sections immediately above describe those classes (subtle issue, I know - looks like the result of restructuring the document section sequence)</p>\r\n<p>Top of page 74 sentence: &quot;Here&rsquo;s the complete StoreManager controller class&quot;, whereas the class below is actually (correctly) the&nbsp;ShoppingCartController class.</p>\r\n<p>It might be beyond the scope of the tutorial to discuss, but a little more insight into the JavaScript handleUpdate method would be nice (such as what those $(stuff).stuff &nbsp;lines do/how they work).</p>\r\n<p>At no point in the tutorial can I see where you add code to allow the user to add albums to the shopping cart (not that it's too hard to work out - I managed - just a completeness thing)</p>\r\n<p>Also - the creation of the CartSummary Partial View is never discussed in the document.</p>\r\n<p>&nbsp;</p>\r\n<p>Also: Can people comment on the level of 'best practice' represented in the tutorial. I understand the close coupling between the DB and the models is undesirable (and implemented as it to keep the tutorial simple, but 'real' at the same time) - so I'm thinking about the best practice concerns regarding the ASP/MVC aspects of the tutorial (use of controllers, the views, use of JSON and JQuery, Authentication etc.) rather than the application architecture.</p>\r\n<p>Thanks&nbsp;</p>\r\n<p>Trevor</p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2010-06-24T07:11:13.063-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "462824",
+    "ThreadId": "217203",
+    "Html": "<p>Trevor, thanks a lot for the feedback. I'll get it fixed up in the next release. Some of the omissions were just plain oversights, others were because I was trying to keep the document to 80ish pages, but if it's unclear it's unclear. Thanks for pointing these out, I'll get them fixed.</p>\r\n<p>Regarding best practice, the biggest (intentional) oversimplifications were in data access (e.g. direct calls to the data layer from controller actions rather than through a repository) and in lack of testing (both lack of unit tests and in use of patterns which aren't as testable). It's hard to get any defined &quot;best practices&quot; that the whole community will agree on, but you can find some community critiques of the project:</p>\r\n<ul>\r\n<li><a href=\"http://mvcmusicstore.codeplex.com/Thread/View.aspx?ThreadId=212459\">http://mvcmusicstore.codeplex.com/Thread/View.aspx?ThreadId=212459</a></li>\r\n<li><a href=\"http://www.bing.com/search?q=mvc+music+store+site:ayende.com\">http://www.bing.com/search?q=mvc+music+store+site%3Aayende.com</a>&nbsp;(note that Ayende is also comparing relational data access with EF to a new document database implementation)</li>\r\n</ul>\r\n<p>Let me know if you're aware of other critiques. My plan is to add an appendix which notes the simplifications the tutorial takes so people can&nbsp;learn more sophisticated&nbsp;practices when they're familiar with the mechanics.</p>",
+    "PostedDate": "2010-07-02T13:45:48.647-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "605090",
+    "ThreadId": "217203",
+    "Html": "<p>On page <a href=\"http://www.asp.net/mvc/tutorials/mvc-music-store-part-8\" target=\"_blank\">http://www.asp.net/mvc/tutorials/mvc-music-store-part-8</a> , in the section entitled <strong>Ajax updates with jQuery</strong> , there are no instructions as to where to Create the View named 'Index'.&nbsp; I had to examine the completed project to figure out that the instructions should have read something like this:</p>\n<p>\"Add a new Folder under Views, entitled ShoppingCart\".</p>\n<p>then \"right click on the new ShoppingCart folder, and select 'Add -&gt; View' to add a new View named Index\"</p>\n<p>Without this information, if you did not&nbsp; add the 'ShoppingCart' folder, the view will end up in the Views folder, and will not work.&nbsp;</p>\n<p>TNX</p>\n<p>&nbsp;</p>\n<p>Marvin</p>",
+    "PostedDate": "2011-04-29T16:11:23.55-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "605092",
+    "ThreadId": "217203",
+    "Html": "This discussion has been copied to a work item. Click <a href=\"http://mvcmusicstore.codeplex.com/workitem/6649\">here</a> to go to the work item and continue the discussion.",
+    "PostedDate": "2011-04-29T16:13:38.757-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

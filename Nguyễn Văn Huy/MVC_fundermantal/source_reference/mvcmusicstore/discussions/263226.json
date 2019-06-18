@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "634661",
+    "ThreadId": "263226",
+    "Html": "\r\n<p>when we remove items from cart,there is a&nbsp;&nbsp;javascript function handleUpdate()</p>\r\n<p>i do not understand what is the use of this funtion.</p>\r\n",
+    "PostedDate": "2011-06-29T03:25:20.627-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "639929",
+    "ThreadId": "263226",
+    "Html": "<p>It's no longer needed - it was there from the MVC 2 version of the tutorial which used Microsoft Ajax; when converting to jQuery I moved the update into the jQuery code. I'll it in the next release.</p>",
+    "PostedDate": "2011-07-09T12:53:24.057-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "639939",
+    "ThreadId": "263226",
+    "Html": "<p>I would seriously consider using the Ajax helpers for this. Would decrease the complexity of the code a little bit, plus it's be be a good demo.</p>",
+    "PostedDate": "2011-07-09T13:48:36.61-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

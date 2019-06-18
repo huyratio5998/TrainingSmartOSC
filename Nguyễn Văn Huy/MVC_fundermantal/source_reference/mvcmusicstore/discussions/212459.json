@@ -1,0 +1,90 @@
+[
+  {
+    "Id": "442171",
+    "ThreadId": "212459",
+    "Html": "<p>We are finally seeing some cleaner MVC samples coming out of MS, congratulations. Good use of view models, relatively concise and well intentioned actions, and very clean and consistent code. I do have some suggestions:</p>\r\n<p>1 - The IoC story could be improved. The storeDb field members in most controllers&nbsp; needs to get injected into the constructor. The default AccountController constructor is a smell. I know you want to focus on MVC, but MVC is largely about clean design and separation, and DI frameworks are a great toolset to help developers achieve that.</p>\r\n<p>2 - The try/catch spread over some of the controllers is avoidable exception swallowing</p>\r\n<p>3 - Program against interfaces (there are a lot of cases where this isn't happening, but the List&lt;T&gt; in the ViewModels jumped out to me)</p>\r\n<p>4 - Maybe this is a known pattern, but what's up with partial models, contained a nested &quot;XYZMetaData&quot; class which exposes a bunch of properties that return objects? Is that really how you do things with EF?</p>\r\n<p>5 - Attribute overload (but without using 3rd party libraries, there really is no way around this, unfortunately).</p>\r\n<p>6 - Some responsibility overlap. GetTopSellingAlbums doesn't belong in HomeController,</p>\r\n<p>7 - 2 JS frameworks?</p>\r\n<p>Again, its definitely the best Microsoft initiated MVC demo...most items on the list are pretty small (the IoC thing will cause you headaches in the long run, or when you wanna unit test though). The Model/EF story continues to be a disaster when compared to other MVC frameworks for other stacks, but there isn't much you can do about that.</p>\r\n<div id=\"_mcePaste\" style=\"left:-10000px;top:0px;width:1px;height:1px;overflow:hidden\">\r\n<pre>AccountControlle</pre>\r\n</div>",
+    "PostedDate": "2010-05-12T10:34:56.673-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "443860",
+    "ThreadId": "212459",
+    "Html": "<p>I've been working on a major .NET MVC project for the last six months but I didn't learn through MS examples (except for the very basics with NerdDinner.) This is the first elaborate MS example of an MVC project I've seen.&nbsp;&nbsp; If this is the best MS has to offer, then I wonder what came before.&nbsp;</p>\r\n<p>Aside from the issues mentioned in the post above, why are models mixed with interface and database code?&nbsp; Why are there explicit save to database calls?&nbsp; Where are the unit-of-work references?&nbsp; Most of all, if a heavy-weight ORM is being used, why isn't it in it's own layer (assembly or class library?)&nbsp; What are these partial models?&nbsp;</p>\r\n<p>Maybe much of the mess is due to Entity Framework,.&nbsp; I've never used it, but I've certainly heard things.&nbsp; .NET MVC is truly a wonderful thing, but perhaps it only shines on a different stack.&nbsp; Using it myself with an nHibernate ORM, it's truly some of the best web-app code I've seen or had the pleasure to write.</p>",
+    "PostedDate": "2010-05-17T09:22:00.263-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "443887",
+    "ThreadId": "212459",
+    "Html": "<p>@Karl, thanks so much for taking the time to respond. I'll look at what I can roll into an 0.9 release. Some specific responses:</p>\r\n<p>1 - We'd decided not to talk about IoC right at the beginning to keep the focus completely on MVC. What do you think about a section at the end that introduces IoC once the mechanics are understood?</p>\r\n<p>2 - Agree, will fix that.</p>\r\n<p>4 - Yes. They don't have to return objects, but that's how you&nbsp;add metadata to EF partial classes so you can update the EF model. I agree, it's not at all beautiful.</p>\r\n<p>5 - Yep</p>\r\n<p>6 - Agree</p>\r\n<p>7 - Both jQuery and&nbsp;ASP.NET Ajax are included in the ASP.NET MVC template, so this shows the two working together. jQuery is the recommended library for Javascript development on ASP.NET MVC, and the ASP.NET Ajax libraries generally add some ASP.NET MVC specific features on top. This will be more and more the case over time, based on the announcements at MIX10 stating that ASP.NET Ajax focus is being changed to work on top of jQuery at a more basic level, Microsoft has developers contributing to jQuery, etc.</p>",
+    "PostedDate": "2010-05-17T10:00:30.087-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "443896",
+    "ThreadId": "212459",
+    "Html": "<p>@theYipster - The focus of this tutorial is intentionally focused on the basic mechanics of ASP.NET MVC for people who are unfamiliar with the pattern. It's written at a more basic level than the NerdDinner sample which at least discusses testing, dependency injection, the repository pattern, etc. The idea here is to provide an introduction to ASP.NET MVC for&nbsp;developers for whom NerdDinner may have been offputting by focusing on exactly one concept throughout. When someone finishes it, they're of course not done learning, but they are up to speed enough with the mechanics of MVC to the point that they can then begin to apply some professional development practices.</p>\r\n<p>It sounds like we need to work on two things:</p>\r\n<p>1 - Notes throughout and a conclusion at the end of the tutorial that lets people know where to go next.</p>\r\n<p>2 - A more advanced tutorial. However, I'm not entirely sure who this would be written for - people who already are up to speed with ASP.NET MVC, testing, architectural concerns, other ORM's, etc. don't need a tutorial. Maybe what you're after is a reference implementation showing best practices?</p>",
+    "PostedDate": "2010-05-17T10:15:43.25-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "443971",
+    "ThreadId": "212459",
+    "Html": "<p>If the Music Store is intended to be a first introduction to the pattern, then I feel the design flaws are even more alarming.&nbsp; Isn't the whole raison-d'etre of MVC about architectural cleanliness with abstractions that work with the web's way of operation?&nbsp; Isn't it about clean, minimalist code, and adherence to the well-lauded principles of &quot;Don't Repeat Yourself&quot; and &quot;Separation of Concerns?&quot; (Which, btw, the Music Store example violates in spades.)</p>\r\n<p>I feel these are ideals that should be strongly shown in all examples--especially those for beginners.&nbsp; The whole choice between MVC and another framework is one of  architecture, and I think that understanding the architecture early on  is a key to success with the framework.&nbsp; Furthermore, any beginning example to a framework serves an important dual role:&nbsp; not only is it a primer to a development method, it's an advertisement for the benefits of the framework. &nbsp; Any good first example should show how MVC specifically, through its architecture, meets these ideals. It should clarify what the benefits (and costs) are to other options, and it should try as best as possible to demystify what return will be after making the effort to learn the framework properly.</p>\r\n<p>Sure, the first example may not be that practical or concrete -- but that's probably okay and often expected (for instance, what utility is there to &quot;Hello World&quot; beyond introducing a language or framework?) Since MVC is all about clean architecture, I think that providing an example that is inherently unclean -- where concerns are strewn between boundaries and logic is repeated ad-nauseum--violates core principals.&nbsp; Yes, the Music Store may be a concrete example of how to build something of significance without much prior knowledge of the framework, but as an education to the benefits of MVC, I feel it misses the mark, and as an advertisement to the framework, I think it has a long, long way to go.</p>",
+    "PostedDate": "2010-05-17T13:42:44.91-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "449857",
+    "ThreadId": "212459",
+    "Html": "<p>@theYipster: I see your point, but I beg to differ...</p>\r\n<p>When my team started to use MVC on a new project, there were a lot of new things to learn: MVC, EF, JQuery to name just a few. And given that it was refactoring of an existing WinForms application (terribly written - but working) the clients were not very enthusiastic about us taking several months to put enhancements on hold.</p>\r\n<p>So we made a conscious decision <em>not</em> to use unit tests, IoC, or repository pattern. We studied Nerd Dinner, and <a href=\"http://www.amazon.com/Pro-ASP-NET-Framework-Steven-Sanderson/dp/1430210079\">excellent Sanderson's book</a>, so we made this decision with our eyes open. But if somebody joins our team today, this tutorial will be an excellent jump-start for WinForms developer.</p>\r\n<p>In summary, ideally you should study MVC along with all the patterns that you mention; but sometimes the reality stands in the way! :)</p>\r\n<p>BTW, we also decided not to use ASP.NET Ajax - jQuery seems to do everything we need. I am glad to see that ASP.NET Ajax's future is to be complementary to jQuery!</p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2010-06-01T00:28:07.23-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "463079",
+    "ThreadId": "212459",
+    "Html": "<p>I cannot get by pages 28 &ndash; 33.</p>\r\n<p>In Browse.aspx I&rsquo;m getting errors on &ldquo;Model.Genre.Name&rdquo; and &ldquo;Model.Albums&rdquo;</p>\r\n<p><span style=\"color:blue;font-size:9.5pt\">I&rsquo;m getting the error (are you missing a using directive or an assembly reference?)</span></p>\r\n<p>&nbsp;<span style=\"color:blue;font-size:9.5pt\">&lt;</span><span style=\"color:maroon;font-size:9.5pt\">h2</span><span style=\"color:blue;font-size:9.5pt\">&gt;</span><span style=\"font-size:9.5pt\">Browsing Genre: &lt;%<span style=\"color:blue\">:</span> Model.Genre.Name %&gt;<span style=\"color:blue\">&lt;/</span><span style=\"color:maroon\">h2</span><span style=\"color:blue\">&gt;</span></span></p>\r\n<p><span style=\"font-size:9.5pt\">&nbsp;</span><span style=\"font-size:9.5pt\">&nbsp;&nbsp; <span style=\"color:blue\">&lt;</span><span style=\"color:maroon\">ul</span><span style=\"color:blue\">&gt;</span></span></p>\r\n<p><span style=\"font-size:9.5pt\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;% <span style=\"color:blue\">foreach</span> (<span style=\"color:blue\">var</span> album <span style=\"color:blue\">in</span> Model.Albums)</span></p>\r\n<p><span style=\"font-size:9.5pt\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; { %&gt;</span></p>\r\n<p><span style=\"font-size:9.5pt\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style=\"color:blue\">&lt;</span><span style=\"color:maroon\">li</span><span style=\"color:blue\">&gt;</span>&lt;%<span style=\"color:blue\">:</span> album.Title %&gt;<span style=\"color:blue\">&lt;/</span><span style=\"color:maroon\">li</span><span style=\"color:blue\">&gt;</span></span></p>\r\n<p><span style=\"font-size:9.5pt\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;% } %&gt;</span></p>\r\n<p><span style=\"font-size:9.5pt\">&nbsp;&nbsp; <span style=\"color:blue\">&lt;/</span><span style=\"color:maroon\">ul</span><span style=\"color:blue\">&gt;</span></span></p>\r\n<p><span style=\"color:blue;font-size:9.5pt\">&nbsp;</span><span style=\"color:blue;font-size:9.5pt\">Similar problem with Index.aspx</span></p>\r\n<p><span style=\"color:blue;font-size:9.5pt\">&lt;</span><span style=\"color:maroon;font-size:9.5pt\">h2</span><span style=\"color:blue;font-size:9.5pt\">&gt;</span><span style=\"font-size:9.5pt\">Album: &lt;%<span style=\"color:blue\">:</span> Model.Title %&gt;<span style=\"color:blue\">&lt;/</span><span style=\"color:maroon\">h2</span><span style=\"color:blue\">&gt;</span></span></p>\r\n<p><span style=\"color:blue;font-size:9.5pt\">&nbsp;</span><span style=\"color:blue;font-size:9.5pt\">It doesn&rsquo;t seem to like Model.</span></p>\r\n<p><span style=\"color:blue;font-size:9.5pt\">&nbsp;</span><span style=\"color:blue;font-size:9.5pt\">Is there an issue between Models and Model? I created Models -&gt; Album.cs and Genre.cs. Is this correct?</span></p>",
+    "PostedDate": "2010-07-03T08:06:48.6-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "463284",
+    "ThreadId": "212459",
+    "Html": "<p>@JMPlex - This should really be a new discussion or issue. I need more information on the error message, but it looks like you might not have created a strongly typed view. Can you copy in the first line of your Browse.aspx view?</p>",
+    "PostedDate": "2010-07-04T13:22:51.023-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "465512",
+    "ThreadId": "212459",
+    "Html": "Jon,\r\n\r\nI started over because I had some other problems. Maybe some caused by me. I'm now on page 29 again. It says, &quot;then modify the Browse and Details medthods to appear as follows:&quot; Do I copy all the code described for // GET: /Store/Browse/ to // GET: /Store/Details/ and just change &quot;public ActionResult Browse()&quot; to &quot;public ActionResult Details()&quot;. I assume that is what you want us to do.\r\n\r\nThen at the bottom it says, &quot;Right-click on Browse and add a strongly typed Browse view, then a strongly typed Details view. This seems to work ok for Browse when I right click on Browse(). I get the Add View the same as on the top of page 30. When I right click on Details() and try to create a strongly typed Details view, in View data class: I have the following:\r\nMvcMusicStore.Models.Album\r\nMvcMusicStore.Models.Genre\r\nMvcMusicStore.ViewModels.StoreBrowseViewModel\r\nMvcMusicStore.ViewModels.StoreIndexViewModel\r\n\r\nUnder ViewModels I only have \r\nStoreBrowseViewModel.cs\r\nStoreIndexViewModel.cs\r\n\r\nI assume I need \r\nMvcMusicStore.ViewModels.StoreDetailsViewModel in the drop down for View data class. Is that correct? I tried to enter everything very carefully this time. Did I miss something again? I never have been able to get the display on the top of page 28. with . Disco Album1 and .Disco Album 2 displayed as circled.\r\n\r\nThanks\r\n\r\n",
+    "PostedDate": "2010-07-09T10:02:51.877-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "465521",
+    "ThreadId": "212459",
+    "Html": "<p>@JMPlex - That looks like a typo on page 29 - it should just say &quot;modify the Browse method to appear as follows&quot;. The instructions for the Details action method and view start on the bottom of page 30. We don't use a StoreDetailsViewModel in that case because we're just displaying the details of one Album, so the Album class is sufficient.</p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2010-07-09T10:17:43.313-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "465555",
+    "ThreadId": "212459",
+    "Html": "<p>Thank you. That was helpful.</p>",
+    "PostedDate": "2010-07-09T11:39:54.433-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

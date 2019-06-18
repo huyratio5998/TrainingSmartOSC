@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "833665",
+    "ThreadId": "354981",
+    "Html": "<p>I am in the part within the StoreController where I am not modifying the index, browse, and details methods now that the EF for SQL CE is in place and when I run the project, it goes fine until I try to go to \"localhost~/Store/\". Then it gives me an \"arguementexception  was unhandled by user code\" issue at this code point:</p>\n<pre>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>var</span>&nbsp;genres&nbsp;=&nbsp;storeDB.Genres.ToList();\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>return</span>&nbsp;View(genres);</pre>\n<pre>I have also updated the class as such:</pre>\n<pre><span>public</span><span> </span><span>class</span><span> </span><span>StoreController</span><span> </span><span>:</span><span> </span><span>Controller</span><span><br /></span><span>{</span><span><br />&nbsp; &nbsp; </span><span>MusicStoreEntities</span><span> storeDB </span><span>=</span><span> </span><span>new</span><span> </span><span>MusicStoreEntities</span><span>();</span></pre>\n<p>It highlights in yellow all the references to \"storeDB\", but again, not sure why this is doing this and am hoping some of you can help here? Is much appreciated!</p>",
+    "PostedDate": "2012-05-08T14:36:25.157-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "833667",
+    "ThreadId": "354981",
+    "Html": "<p>I bit more, within the browser address bar, I do see that when I try to go to anything with \"localhost~/Store\" that it will say \"Format of the initialization string does not conform to specifications starting at index 0\". Not sure what that means, but is probably something simple I am overlooking. Ideas or fixes please? Thanks much!</p>",
+    "PostedDate": "2012-05-08T14:41:38.58-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

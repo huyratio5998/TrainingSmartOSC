@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "1273956",
+    "ThreadId": "551970",
+    "Html": "I want to add a StyleSheet into my MVCMusicStore (Like in page 30)\r<br />\n I follow exactly the procedures as the tutorial documentation. What I got was only the word of &quot;ASP.NET MVC MUSIC STORE&quot; like this:\r<br />\n<br />\n <img src=\"http://oi62.tinypic.com/w6wb5d.jpg\" alt=\"Image\" />\r<br />\n<br />\nI m using VS2010\r<br />\n<br />\nAm I doing anything wrong or the documentation is wrong? Thanks.<br />\n",
+    "PostedDate": "2014-07-18T06:43:38.053-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1274000",
+    "ThreadId": "551970",
+    "Html": "Hi Moez_rebai,\r<br />\n<br />\nYou should try to add link below to your &lt;head&gt; in _Layout file: \r<br />\n&lt;link href=&quot;<a href=\"mailto:@Url.Content(&quot;~/Content/Site.css&quot;)\" rel=\"nofollow\">@Url.Content(\"~/Content/Site.css\")</a>&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;/&gt;\r<br />\n<br />\nGood luck!<br />\n",
+    "PostedDate": "2014-07-18T08:18:55.193-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

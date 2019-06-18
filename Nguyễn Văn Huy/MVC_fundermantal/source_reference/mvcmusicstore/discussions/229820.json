@@ -1,0 +1,50 @@
+[
+  {
+    "Id": "503014",
+    "ThreadId": "229820",
+    "Html": "<p>I have reached page 65 of the tuorial. The Account Controller/Model/View files have been copied in to the project folder and added to the project.</p>\r\n<p>When I click the icon in Solution Explorer, the website opens, but when I click the Security tab, I get error: &quot;<span id=\"content_content_exceptionMessageLabel1\" style=\"font-weight:bold\">A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified</span>&quot; I clicked the Provider tab and nothing works there too.</p>\r\n<p>I have included the ASPNETDB.MDF from the sample project. But as I am strictly following the tutorial, I am not sure, why the Config site is not working. Please help.</p>\r\n<p>Am I expected to create the Membership, Profile and RoleManager nodes in web.config manually? Do I create the ASPNETDB.MDF from scratch using ﻿﻿﻿﻿aspnet_regsql.exe? I&nbsp;am under the impression that because the tutorial doesn't mention it, the VS2010 wizardry might be working behind the scenes.</p>\r\n<p>Respectfully,&nbsp;</p>\r\n<p>- Tushar G. Walavalkar</p>",
+    "PostedDate": "2010-10-06T08:03:35.183-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "503425",
+    "ThreadId": "229820",
+    "Html": "<p>On Page 64, in addition to the various copy tasks done from your temp project to your Store project, you also need to copy the &lt;membership&gt;, &lt;profile&gt; and &lt;rolemanager&gt; nodes from the temp project web.config. You&nbsp;will also&nbsp;have to copy the connection string or create a new one for use with the providers. From what I infer, these providers as yet cannot use the EF provider connection string. May be someone can correct me here.</p>\r\n<p>Respectfully,</p>\r\n<p>Tushar G. Walavalkar</p>",
+    "PostedDate": "2010-10-07T00:13:54.05-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "574330",
+    "ThreadId": "229820",
+    "Html": "<p>I had similar issue. I have followed your instructions and it is working for me now. Thanks for the post.</p>\r\n<p>I copied &lt;membership&gt;, &lt;profile&gt; and &lt;rolemanager&gt; nodes from the temp project web.config to my MvcMusicStore project web.config</p>\r\n<p>I had to create a new ASPNETDB database in my sql server and run the aspnet_regsql utility to populate that. Then I had to add the connectionstring in web.config file as below,</p>\r\n<p><span style=\"font-family: Consolas; color: #0000ff; font-size: x-small;\"><span style=\"font-family: Consolas; color: #0000ff; font-size: x-small;\"><span style=\"font-family: Consolas; color: #0000ff; font-size: x-small;\">&lt;</span></span></span><span style=\"font-family: Consolas; color: #a31515; font-size: x-small;\"><span style=\"font-family: Consolas; color: #a31515; font-size: x-small;\"><span style=\"font-family: Consolas; color: #a31515; font-size: x-small;\">add</span></span></span><span style=\"font-family: Consolas; color: #0000ff; font-size: x-small;\"><span style=\"font-family: Consolas; color: #0000ff; font-size: x-small;\"><span style=\"font-family: Consolas; color: #0000ff; font-size: x-small;\"> </span></span></span><span style=\"font-family: Consolas; color: #ff0000; font-size: x-small;\"><span style=\"font-family: Consolas; color: #ff0000; font-size: x-small;\"><span style=\"font-family: Consolas; color: #ff0000; font-size: x-small;\">name</span></span></span><span style=\"font-family: Consolas; color: #0000ff; font-size: x-small;\"><span style=\"font-family: Consolas; color: #0000ff; font-size: x-small;\"><span style=\"font-family: Consolas; color: #0000ff; font-size: x-small;\">=</span></span></span><span style=\"font-family: Consolas; font-size: x-small;\"><span style=\"font-family: Consolas; font-size: x-small;\">\"</span></span><span style=\"font-family: Consolas; color: #0000ff; font-size: x-small;\"><span style=\"font-family: Consolas; color: #0000ff; font-size: x-small;\"><span style=\"font-family: Consolas; color: #0000ff; font-size: x-small;\">ApplicationServices</span></span></span><span style=\"font-family: Consolas; font-size: x-small;\"><span style=\"font-family: Consolas; font-size: x-small;\">\"</span></span><span style=\"font-family: Consolas; color: #ff0000; font-size: x-small;\"><span style=\"font-family: Consolas; color: #ff0000; font-size: x-small;\"><span style=\"font-family: Consolas; color: #ff0000; font-size: x-small;\">connectionString</span></span></span><span style=\"font-family: Consolas; color: #0000ff; font-size: x-small;\"><span style=\"font-family: Consolas; color: #0000ff; font-size: x-small;\"><span style=\"font-family: Consolas; color: #0000ff; font-size: x-small;\">=</span></span></span><span style=\"font-family: Consolas; font-size: x-small;\"><span style=\"font-family: Consolas; font-size: x-small;\">\"</span></span><span style=\"font-family: Consolas; color: #0000ff; font-size: x-small;\"><span style=\"font-family: Consolas; color: #0000ff; font-size: x-small;\"><span style=\"font-family: Consolas; color: #0000ff; font-size: x-small;\">Server=localhost\\instance2;Database=ASPNETDB;Trusted_Connection=True;</span></span></span><span style=\"font-family: Consolas; font-size: x-small;\"><span style=\"font-family: Consolas; font-size: x-small;\">\"</span></span><span style=\"font-family: Consolas; color: #ff0000; font-size: x-small;\"><span style=\"font-family: Consolas; color: #ff0000; font-size: x-small;\"><span style=\"font-family: Consolas; color: #ff0000; font-size: x-small;\">providerName</span></span></span><span style=\"font-family: Consolas; color: #0000ff; font-size: x-small;\"><span style=\"font-family: Consolas; color: #0000ff; font-size: x-small;\"><span style=\"font-family: Consolas; color: #0000ff; font-size: x-small;\">=</span></span></span><span style=\"font-family: Consolas; font-size: x-small;\"><span style=\"font-family: Consolas; font-size: x-small;\">\"</span></span><span style=\"font-family: Consolas; color: #0000ff; font-size: x-small;\"><span style=\"font-family: Consolas; color: #0000ff; font-size: x-small;\"><span style=\"font-family: Consolas; color: #0000ff; font-size: x-small;\">System.Data.SqlClient</span></span></span><span style=\"font-family: Consolas; font-size: x-small;\"><span style=\"font-family: Consolas; font-size: x-small;\">\"</span></span><span style=\"font-family: Consolas; color: #0000ff; font-size: x-small;\">\r\n<p><span style=\"font-family: Consolas; color: #0000ff; font-size: x-small;\">\r\n<p><span style=\"font-family: Consolas; color: #0000ff; font-size: x-small;\"> /&gt;</span></p>\r\n</span></p>\r\n</span></p>\r\n<pre></pre>\r\n<p>&nbsp;</p>\r\n<div id=\"_mcePaste\" class=\"mcePaste\" style=\"position: absolute; width: 1px; height: 1px; overflow: hidden; top: 0px; left: -10000px;\">﻿</div>",
+    "PostedDate": "2011-03-02T03:19:18.137-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "574331",
+    "ThreadId": "229820",
+    "Html": "<p><span style=\"font-family: Consolas; color: #0000ff; font-size: x-small;\"></span>\n<p>&nbsp;</p>\n<p>&nbsp;</p>\n<div id=\"_mcePaste\" class=\"mcePaste\" style=\"position: absolute; width: 1px; height: 1px; overflow: hidden; top: 0px; left: -10000px;\">﻿</div>\n</p>\n&nbsp;",
+    "PostedDate": "2011-03-02T03:19:20.2-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "575051",
+    "ThreadId": "229820",
+    "Html": "<p>It feels great to know that somebody benefited from my post. Thank you.</p>",
+    "PostedDate": "2011-03-03T07:03:40.37-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "575804",
+    "ThreadId": "229820",
+    "Html": "<p>Remember that is a new project with framework MVC, the functionalityis diferent.</p>\r\n<p>Regards</p>\r\n<p>jnux</p>",
+    "PostedDate": "2011-03-04T13:58:45.947-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

@@ -1,0 +1,45 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 1,
+    "Custom": null,
+    "Description": "I'd like to ask the author of this fine project to take a few minutes and incorporate answers to the dozens of valid issues that have been posted here, and in comments to the project building instructions.\r\n\r\nAs a couple of examples, pointing out that JQuery library version may need to be changed from original downloaded project, and example connection strings to SQL Server database ( vs CE. )\r\n\r\nThese questions have been answered (many times) in the comments, but a quick edit within the article would save frustration to the readers of this otherwise well written article.\r\n",
+    "LastUpdatedDate": "2013-07-15T12:32:46.32-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Unassigned",
+      "Severity": 0,
+      "Id": 0
+    },
+    "ProjectName": "mvcmusicstore",
+    "ReportedDate": "2013-04-30T09:38:14.503-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Update Documentation for MVC project",
+    "Type": {
+      "Name": "Unassigned",
+      "Id": 5
+    },
+    "VoteCount": 3,
+    "Id": 6689
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Yes, it's obvious a huge amount of work went into this project. It seems like a few hours of fixing minor issues (e.g., changing the jquery references to 1.5.1, updating the project to v4, etc) would keep this great example relevant.",
+      "PostedDate": "2013-07-15T12:32:46.32-07:00",
+      "Id": 106086
+    }
+  ]
+}

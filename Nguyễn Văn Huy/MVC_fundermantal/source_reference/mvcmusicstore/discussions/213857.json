@@ -1,0 +1,42 @@
+[
+  {
+    "Id": "447409",
+    "ThreadId": "213857",
+    "Html": "<p>On this page the tutorial tells me to add an Album class to the Models folder. So far so good.</p>\r\n<p>However when I enter this line...</p>\r\n<p>&nbsp;</p>\r\n<div style=\"color:black;background-color:white\">\r\n<pre> [MetadataType(<span style=\"color:blue\">typeof</span>(AlbumMetaData))]\r\n</pre>\r\n</div>\r\n<p>&nbsp;</p>\r\n<p>I get an error on AlbumMetaData which says..</p>\r\n<p>&nbsp;</p>\r\n<pre>The type or namespace name 'AlbumMetaData' could not be found (are you missing a using directive or an assembly reference). </pre>\r\n<p>&nbsp;</p>\r\n<p>I'm pretty sure I am not missing either.</p>\r\n<p>So far I have followed the tutorial word by word and it has all worked as expected. But now I am stuck on page 62 .</p>\r\n<p>What am I missing?</p>\r\n<p>Cheers.</p>\r\n<p>BTW: this is my first crack at MVC and this is a super tutorial. Mind you, coming for ASP.NET 2.0 to this I get the felling I am going to need to read it all again once done.</p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2010-05-25T21:27:14.573-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "449847",
+    "ThreadId": "213857",
+    "Html": "<p>you are missing class AlbumMetaData (on page 62 it's an internal class inside Album). Maybe you misspelled it?</p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2010-06-01T00:05:55.73-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "531955",
+    "ThreadId": "213857",
+    "Html": "\r\n<p>I am having the same issue.&nbsp; There is no referrence to creating an AlbumnMetaData class anywhere in the turorial.&nbsp; Page 62 is not even related to validation.&nbsp; Where can I find the code to create this class for this project?</p>\r\n<p>Thanks!!!</p>\r\n",
+    "PostedDate": "2010-12-06T12:56:46.303-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "532011",
+    "ThreadId": "213857",
+    "Html": "\r\n<p>AlbumMetaData is described on page 98 of the v1 PDF, in section 6. You can see this online here:\r\n<a href=\"http://www.asp.net/mvc/tutorials/mvc-music-store-part-6\">http://www.asp.net/mvc/tutorials/mvc-music-store-part-6</a></p>\r\n<p>Here's the code for that class:</p>\r\n<div style=\"color:black; background-color:white\">\r\n<pre><span style=\"color:blue\">using</span> System.ComponentModel;\r\n<span style=\"color:blue\">using</span> System.ComponentModel.DataAnnotations;\r\n<span style=\"color:blue\">using</span> System.Web.Mvc;\r\n \r\n<span style=\"color:blue\">namespace</span> MvcMusicStore.Models\r\n{\r\n    [MetadataType(<span style=\"color:blue\">typeof</span>(AlbumMetaData))]\r\n    <span style=\"color:blue\">public</span> <span style=\"color:blue\">partial</span> <span style=\"color:blue\">class</span> Album\r\n    {\r\n        <span style=\"color:green\">// Validation rules for the Album class</span>\r\n \r\n        [Bind(Exclude = <span style=\"color:#a31515\">&quot;AlbumId&quot;</span>)]\r\n        <span style=\"color:blue\">public</span> <span style=\"color:blue\">class</span> AlbumMetaData\r\n        {\r\n            [ScaffoldColumn(<span style=\"color:blue\">false</span>)]\r\n            <span style=\"color:blue\">public</span> <span style=\"color:blue\">object</span> AlbumId { <span style=\"color:blue\">get</span>; <span style=\"color:blue\">set</span>; }\r\n \r\n            [DisplayName(<span style=\"color:#a31515\">&quot;Genre&quot;</span>)]\r\n            <span style=\"color:blue\">public</span> <span style=\"color:blue\">object</span> GenreId { <span style=\"color:blue\">get</span>; <span style=\"color:blue\">set</span>; }\r\n \r\n            [DisplayName(<span style=\"color:#a31515\">&quot;Artist&quot;</span>)]\r\n            <span style=\"color:blue\">public</span> <span style=\"color:blue\">object</span> ArtistId { <span style=\"color:blue\">get</span>; <span style=\"color:blue\">set</span>; }\r\n \r\n            [Required(ErrorMessage = <span style=\"color:#a31515\">&quot;An Album Title is required&quot;</span>)]\r\n            [StringLength(160)]\r\n            <span style=\"color:blue\">public</span> <span style=\"color:blue\">object</span> Title { <span style=\"color:blue\">get</span>; <span style=\"color:blue\">set</span>; }\r\n \r\n            [DisplayName(<span style=\"color:#a31515\">&quot;Album Art URL&quot;</span>)]\r\n            [StringLength(1024)]\r\n            <span style=\"color:blue\">public</span> <span style=\"color:blue\">object</span> AlbumArtUrl { <span style=\"color:blue\">get</span>; <span style=\"color:blue\">set</span>; }\r\n \r\n            [Required(ErrorMessage = <span style=\"color:#a31515\">&quot;Price is required&quot;</span>)]\r\n            [Range(0.01, 100.00, \r\n                ErrorMessage = <span style=\"color:#a31515\">&quot;Price must be between 0.01 and 100.00&quot;</span>)]\r\n            <span style=\"color:blue\">public</span> <span style=\"color:blue\">object</span> Price { <span style=\"color:blue\">get</span>; <span style=\"color:blue\">set</span>; }\r\n        }\r\n    }\r\n}\r\n</pre>\r\n</div>\r\n",
+    "PostedDate": "2010-12-06T15:24:51.967-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "532242",
+    "ThreadId": "213857",
+    "Html": "\r\n<p>Thanks for the info!!</p>\r\n",
+    "PostedDate": "2010-12-07T05:33:15.477-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

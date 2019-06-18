@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "922691",
+    "ThreadId": "398260",
+    "Html": "\r\n<p><span>I have followed the tutorial step by step, but these two are null - not reading from sampledata.cs for some reason. They are:</span></p>\r\n<p><span>When I run project, the home page at index() action is still smooth, but when i click on Store link,&nbsp;</span></p>\r\n<p><span>It's display a message In StoreController at the line of code:&nbsp;</span></p>\r\n<p><span>var genres = storeDB.Genres.ToList(); and message:&nbsp;Unable to find the requested .Net Framework Data Provider. &nbsp;It may not be installed.</span></p>\r\n<p><span>and the same error in the line of code&nbsp;var genreModel = storeDB.Genres.Include(&quot;Albums&quot;).Single(g =&gt; g.Name == genre); in another case.</span></p>\r\n<p><span><span>can anyone offer a direction?</span></span></p>\r\n<p><span><span>thank you!</span></span></p>\r\n<p><span><span>HungTran</span></span></p>\r\n",
+    "PostedDate": "2012-10-05T19:52:57.593-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

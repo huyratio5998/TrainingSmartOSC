@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "990242",
+    "ThreadId": "430410",
+    "Html": "\r\n<p>Hello</p>\r\n<p>&nbsp;</p>\r\n<p>I don't know how to finish Chapter 4.</p>\r\n<p>When I finished part &quot;Updating the Store Index to query the database&quot; and started the project, there was no genres list on Shop site. It looks like the data was empty, but I added SampleData to the project and did every part of tutorial before this step.\r\n It just looks like in ferry2 case:</p>\r\n<p>http://store.picbg.net/pubpic/7D/E5/8113df2043e87de5.jpg</p>\r\n",
+    "PostedDate": "2013-01-22T03:41:26.65-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "991735",
+    "ThreadId": "430410",
+    "Html": "\r\n<p>Hello Yaggar,</p>\r\n<p>&nbsp;</p>\r\n<p>You must have made an typo error somewhere in part 3 and 4 because when you have done everything well, you must see this</p>\r\n<h3>Browse Genres</h3>\r\n<p>Select from 10 genres:</p>\r\n<ul>\r\n<li><a href=\"http://localhost:57252/Store/Browse?genre=Classical\">Classical</a> </li><li><a href=\"http://localhost:57252/Store/Browse?genre=Jazz\">Jazz</a> </li><li><a href=\"http://localhost:57252/Store/Browse?genre=Rock\">Rock</a> </li><li><a href=\"http://localhost:57252/Store/Browse?genre=Pop\">Pop</a> </li><li><a href=\"http://localhost:57252/Store/Browse?genre=Disco\">Disco</a> </li><li><a href=\"http://localhost:57252/Store/Browse?genre=Latin\">Latin</a> </li><li><a href=\"http://localhost:57252/Store/Browse?genre=Metal\">Metal</a> </li><li><a href=\"http://localhost:57252/Store/Browse?genre=Alternative\">Alternative</a>\r\n</li><li><a href=\"http://localhost:57252/Store/Browse?genre=Reggae\">Reggae</a> </li><li><a href=\"http://localhost:57252/Store/Browse?genre=Blues\">Blues</a> </li></ul>\r\n<p>&nbsp;</p>\r\n<p><strong>Check the music store Index.cshtml</strong></p>\r\n",
+    "PostedDate": "2013-01-24T12:39:15.673-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

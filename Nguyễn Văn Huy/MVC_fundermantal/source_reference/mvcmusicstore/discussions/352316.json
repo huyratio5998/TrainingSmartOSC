@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "823892",
+    "ThreadId": "352316",
+    "Html": "\r\n<p>Getting the error above when creating the ShoppingCart class which is on the end of page 96.</p>\r\n<p>&nbsp;</p>\r\n<p>Error is on this line:</p>\r\n<p>&nbsp;</p>\r\n<p></p>\r\n<pre>order.Total = orderTotal;</pre>\r\n<p></p>\r\n",
+    "PostedDate": "2012-04-14T13:05:11.4-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

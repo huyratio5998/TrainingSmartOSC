@@ -1,0 +1,74 @@
+[
+  {
+    "Id": "539474",
+    "ThreadId": "239288",
+    "Html": "\r\n<p>Hi,</p>\r\n<p>Is anyone can instruct me how to get the logo on page 27 (Ver. 1.0 Tutorial documentation) screen shot? I follow exactly the procedures as the tutorial documentation. What I got&nbsp;was only the word of &quot;ASP.NET MVC MUSIC STORE&quot; like this:</p>\r\n<p>&#65279;&#65279;ASP.NET MVC MUSIC STORE</p>\r\n<p>&nbsp;&nbsp; . Home</p>\r\n<p>&nbsp; . Store</p>\r\n<p>This is the Home Page</p>\r\n<p>&nbsp;</p>\r\n<p>Am I doing anything wrong or the documentation is wrong? Thanks.</p>\r\n<p>&nbsp;</p>\r\n",
+    "PostedDate": "2010-12-22T10:43:06.493-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "539518",
+    "ThreadId": "239288",
+    "Html": "\r\n<p>Some things to check:</p>\r\n<ol>\r\n<li>Did you include the stylesheet and images as shown in the picture on page 22?\r\n</li><li>Is your link to the stylesheet (Site.css) correct, as shown in the code block at the top of page 22?\r\n</li><li>Is your /Home/Index.aspx view using the Master Page? Check that the top line of that file matches the code block shown on page 26.\r\n</li></ol>\r\n",
+    "PostedDate": "2010-12-22T12:18:18.25-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "539633",
+    "ThreadId": "239288",
+    "Html": "\r\n<p><span style=\"text-decoration:underline\">Site.Master</span></p>\r\n<div style=\"color:black; background-color:white\">\r\n<pre><span style=\"color:blue\">&lt;</span><span style=\"color:#a31515\">head</span> <span style=\"color:red\">runat</span><span style=\"color:blue\">=</span><span style=\"color:blue\">&quot;server&quot;</span><span style=\"color:blue\">&gt;</span>\r\n    <span style=\"color:blue\">&lt;</span><span style=\"color:#a31515\">link</span> <span style=\"color:red\">href</span><span style=\"color:blue\">=</span><span style=\"color:blue\">&quot;/Content/Site.css&quot;</span> <span style=\"color:red\">rel</span><span style=\"color:blue\">=</span><span style=\"color:blue\">&quot;Stylesheet&quot;</span> <span style=\"color:red\">type</span><span style=\"color:blue\">=</span><span style=\"color:blue\">&quot;text/css&quot;</span> <span style=\"color:blue\">/&gt;</span>\r\n    <span style=\"color:blue\">&lt;</span><span style=\"color:#a31515\">title</span><span style=\"color:blue\">&gt;</span><span style=\"color:blue\">&lt;</span><span style=\"color:#a31515\">asp</span><span style=\"color:blue\">:</span><span style=\"color:#a31515\">ContentPlaceHolder</span> <span style=\"color:red\">ID</span><span style=\"color:blue\">=</span><span style=\"color:blue\">&quot;TitleContent&quot;</span> <span style=\"color:red\">runat</span><span style=\"color:blue\">=</span><span style=\"color:blue\">&quot;server&quot;</span> <span style=\"color:blue\">/&gt;</span><span style=\"color:blue\">&lt;/</span><span style=\"color:#a31515\">title</span><span style=\"color:blue\">&gt;</span>\r\n<span style=\"color:blue\">&lt;/</span><span style=\"color:#a31515\">head</span><span style=\"color:blue\">&gt;</span>\r\n</pre>\r\n</div>\r\n<p><span style=\"color:#000000; text-decoration:underline\"><span style=\"font-size:x-small; font-family:Consolas\"><span style=\"font-size:x-small; font-family:Consolas\"><span style=\"font-size:x-small; font-family:Consolas\"><span style=\"font-size:x-small; font-family:Consolas\"><span style=\"font-size:x-small; font-family:Consolas\"><span style=\"font-size:x-small; font-family:Consolas\"><span style=\"font-size:x-small; font-family:Consolas\"><span style=\"font-size:x-small; font-family:Consolas\"><span style=\"font-size:x-small; font-family:Consolas\"><span style=\"font-size:x-small; font-family:Consolas\"><span style=\"font-size:x-small; font-family:Consolas\"><span style=\"font-size:x-small; font-family:Consolas\"><span style=\"font-size:x-small; font-family:Consolas\"><span style=\"font-size:x-small; font-family:Consolas\">Index.aspx</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></p>\r\n<div style=\"color:black; background-color:white\">\r\n<pre><p><span style=\"color:#000000\"><span style=\"font-size:x-small; font-family:Consolas\"><span style=\"font-size:x-small; font-family:Consolas\"><span style=\"font-size:x-small; font-family:Consolas\"><span style=\"font-size:x-small; font-family:Consolas\"><span style=\"font-size:x-small; font-family:Consolas\"><span style=\"font-size:x-small; font-family:Consolas\"><span style=\"font-size:x-small; font-family:Consolas\"><span style=\"font-size:x-small; font-family:Consolas\"><span style=\"font-size:x-small; font-family:Consolas\"><span style=\"font-size:x-small; font-family:Consolas\"><span style=\"font-size:x-small; font-family:Consolas\"><span style=\"font-size:x-small; font-family:Consolas\"><span style=\"font-size:x-small; font-family:Consolas\"><span style=\"font-size:x-small; font-family:Consolas\"></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span style=\"color:#000000\"><span style=\"font-size:x-small; font-family:Consolas\"><span style=\"font-size:x-small; font-family:Consolas\"><span style=\"font-size:x-small; font-family:Consolas\"><span style=\"font-size:x-small; font-family:Consolas\"><span style=\"font-size:x-small; font-family:Consolas\"><span style=\"font-size:x-small; font-family:Consolas\"><span style=\"font-size:x-small; font-family:Consolas\"><span style=\"font-size:x-small; font-family:Consolas\"><span style=\"font-size:x-small; font-family:Consolas\"><span style=\"font-size:x-small; font-family:Consolas\"><span style=\"font-size:x-small; font-family:Consolas\"><span style=\"font-size:x-small; font-family:Consolas\"><span style=\"font-size:x-small; font-family:Consolas\"><span style=\"font-size:x-small; font-family:Consolas\"><span style=\"color:blue\">@</span> <span style=\"color:#a31515\">Page</span> <span style=\"color:red\">Language</span><span style=\"color:blue\">=</span><span style=\"color:blue\">&quot;C#&quot;</span> <span style=\"color:red\">MasterPageFile</span><span style=\"color:blue\">=</span><span style=\"color:blue\">&quot;~/Views/Shared/Site.Master&quot;</span> \r\n    <span style=\"color:red\">Inherits</span><span style=\"color:blue\">=</span><span style=\"color:blue\">&quot;System.Web.Mvc.ViewPage&quot;</span> <span style=\"background-color:yellow\">%&gt;</span>\r\n\r\n<span style=\"color:blue\">&lt;</span><span style=\"color:#a31515\">asp</span><span style=\"color:blue\">:</span><span style=\"color:#a31515\">Content</span> <span style=\"color:red\">ID</span><span style=\"color:blue\">=</span><span style=\"color:blue\">&quot;Content1&quot;</span> <span style=\"color:red\">ContentPlaceHolderID</span><span style=\"color:blue\">=</span><span style=\"color:blue\">&quot;TitleContent&quot;</span> <span style=\"color:red\">runat</span><span style=\"color:blue\">=</span><span style=\"color:blue\">&quot;server&quot;</span><span style=\"color:blue\">&gt;</span>\r\n\tHome\r\n<span style=\"color:blue\">&lt;/</span><span style=\"color:#a31515\">asp</span><span style=\"color:blue\">:</span><span style=\"color:#a31515\">Content</span><span style=\"color:blue\">&gt;</span>\r\n\r\n<span style=\"color:blue\">&lt;</span><span style=\"color:#a31515\">asp</span><span style=\"color:blue\">:</span><span style=\"color:#a31515\">Content</span> <span style=\"color:red\">ID</span><span style=\"color:blue\">=</span><span style=\"color:blue\">&quot;Content2&quot;</span> <span style=\"color:red\">ContentPlaceHolderID</span><span style=\"color:blue\">=</span><span style=\"color:blue\">&quot;MainContent&quot;</span> <span style=\"color:red\">runat</span><span style=\"color:blue\">=</span><span style=\"color:blue\">&quot;server&quot;</span><span style=\"color:blue\">&gt;</span>\r\n\r\n    <span style=\"color:blue\">&lt;</span><span style=\"color:#a31515\">h2</span><span style=\"color:blue\">&gt;</span>This is the Home Page<span style=\"color:blue\">&lt;/</span><span style=\"color:#a31515\">h2</span><span style=\"color:blue\">&gt;</span>\r\n\r\n<span style=\"color:blue\">&lt;/</span><span style=\"color:#a31515\">asp</span><span style=\"color:blue\">:</span><span style=\"color:#a31515\">Content</span><span style=\"color:blue\">&gt;</span>\r\n</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></p><div style=\"color:black; background-color:white\"><pre><span style=\"background-color:yellow\">&lt;% </span></pre>\r\n</div>\r\n</pre>\r\n</div>\r\n<p><span style=\"color:#000000\"><span style=\"font-size:x-small; font-family:Consolas\"><span style=\"font-size:x-small; font-family:Consolas\"><span style=\"font-size:x-small; font-family:Consolas\"><span style=\"font-size:x-small; font-family:Consolas\"><span style=\"font-size:x-small; font-family:Consolas\"><span style=\"font-size:x-small; font-family:Consolas\"><span style=\"font-size:x-small; font-family:Consolas\"><span style=\"font-size:x-small; font-family:Consolas\"><span style=\"font-size:x-small; font-family:Consolas\"><span style=\"font-size:x-small; font-family:Consolas\"><span style=\"font-size:x-small; font-family:Consolas\"><span style=\"font-size:x-small; font-family:Consolas\"><span style=\"font-size:x-small; font-family:Consolas\"><span style=\"font-size:x-small; font-family:Consolas\">It\r\n seems like the Site.css file can not be located. Any suggestion? Thanks.</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></p>\r\n<div style=\"color:black; background-color:white\"><span style=\"color:#000000\"><span style=\"font-size:x-small; font-family:Consolas\"><span style=\"font-size:x-small; font-family:Consolas\"><span style=\"font-size:x-small; font-family:Consolas\"><span style=\"font-size:x-small; font-family:Consolas\"><span style=\"font-size:x-small; font-family:Consolas\"><span style=\"font-size:x-small; font-family:Consolas\"><span style=\"font-size:x-small; font-family:Consolas\"><span style=\"font-size:x-small; font-family:Consolas\"><span style=\"font-size:x-small; font-family:Consolas\"><span style=\"font-size:x-small; font-family:Consolas\"><span style=\"font-size:x-small; font-family:Consolas\"><span style=\"font-size:x-small; font-family:Consolas\"><span style=\"font-size:x-small; font-family:Consolas\"><span style=\"font-size:x-small; font-family:Consolas\">&nbsp;</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></div>\r\n",
+    "PostedDate": "2010-12-22T16:09:11.797-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "539714",
+    "ThreadId": "239288",
+    "Html": "\r\n<p>Can you verify that your /Content directory looks the same as the screenshot on page 22? Can you upload or link to a screenshot of your solution folder?</p>\r\n",
+    "PostedDate": "2010-12-22T19:59:35.303-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "539977",
+    "ThreadId": "239288",
+    "Html": "\r\n<p>I copied the Site.css from the MvcMusicStore-Completed directory and switch to Google Chrome (instead of IE). It works right now. I don't know which one contribute to the result. I am so glad that I can continue the tutorial. Thank you very much for the\r\n help.</p>\r\n",
+    "PostedDate": "2010-12-23T09:42:22.2-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "540084",
+    "ThreadId": "239288",
+    "Html": "\r\n<p>Hi,</p>\r\n<p>Anyone can tell me why:</p>\r\n<p>(1) I got stuck again. When I tried to run up to tutorial page 64 (with http://localhost:1843/StoreManager), the system error with the NULL value in the &quot;foreach (var item in\r\n<strong>Model</strong>)&quot;. When did this &quot;Model&quot; value get assigned?</p>\r\n<p>(2) At tutorial page 66, the compiler has error &quot;error CS0721: 'MvcMusicStore.Helpers.HtmlHelpers': static types cannot be used as parameters&quot;. Any idea about this. Thank you in advance for the help.</p>\r\n<p>&nbsp;</p>\r\n",
+    "PostedDate": "2010-12-23T14:51:37.41-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "542300",
+    "ThreadId": "239288",
+    "Html": "\r\n<p>Hi,</p>\r\n<p>I can go through to page 96 of the tutorial document without problem.</p>\r\n<p>In page <strong>96</strong>, how do I add the &lt;Cancel&gt; selection in case of user wants to cancel out of the Deletion mode? Thanks for the help.</p>\r\n<p>&nbsp;</p>\r\n",
+    "PostedDate": "2010-12-30T12:13:12.433-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "707577",
+    "ThreadId": "239288",
+    "Html": "<p>Although an old thread, I had the same problem today using&nbsp;(IE9 64 bit, Music Store v 3.0)&nbsp;and finding a solution, I thought I'd share...</p>\r\n<p>You need to clear IE's cache...</p>\r\n<p>On IE9 menu, Tools / Internet options / Browsing history / Delete...</p>\r\n<p>I had several items checked when I hit the Delete button, but I suspect it is the \"Temoprary Internet file\" is the ticket.</p>\r\n<p>Good luck.</p>",
+    "PostedDate": "2011-12-05T07:46:25.967-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "716737",
+    "ThreadId": "239288",
+    "Html": "<p>deleting just the \"Temporary Internet Files\" worked</p>",
+    "PostedDate": "2011-12-23T11:38:36.487-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

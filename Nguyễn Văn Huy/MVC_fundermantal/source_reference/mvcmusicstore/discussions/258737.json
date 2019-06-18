@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "617136",
+    "ThreadId": "258737",
+    "Html": "<p>Working through all 135 pages of the tutorial in detail.</p>\n<p>Was going great until I got to section 8.</p>\n<p>&nbsp;</p>\n<p><a title=\"Section 8 Go to ShoppingCart Class\" href=\"http://www.asp.net/mvc/tutorials/mvc-music-store-part-8\" target=\"_blank\">http://www.asp.net/mvc/tutorials/mvc-music-store-part-8</a></p>\n<p>Please go to the shopping cart class.</p>\n<p>Due to the my lack of expereince with the subject, I can't understand the purpose of the helper method below.</p>\n<p>&nbsp;</p>\n<p>Also, not clear on the two GetCart methods. I know they are overridden with different signatures, it is just not registering with me why.</p>\n<p>&nbsp;</p>\n<p>Can someone help my old brain.</p>\n<p>&nbsp;This text does not seem to be enough for it to gel with me:</p>\n<p><span style=\"color: #00ff00;\"><em><strong>GetCart</strong> is a static method which allows our controllers to obtain a cart object. It uses the <strong>GetCartId</strong> method to handle reading the CartId from the user&rsquo;s session. The GetCartId method requires the HttpContextBase so that it can read the user&rsquo;s CartId from user&rsquo;s session.</em></span></p>\n<p>&nbsp;</p>\n<div style=\"color: black; background-color: white;\">\n<pre>        <span style=\"color: blue;\">public</span> <span style=\"color: blue;\">static</span> ShoppingCart GetCart(HttpContextBase context) \r\n        { \r\n            <span style=\"color: blue;\">var</span> cart = <span style=\"color: blue;\">new</span> ShoppingCart(); \r\n            cart.ShoppingCartId = cart.GetCartId(context); \r\n            <span style=\"color: blue;\">return</span> cart; \r\n        } \r\n        <span style=\"color: green;\">// Helper method to simplify shopping cart calls </span>\r\n        <span style=\"color: blue;\">public</span> <span style=\"color: blue;\">static</span> ShoppingCart GetCart(Controller controller) \r\n        { \r\n            <span style=\"color: blue;\">return</span> GetCart(controller.HttpContext); \r\n        }\r\n\r\n</pre>\n</div>",
+    "PostedDate": "2011-05-23T23:17:29.61-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "619866",
+    "ThreadId": "258737",
+    "Html": "<p>I really need some further help understanding this.</p>\r\n<p>Why can't I just call the session variable directly like I used to do in old ASP.</p>\r\n<p>My basis for knowledge is classic asp.&nbsp; Just a little asp.net before MVC.</p>",
+    "PostedDate": "2011-05-28T16:49:13.14-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

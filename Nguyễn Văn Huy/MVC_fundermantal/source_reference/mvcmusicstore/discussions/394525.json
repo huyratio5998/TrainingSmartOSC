@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "908822",
+    "ThreadId": "394525",
+    "Html": "\r\n<p>Hello! Please, help me!. I need to make store like this, but genres should <strong>\r\nnot be link</strong>s, but items of Dropdownlist. When the genre from the dropdownlist is choosen, below should appear albums of that genre. What&nbsp; should I&nbsp; change?<br>\r\nNow I have this:<br>\r\n<br>\r\n&lt;ul&gt;<br>\r\n&lt;% foreach (string genreName in Model.Genre)<br>\r\n{ %&gt;<br>\r\n&lt;li&gt;<br>\r\n&lt;%: Html.ActionLink(genreName, &quot;Browse&quot;, &quot;Store&quot;, new { genre = genreName }, null)%&gt;<br>\r\n&lt;/li&gt;<br>\r\n&lt;% } %&gt;<br>\r\n&lt;/ul&gt;</p>\r\n<p>Thank you beforehand for your answers.</p>\r\n",
+    "PostedDate": "2012-09-05T12:05:48.18-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

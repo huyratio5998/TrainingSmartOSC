@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "586874",
+    "ThreadId": "251302",
+    "Html": "\r\n<p>Hi there,</p>\r\n<p>I am trying to build a new project ASP MVC 3. I want to use EF Code First as db link. I have the database outside the folder of the project. Is there an option to make it work? Somehow..provide sql connection and EF to know how to make connection with database?</p>\r\n<p>Or how actualy works EF Coce? As I seen on a thread is good to know that name of the class has to be as the connection string name, right? Something else to consider?</p>\r\n",
+    "PostedDate": "2011-03-26T05:15:09.937-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "588621",
+    "ThreadId": "251302",
+    "Html": "<p>EF (Code First or not) will need a database connection string. You can attach an MDF file as an instance in SQL Server, but I highly recommend following the tutorial and using SQL Express w/ App_Data if possible. A large percentage of the questions here are due to setting up the database differently from how the tutorial specifies.</p>",
+    "PostedDate": "2011-03-30T00:15:37.637-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

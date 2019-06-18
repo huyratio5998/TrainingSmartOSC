@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "948321",
+    "ThreadId": "404888",
+    "Html": "\r\n<p>How do I make this stop?</p>\r\n<p>Error&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Assembly 'Microsoft.Web.WebPages.OAuth, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35' uses 'WebMatrix.WebData, Version=2.0.0.0,\r\n Culture=neutral, PublicKeyToken=31bf3856ad364e35' which has a higher version than referenced assembly 'WebMatrix.WebData, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35'&nbsp; c:\\Program Files\\Microsoft ASP.NET\\ASP.NET Web Pages\\v2.0\\Assemblies\\Microsoft.Web.WebPages.OAuth.dll</p>\r\n",
+    "PostedDate": "2012-11-28T06:37:36.103-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "948581",
+    "ThreadId": "404888",
+    "Html": "\r\n<div>\r\n<p>You can specify a version number of in NuGet Package Manager Console with the following nomenclature:<br>\r\n<br>\r\n</p>\r\n<pre><span>\tPM</span><span>&gt;</span><span> </span><span>Install</span><span>-</span><span>Package</span><span> </span><span>WebMatrix</span><span>.</span><span>WebData</span><span> </span><span>-</span><span>Version</span><span> </span><span>2.0</span><span>.</span><span>20505.0</span></pre>\r\n<p><span>Reference</span><span>:</span></p>\r\n<p><a href=\"http://nuget.org/packages/WebMatrix.WebData/2.0.20505.0\">http://nuget.org/packages/WebMatrix.WebData/2.0.20505.0</a></p>\r\n</div>\r\n",
+    "PostedDate": "2012-11-28T12:39:02.51-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

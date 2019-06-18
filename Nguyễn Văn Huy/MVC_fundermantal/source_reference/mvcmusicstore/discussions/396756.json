@@ -1,0 +1,42 @@
+[
+  {
+    "Id": "916989",
+    "ThreadId": "396756",
+    "Html": "\r\n<p>hello -</p>\r\n<p>&nbsp;</p>\r\n<p>I have followed the tutorial step by step, but these two are null - not reading from sampledata.cs for some reason.&nbsp; these remain null despite initialization in global.asax.&nbsp; can anyone offer a direction?</p>\r\n<p>&nbsp;</p>\r\n<p>thank you</p>\r\n<p>Harvey</p>\r\n",
+    "PostedDate": "2012-09-24T19:51:52.153-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "916994",
+    "ThreadId": "396756",
+    "Html": "\r\n<div style=\"font-family:Tahoma; font-size:10pt; color:#000000; margin:0\">Can you delete the database (\\App_Data\\MvcMusicStore.sdf), set a breakpoint in sampledata.cs Seed method, and see if it's being called?\r\n<div><br>\r\n<hr tabindex=\"-1\">\r\n<div id=\"divRplyFwdMsg\"><font face=\"Calibri, sans-serif\" color=\"#000000\" style=\"font-size:11pt\"><b>From:</b> hflaisher<br>\r\n<b>Sent:</b> Monday, September 24, 2012 7:52 PM<br>\r\n<b>To:</b> Jon Galloway<br>\r\n<b>Subject:</b> genres and artists are null - seeding does not seem to work [mvcmusicstore:396756]<br>\r\n</font><br>\r\n</div>\r\n<div></div>\r\n<div>\r\n<p>From: hflaisher</p>\r\n<div id=\"ThreadNotificationPostBody\">\r\n<p>hello -</p>\r\n<p></p>\r\n<p>I have followed the tutorial step by step, but these two are null - not reading from sampledata.cs for some reason. these remain null despite initialization in global.asax. can anyone offer a direction?</p>\r\n<p></p>\r\n<p>thank you</p>\r\n<p>Harvey</p>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n",
+    "PostedDate": "2012-09-24T20:24:14.47-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "917221",
+    "ThreadId": "396756",
+    "Html": "Hello jongalloway:<br>\r\n<br>\r\nthank you for responding. Yes, I have tried that and it is indeed being executed, but no database. I have also put in the db from the completed MusicStore project and the Genres are not being read from there either. I have checked connection strings, etc on\r\n my proj against the completed MusicStore (which does work) and I cannot find any differences at all.<br>\r\n<br>\r\nany other suggestions?<br>\r\n<br>\r\nthanks<br>\r\nHarvey<br>\r\n<br>\r\n<br>\r\n<br>\r\n<br>\r\n<div>On Mon, Sep 24, 2012 at 11:24 PM, jongalloway <span dir=\"ltr\">&lt;<a href=\"mailto:notifications@codeplex.com\" target=\"_blank\">notifications@codeplex.com</a>&gt;</span> wrote:<br>\r\n<blockquote style=\"margin:0 0 0 .8ex; border-left:1px #ccc solid; padding-left:1ex\">\r\n<div>\r\n<p>From: jongalloway</p>\r\n<div>\r\n<div style=\"font-size:10pt; margin:0; font-family:Tahoma\">Can you delete the database (\\App_Data\\MvcMusicStore.sdf), set a breakpoint in sampledata.cs Seed method, and see if it's being called?\r\n<div><br>\r\n<hr>\r\n<div><font color=\"#000000\" face=\"Calibri, sans-serif\" style=\"font-size:11pt\"><b>From:</b> hflaisher<br>\r\n<b>Sent:</b> Monday, September 24, 2012 7:52 PM<br>\r\n<b>To:</b> Jon Galloway<br>\r\n<b>Subject:</b> genres and artists are null - seeding does not seem to work [mvcmusicstore:396756]<br>\r\n</font><br>\r\n</div>\r\n<div></div>\r\n<div>\r\n<p>From: hflaisher</p>\r\n<div>\r\n<p>hello -</p>\r\n<p></p>\r\n<p>I have followed the tutorial step by step, but these two are null - not reading from sampledata.cs for some reason. these remain null despite initialization in global.asax. can anyone offer a direction?</p>\r\n<p></p>\r\n<p>thank you</p>\r\n<p>Harvey</p>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n<div>\r\n<p>Read the <a href=\"http://mvcmusicstore.codeplex.com/discussions/396756#post916994\" target=\"_blank\">\r\nfull discussion online</a>.</p>\r\n<p>To add a post to this discussion, reply to this email (<a href=\"mailto:mvcmusicstore@discussions.codeplex.com?subject=[mvcmusicstore:396756]\" target=\"_blank\">mvcmusicstore@discussions.codeplex.com</a>)</p>\r\n<p>To start a new discussion for this project, email <a href=\"mailto:mvcmusicstore@discussions.codeplex.com\" target=\"_blank\">\r\nmvcmusicstore@discussions.codeplex.com</a></p>\r\n<p>You are receiving this email because you subscribed to this discussion on CodePlex. You can\r\n<a href=\"https://mvcmusicstore.codeplex.com/discussions/396756/unsubscribe/\" target=\"_blank\">\r\nunsubscribe</a> on CodePlex.com.</p>\r\n<p>Please note: Images and attachments will be removed from emails. Any posts to this discussion will also be available online at CodePlex.com</p>\r\n</div>\r\n</div>\r\n</blockquote>\r\n</div>\r\n<br>\r\n",
+    "PostedDate": "2012-09-25T06:30:44.69-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "925816",
+    "ThreadId": "396756",
+    "Html": "<p>I have same problem with you, but i fixed it, My application could read data from sampleData.cs.</p>\r\n<p>You have to install SQL Server Compact Edition from install web component, then use connection string in the MvcMusicStore tutorial.</p>\r\n<p>After that, you can run your application smoothly.</p>\r\n<p>Regards!</p>",
+    "PostedDate": "2012-10-12T07:04:34.57-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "925837",
+    "ThreadId": "396756",
+    "Html": "Thank you very much.<br>\r\n<br>\r\nI did install CE and I also used the identical conn string and nothing would work. I eventually just copied the complete db from the completed MusicStore app and used it instead.\r\n<br>\r\n<br>\r\nregards<br>\r\nHarvey<br>\r\n<br>\r\n<div>On Fri, Oct 12, 2012 at 10:04 AM, hungtv01116 <span dir=\"ltr\">&lt;<a href=\"mailto:notifications@codeplex.com\" target=\"_blank\">notifications@codeplex.com</a>&gt;</span> wrote:<br>\r\n<blockquote style=\"margin:0 0 0 .8ex; border-left:1px #ccc solid; padding-left:1ex\">\r\n<div>\r\n<p>From: hungtv01116</p>\r\n<div>\r\n<p>I have same problem with you, but i fixed it, My application could read data from sampleData.cs.</p>\r\n<p>You have to install SQL Server Compact Edition from install web component, then use connection string in the MvcMusicStore tutorial.</p>\r\n<p>After that, you can run your application smoothly.</p>\r\n<p>Regards!</p>\r\n</div>\r\n<div>\r\n<p>Read the <a href=\"http://mvcmusicstore.codeplex.com/discussions/396756#post925816\" target=\"_blank\">\r\nfull discussion online</a>.</p>\r\n<p>To add a post to this discussion, reply to this email (<a href=\"mailto:mvcmusicstore@discussions.codeplex.com?subject=[mvcmusicstore:396756]\" target=\"_blank\">mvcmusicstore@discussions.codeplex.com</a>)</p>\r\n<p>To start a new discussion for this project, email <a href=\"mailto:mvcmusicstore@discussions.codeplex.com\" target=\"_blank\">\r\nmvcmusicstore@discussions.codeplex.com</a></p>\r\n<p>You are receiving this email because you subscribed to this discussion on CodePlex. You can\r\n<a href=\"https://mvcmusicstore.codeplex.com/discussions/396756/unsubscribe/\" target=\"_blank\">\r\nunsubscribe</a> on CodePlex.com.</p>\r\n<p>Please note: Images and attachments will be removed from emails. Any posts to this discussion will also be available online at CodePlex.com</p>\r\n</div>\r\n</div>\r\n</blockquote>\r\n</div>\r\n<br>\r\n",
+    "PostedDate": "2012-10-12T07:41:05.103-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

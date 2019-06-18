@@ -1,0 +1,45 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 1,
+    "Custom": null,
+    "Description": "Hi,\r\n\r\nJust went through page 50 regarding adding Albums into my 'Genres' \r\n\r\nThe tutorial tells me to add: \r\n\r\npublic ActionResult Browse(string genre) \r\n { \r\n    // Retrieve Genre and its Associated Albums from database \r\n    var genreModel = storeDB.Genres.Include(\"Albums\") \r\n        .Single(g => g.Name == genre); \r\n  \r\n    return View(genreModel); \r\n }\r\n\r\nin my Storecontroller.cs\r\n\r\nApperently I have missed something. \r\n\r\nI get a red underline on 'storedb' - Error message: The name 'storeDB' does not exists in the current context.\r\nWhat have I possible missed? \r\n\r\nThanks for a great guide and learning sandbox.\r\n\r\n/Regards David",
+    "LastUpdatedDate": "2012-04-02T07:14:24.25-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "mvcmusicstore",
+    "ReportedDate": "2012-03-20T11:52:14.067-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "storedb (Browse Store Controller)",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 6677
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Hi David,\n\nMake sure who have declared the class member storeDB variable in the beginning of the class. You need to add the line :\n   MusicStoreEntities storeDB = new MusicStoreEntities();\nto the beginning of the class. \n\nRegards, Deon",
+      "PostedDate": "2012-04-02T07:14:24.25-07:00",
+      "Id": 60340
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "839493",
+    "ThreadId": "356733",
+    "Html": "\r\n<p>Has anyone noticed that the browse.cshtml rendering drops all of the images, etc. BELOW the left GenreMenu.cshtml if there are more items than can appear to the right of the sidebar? For example, select Classical vs. Pop.</p>\r\n<p>I am not an expert on CSS and have not been able to get the browse list to appear in the main content area to the right of the left nav menu as expected.</p>\r\n<p>Does anyone know what needs to change in site.css to make this work properly?</p>\r\n",
+    "PostedDate": "2012-05-22T09:50:35.08-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "839517",
+    "ThreadId": "356733",
+    "Html": "<p>Ok, made the following changes that seem to work:</p>\r\n<ul>\r\n<li>Added width and border-left to main.</li>\r\n<li>Removed border-right from categories</li>\r\n</ul>\r\n<p>Please let me know if there is a better way to do this.</p>\r\n<p>\r\n<div style=\"color: black; background-color: white;\">\r\n<pre><span style=\"color: #a31515;\">#main</span>\r\n{\r\n    <span style=\"color: red;\">overflow</span>: <span style=\"color: blue;\">hidden</span>;\r\n    <span style=\"color: red;\">width</span>: <span style=\"color: blue;\">700px</span>;\r\n    <span style=\"color: red;\">padding</span>: <span style=\"color: blue;\">0 0 15px 10px</span>;\r\n    <span style=\"color: red;\">float</span>: <span style=\"color: blue;\">left</span>;\r\n    <span style=\"color: red;\">border-left</span>: <span style=\"color: blue;\">#5d5a53 1px dotted</span>;\r\n}\r\n\r\n<span style=\"color: #a31515;\">#categories</span>\r\n{\r\n    <span style=\"color: red;\">font-family</span>: <span style=\"color: blue;\">Constantia, Georgia, serif</span>;\r\n    <span style=\"color: red;\">list-style-type</span>: <span style=\"color: blue;\">none</span>;\r\n    <span style=\"color: red;\">padding-right</span>: <span style=\"color: blue;\">10px</span>;\r\n    <span style=\"color: red;\">margin</span>: <span style=\"color: blue;\">0 25px 0 0</span>;\r\n    <span style=\"color: red;\">float</span>: <span style=\"color: blue;\">left</span>;\r\n}\r\n</pre>\r\n</div>\r\n&nbsp;</p>",
+    "PostedDate": "2012-05-22T10:44:49.943-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

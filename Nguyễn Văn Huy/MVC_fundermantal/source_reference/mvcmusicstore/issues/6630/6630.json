@@ -1,0 +1,45 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "Data",
+      "DisplayName": "Data"
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 1,
+    "Custom": null,
+    "Description": "- The databse sql script id's need the albums table reseeded.\r\n- The code refers to artist, genre and album, when it should be artists, genres and albums\r\n- Part 5 - Create view for the StoreManager controller - if you browse to Storemanager/Create as the tutorial suggests the code in the Album Shared Editor Templates falls over.\r\n",
+    "LastUpdatedDate": "2017-11-28T07:20:36.717-08:00",
+    "PlannedForRelease": "MVC Music Store v2.1",
+    "ReleaseVisibleToPublic": true,
+    "Priority": {
+      "Name": "Medium",
+      "Severity": 100,
+      "Id": 2
+    },
+    "ProjectName": "mvcmusicstore",
+    "ReportedDate": "2011-02-27T04:18:14.76-08:00",
+    "Status": {
+      "Name": "Resolved",
+      "Id": 7
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Bugs in SQL Script",
+    "Type": {
+      "Name": "Task",
+      "Id": 2
+    },
+    "VoteCount": 1,
+    "Id": 6630
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Thanks. The recommended path is to use the database MDF file that's included in the code. Will update the SQL scripts to match.",
+      "PostedDate": "2011-02-27T08:38:32.617-08:00",
+      "Id": 29696
+    }
+  ]
+}

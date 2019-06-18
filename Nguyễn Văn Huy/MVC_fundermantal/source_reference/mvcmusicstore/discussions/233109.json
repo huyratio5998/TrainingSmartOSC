@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "515691",
+    "ThreadId": "233109",
+    "Html": "\r\n<p>First, it is a great job you guys have done.</p>\r\n<p>I am thinking it will be so nice if you guys can extend this project to a MVC 2 based CMS.</p>\r\n<p>&nbsp;</p>\r\n<p>So admin can at least add a detalied album page or edit it.</p>\r\n<p>&nbsp;</p>\r\n<p>Again, appreciate your work!</p>\r\n",
+    "PostedDate": "2010-11-01T19:23:11.397-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "515724",
+    "ThreadId": "233109",
+    "Html": "\r\n<p>Thanks, @hanwesh, glad you like it.</p>\r\n<p>This is a tutorial designed to keep things simple and explain the concepts of ASP.NET MVC, so a CMS is way out of scope. I'd suggest you check out one of the existing MVC based CMS projects on CodePlex, including the Orchard project:\r\n<a href=\"http://orchard.codeplex.com/\">http://orchard.codeplex.com/</a></p>\r\n",
+    "PostedDate": "2010-11-01T21:23:58.667-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

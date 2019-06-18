@@ -1,0 +1,34 @@
+[
+  {
+    "Id": "594928",
+    "ThreadId": "253305",
+    "Html": "\r\n<p>hi~~could anybody tell me why this happened?</p>\r\n<p>Without adding &quot;Album.cs&quot;&quot;Artist.cs&quot;&quot;Genre.cs&quot;etc. classes in Models,</p>\r\n<p>I created my own data tables in SQL server and .edmx &quot;ADO.NET Entity Data Model&quot;&nbsp; data file in Models,</p>\r\n<p>following</p>\r\n<div>\r\n<p><a href=\"http://www.asp.net/mvc/tutorials/getting-started-with-mvc-part4\">http://www.asp.net/mvc/tutorials/getting-started-with-mvc-part4</a></p>\r\n</div>\r\n<p>it's working , except &quot;var album = storeDB.Albums.Find(id);&quot;</p>\r\n<p>&quot; storeDB.Albums.Remove(album);&quot; system doesn't recognize these two methods, added&quot;using system.data.entity&quot;</p>\r\n<p>I need to replace them by where, delectobject methods</p>\r\n<p>&nbsp;</p>\r\n<p>could anyone know what happened?</p>\r\n<p>or why there need be data classes added in Models coding by ourseleves</p>\r\n<p>and this difference will happen?</p>\r\n<p>&nbsp;</p>\r\n<p>thank you very much in advance!</p>\r\n",
+    "PostedDate": "2011-04-10T10:56:46.573-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "594992",
+    "ThreadId": "253305",
+    "Html": "<p>Fay,</p>\r\n<p>It would be hard to help without knowing more of what you are doing; you asked the question in the MVC Music Store discussion but you are referencing a different tutorial so we have no point of reference as to where you are at with your code, or what you are trying to accomplish.</p>\r\n<p>Maybe if you could give a step by step of what you have done so far and whether you are actually working on the MVC Music Store project.</p>",
+    "PostedDate": "2011-04-10T15:06:11.43-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "595013",
+    "ThreadId": "253305",
+    "Html": "<p>Hi,madisonjames,thank you so much for response. sorry for lack of information.</p>\n<p>because I tried to use my own database and MVCMusicStore has the preload database and the author refer to that link at part4, so that's why i mentioned that link which i was following when tried to create the entity framework.</p>\n<p>&nbsp;</p>\n<p>my database is just similar as MvcMusicStore I just tried to create it from beginning and tried to learn every detail how that working..I am in part create ,edit delete Albums information part, everything going fine just this difference happened, again, i didn't add any data model as the tutorial did, i created .edmx file..(that because i didn't know other methods if i create database by my own)</p>\n<p>&nbsp;</p>\n<p><a href=\"http://www.asp.net/mvc/tutorials/getting-started-with-mvc-part4\">http://www.asp.net/mvc/tutorials/getting-started-with-mvc-part4</a></p>\n<p>I just following this step and created tables in SQL server, everything working fine just could not use \"var album = storeDB.Albums.Find(id);\" \" storeDB.Albums.Remove(album);\"methods.</p>\n<p>&nbsp;</p>\n<p>also,If I didn't create the .edmx file, just connected to the database in SQL server and added \"Album.cs\"\"Artist.cs\"\"Genre.cs\"etc. classes in Models , it'll have error like data will not be recognized.</p>\n<p>&nbsp;</p>\n<p>I think the MVCMusicStore preload database maybe not just created by in SQL server create tables and relations..so I tried with that link built .edmx file,but if you added \"Album.cs\"\"Artist.cs\"\"Genre.cs\"etc. classes in Models in tutorial, it will tell duplicated...</p>\n<p>&nbsp;</p>\n<p>you can see I am so new to entity framework, Also I am going to learn from beginning</p>\n<p>&nbsp;</p>\n<p>because i think maybe someone will be more familiar to this project so I post here..</p>\n<p>&nbsp;</p>\n<p>any suggestion to learn EntityFrame work&nbsp; or point out what happened to me will be very appreciated !</p>",
+    "PostedDate": "2011-04-10T16:41:35.293-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "605557",
+    "ThreadId": "253305",
+    "Html": "<p>I think couldn't make the use database and model class</p>\r\n<p>&nbsp;</p>\r\n<p>is because I don't know the knowledge of EntityFramework partial class defination</p>",
+    "PostedDate": "2011-05-01T11:05:53.967-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

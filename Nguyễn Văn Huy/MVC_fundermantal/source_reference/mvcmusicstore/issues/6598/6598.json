@@ -1,0 +1,45 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "Documentation",
+      "DisplayName": "Documentation"
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 1,
+    "Custom": null,
+    "Description": "On Page Page 43 in the Document you write:\r\n    return View(storeDB.Albums);\r\n\r\nShouldn't it be:\r\n    return View(albums);\r\n\r\nsince you create an albums collection beforehand.",
+    "LastUpdatedDate": "2017-11-28T07:20:36.717-08:00",
+    "PlannedForRelease": "MVC Music Store v1.0",
+    "ReleaseVisibleToPublic": true,
+    "Priority": {
+      "Name": "Medium",
+      "Severity": 100,
+      "Id": 2
+    },
+    "ProjectName": "mvcmusicstore",
+    "ReportedDate": "2010-05-11T12:57:00.217-07:00",
+    "Status": {
+      "Name": "Resolved",
+      "Id": 7
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Typo in Document",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 2,
+    "Id": 6598
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Thanks, will fix in next release.",
+      "PostedDate": "2010-07-02T14:12:12.043-07:00",
+      "Id": 13785
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "834355",
+    "ThreadId": "355194",
+    "Html": "\r\n<p>Hi,</p>\r\n<p>Just now i have downloaded the MvcMusicStore application, when i try to run the appln i am getting the error as:</p>\r\n<p>Unable to find the requested .Net Framework Data Provider.&nbsp; It may not be installed.</p>\r\n<p>I have MVC3.0 installed and VS2010 SP1 installed.</p>\r\n<p>How can i run the MvcMusicStore application?</p>\r\n<p>&nbsp;</p>\r\n<p>Thanks.</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>\r\n",
+    "PostedDate": "2012-05-09T19:32:28.72-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

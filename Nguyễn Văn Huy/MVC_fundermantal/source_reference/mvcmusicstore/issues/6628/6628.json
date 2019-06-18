@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "Documentation",
+      "DisplayName": "Documentation"
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Need to change page 51 when \"Running our application and browsing to /Store/Details/500 shows that our results are now being pulled from the database.\" is actually \"Running our application and browsing to /Store/Details/5 shows that our results are now being pulled from the database.\"",
+    "LastUpdatedDate": "2017-11-28T07:20:36.717-08:00",
+    "PlannedForRelease": "MVC Music Store v2.1",
+    "ReleaseVisibleToPublic": true,
+    "Priority": {
+      "Name": "Medium",
+      "Severity": 100,
+      "Id": 2
+    },
+    "ProjectName": "mvcmusicstore",
+    "ReportedDate": "2011-02-19T07:46:25.637-08:00",
+    "Status": {
+      "Name": "Resolved",
+      "Id": 7
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "MVC music store documentation - fix link from /Store/Details/500 to /Store/Details/5",
+    "Type": {
+      "Name": "Task",
+      "Id": 2
+    },
+    "VoteCount": 1,
+    "Id": 6628
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

@@ -1,0 +1,45 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 1,
+    "Custom": null,
+    "Description": "Im using Asp.net MVC with MySql.When Im adding EF 6.0.0 and run the solution.The following error occurs.\r\n\r\n Configuration Error\r\nDescription: An error occurred during the processing of a configuration file required to service this request. Please review the specific error details below and modify your configuration file appropriately.\r\n\r\nParser Error Message: Unrecognized element 'providers'.\r\n\r\nIn the Project,it shows warning like this.\r\nThe element 'entityFramework' has invalid child element 'providers'. List of possible elements expected: 'contexts, defaultConnectionFactory'.\r\n",
+    "LastUpdatedDate": "2013-12-24T06:26:42.537-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Unassigned",
+      "Severity": 0,
+      "Id": 0
+    },
+    "ProjectName": "mvcmusicstore",
+    "ReportedDate": "2013-12-23T21:32:08.48-08:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "The element entity framework has invalid child element providers.",
+    "Type": {
+      "Name": "Unassigned",
+      "Id": 5
+    },
+    "VoteCount": 1,
+    "Id": 6694
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "I resolve this error by copying two files like\n(1)EntityFrameworkCatalog.xml file\n(2)EntityFrameworkConfig_6_0_0.xsd\n\nfrom\n https://entityframework.codeplex.com/SourceControl/latest#src/EFTools/setup/EFToolsMsi/XmlSchemas/EntityFrameworkCatalog.xml\n \nand place those files in \"C:\\Program Files\\Microsoft Visual Studio 10.0\\Xml\\Schemas\" folder.\nAt first download the entire zip file from above link.\nfrom that extract the above two files(xml,xsd) from the below location\n\"src\\EFTools\\setup\\EFToolsMsi\\XmlSchemas\". and copy to  \"C:\\Program Files\\Microsoft Visual Studio 10.0\\Xml\\Schemas\" .\n\nWhy because day by day software is updated.Because of that reason we have to work with updated softwares.\n\n(or) \n\nYou can install the EF6 Designer for VS2012 from \" http://www.microsoft.com/en-us/download/details.aspx?id=40762 \" and it will update the schema that validates config files.\n",
+      "PostedDate": "2013-12-24T06:26:42.537-08:00",
+      "Id": 128365
+    }
+  ]
+}

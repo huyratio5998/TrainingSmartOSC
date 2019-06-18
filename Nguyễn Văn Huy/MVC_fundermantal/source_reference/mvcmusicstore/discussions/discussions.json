@@ -1,0 +1,1732 @@
+[
+  {
+    "Id": "211450",
+    "Title": "Data Annotation",
+    "LatestDate": "2010-10-12T16:32:32.683-07:00"
+  },
+  {
+    "Id": "211732",
+    "Title": "Problems with tutorial v0.8",
+    "LatestDate": "2010-05-10T23:32:26.6-07:00"
+  },
+  {
+    "Id": "212104",
+    "Title": "comments to the tutorial",
+    "LatestDate": "2010-05-10T22:53:31.267-07:00"
+  },
+  {
+    "Id": "212212",
+    "Title": "database for SQl 2005",
+    "LatestDate": "2011-07-27T02:02:14.45-07:00"
+  },
+  {
+    "Id": "212245",
+    "Title": "Future plans",
+    "LatestDate": "2011-02-22T11:52:51.907-08:00"
+  },
+  {
+    "Id": "212324",
+    "Title": "adding list data directly into viewmodels",
+    "LatestDate": "2010-05-11T15:07:28.817-07:00"
+  },
+  {
+    "Id": "212454",
+    "Title": "Add topical links to tutorial pdf",
+    "LatestDate": "2010-05-12T09:44:33.737-07:00"
+  },
+  {
+    "Id": "212459",
+    "Title": "General Feedback",
+    "LatestDate": "2010-07-09T11:39:54.433-07:00"
+  },
+  {
+    "Id": "213857",
+    "Title": "DataAnnotations page 62...",
+    "LatestDate": "2010-12-07T05:33:15.477-08:00"
+  },
+  {
+    "Id": "213956",
+    "Title": "single page ASP MVC website",
+    "LatestDate": "2010-05-31T23:57:49.88-07:00"
+  },
+  {
+    "Id": "214354",
+    "Title": "Parameter question returning a View",
+    "LatestDate": "2010-07-02T13:54:00.233-07:00"
+  },
+  {
+    "Id": "216333",
+    "Title": "Data connection",
+    "LatestDate": "2010-07-02T13:51:51.613-07:00"
+  },
+  {
+    "Id": "217203",
+    "Title": "Comments on the Tutorial",
+    "LatestDate": "2011-04-29T16:13:38.757-07:00"
+  },
+  {
+    "Id": "217963",
+    "Title": "Some Problem With Database",
+    "LatestDate": "2010-07-02T12:22:16.447-07:00"
+  },
+  {
+    "Id": "218189",
+    "Title": "Creating the App_Data and connecting to the Database",
+    "LatestDate": "2010-07-07T14:12:49.743-07:00"
+  },
+  {
+    "Id": "218290",
+    "Title": "Database problems with SQL 2008 R2",
+    "LatestDate": "2010-11-05T13:07:15.413-07:00"
+  },
+  {
+    "Id": "219225",
+    "Title": "My Membership and Authorization doesn't work",
+    "LatestDate": "2010-07-28T03:18:12.777-07:00"
+  },
+  {
+    "Id": "220031",
+    "Title": "MvcMusicStore.mdf cannot be opened because it is version 655. This server supports version 612 and earlier.",
+    "LatestDate": "2010-08-10T08:50:33.623-07:00"
+  },
+  {
+    "Id": "220241",
+    "Title": "MvcMusicStore.mdf can't be opened",
+    "LatestDate": "2010-07-25T22:08:44.01-07:00"
+  },
+  {
+    "Id": "220304",
+    "Title": "Edit View is empty",
+    "LatestDate": "2010-07-25T22:16:23.623-07:00"
+  },
+  {
+    "Id": "220395",
+    "Title": "Default Entity Container name not found",
+    "LatestDate": "2011-04-14T17:09:37.56-07:00"
+  },
+  {
+    "Id": "220554",
+    "Title": "About Using MetaData Partial Classes with Entity Framework",
+    "LatestDate": "2010-07-22T00:23:24.747-07:00"
+  },
+  {
+    "Id": "221570",
+    "Title": "Creating Music Store with VS2008 and SQL Server 2008 express",
+    "LatestDate": "2012-11-06T02:06:35.57-08:00"
+  },
+  {
+    "Id": "221750",
+    "Title": "Problem with tutorial",
+    "LatestDate": "2010-07-29T06:10:34.237-07:00"
+  },
+  {
+    "Id": "222073",
+    "Title": "Problems with the validation",
+    "LatestDate": "2010-08-03T09:54:26.31-07:00"
+  },
+  {
+    "Id": "222074",
+    "Title": "Limit the list return from the index view",
+    "LatestDate": "2010-07-31T07:17:31.477-07:00"
+  },
+  {
+    "Id": "222207",
+    "Title": "Album Editor Failed",
+    "LatestDate": "2010-08-09T00:22:42.193-07:00"
+  },
+  {
+    "Id": "222309",
+    "Title": "MVC_Music_Store Tutorial page 53, Html.EditorFor(...)",
+    "LatestDate": "2010-08-03T12:54:49.277-07:00"
+  },
+  {
+    "Id": "223252",
+    "Title": "Compiler Problems with <%:",
+    "LatestDate": "2010-08-12T02:14:57.15-07:00"
+  },
+  {
+    "Id": "223414",
+    "Title": "Where's ShoppingCartRemoveViewModel?",
+    "LatestDate": "2010-08-23T12:36:48.05-07:00"
+  },
+  {
+    "Id": "223634",
+    "Title": "Routing table for /Store/Details/id/abc",
+    "LatestDate": "2010-10-19T14:30:06.06-07:00"
+  },
+  {
+    "Id": "223735",
+    "Title": "StoreManager - Index, Namespace=...Helpers",
+    "LatestDate": "2010-08-16T13:55:50.637-07:00"
+  },
+  {
+    "Id": "223773",
+    "Title": "How to make the menu list and albums like frame set",
+    "LatestDate": "2010-08-17T00:05:26.56-07:00"
+  },
+  {
+    "Id": "223790",
+    "Title": "vs2008+sql2005无法更新数据",
+    "LatestDate": "2010-09-01T23:53:10.877-07:00"
+  },
+  {
+    "Id": "224016",
+    "Title": "Do Not Understand the following, Please help.",
+    "LatestDate": "2010-09-07T14:38:48.04-07:00"
+  },
+  {
+    "Id": "224542",
+    "Title": "Connecting to MvcMucisStore.mdf gives \"access denied\"",
+    "LatestDate": "2011-01-13T07:32:27.137-08:00"
+  },
+  {
+    "Id": "224705",
+    "Title": "Missing Model Genre",
+    "LatestDate": "2010-08-31T10:29:54.543-07:00"
+  },
+  {
+    "Id": "224986",
+    "Title": "Helper Html.Truncate does not compile",
+    "LatestDate": "2010-09-25T19:03:19.283-07:00"
+  },
+  {
+    "Id": "225003",
+    "Title": "ViewModels",
+    "LatestDate": "2010-08-27T00:39:35.373-07:00"
+  },
+  {
+    "Id": "225737",
+    "Title": "how to publish MVC project on my website?",
+    "LatestDate": "2010-09-02T20:12:25.943-07:00"
+  },
+  {
+    "Id": "226934",
+    "Title": "Problem in views - MvcMusicStore.Models.Artist",
+    "LatestDate": "2010-09-13T15:15:30.907-07:00"
+  },
+  {
+    "Id": "228574",
+    "Title": "error regarding /Store/",
+    "LatestDate": "2011-06-12T14:47:46.557-07:00"
+  },
+  {
+    "Id": "228603",
+    "Title": "Unable to open the database",
+    "LatestDate": "2010-09-30T08:41:49.697-07:00"
+  },
+  {
+    "Id": "229170",
+    "Title": "Why doesn't the Save button in StoreManager/Edit.aspx work?",
+    "LatestDate": "2010-09-30T17:07:48.31-07:00"
+  },
+  {
+    "Id": "229210",
+    "Title": "Confused about the Tutorial",
+    "LatestDate": "2010-09-30T17:38:46.94-07:00"
+  },
+  {
+    "Id": "229820",
+    "Title": "Cannot load ASP.NET Configuration website",
+    "LatestDate": "2011-03-04T13:58:45.947-08:00"
+  },
+  {
+    "Id": "230778",
+    "Title": "New Release of MvcMusicStore - v1.0",
+    "LatestDate": "2010-10-13T10:01:53.96-07:00"
+  },
+  {
+    "Id": "230872",
+    "Title": "Error: 25 - Connection string is not valid",
+    "LatestDate": "2010-10-15T10:34:07.65-07:00"
+  },
+  {
+    "Id": "231534",
+    "Title": "Issue with connecting to an MDB file (and some observations)",
+    "LatestDate": "2010-10-25T20:04:33.007-07:00"
+  },
+  {
+    "Id": "231563",
+    "Title": "HtmlHelpers Code for StoreManager V1.0 Bug",
+    "LatestDate": "2010-10-19T16:06:54.273-07:00"
+  },
+  {
+    "Id": "231656",
+    "Title": "MVC Error: Object reference not set to an instance of an object.",
+    "LatestDate": "2010-10-25T16:29:39.12-07:00"
+  },
+  {
+    "Id": "232201",
+    "Title": "There is a bug in the RemoveFromCart method",
+    "LatestDate": "2010-10-25T16:31:18.497-07:00"
+  },
+  {
+    "Id": "232365",
+    "Title": "artist and genre problem upon create/edit",
+    "LatestDate": "2011-05-20T15:55:19.58-07:00"
+  },
+  {
+    "Id": "233109",
+    "Title": "Recommend to create a MVC 2 based CMS ",
+    "LatestDate": "2010-11-01T21:23:58.667-07:00"
+  },
+  {
+    "Id": "233520",
+    "Title": "Registering wants me to fill password retrieval fields",
+    "LatestDate": "2011-11-21T10:53:58.793-08:00"
+  },
+  {
+    "Id": "233942",
+    "Title": "EditFor: ASP.NET 3.5 vs. 4 ",
+    "LatestDate": "2010-11-08T13:53:53.427-08:00"
+  },
+  {
+    "Id": "235337",
+    "Title": "Help me! MVC music store v0.8",
+    "LatestDate": "2011-07-06T06:21:56.007-07:00"
+  },
+  {
+    "Id": "235622",
+    "Title": "How to run in .NET 3.5",
+    "LatestDate": "2011-09-02T14:02:56.75-07:00"
+  },
+  {
+    "Id": "235637",
+    "Title": "How to run under IIS in 3.5",
+    "LatestDate": "2010-11-22T12:50:01.683-08:00"
+  },
+  {
+    "Id": "236310",
+    "Title": "MVC music store tutorial1.0 pg 80-82",
+    "LatestDate": "2010-11-28T22:45:38.57-08:00"
+  },
+  {
+    "Id": "237367",
+    "Title": "Qurious behavior in StoreController ",
+    "LatestDate": "2010-12-06T18:27:26.727-08:00"
+  },
+  {
+    "Id": "237434",
+    "Title": "Adding Credit card or PayPal Sales",
+    "LatestDate": "2010-12-07T06:24:52.007-08:00"
+  },
+  {
+    "Id": "238487",
+    "Title": "Log in doesn't go anywhere",
+    "LatestDate": "2010-12-15T20:12:07.02-08:00"
+  },
+  {
+    "Id": "238954",
+    "Title": "Adding CSS Style Sheet",
+    "LatestDate": "2010-12-22T12:21:33.167-08:00"
+  },
+  {
+    "Id": "239197",
+    "Title": "MVC 3 update?",
+    "LatestDate": "2010-12-22T13:42:24.63-08:00"
+  },
+  {
+    "Id": "239209",
+    "Title": "Framedata provider",
+    "LatestDate": "2011-11-08T02:41:19.53-08:00"
+  },
+  {
+    "Id": "239288",
+    "Title": "MVC Music Store Tutorial Version 1.0",
+    "LatestDate": "2011-12-23T11:38:36.487-08:00"
+  },
+  {
+    "Id": "239603",
+    "Title": "MVCMusicStore 1.0 tutorial, help please..stuck here. Edit view doesn't show the dropdownlist control",
+    "LatestDate": "2010-12-26T14:29:36.777-08:00"
+  },
+  {
+    "Id": "239639",
+    "Title": "A question in Using Data Annotations",
+    "LatestDate": "2010-12-27T20:45:38.917-08:00"
+  },
+  {
+    "Id": "239717",
+    "Title": "A question in CartController",
+    "LatestDate": "2010-12-27T20:52:58.407-08:00"
+  },
+  {
+    "Id": "239720",
+    "Title": "A question in ShoppingCartModel.AddToCart",
+    "LatestDate": "2010-12-27T20:57:28.367-08:00"
+  },
+  {
+    "Id": "239807",
+    "Title": "Missing info tutorial, dropdownlist and ViewData",
+    "LatestDate": "2010-12-28T17:45:26.267-08:00"
+  },
+  {
+    "Id": "240015",
+    "Title": "Fix the Cart Bug",
+    "LatestDate": "2011-01-22T03:50:34.797-08:00"
+  },
+  {
+    "Id": "240783",
+    "Title": "Anybody developping this project with  VB NET ?",
+    "LatestDate": "2011-06-10T23:14:07.343-07:00"
+  },
+  {
+    "Id": "241147",
+    "Title": "I don't see the list of genres from Model.Genres",
+    "LatestDate": "2011-01-11T07:51:03.83-08:00"
+  },
+  {
+    "Id": "241152",
+    "Title": "Unable to create edmx",
+    "LatestDate": "2011-01-11T10:46:20.593-08:00"
+  },
+  {
+    "Id": "241225",
+    "Title": "Publishing to remote server",
+    "LatestDate": "2011-04-30T04:00:11.823-07:00"
+  },
+  {
+    "Id": "241327",
+    "Title": "Html Helper not working",
+    "LatestDate": "2011-04-06T15:25:00.607-07:00"
+  },
+  {
+    "Id": "241470",
+    "Title": "Save is not working",
+    "LatestDate": "2011-01-13T07:51:26.823-08:00"
+  },
+  {
+    "Id": "241609",
+    "Title": "MVC Music Store and mvc working pattern",
+    "LatestDate": "2011-01-13T05:08:59.75-08:00"
+  },
+  {
+    "Id": "241805",
+    "Title": "Asp .Net Configuration site not working",
+    "LatestDate": "2011-03-03T06:03:07.967-08:00"
+  },
+  {
+    "Id": "241852",
+    "Title": "Error 'The name ViewBag does not exist in current context.'",
+    "LatestDate": "2011-01-14T16:07:57.06-08:00"
+  },
+  {
+    "Id": "241884",
+    "Title": "Invalid object name 'dbo.Genres' ...",
+    "LatestDate": "2012-06-11T23:45:51.237-07:00"
+  },
+  {
+    "Id": "242021",
+    "Title": "MVC MUSIC Store DB foreign Key problem...",
+    "LatestDate": "2011-04-06T15:23:38.933-07:00"
+  },
+  {
+    "Id": "242317",
+    "Title": "Should CreateOrder in ShoppingCart model set OrderDetail.Quantity?",
+    "LatestDate": "2012-01-04T07:31:32.63-08:00"
+  },
+  {
+    "Id": "242325",
+    "Title": "Attaching to .mdf",
+    "LatestDate": "2012-03-27T02:08:41.313-07:00"
+  },
+  {
+    "Id": "242541",
+    "Title": "Invalid value for key attachdbfilename",
+    "LatestDate": "2011-01-26T17:13:02.95-08:00"
+  },
+  {
+    "Id": "242704",
+    "Title": "The project type is not supported by this installation error",
+    "LatestDate": "2011-01-21T00:13:03.003-08:00"
+  },
+  {
+    "Id": "242882",
+    "Title": "Client-Side Validation",
+    "LatestDate": "2011-01-26T17:07:11.183-08:00"
+  },
+  {
+    "Id": "243910",
+    "Title": "Default Style Doesn't Display in FF3",
+    "LatestDate": "2011-02-07T06:20:54.557-08:00"
+  },
+  {
+    "Id": "243946",
+    "Title": "Problem with adding to cart / solved",
+    "LatestDate": "2011-01-31T16:28:34.877-08:00"
+  },
+  {
+    "Id": "244052",
+    "Title": "Ajax remove link in cart doesn't work",
+    "LatestDate": "2015-03-02T06:24:19.267-08:00"
+  },
+  {
+    "Id": "244167",
+    "Title": "Manage Orders",
+    "LatestDate": "2012-04-13T11:45:34.133-07:00"
+  },
+  {
+    "Id": "245922",
+    "Title": "What do you need to change in .css for better display of pictures?",
+    "LatestDate": "2011-02-14T00:45:31.607-08:00"
+  },
+  {
+    "Id": "245950",
+    "Title": "Where are the Unit Tests?",
+    "LatestDate": "2011-02-14T05:58:35.18-08:00"
+  },
+  {
+    "Id": "246946",
+    "Title": "Validation message not removed immediately",
+    "LatestDate": "2012-01-25T06:08:51.413-08:00"
+  },
+  {
+    "Id": "247312",
+    "Title": "Registering/Login with check out",
+    "LatestDate": "2011-02-24T23:35:51.373-08:00"
+  },
+  {
+    "Id": "247380",
+    "Title": "OrderDetails - Missing?",
+    "LatestDate": "2011-04-06T15:22:32.73-07:00"
+  },
+  {
+    "Id": "247638",
+    "Title": "Problem with AddToCart /Solved",
+    "LatestDate": "2011-02-25T17:54:56.4-08:00"
+  },
+  {
+    "Id": "247701",
+    "Title": "RemoveFromCart result in Open File Dialog",
+    "LatestDate": "2011-02-26T12:02:43.417-08:00"
+  },
+  {
+    "Id": "247945",
+    "Title": "Razor Syntax @model - @Model.Title",
+    "LatestDate": "2011-03-01T22:53:17.97-08:00"
+  },
+  {
+    "Id": "248091",
+    "Title": "EFCodeFirst and Connection String Name",
+    "LatestDate": "2011-03-01T23:12:47.617-08:00"
+  },
+  {
+    "Id": "248449",
+    "Title": "handleUpdate() obsolete?",
+    "LatestDate": "2011-07-05T16:28:41.073-07:00"
+  },
+  {
+    "Id": "248571",
+    "Title": "Ajax.ActionLink not used? ",
+    "LatestDate": "2011-04-18T09:59:07.797-07:00"
+  },
+  {
+    "Id": "249270",
+    "Title": "Logon issue (stuck at logon page)",
+    "LatestDate": "2011-07-28T14:37:54.91-07:00"
+  },
+  {
+    "Id": "249723",
+    "Title": "Database connection issue.",
+    "LatestDate": "2011-03-20T16:40:12.177-07:00"
+  },
+  {
+    "Id": "250453",
+    "Title": "Try to use .dbo in SQL Server but got error..",
+    "LatestDate": "2011-03-20T16:49:59.127-07:00"
+  },
+  {
+    "Id": "250466",
+    "Title": "StoreManager Edit Error",
+    "LatestDate": "2011-03-25T00:38:50.95-07:00"
+  },
+  {
+    "Id": "250733",
+    "Title": "SQL Server Database setup script errors",
+    "LatestDate": "2011-04-06T17:59:36.737-07:00"
+  },
+  {
+    "Id": "251302",
+    "Title": "Connect to sql problem",
+    "LatestDate": "2011-03-30T00:15:37.637-07:00"
+  },
+  {
+    "Id": "251647",
+    "Title": "Problem to add Dropdownlist to Create view",
+    "LatestDate": "2011-03-30T00:13:15.103-07:00"
+  },
+  {
+    "Id": "252394",
+    "Title": "Cannot add the EFCodeFirst package",
+    "LatestDate": "2011-04-04T11:06:16.997-07:00"
+  },
+  {
+    "Id": "253105",
+    "Title": "Browser issues with MVC Music Store v2.1 - only correct in Chrome???",
+    "LatestDate": "2012-01-13T02:47:00.007-08:00"
+  },
+  {
+    "Id": "253305",
+    "Title": "EntityFramework questions? could not use\"Find\"\"Remove\"method",
+    "LatestDate": "2011-05-01T11:05:53.967-07:00"
+  },
+  {
+    "Id": "254126",
+    "Title": "how to add example music clip",
+    "LatestDate": "2011-04-15T15:46:27.037-07:00"
+  },
+  {
+    "Id": "254862",
+    "Title": "Missing property in MusicStoreEntities?",
+    "LatestDate": "2011-04-21T11:46:37.157-07:00"
+  },
+  {
+    "Id": "255115",
+    "Title": "Isn't SQL Server Express still required?",
+    "LatestDate": "2011-04-25T19:58:48.757-07:00"
+  },
+  {
+    "Id": "255122",
+    "Title": "Dispose methods for controllers",
+    "LatestDate": "2011-04-30T05:37:59.67-07:00"
+  },
+  {
+    "Id": "255178",
+    "Title": "Problem with Bind Exclude on Album model class",
+    "LatestDate": "2013-10-15T14:40:21.953-07:00"
+  },
+  {
+    "Id": "255731",
+    "Title": "Chapter Save Points Added",
+    "LatestDate": "2011-04-29T10:31:28.773-07:00"
+  },
+  {
+    "Id": "255732",
+    "Title": "Version 3.0b Update",
+    "LatestDate": "2011-04-29T10:38:18.76-07:00"
+  },
+  {
+    "Id": "255883",
+    "Title": "Cookies or Session?",
+    "LatestDate": "2011-05-11T13:31:37.23-07:00"
+  },
+  {
+    "Id": "255946",
+    "Title": "Integration with WCF WebAPI",
+    "LatestDate": "2011-05-01T23:16:45.513-07:00"
+  },
+  {
+    "Id": "255953",
+    "Title": "Partial Class...?",
+    "LatestDate": "2011-05-11T14:11:42.31-07:00"
+  },
+  {
+    "Id": "257159",
+    "Title": "Album and Artist on Detail page",
+    "LatestDate": "2011-05-13T01:30:26.03-07:00"
+  },
+  {
+    "Id": "257160",
+    "Title": "Artist / Album dropdowns on edit page",
+    "LatestDate": "2011-06-24T19:19:05.5-07:00"
+  },
+  {
+    "Id": "258186",
+    "Title": "Invalid object name 'dbo.Genres'.",
+    "LatestDate": "2011-05-31T09:44:54.717-07:00"
+  },
+  {
+    "Id": "258737",
+    "Title": "Purpose of GetCart Helper Method [ and GetCart(HttpContextBase context)]",
+    "LatestDate": "2011-05-28T16:49:13.14-07:00"
+  },
+  {
+    "Id": "259618",
+    "Title": "SampleData",
+    "LatestDate": "2012-06-12T00:17:06.287-07:00"
+  },
+  {
+    "Id": "260673",
+    "Title": "Visual studio crashes following the tutorial",
+    "LatestDate": "2011-06-14T02:42:49.897-07:00"
+  },
+  {
+    "Id": "260693",
+    "Title": "Model Compatibility cannot be Checked",
+    "LatestDate": "2011-06-10T23:01:29.89-07:00"
+  },
+  {
+    "Id": "261840",
+    "Title": "Obvious/needed Improvements before going live? ",
+    "LatestDate": "2011-10-05T17:55:59.063-07:00"
+  },
+  {
+    "Id": "262190",
+    "Title": "SampleData.cs problem",
+    "LatestDate": "2011-06-23T10:37:15.55-07:00"
+  },
+  {
+    "Id": "263226",
+    "Title": "what is the use of javascript function handleUpdate() ",
+    "LatestDate": "2011-07-09T13:48:36.61-07:00"
+  },
+  {
+    "Id": "263531",
+    "Title": "jQuery references needs update",
+    "LatestDate": "2011-10-05T17:54:28.167-07:00"
+  },
+  {
+    "Id": "264134",
+    "Title": "PDF Download link points to old version",
+    "LatestDate": "2011-07-07T17:01:06.797-07:00"
+  },
+  {
+    "Id": "264151",
+    "Title": "Membership provider - stuck on part 7",
+    "LatestDate": "2011-09-02T14:13:36.94-07:00"
+  },
+  {
+    "Id": "266288",
+    "Title": "I can't compile db.Albums.Include(a => a.Genre).Include(a => a.Artist)",
+    "LatestDate": "2011-07-23T09:32:38.36-07:00"
+  },
+  {
+    "Id": "266382",
+    "Title": "Tutorial 8: Shopping Cart",
+    "LatestDate": "2012-04-12T09:30:55.54-07:00"
+  },
+  {
+    "Id": "266469",
+    "Title": "Membership provider part 7  error",
+    "LatestDate": "2011-07-25T06:58:08.997-07:00"
+  },
+  {
+    "Id": "266471",
+    "Title": "Store Front Links Broken in IE9",
+    "LatestDate": "2011-10-05T17:51:24.853-07:00"
+  },
+  {
+    "Id": "266815",
+    "Title": "Disposing Entities Inside controller",
+    "LatestDate": "2011-07-27T15:51:00.823-07:00"
+  },
+  {
+    "Id": "269343",
+    "Title": "Need help & resolution on the inclusion of Site.css file",
+    "LatestDate": "2011-09-02T14:24:31.103-07:00"
+  },
+  {
+    "Id": "269518",
+    "Title": "Cart Table Problem",
+    "LatestDate": "2011-09-02T14:48:59.48-07:00"
+  },
+  {
+    "Id": "269974",
+    "Title": "Question about \"Part 6: Using Data Annotations for Model Validation\"",
+    "LatestDate": "2011-08-22T09:18:22.377-07:00"
+  },
+  {
+    "Id": "271296",
+    "Title": "Shopping Cart in LINQ to SQL instead of Entity Framework?",
+    "LatestDate": "2011-09-20T09:35:50.863-07:00"
+  },
+  {
+    "Id": "271707",
+    "Title": "Routing with multiple parameters when browsing",
+    "LatestDate": "2011-09-06T23:37:11.09-07:00"
+  },
+  {
+    "Id": "271862",
+    "Title": "null entry for parameter 'id' (Pg 103)",
+    "LatestDate": "2011-09-08T20:56:49.44-07:00"
+  },
+  {
+    "Id": "272357",
+    "Title": "I need some help in an  MVC project",
+    "LatestDate": "2011-09-12T19:33:36.24-07:00"
+  },
+  {
+    "Id": "272777",
+    "Title": "Different @Model statement in Shopping Cart Index view",
+    "LatestDate": "2011-09-15T21:52:55.54-07:00"
+  },
+  {
+    "Id": "273259",
+    "Title": "MigrateShoppingCart isn't in AccountController.cs of Assets",
+    "LatestDate": "2011-09-20T16:27:41.92-07:00"
+  },
+  {
+    "Id": "274021",
+    "Title": "My review",
+    "LatestDate": "2011-09-27T11:42:03.147-07:00"
+  },
+  {
+    "Id": "274262",
+    "Title": "Artist DropDownList in the Create View",
+    "LatestDate": "2011-09-29T07:46:55.333-07:00"
+  },
+  {
+    "Id": "274285",
+    "Title": "Browsed Albums shifted down",
+    "LatestDate": "2012-01-05T01:48:45.28-08:00"
+  },
+  {
+    "Id": "274741",
+    "Title": "when no orderdetails exists, GetTopSellingAlbums returns first \"count\" of albums",
+    "LatestDate": "2011-10-04T11:19:36.423-07:00"
+  },
+  {
+    "Id": "275345",
+    "Title": "CartSummary.cshtml render /ShoppingCart?Length=12",
+    "LatestDate": "2011-10-31T08:03:36.603-07:00"
+  },
+  {
+    "Id": "275947",
+    "Title": "Part 7 - Role-based Authorization - Log Page Problem",
+    "LatestDate": "2011-11-04T13:11:59.647-07:00"
+  },
+  {
+    "Id": "275956",
+    "Title": "Why sdf not mdf file included with the source",
+    "LatestDate": "2011-10-24T15:17:20.21-07:00"
+  },
+  {
+    "Id": "276789",
+    "Title": "An error in MvcMusicStore-v3.0_2",
+    "LatestDate": "2011-10-21T17:38:38.487-07:00"
+  },
+  {
+    "Id": "276814",
+    "Title": "Using remote SQL Database To Store Data for Musicstore",
+    "LatestDate": "2011-10-22T07:51:58.427-07:00"
+  },
+  {
+    "Id": "276857",
+    "Title": "Genre & Artist name not showing up on StoreManager/Details",
+    "LatestDate": "2011-10-24T15:14:18.457-07:00"
+  },
+  {
+    "Id": "277048",
+    "Title": "Integrating SQLServer Express",
+    "LatestDate": "2011-10-24T18:32:15.983-07:00"
+  },
+  {
+    "Id": "277065",
+    "Title": "Adding more albums to the SampleData.cs MVC 3 MusicStore",
+    "LatestDate": "2011-10-29T13:52:37.317-07:00"
+  },
+  {
+    "Id": "277370",
+    "Title": "Error:Unable to find the requested .Net Framework Data Provider.  It may not be installed.",
+    "LatestDate": "2012-05-26T11:48:15.163-07:00"
+  },
+  {
+    "Id": "278021",
+    "Title": "Blank Store Pages",
+    "LatestDate": "2011-11-02T04:54:10.02-07:00"
+  },
+  {
+    "Id": "279259",
+    "Title": "Problem with showing list of all Genres",
+    "LatestDate": "2014-09-30T12:10:30.2-07:00"
+  },
+  {
+    "Id": "280311",
+    "Title": "Scaffolding the store using the GMail Contact object",
+    "LatestDate": "2011-11-21T12:20:04.11-08:00"
+  },
+  {
+    "Id": "281873",
+    "Title": "MVC Music Store - Connect to Compact SQL DB with SQL Manager",
+    "LatestDate": "2011-12-07T01:19:55.597-08:00"
+  },
+  {
+    "Id": "281897",
+    "Title": "'edit link' concurrency exception in tutorial?",
+    "LatestDate": "2011-12-28T17:32:55.667-08:00"
+  },
+  {
+    "Id": "283168",
+    "Title": "An error occurred while executing the command definition. See the inner exception for details.",
+    "LatestDate": "2011-12-15T19:42:09.627-08:00"
+  },
+  {
+    "Id": "283268",
+    "Title": "Scalability?",
+    "LatestDate": "2011-12-16T16:21:13.467-08:00"
+  },
+  {
+    "Id": "283591",
+    "Title": "Navigation links not working",
+    "LatestDate": "2012-02-09T12:01:13.63-08:00"
+  },
+  {
+    "Id": "283634",
+    "Title": "Thank you Jon!",
+    "LatestDate": "2011-12-20T09:33:20.743-08:00"
+  },
+  {
+    "Id": "283720",
+    "Title": "How can i validate dropdownlist value at client side",
+    "LatestDate": "2011-12-21T02:24:44.397-08:00"
+  },
+  {
+    "Id": "283896",
+    "Title": "How can i show cart-total as decimal",
+    "LatestDate": "2011-12-22T05:45:40.12-08:00"
+  },
+  {
+    "Id": "284300",
+    "Title": "Record created, updated, deleted message",
+    "LatestDate": "2011-12-27T18:36:21.997-08:00"
+  },
+  {
+    "Id": "284308",
+    "Title": "Predefine value",
+    "LatestDate": "2011-12-27T20:22:27.963-08:00"
+  },
+  {
+    "Id": "284923",
+    "Title": "Paypal integration",
+    "LatestDate": "2012-03-09T02:47:39.16-08:00"
+  },
+  {
+    "Id": "285145",
+    "Title": "Trouble in Part 8-strongly typed view**SOLVED",
+    "LatestDate": "2012-01-06T08:20:48.99-08:00"
+  },
+  {
+    "Id": "285634",
+    "Title": "Drop Down Lists and When you need to use .Net 3.5 and Older EF",
+    "LatestDate": "2012-01-10T06:54:51.463-08:00"
+  },
+  {
+    "Id": "285948",
+    "Title": "Add Image field to Album class",
+    "LatestDate": "2012-01-12T09:25:30.683-08:00"
+  },
+  {
+    "Id": "286330",
+    "Title": "can't initiate SQL Server compact server in Music Store Tutorial",
+    "LatestDate": "2012-01-16T12:05:25.9-08:00"
+  },
+  {
+    "Id": "286363",
+    "Title": "SQL Server Database issues",
+    "LatestDate": "2013-11-01T14:51:17.563-07:00"
+  },
+  {
+    "Id": "286373",
+    "Title": "DropDownList for Country in AddressAndPayment",
+    "LatestDate": "2012-01-23T20:39:32.253-08:00"
+  },
+  {
+    "Id": "286617",
+    "Title": "ViewBag Dropdown List change to textbox",
+    "LatestDate": "2012-01-24T00:51:33.373-08:00"
+  },
+  {
+    "Id": "286896",
+    "Title": "Images not displaying on production server",
+    "LatestDate": "2012-01-24T00:44:53.477-08:00"
+  },
+  {
+    "Id": "287173",
+    "Title": "Adding quantity input to pass to Shopping Cart",
+    "LatestDate": "2012-01-23T22:00:01.777-08:00"
+  },
+  {
+    "Id": "287374",
+    "Title": "Remove From Cart not working on Production Server",
+    "LatestDate": "2012-01-25T08:04:08.833-08:00"
+  },
+  {
+    "Id": "287598",
+    "Title": "mvc music store ProviderManifestToken string problem",
+    "LatestDate": "2012-01-27T01:46:25.307-08:00"
+  },
+  {
+    "Id": "311006",
+    "Title": "Prerequisites Visual Studio 2010 Ultimate",
+    "LatestDate": "2012-02-14T00:25:04.883-08:00"
+  },
+  {
+    "Id": "317587",
+    "Title": "Web Platform Installer failure",
+    "LatestDate": "2012-02-17T20:49:12.183-08:00"
+  },
+  {
+    "Id": "317690",
+    "Title": "Model compatibility cannot be checked Error when Created SQL Server 2008 Database",
+    "LatestDate": "2012-02-16T01:16:46.513-08:00"
+  },
+  {
+    "Id": "341150",
+    "Title": "Error with the MusicStore Example / \"Model compatibility cannot be checked...\"",
+    "LatestDate": "2012-02-22T07:14:08.03-08:00"
+  },
+  {
+    "Id": "344695",
+    "Title": "Admin Order options and User profile?",
+    "LatestDate": "2013-10-30T14:40:00.07-07:00"
+  },
+  {
+    "Id": "346420",
+    "Title": "larger shop?",
+    "LatestDate": "2012-02-27T06:37:00.253-08:00"
+  },
+  {
+    "Id": "346464",
+    "Title": "Problem with display data from ActionResult Index()",
+    "LatestDate": "2012-02-27T13:20:32.727-08:00"
+  },
+  {
+    "Id": "346707",
+    "Title": "var genres = storeDB.Genres.ToList(); error!",
+    "LatestDate": "2012-04-16T13:19:40.377-07:00"
+  },
+  {
+    "Id": "347558",
+    "Title": "MVC4?",
+    "LatestDate": "2014-04-30T01:10:37.267-07:00"
+  },
+  {
+    "Id": "348135",
+    "Title": "How to include mp3 files in SampleData?",
+    "LatestDate": "2012-03-10T14:37:11.067-08:00"
+  },
+  {
+    "Id": "348517",
+    "Title": "Server Error in '/' Application.",
+    "LatestDate": "2012-03-14T11:01:04.667-07:00"
+  },
+  {
+    "Id": "349192",
+    "Title": "error to attaching Database",
+    "LatestDate": "2012-03-26T12:31:39.897-07:00"
+  },
+  {
+    "Id": "349719",
+    "Title": "How can I programatically  set the items in a dropdownlist list?",
+    "LatestDate": "2012-03-22T20:24:41.913-07:00"
+  },
+  {
+    "Id": "349742",
+    "Title": "ASP.Net configuration will not launch",
+    "LatestDate": "2012-04-23T23:01:09.89-07:00"
+  },
+  {
+    "Id": "350536",
+    "Title": "How to run the code",
+    "LatestDate": "2012-03-29T12:36:25.07-07:00"
+  },
+  {
+    "Id": "351535",
+    "Title": "@Model.Genre.Name",
+    "LatestDate": "2012-07-05T07:54:57.107-07:00"
+  },
+  {
+    "Id": "352316",
+    "Title": "Cannot implicitly convert type 'decimal' to 'string'\t",
+    "LatestDate": "2012-04-14T13:05:11.4-07:00"
+  },
+  {
+    "Id": "353322",
+    "Title": "Add store catalog",
+    "LatestDate": "2012-04-23T23:13:32.423-07:00"
+  },
+  {
+    "Id": "353898",
+    "Title": "var genres = storeDB.Genre.ToList(); error ",
+    "LatestDate": "2012-05-26T12:02:44.17-07:00"
+  },
+  {
+    "Id": "354646",
+    "Title": "Unable to find the requested .Net Framework Data Provider.  It may not be installed.  ",
+    "LatestDate": "2012-06-20T00:36:32.013-07:00"
+  },
+  {
+    "Id": "354981",
+    "Title": "Store is stopping on storeDB",
+    "LatestDate": "2012-05-08T14:41:38.58-07:00"
+  },
+  {
+    "Id": "355194",
+    "Title": "Unable to find the requested .Net Framework Data Provider.  It may not be installed.",
+    "LatestDate": "2012-05-09T19:32:28.72-07:00"
+  },
+  {
+    "Id": "355196",
+    "Title": "where can i find .edmx file in MvcMusicStore-v3.0 ?",
+    "LatestDate": "2012-05-12T03:21:23.4-07:00"
+  },
+  {
+    "Id": "355197",
+    "Title": "where can i find .edmx file in MvcMusicStore-v3.0 ?",
+    "LatestDate": "2012-05-09T19:53:52.44-07:00"
+  },
+  {
+    "Id": "355198",
+    "Title": "where can i find .edmx file in MvcMusicStore-v3.0 ?",
+    "LatestDate": "2012-05-09T19:53:52.643-07:00"
+  },
+  {
+    "Id": "355199",
+    "Title": "where can i find .edmx file in MvcMusicStore-v3.0 ?",
+    "LatestDate": "2012-05-09T19:53:52.243-07:00"
+  },
+  {
+    "Id": "355217",
+    "Title": "Unable to find the requested .Net Framework Data Provider.  It may not be installed.\"",
+    "LatestDate": "2012-05-10T00:05:47.663-07:00"
+  },
+  {
+    "Id": "356286",
+    "Title": "Creating Music Store Project in MVC4",
+    "LatestDate": "2012-05-18T10:55:49.003-07:00"
+  },
+  {
+    "Id": "356307",
+    "Title": "Understanding MVC Music Store Through Controllers",
+    "LatestDate": "2012-05-18T10:04:10.12-07:00"
+  },
+  {
+    "Id": "356532",
+    "Title": "Building Mvc Music Store Project in MVC4",
+    "LatestDate": "2012-05-21T05:36:53.967-07:00"
+  },
+  {
+    "Id": "356696",
+    "Title": "login error",
+    "LatestDate": "2013-08-23T04:57:38.197-07:00"
+  },
+  {
+    "Id": "356733",
+    "Title": "There seems to be a bug with site.css",
+    "LatestDate": "2012-05-22T10:44:49.943-07:00"
+  },
+  {
+    "Id": "358329",
+    "Title": "One or more validation errors were detected during model generation",
+    "LatestDate": "2012-06-12T07:15:13.047-07:00"
+  },
+  {
+    "Id": "358597",
+    "Title": "Making a button to retrieve all albums from a certain artist",
+    "LatestDate": "2012-06-12T00:33:20.147-07:00"
+  },
+  {
+    "Id": "358994",
+    "Title": "MvsMusicStore lession 2 Why does using both Browser Methods IN StroreController cause Exception in browser when mapping to either /Store/Browser or /Store/Browse?Genre=Disco",
+    "LatestDate": "2012-06-11T23:44:02.023-07:00"
+  },
+  {
+    "Id": "358995",
+    "Title": "MvcMusicStore Lesson 2 - How come Internet exception occurrs when Details method input parameter name is changed to idd?",
+    "LatestDate": "2012-06-11T23:50:54.957-07:00"
+  },
+  {
+    "Id": "359066",
+    "Title": "Lesson 4 MvcMusicStore- Not Step by Step project -WHERE DID THIS SampleData.cs  come from? How exactly was this file created?",
+    "LatestDate": "2012-06-12T00:03:28.62-07:00"
+  },
+  {
+    "Id": "359070",
+    "Title": "Lesson 4 MvcMusicStorre - Just dropping SampleData.cs into project gives following compile error",
+    "LatestDate": "2012-06-12T00:12:54.703-07:00"
+  },
+  {
+    "Id": "359108",
+    "Title": "MvcMusicStore lesson 4 - Runtime errors",
+    "LatestDate": "2012-06-12T00:15:54.527-07:00"
+  },
+  {
+    "Id": "359388",
+    "Title": "MsvMusicStore Lesson 8",
+    "LatestDate": "2012-06-13T09:36:20.103-07:00"
+  },
+  {
+    "Id": "359450",
+    "Title": "I  need to add another function in the ShoppingCart",
+    "LatestDate": "2012-06-13T07:01:03.15-07:00"
+  },
+  {
+    "Id": "359784",
+    "Title": "'jQuery' is undefined",
+    "LatestDate": "2012-11-23T14:44:19.927-08:00"
+  },
+  {
+    "Id": "360489",
+    "Title": "Great teacher!",
+    "LatestDate": "2012-06-21T08:40:58.02-07:00"
+  },
+  {
+    "Id": "360976",
+    "Title": "Linq query confusion",
+    "LatestDate": "2012-06-26T06:28:25.433-07:00"
+  },
+  {
+    "Id": "361033",
+    "Title": "'SqlException was unhandled by user code' error (pp 44-48, PDF tutorial)",
+    "LatestDate": "2012-06-26T12:35:07.707-07:00"
+  },
+  {
+    "Id": "361148",
+    "Title": "Partial success with validation context ",
+    "LatestDate": "2012-06-27T09:32:19.263-07:00"
+  },
+  {
+    "Id": "361460",
+    "Title": "Shortcut method of building a Code First project",
+    "LatestDate": "2012-06-29T18:42:04.94-07:00"
+  },
+  {
+    "Id": "361498",
+    "Title": "How to configure MvcMusicStore .Net WebApp with MySQL?",
+    "LatestDate": "2012-07-01T20:37:26.27-07:00"
+  },
+  {
+    "Id": "362815",
+    "Title": "The type or namespace name dbcontext cannot be found",
+    "LatestDate": "2012-07-11T08:14:55.343-07:00"
+  },
+  {
+    "Id": "366190",
+    "Title": "Using MVC Music Store with SQL Server 2008 (NOT Express)",
+    "LatestDate": "2013-02-26T11:10:50.137-08:00"
+  },
+  {
+    "Id": "370267",
+    "Title": "numeric validation and localisation",
+    "LatestDate": "2012-07-16T01:17:50.843-07:00"
+  },
+  {
+    "Id": "371415",
+    "Title": "Cannot connect to Database",
+    "LatestDate": "2012-07-26T01:48:55.337-07:00"
+  },
+  {
+    "Id": "388897",
+    "Title": "ASP configuration site is not working",
+    "LatestDate": "2015-05-07T23:25:24.09-07:00"
+  },
+  {
+    "Id": "391406",
+    "Title": "displaying contents from database",
+    "LatestDate": "2012-09-13T02:07:26.353-07:00"
+  },
+  {
+    "Id": "391799",
+    "Title": "Error - Unable to find the requested .Net Framework Data Provider ",
+    "LatestDate": "2012-08-30T10:33:44.193-07:00"
+  },
+  {
+    "Id": "392181",
+    "Title": "The entity types 'Artist' and 'OrderDetail' cannot share table 'OrderDetail' because they are not in the same type hierarchy or do not have a valid one to one foreign key relationship with matching primary keys between them.",
+    "LatestDate": "2012-09-13T01:58:16.77-07:00"
+  },
+  {
+    "Id": "392388",
+    "Title": "Site.css not taking effect in tutorial",
+    "LatestDate": "2013-05-02T18:24:03.79-07:00"
+  },
+  {
+    "Id": "392501",
+    "Title": "Intellisense errors in Views\\ShoppingCart\\Index.cshtml",
+    "LatestDate": "2012-12-24T07:26:36.01-08:00"
+  },
+  {
+    "Id": "393367",
+    "Title": "Accessing the ASP.net Configuration site in VS 2012",
+    "LatestDate": "2012-09-05T04:55:59.83-07:00"
+  },
+  {
+    "Id": "393786",
+    "Title": "Data Access",
+    "LatestDate": "2012-08-30T10:30:21.707-07:00"
+  },
+  {
+    "Id": "394525",
+    "Title": " DropDownList MVC MUSIC STORE",
+    "LatestDate": "2012-09-05T12:05:48.18-07:00"
+  },
+  {
+    "Id": "396550",
+    "Title": "Compilation error in Browse.cshtml file",
+    "LatestDate": "2012-09-23T10:59:15.33-07:00"
+  },
+  {
+    "Id": "396756",
+    "Title": "genres and artists are null - seeding does not seem to work",
+    "LatestDate": "2012-10-12T07:41:05.103-07:00"
+  },
+  {
+    "Id": "397026",
+    "Title": "[Bind(Exclude = \"OrderId\")]",
+    "LatestDate": "2012-09-26T16:52:13.307-07:00"
+  },
+  {
+    "Id": "397409",
+    "Title": "Getting error when trying to add StoreManagerController",
+    "LatestDate": "2014-10-31T12:16:14.05-07:00"
+  },
+  {
+    "Id": "397479",
+    "Title": "Partial 5 problem?",
+    "LatestDate": "2012-09-30T19:55:41.933-07:00"
+  },
+  {
+    "Id": "398260",
+    "Title": "Getting error when trying to run project ",
+    "LatestDate": "2012-10-05T19:52:57.593-07:00"
+  },
+  {
+    "Id": "398348",
+    "Title": "Pagination in storecontroller",
+    "LatestDate": "2012-10-06T21:18:50.57-07:00"
+  },
+  {
+    "Id": "398883",
+    "Title": "Data Binding",
+    "LatestDate": "2012-10-12T01:58:56.937-07:00"
+  },
+  {
+    "Id": "399682",
+    "Title": "Inline video using HTML5 code",
+    "LatestDate": "2012-10-16T19:54:03.567-07:00"
+  },
+  {
+    "Id": "400090",
+    "Title": "RE: SQL Server Database issues post by charlie 303",
+    "LatestDate": "2012-10-19T11:58:23.297-07:00"
+  },
+  {
+    "Id": "400324",
+    "Title": "Music Store Tutorial, 4th Step / Error: Unable to find the requested .Net Framework Data Provider...",
+    "LatestDate": "2012-10-23T07:17:07.05-07:00"
+  },
+  {
+    "Id": "400359",
+    "Title": "Unable to connect to datasource through Web Site Administration tool",
+    "LatestDate": "2012-10-22T12:50:50.203-07:00"
+  },
+  {
+    "Id": "400360",
+    "Title": "Unable to connect to datasource through Web Site Administration tool",
+    "LatestDate": "2012-11-26T10:07:34.393-08:00"
+  },
+  {
+    "Id": "400691",
+    "Title": "Part 4 Models and Data Access - unhandled exception been thrown in Global.asax.cs",
+    "LatestDate": "2012-10-30T05:36:35.88-07:00"
+  },
+  {
+    "Id": "402980",
+    "Title": "VS2012 & MVC 4 update?",
+    "LatestDate": "2012-11-17T20:21:54.877-08:00"
+  },
+  {
+    "Id": "404629",
+    "Title": "Like others, Unable to achieve step 7 with Web Site Administration Tool",
+    "LatestDate": "2012-12-19T12:43:47.133-08:00"
+  },
+  {
+    "Id": "404761",
+    "Title": "Simple Membership, WebSecurity.InitializeDatabaseConnection",
+    "LatestDate": "2012-11-27T10:33:22.49-08:00"
+  },
+  {
+    "Id": "404797",
+    "Title": "MVC 4 Account Login Steps - New project from 'Empty' template.",
+    "LatestDate": "2012-11-27T14:52:11.48-08:00"
+  },
+  {
+    "Id": "404888",
+    "Title": "WebMatrix.WebData, Version=2.0.0.0 v WebMatrix.WebData, Version=1.0.0.0",
+    "LatestDate": "2012-11-28T12:39:02.51-08:00"
+  },
+  {
+    "Id": "405026",
+    "Title": "App_Start/AppConfig.cs Re: SampleData and Account Creation",
+    "LatestDate": "2012-11-29T07:16:53.473-08:00"
+  },
+  {
+    "Id": "405352",
+    "Title": "recordToDelete is null in RemoveLink      using WIN8 VS2010 MVC3",
+    "LatestDate": "2012-12-03T02:56:38.117-08:00"
+  },
+  {
+    "Id": "405449",
+    "Title": "The connection name 'DefaultConnection' was not found in the applications configuration or the connection string is empty. ",
+    "LatestDate": "2014-04-24T05:01:44.61-07:00"
+  },
+  {
+    "Id": "406408",
+    "Title": "Can't Associate ShoppingCartViewModel to the Shopping Cart Index page",
+    "LatestDate": "2013-05-24T07:11:21.51-07:00"
+  },
+  {
+    "Id": "415297",
+    "Title": "I get stuck at the end of Chapter 4",
+    "LatestDate": "2013-01-20T06:28:24.51-08:00"
+  },
+  {
+    "Id": "427809",
+    "Title": "Chapter 3 Updating the Stylesheet...HELP HELP",
+    "LatestDate": "2013-01-10T02:19:51.873-08:00"
+  },
+  {
+    "Id": "427908",
+    "Title": "Chapter 3 Creating a Class in Models...HELP HELP",
+    "LatestDate": "2012-12-28T05:30:29.503-08:00"
+  },
+  {
+    "Id": "428276",
+    "Title": "Chapter 2 Controllers - StoreController",
+    "LatestDate": "2013-01-02T10:20:04.063-08:00"
+  },
+  {
+    "Id": "429146",
+    "Title": "Site.css does not give the expected style",
+    "LatestDate": "2013-01-18T10:02:37.923-08:00"
+  },
+  {
+    "Id": "429665",
+    "Title": "Wonderful Basic Tutorial",
+    "LatestDate": "2013-01-15T05:10:45.5-08:00"
+  },
+  {
+    "Id": "430077",
+    "Title": "var album = new Album {Title= \"Album\"+ id }",
+    "LatestDate": "2013-01-21T15:51:19.047-08:00"
+  },
+  {
+    "Id": "430410",
+    "Title": "Chapter 4 - no list of genres returned",
+    "LatestDate": "2013-01-24T12:39:15.673-08:00"
+  },
+  {
+    "Id": "430798",
+    "Title": "I create a new project with different database, but I got stuck, someone with advance knowlege please explain it for me ....",
+    "LatestDate": "2013-01-24T15:28:54.707-08:00"
+  },
+  {
+    "Id": "430860",
+    "Title": "Unhappy with chapter 4...",
+    "LatestDate": "2013-02-01T07:08:40.197-08:00"
+  },
+  {
+    "Id": "431155",
+    "Title": "Chapter 5 ERROR : Add StoreManagerController ",
+    "LatestDate": "2013-02-04T07:32:49.16-08:00"
+  },
+  {
+    "Id": "432354",
+    "Title": "Chapter 4: Updating the Store Index to query the database",
+    "LatestDate": "2013-02-07T10:00:20.61-08:00"
+  },
+  {
+    "Id": "432400",
+    "Title": "Shared Folder not Found",
+    "LatestDate": "2013-05-25T21:55:11.177-07:00"
+  },
+  {
+    "Id": "433047",
+    "Title": "MVC Security with the MvcMusicStore Chapter 7",
+    "LatestDate": "2013-02-13T18:06:38.467-08:00"
+  },
+  {
+    "Id": "433451",
+    "Title": "TryUpdateModel(order) returning false ",
+    "LatestDate": "2013-02-17T12:23:00.55-08:00"
+  },
+  {
+    "Id": "433464",
+    "Title": "OrderDetails not populating",
+    "LatestDate": "2013-08-17T07:59:42.493-07:00"
+  },
+  {
+    "Id": "433696",
+    "Title": "Is it possible to make a domain decimal field not required ",
+    "LatestDate": "2013-02-20T05:42:10.76-08:00"
+  },
+  {
+    "Id": "434006",
+    "Title": "HTTPPost Variations",
+    "LatestDate": "2013-03-29T17:10:29.887-07:00"
+  },
+  {
+    "Id": "435149",
+    "Title": "How to do Payment process in MVC 4.0",
+    "LatestDate": "2013-03-02T19:12:36.267-08:00"
+  },
+  {
+    "Id": "435561",
+    "Title": "\"The provider did not return a ProviderManifestToken string\"",
+    "LatestDate": "2013-03-06T03:33:37.45-08:00"
+  },
+  {
+    "Id": "437470",
+    "Title": "Online demo",
+    "LatestDate": "2013-05-16T04:58:34.967-07:00"
+  },
+  {
+    "Id": "440861",
+    "Title": "Database Problem....",
+    "LatestDate": "2013-05-16T04:50:36.733-07:00"
+  },
+  {
+    "Id": "441280",
+    "Title": "JS error : ./ShoppingCart/AddToCart/",
+    "LatestDate": "2013-04-23T04:55:41.34-07:00"
+  },
+  {
+    "Id": "442060",
+    "Title": "error @ part 10`",
+    "LatestDate": "2013-04-30T03:38:56.86-07:00"
+  },
+  {
+    "Id": "443477",
+    "Title": "Error message in Part 8",
+    "LatestDate": "2015-01-18T11:40:24.237-08:00"
+  },
+  {
+    "Id": "444954",
+    "Title": "ShoppingCartModelView does not show up in Model Classes for Strongly typing to it",
+    "LatestDate": "2013-05-24T21:22:00.007-07:00"
+  },
+  {
+    "Id": "444955",
+    "Title": "ShoppingCartModelView does not show up in Model Classes for Strongly typing to it",
+    "LatestDate": "2015-02-08T03:26:42.73-08:00"
+  },
+  {
+    "Id": "444956",
+    "Title": "ShoppingCartModelView does not show up in Model Classes for Strongly typing to it",
+    "LatestDate": "2013-05-24T21:22:00.457-07:00"
+  },
+  {
+    "Id": "444961",
+    "Title": "Is it a Textual Mistake or there are two files with the Name Order.cs",
+    "LatestDate": "2013-05-25T03:54:12.583-07:00"
+  },
+  {
+    "Id": "444963",
+    "Title": "ShopppingCartViewMode class is NOT VISIBLE IN THE LIST OF MODEL CLASSES for Strongly typing to It ",
+    "LatestDate": "2013-05-25T04:01:58.44-07:00"
+  },
+  {
+    "Id": "444968",
+    "Title": "Order(MvcMusicStore.Models)  is not selected when creating AddressAndPayment View",
+    "LatestDate": "2013-05-25T06:03:52.983-07:00"
+  },
+  {
+    "Id": "445360",
+    "Title": "Fetching data for Genres",
+    "LatestDate": "2013-05-29T11:31:14.02-07:00"
+  },
+  {
+    "Id": "445479",
+    "Title": "Parameter names of controlers",
+    "LatestDate": "2013-05-30T09:20:34.243-07:00"
+  },
+  {
+    "Id": "445638",
+    "Title": "convertion of  type 'string' to 'decimal'",
+    "LatestDate": "2013-05-31T20:11:21.94-07:00"
+  },
+  {
+    "Id": "446268",
+    "Title": "_Layout.cshtml file is not found under shared folder  ",
+    "LatestDate": "2014-07-16T06:23:45.493-07:00"
+  },
+  {
+    "Id": "446372",
+    "Title": "Remove From Cart function not working",
+    "LatestDate": "2013-06-29T05:06:27.727-07:00"
+  },
+  {
+    "Id": "449263",
+    "Title": "Don't understand difference in Details and Browse methods",
+    "LatestDate": "2013-07-07T17:47:16.213-07:00"
+  },
+  {
+    "Id": "451869",
+    "Title": "Remove From Cart - Ajax Version Problem",
+    "LatestDate": "2013-07-30T06:59:01.233-07:00"
+  },
+  {
+    "Id": "452439",
+    "Title": "New upgrade version of MVC Music Store in MVC 5 + EF 6?",
+    "LatestDate": "2013-08-05T06:35:43.503-07:00"
+  },
+  {
+    "Id": "461070",
+    "Title": "Could not load file or assembly 'MySql.Web, Version=6.7.4.0 - Page 82 Security Tab ",
+    "LatestDate": "2013-10-03T11:09:39.33-07:00"
+  },
+  {
+    "Id": "462180",
+    "Title": "About the error: System.Data.SqlServerCe.4.0 provider not found",
+    "LatestDate": "2013-10-15T01:43:09.767-07:00"
+  },
+  {
+    "Id": "462209",
+    "Title": "Part 6 - Problem with Bind-attribute",
+    "LatestDate": "2013-11-05T13:26:35.417-08:00"
+  },
+  {
+    "Id": "463189",
+    "Title": "Reason for using partial classes",
+    "LatestDate": "2013-10-22T10:20:16.407-07:00"
+  },
+  {
+    "Id": "463232",
+    "Title": "EF error when updating",
+    "LatestDate": "2013-11-06T01:17:52.597-08:00"
+  },
+  {
+    "Id": "465153",
+    "Title": "How to get the App_Data option available",
+    "LatestDate": "2013-11-01T13:56:59.517-07:00"
+  },
+  {
+    "Id": "468779",
+    "Title": "Unable to retrieve metadata for 'MVCMusicStore.Models.Album'. Unable to cast object of type 'System.Data.Entity.Core.Objects.ObjectContext' to type 'System.Data.Objects.ObjectContext'",
+    "LatestDate": "2014-07-20T08:35:08.083-07:00"
+  },
+  {
+    "Id": "477955",
+    "Title": "Problem in validation",
+    "LatestDate": "2015-02-01T06:31:59.413-08:00"
+  },
+  {
+    "Id": "484042",
+    "Title": "view orders?",
+    "LatestDate": "2014-01-08T02:45:32.557-08:00"
+  },
+  {
+    "Id": "531639",
+    "Title": "override void seed() no suitable method found to override in mvc4",
+    "LatestDate": "2014-02-12T21:35:39.283-08:00"
+  },
+  {
+    "Id": "538783",
+    "Title": "Add a search bar to the site.",
+    "LatestDate": "2014-03-12T10:15:54.497-07:00"
+  },
+  {
+    "Id": "539186",
+    "Title": "Where is data stored?",
+    "LatestDate": "2014-03-16T20:46:47.387-07:00"
+  },
+  {
+    "Id": "540968",
+    "Title": "Help with sintaxis.",
+    "LatestDate": "2014-04-02T12:17:09.11-07:00"
+  },
+  {
+    "Id": "543125",
+    "Title": "La ressource est introuvable. !!",
+    "LatestDate": "2014-04-23T13:12:54.457-07:00"
+  },
+  {
+    "Id": "546898",
+    "Title": "Chapter 3: Seeing same simple page after adding CSS and Images.",
+    "LatestDate": "2014-07-15T12:08:56.833-07:00"
+  },
+  {
+    "Id": "550329",
+    "Title": "HOW TO ADD CONNECTIONSTRING FOR STANDARD EDITION OF SQL SERVER ",
+    "LatestDate": "2014-07-02T03:44:20.517-07:00"
+  },
+  {
+    "Id": "551744",
+    "Title": "Chapter 4: Querying the Database error",
+    "LatestDate": "2014-08-08T12:12:52.453-07:00"
+  },
+  {
+    "Id": "551970",
+    "Title": "Updating CSS Style Sheet",
+    "LatestDate": "2014-07-18T08:18:55.193-07:00"
+  },
+  {
+    "Id": "552013",
+    "Title": "Do Part 7 on VS 2013 Express",
+    "LatestDate": "2014-07-18T10:35:10.623-07:00"
+  },
+  {
+    "Id": "560623",
+    "Title": "Chapter 4 Please Help me!",
+    "LatestDate": "2014-08-08T12:11:51.827-07:00"
+  },
+  {
+    "Id": "566766",
+    "Title": "Scafolding Problem",
+    "LatestDate": "2014-10-14T08:19:01.61-07:00"
+  },
+  {
+    "Id": "568360",
+    "Title": "Part 8 - ShoppingcartViewModel view",
+    "LatestDate": "2014-09-25T07:16:40.523-07:00"
+  },
+  {
+    "Id": "569601",
+    "Title": "Would love to see this redone in mvc5 in vs2013",
+    "LatestDate": "2014-10-22T06:03:01.667-07:00"
+  },
+  {
+    "Id": "578391",
+    "Title": "Cookies Mod for ShoppingCart.cs",
+    "LatestDate": "2015-01-22T13:39:41.697-08:00"
+  },
+  {
+    "Id": "581557",
+    "Title": "password",
+    "LatestDate": "2015-02-26T08:56:46.743-08:00"
+  },
+  {
+    "Id": "636681",
+    "Title": "Problems with database MvvcMusicStore.sdf",
+    "LatestDate": "2015-05-04T11:39:08.36-07:00"
+  },
+  {
+    "Id": "641204",
+    "Title": "Could not load file or assembly 'System.Web.WebPages.Razor, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35' or one of its dependencies. The located assembly's manifest definition does not match the assembly reference. (Exception from HR",
+    "LatestDate": "2015-07-13T08:45:15.11-07:00"
+  },
+  {
+    "Id": "646211",
+    "Title": "password compare",
+    "LatestDate": "2015-10-14T12:13:10.363-07:00"
+  },
+  {
+    "Id": "651093",
+    "Title": " An error occurred during the execution of the SQL file 'InstallCommon.sql'",
+    "LatestDate": "2016-02-09T12:22:15.58-08:00"
+  },
+  {
+    "Id": "653749",
+    "Title": " Error in GetCount () does not come out of the infinite loop.",
+    "LatestDate": "2016-04-19T11:24:43.667-07:00"
+  },
+  {
+    "Id": "659248",
+    "Title": "Reading data from web services",
+    "LatestDate": "2016-11-07T23:23:17.76-08:00"
+  },
+  {
+    "Id": "661140",
+    "Title": "Chapter 4 EF error - No Entity Framework provider found for the ADO.NET provider with invariant name 'System.Data.SqlServerCe.4.0'.",
+    "LatestDate": "2017-02-06T05:33:27.857-08:00"
+  },
+  {
+    "Id": "661847",
+    "Title": "New cart created each time even when the same item is added to the Shopping Cart. ",
+    "LatestDate": "2017-03-10T06:16:17.143-08:00"
+  },
+  {
+    "Id": "663586",
+    "Title": "ASP.NET MVC 5 Application",
+    "LatestDate": "2017-08-10T04:52:49.72-07:00"
+  }
+]

@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "802006",
+    "ThreadId": "346420",
+    "Html": "\r\n<p>Hey guys I've just finished the tutorial and I'm using it as a reference to create my own shop website and I need some help.</p>\r\n<p>The shop I'm building has more than one department: cds, dvds, gifts, clothes and a few others</p>\r\n<p><em><strong>Is there any information on adding more than one department to store?</strong></em></p>\r\n<p><br>\r\nI've tried using separate controllers, store entity classes and using different sample data files for each department but it will only load one of the sample data files even when I've told it which one to use.</p>\r\n<p>&nbsp;</p>\r\n<p>I'm new to MVC so any help/advice is appreciated.</p>\r\n<p>&nbsp;</p>\r\n<p>Thanks in Advance</p>\r\n",
+    "PostedDate": "2012-02-27T06:37:00.253-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

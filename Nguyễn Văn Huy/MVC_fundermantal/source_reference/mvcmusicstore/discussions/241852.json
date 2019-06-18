@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "549618",
+    "ThreadId": "241852",
+    "Html": "\r\n<p>I've got the completed solution.&nbsp; I attached my database.&nbsp; I'm getting the following build error..</p>\r\n<p><strong>The name 'ViewBag' does not exist in the current context&nbsp;</strong>C:\\MvcMusicStore2.0Completed\\MvcMusicStore\\Controllers\\AccountController.cs&nbsp;150&nbsp;13&nbsp;MvcMusicStore</p>\r\n<p>Any Ideas?</p>\r\n<p>Thanks</p>\r\n",
+    "PostedDate": "2011-01-14T13:44:34.193-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "549666",
+    "ThreadId": "241852",
+    "Html": "\r\n<p>I got it fixed.&nbsp; In the controler classes the 'ViewBag' needed to be changed to 'ViewModel'.&nbsp; In the Views, the 'ViewBag' needed to be changed to 'View'.&nbsp; That fixed it, now I'm up and running!!</p>\r\n",
+    "PostedDate": "2011-01-14T15:32:38.26-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "549684",
+    "ThreadId": "241852",
+    "Html": "\r\n<p>Sounds like you're running a pre-release version of ASP.NET MVC 3. The RTM version of ASP.NET MVC 3 uses ViewBag in codebehind and view code. I recommend you update to the RTM:&nbsp;http://www.microsoft.com/web/gallery/install.aspx?appid=MVC3</p>\r\n",
+    "PostedDate": "2011-01-14T16:07:57.06-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

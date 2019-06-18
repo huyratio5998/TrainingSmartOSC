@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "1107625",
+    "ThreadId": "462209",
+    "Html": "When I've added Bind-attribute [Bind(Exclude = &quot;AlbumId&quot;)] <br />\nI've faced with a trouble during execution of &quot;Edit&quot; - action<br />\nI've got next error:<br />\n&quot;Store update, insert, or delete statement affected an unexpected number of rows (0). Entities may have been modified or deleted since entities were loaded. Refresh ObjectStateManager entries.&quot;<br />\n<br />\nSource Error: <br />\nLine 80:             {<br />\nLine 81:                 db.Entry(album).State = EntityState.Modified;<br />\nLine 82:                 db.SaveChanges(); //this line causes an error<br />\nLine 83:                 return RedirectToAction(&quot;Index&quot;);<br />\nLine 84:             }<br />\n<br />\nHow could you solve it? Without this attribute everything is fine.<br />\n",
+    "PostedDate": "2013-10-15T06:05:55.76-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1118192",
+    "ThreadId": "462209",
+    "Html": "Set a breakpoint and view the 'album' object being passed to the HTTP POST 'Edit' in the 'MVCSTOREMANAGERCONTROLLER'<br />\nIf the ID = 0 it means you are trying to update a row with a key value that did not get set correctly.<br />\nIf the above is true have to figure out how to insure that the view reference the ID so that it is there to get pulled and returned to the controller.<br />\n",
+    "PostedDate": "2013-11-05T13:26:35.417-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": "2013-11-05T13:39:06.013-08:00"
+  }
+]

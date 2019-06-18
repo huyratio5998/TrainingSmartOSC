@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "929574",
+    "ThreadId": "400090",
+    "Html": "\r\n<p>Jon,</p>\r\n<p>I have begun using your Music Store tutorial to get my feet wet in MVC.&nbsp; It is exactly what I need with the exception of the database.&nbsp; I'm planning on using MVC for a web based application that will be accessed by multiple users.&nbsp; I will\r\n need to give an admin the ability to update a membership file from an Excel spreadsheet as well as other admin tasks.&nbsp; Regular users will only have browse ability.&nbsp; From what I know about SQL Server CE (I read an excellent CE/Express comparision\r\n by Steve Lasker&nbsp;at Microsoft), it is not suited for this type of application.&nbsp; While I want to follow your tutorial and learn as much as possible, I'm not targeting a single user type application.&nbsp; Your answer to charlie303 seemed to imply it\r\n wasn't a good idea to change data sources, which was confusing to me.&nbsp; Is MVC an incorrect framework for what I want to do?</p>\r\n<p>Thanks for your efforts on the tutorial - I'm really enjoying it and learning&nbsp; a lot from it.</p>\r\n",
+    "PostedDate": "2012-10-19T11:58:23.297-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

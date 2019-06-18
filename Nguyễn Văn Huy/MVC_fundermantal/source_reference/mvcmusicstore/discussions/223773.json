@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "481237",
+    "ThreadId": "223773",
+    "Html": "I copied the Site.css and Site.Master from MvcMusicStore to my own application.\r\nChange the controller and action accordingly in the Site.Master file.\r\nHowever, I have no luck to separate the menu(genres) and the album on the left and right respectively.\r\nYes, the genre list is on the left, but the album list is 2 inches from the left.\r\nSo they are overlapped.\r\n\r\nNot sure what else I missed?",
+    "PostedDate": "2010-08-17T00:05:26.56-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "668911",
+    "ThreadId": "271862",
+    "Html": "<p>I'm getting an error in the ShoppingCartViewModel page. I'm new to MVC development so I'm following along in the tutorial and I've just completed page 103 in the pdf. When I run the app I get this error when I click the \"Add to Cart\" button. VS is not showing any build errors at all, however.</p>\n<h2><em>The parameters dictionary contains a null entry for parameter 'id' of non-nullable type 'System.Int32' for method 'System.Web.Mvc.ActionResult AddToCart(Int32)' in 'MvcMusicStore.Controllers.ShoppingCartController'. An optional parameter must be a reference type, a nullable type, or be declared as an optional parameter.<br />Parameter name: parameters</em></h2>",
+    "PostedDate": "2011-09-07T20:45:47.67-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "669494",
+    "ThreadId": "271862",
+    "Html": "<p>Disregard. It was another case of fat finger syndrome...</p>",
+    "PostedDate": "2011-09-08T20:56:49.44-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

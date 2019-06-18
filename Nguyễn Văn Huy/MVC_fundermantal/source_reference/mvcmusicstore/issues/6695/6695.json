@@ -1,0 +1,45 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 1,
+    "Custom": null,
+    "Description": "namespace MvcMusicStore.Controllers\r\n{\r\n    public class StoreController : Controller\r\n    {\r\n        MusicStoreEntities storeDB = new MusicStoreEntities();\r\n        //\r\n        // GET: /Store/\r\n        public ActionResult Index()\r\n        {\r\n            var genres = storeDB.Genres.ToList(); -> (Getting this error here)\r\n            return View(genres);\r\n        }\r\n        //\r\n        // GET: /Store/Browse?genre=Disco\r\n        public ActionResult Browse(string genre)\r\n        {\r\n            //Retrive Genre and its Associated Albums from database\r\n            var generModel = storeDB.Genres.Include(\"Albums\").Single(g => g.Name == genre);\r\n            return View(generModel);\r\n        }\r\n        //\r\n        // GET: /Store/Details/5\r\n        public ActionResult Details(int id)\r\n        {\r\n            var album = storeDB.Albums.Find(id);\r\n            return View(album);\r\n        }\r\n\r\n    }\r\n}\r\n\r\n\r\n\r\n\r\n// This is my MusicStoreEntities Class\r\n\r\nnamespace MvcMusicStore.Models\r\n{\r\n    public class MusicStoreEntities : DbContext\r\n    {\r\n\r\n        public DbSet<Album> Albums { get; set; }\r\n        public DbSet<Genre> Genres { get; set; }\r\n        public DbSet<Artist> Artists { get; set; }\r\n        public DbSet<Cart>  Carts { get; set; }\r\n        public DbSet<Order> Orders { get; set; }\r\n        public DbSet<OrderDetail> OrderDetails { get; set; }\r\n\r\n    }\r\n}",
+    "LastUpdatedDate": "2014-01-18T08:38:44.017-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Unassigned",
+      "Severity": 0,
+      "Id": 0
+    },
+    "ProjectName": "mvcmusicstore",
+    "ReportedDate": "2014-01-18T08:06:56.067-08:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "The model backing the 'MusicStoreEntities' context has changed since the database was created. Consider using Code First Migrations to update the database.",
+    "Type": {
+      "Name": "Unassigned",
+      "Id": 5
+    },
+    "VoteCount": 1,
+    "Id": 6695
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "I have solved this problem by adding the following line to Application_Start() method in Global.asax page:\nSystem.Data.Entity.Database.SetInitializer(new MvcMusicStore.Models.SampleData());",
+      "PostedDate": "2014-01-18T08:38:44.017-08:00",
+      "Id": 130788
+    }
+  ]
+}

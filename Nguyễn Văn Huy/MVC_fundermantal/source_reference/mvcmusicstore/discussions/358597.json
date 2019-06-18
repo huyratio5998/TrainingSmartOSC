@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "845575",
+    "ThreadId": "358597",
+    "Html": "\r\n<p>I am interested in making a button, within the details of the store view. So far I have this:</p>\r\n<p>(details.cshtml)</p>\r\n<p>&lt;p class=&quot;button&quot;&gt;<br>\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; @Html.ActionLink(&quot;More Songs from &quot; &#43; @Model.Artist.Name &#43; &quot; Here&quot;, &quot;BrowseArtist&quot;, &quot;StoreController&quot;, new { id = Model.AlbumId }, &quot;&quot;)<br>\r\n&nbsp;&nbsp;&nbsp; &lt;/p&gt;</p>\r\n<p>&nbsp;</p>\r\n<p>(StoreController.cs)</p>\r\n<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; public ActionResult BrowseArtist(string artist)<br>\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {<br>\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; var artistModel = storeDB.Artists.Include(&quot;Albums&quot;)<br>\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; .Single(g =&gt; g.Name == artist);<br>\r\n<br>\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; return View(artistModel);</p>\r\n<p>&nbsp;</p>\r\n<p>(BrowseArtist.cshtml)</p>\r\n<p>@model MyMusicStore.Models.Artist<br>\r\n@{<br>\r\n&nbsp;&nbsp;&nbsp; ViewBag.Title = &quot;BrowseArtist&quot;;<br>\r\n}<br>\r\n&lt;div class=&quot;genre&quot;&gt;<br>\r\n&nbsp;&nbsp;&nbsp; &lt;h3&gt;&lt;em&gt;@Model.Albums&lt;/em&gt; Albums&lt;/h3&gt;<br>\r\n&nbsp;<br>\r\n&nbsp;&nbsp;&nbsp; &lt;ul id=&quot;album-list&quot;&gt;<br>\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; @foreach (var album in Model.Albums)<br>\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {<br>\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;li&gt;<br>\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;a href=&quot;@Url.Action(&quot;Details&quot;,<br>\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; new { id = album.AlbumId })&quot;&gt;<br>\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;img alt=&quot;@album.Title&quot;\r\n<br>\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; src=&quot;@album.AlbumArtUrl&quot; /&gt;<br>\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;span&gt;@album.Title&lt;/span&gt;<br>\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/a&gt;<br>\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/li&gt;<br>\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br>\r\n&nbsp;&nbsp;&nbsp; &lt;/ul&gt;<br>\r\n&lt;/div&gt;</p>\r\n",
+    "PostedDate": "2012-06-06T08:23:08.957-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "847778",
+    "ThreadId": "358597",
+    "Html": "<p>It looks like you're off to a good start. Your controller should be using a Where query rather than a Single, as you're looking for more than one Album:</p>\r\n<div style=\"color: black; background-color: white;\">\r\n<pre>        <span style=\"color: blue;\">public</span> ActionResult BrowseArtist(<span style=\"color: blue;\">string</span> artist)\r\n        {\r\n            <span style=\"color: blue;\">var</span> artistModel = storeDB.Albums\r\n                .Where(g =&gt; g.Artist.Name == artist);\r\n\r\n            <span style=\"color: blue;\">return</span> View(artistModel);\r\n        }\r\n\r\n</pre>\r\n</div>",
+    "PostedDate": "2012-06-12T00:33:20.147-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

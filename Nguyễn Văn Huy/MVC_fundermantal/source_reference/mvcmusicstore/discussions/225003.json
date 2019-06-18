@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "485457",
+    "ThreadId": "225003",
+    "Html": "<p>In the tutorials it created few models under ViewModels.</p>\r\n<p>Why were not they put under the folder 'Models'?</p>\r\n<p>&nbsp;</p>\r\n<p>Can I move those from folder 'ViewModels' to 'Models'?</p>",
+    "PostedDate": "2010-08-26T18:03:37.413-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "485555",
+    "ThreadId": "225003",
+    "Html": "<p>In the tutorial, we create entity object in the Models folder, and we create ViewModel objects in the ViewModels folder. While you can put these classes whereever you like (model classes can be in any folder you like, in another project, etc.) I recommend putting ViewModels in a separate folder than the entity objects.</p>",
+    "PostedDate": "2010-08-27T00:39:35.373-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

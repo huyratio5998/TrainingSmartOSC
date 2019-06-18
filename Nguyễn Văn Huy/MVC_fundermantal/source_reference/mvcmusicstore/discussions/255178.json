@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "602436",
+    "ThreadId": "255178",
+    "Html": "\r\n<p>I think there could be a problem with the Bind annotation on the Album class. &nbsp;I'm pretty new to MVC, so am not totally sure about this.</p>\r\n<p>My understanding is that the [Bind(Exclude = &quot;AlbumId&quot;)] attribute means that when an action method takes a parameter of type Album, then the AlbumId post variable from the client will not be bound to the model.</p>\r\n<p>This causes a problem when editing an album, and I get an exception every time. &nbsp;This is because AlbumId of the passed in Album is still 0.</p>\r\n<p>Is this just me or is everyone else having the same problem? &nbsp;Why is the Bind attribute placed on the Album class?</p>\r\n",
+    "PostedDate": "2011-04-25T08:10:44.38-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1107681",
+    "ThreadId": "255178",
+    "Html": "So, How did you solve it, didn't you? \r<br />\nBecause I've found this problem also.<br />\n",
+    "PostedDate": "2013-10-15T06:49:26.067-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1107997",
+    "ThreadId": "255178",
+    "Html": "Didn't really look at it too much, but everything <em>seems</em> to work if you simply remove the Bind attribute from the Album class, like this ...<br />\n<pre><code>diff --git a/MvcMusicStore/Models/Album.cs b/MvcMusicStore/Models/Album.cs\nindex 1d0e4e7..15fb11b 100644\n--- a/MvcMusicStore/Models/Album.cs\n+++ b/MvcMusicStore/Models/Album.cs\n@@ -5,7 +5,6 @@ using System.Collections.Generic;\n\n namespace MvcMusicStore.Models\n {\n-    [Bind(Exclude = &quot;AlbumId&quot;)]\n     public class Album\n     {\n         [ScaffoldColumn(false)]</code></pre>\n\n",
+    "PostedDate": "2013-10-15T14:40:21.953-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "1048606",
+    "ThreadId": "444968",
+    "Html": "Under the directions on page 107-120 of  pdf,  I created CheckOutController and  rightclicked  under the AddressAndPayment  method  for  strongly typing to Order(MvcMusicStore.Models) . But  It is not there in the list of Model  classes. Though,  I had already created  Order.cs class under Model Folder when I was reading the pdf at page 89.\r<br />\nPlease Help.\r<br />\nThank you in anticipation!<br />\n",
+    "PostedDate": "2013-05-25T06:03:52.983-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

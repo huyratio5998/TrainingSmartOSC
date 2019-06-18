@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "648644",
+    "ThreadId": "266815",
+    "Html": "<p>Why entities have not been disposed inside controllers??, I was expecting some codes like below inside controller.</p>\n<p>&nbsp;</p>\n<pre style=\"font-family: Consolas; font-size: 13px; color: black; background: none repeat scroll 0% 0% white;\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style=\"color: blue;\">protected</span>&nbsp;<span style=\"color: blue;\">override</span>&nbsp;<span style=\"color: blue;\">void</span>&nbsp;Dispose(<span style=\"color: blue;\">bool</span>&nbsp;disposing)\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;storeDB.Dispose();\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style=\"color: blue;\">base</span>.Dispose(disposing);\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br /><br /><br />I read articles on asp.net/mvc, they in their tutorial have written 'There is need to dispose context created inside controllers,to close the connection'.<br />Is there any specific reason that you have chosen not to dispose the entities or may be Iam missing something.</pre>",
+    "PostedDate": "2011-07-27T15:51:00.823-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

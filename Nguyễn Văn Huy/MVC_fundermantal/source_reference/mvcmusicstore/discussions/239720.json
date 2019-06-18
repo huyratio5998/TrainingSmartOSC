@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "541049",
+    "ThreadId": "239720",
+    "Html": "\r\n<p>I'm sorry I am new, but I have a lot of question. :)</p>\r\n<p>var cartItem = storeDB.Carts.SingleOrDefault(<br>\r\n&nbsp;&nbsp;&nbsp; c =&gt; c.CartId == shoppingCartId &amp;&amp;<br>\r\n&nbsp;&nbsp;&nbsp; c.AlbumId == album.AlbumId);</p>\r\n<p>Could you explain that why use SingleOrDefault not Single?</p>\r\n<p>according to&nbsp;the&nbsp;underside:&nbsp;if (cartItem == null) so it also maybe return null while we use the &quot;Default&quot;?</p>\r\n<p>&nbsp;</p>\r\n<p>Thanks!</p>\r\n",
+    "PostedDate": "2010-12-27T20:57:28.367-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

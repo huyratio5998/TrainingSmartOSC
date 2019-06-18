@@ -1,0 +1,55 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 3,
+    "Custom": null,
+    "Description": "In part 4 we are told to make changes to the Web.config \r\n\r\nwe are told to add \r\n  <connectionStrings>\r\n    <add name=\"MusicStoreEntities\"\r\n     connectionString=\"Data Source=|DataDirectory|MvcMusicStore.sdf\"\r\n     providerName=\"System.Data.SqlServerCe.4.0\"/>\r\n  </connectionStrings> \r\n\r\nbefore the last </configuration> tag. \r\n\r\nwhen I run the code I get this error message \r\n\r\nHTTP Error 500.19 - Internal Server Error\r\nThe requested page cannot be accessed because the related configuration data for the page is invalid.\r\n\r\nDetailed Error Information:\r\nModule\t   IIS Web Core\r\nNotification\t   Unknown\r\nHandler\t   Not yet determined\r\nError Code\t   0x800700b7\r\nConfig Error\t   Config section 'connectionStrings' already defined. Sections must only appear once per config file. See the help topic <location> for exceptions\r\nConfig File\t   \\\\?\\c:\\users\\kertins\\documents\\visual studio 2013\\Projects\\MvcMusicStore\\MvcMusicStore\\web.config\r\nRequested URL\t   http://localhost:51708/\r\nPhysical Path\t   \r\nLogon Method\t   Not yet determined\r\nLogon User\t   Not yet determined\r\nRequest Tracing Directory\t   C:\\Users\\Kertins\\Documents\\IISExpress\\TraceLogFiles\\\r\n\r\nConfig Source:\r\n  107: \r\n  108:   <connectionStrings>\r\n  109:     <add name=\"MusicStoreEntities\"\r\n\r\nMore Information:\r\nThis error occurs when there is a problem reading the configuration file for the Web server or Web application. In some cases, the event logs may contain more information about what caused this error.\r\nIf you see the text \"There is a duplicate 'system.web.extensions/scripting/scriptResourceHandler' section defined\", this error is because you are running a .NET Framework 3.5-based application in .NET Framework 4. If you are running WebMatrix, to resolve this problem, go to the Settings node to set the .NET Framework version to \".NET 2\". You can also remove the extra sections from the web.config file.\r\nView more information »\r\n\r\n\r\n\r\nIt looks like the issue is \r\nConfig Source:\r\n  107: \r\n  108:   <connectionStrings>\r\n  109:     <add name=\"MusicStoreEntities\"\r\n\r\nbut I dont know how to get it to work... \r\n\r\ncould someone help explain this and offer a solution. \r\n\r\n\r\n",
+    "LastUpdatedDate": "2015-02-23T11:35:15.043-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Unassigned",
+      "Severity": 0,
+      "Id": 0
+    },
+    "ProjectName": "mvcmusicstore",
+    "ReportedDate": "2014-05-22T05:55:32.777-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Part 4 connectionString",
+    "Type": {
+      "Name": "Unassigned",
+      "Id": 5
+    },
+    "VoteCount": 1,
+    "Id": 6701
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "sorry all the formatting was removed from the post.... ",
+      "PostedDate": "2014-05-22T05:56:02.607-07:00",
+      "Id": 147417
+    },
+    {
+      "Message": "Remove the connectionStrings tags you added and just place <add name=\"MusicStoreEntities\"\n connectionString=\"Data Source=|DataDirectory|MvcMusicStore.sdf\"\n providerName=\"System.Data.SqlServerCe.4.0\"/> inside the existing tags\n ",
+      "PostedDate": "2014-09-10T18:53:27.237-07:00",
+      "Id": 159399
+    },
+    {
+      "Message": "I have change the code like you said but i am still getting the same error message. please someone help.\n\n\nHTTP Error 500.19 - Internal Server Error\n\nThe requested page cannot be accessed because the related configuration data for the page is invalid.\n\n\n\nDetailed Error Information:\n\n\n\nModule\n   IIS Web Core \n\nNotification\n   Unknown \n\nHandler\n   Not yet determined \n\nError Code\n   0x80070032 \n\nConfig Error\n   The configuration section 'add' cannot be read because it is missing a section declaration  \n\nConfig File\n   \\\\?\\C:\\Users\\Kaoma\\Desktop\\MvcMusicStore 2\\MvcMusicStore\\MvcMusicStore\\web.config \n\n\n\nRequested URL\n   http://localhost:53652/ \n\nPhysical Path\n    \n\nLogon Method\n   Not yet determined \n\nLogon User\n   Not yet determined \n\nRequest Tracing Directory\n   C:\\Users\\Kaoma\\Documents\\IISExpress\\TraceLogFiles\\ \n\n\n\n\nConfig Source:\n  107: \n  108:   <add name=\"MusicStoreEntities\"\n  109: connectionString=\"Data Source=|DataDirectory|MvcMusicStore.sdf\"\n\n",
+      "PostedDate": "2015-02-23T11:35:15.043-08:00",
+      "Id": 175155
+    }
+  ]
+}

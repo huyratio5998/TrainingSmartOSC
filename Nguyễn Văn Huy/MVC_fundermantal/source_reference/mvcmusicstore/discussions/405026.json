@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "949034",
+    "ThreadId": "405026",
+    "Html": "\r\n<p>Error 1 The type or namespace name 'SampleData' does not exist in the namespace 'MvcEmptyApp.Models' (are you missing an assembly reference?) C:\\Documents and Settings\\Alpha\\My Documents\\ASP MVC projects\\MusicStore\\Test Projects\\MvcEmptyApp\\MvcEmptyApp\\App_Start\\AppConfig.cs\r\n 16 79 MvcEmptyApp</p>\r\n<p>The ‘Music Store’ tutorial imported 'sampledata.cs' from resources provided attendant to the tutorial which 'seeded' data in relation to MusicStoreEntities.cs (code below).<br>\r\n_________________</p>\r\n<p>namespace MvcMusicStore.Models<br>\r\n{<br>\r\n&nbsp;&nbsp;&nbsp; public class SampleData : DropCreateDatabaseIfModelChanges&lt;MusicStoreEntities&gt;<br>\r\n&nbsp;&nbsp;&nbsp; {<br>\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; protected override void Seed(MusicStoreEntities context)<br>\r\n_________________</p>\r\n<p>Questions:</p>\r\n<p>Does ‘Sampledata’ function in the same as above for account creation?&nbsp; Is it the same seeding process, or something different?</p>\r\n<p>Is the 'Sampledata' used for account creation the same as the one used already for&nbsp;music database (there is no reference to usernames or userIDs, so&nbsp;I'm thinking no: I need to create a different sampledata code).&nbsp;</p>\r\n<p>Is the entity or name “Sampledata” a standard used for any and all database creation, or is it just coincidence that the name is being used both for music store music and account database creation.</p>\r\n<p>Any direction on how to get the appconfig.cs and sampledata.cs working appreciated.</p>\r\n<p>Thanks.</p>\r\n",
+    "PostedDate": "2012-11-29T07:16:53.473-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]
