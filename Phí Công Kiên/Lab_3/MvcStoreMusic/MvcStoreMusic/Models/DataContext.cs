@@ -10,6 +10,7 @@ namespace MvcStoreMusic.Models
         public virtual DbSet<Genre> Genres { get; set; }
         public virtual DbSet<Album> Albums { get; set; }
         public virtual DbSet<Artist> Artists { get; set; }
+
         public DataContext() : base("StoreMusicDB")
         {
             
