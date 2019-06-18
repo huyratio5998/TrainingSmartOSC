@@ -1,0 +1,7 @@
+C:\Users\drago\Desktop\Homework\OOP_C#\Practical_Lab_1\Practical_Lab_1\bin\Debug\Practical_Lab_1.exe.config
+C:\Users\drago\Desktop\Homework\OOP_C#\Practical_Lab_1\Practical_Lab_1\bin\Debug\Practical_Lab_1.exe
+C:\Users\drago\Desktop\Homework\OOP_C#\Practical_Lab_1\Practical_Lab_1\bin\Debug\Practical_Lab_1.pdb
+C:\Users\drago\Desktop\Homework\OOP_C#\Practical_Lab_1\Practical_Lab_1\obj\Debug\Practical_Lab_1.csprojAssemblyReference.cache
+C:\Users\drago\Desktop\Homework\OOP_C#\Practical_Lab_1\Practical_Lab_1\obj\Debug\Practical_Lab_1.csproj.CoreCompileInputs.cache
+C:\Users\drago\Desktop\Homework\OOP_C#\Practical_Lab_1\Practical_Lab_1\obj\Debug\Practical_Lab_1.exe
+C:\Users\drago\Desktop\Homework\OOP_C#\Practical_Lab_1\Practical_Lab_1\obj\Debug\Practical_Lab_1.pdb
