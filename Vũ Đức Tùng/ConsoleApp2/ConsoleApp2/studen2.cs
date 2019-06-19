@@ -6,6 +6,7 @@ using System.Linq;
 
 namespace ConsoleApp2
 {
+    //moder lop hoc sinh
     class student : pointandsubject
     {
         public string name
@@ -89,8 +90,9 @@ namespace ConsoleApp2
             string name;
             string email;
             string choisePoin, choiseInfo;
+            // khoi tao doi tuong hoc sinh
             List<student> hocsinh = new List<student>();
-
+            // nhap thong tin hoc sinh
             do
             {
 
@@ -135,6 +137,7 @@ namespace ConsoleApp2
                 Console.WriteLine("ban muon nhap thong tin hoc sinh tiep khong: Y/N: ");
                 choiseInfo = Convert.ToString(Console.ReadLine());
             } while ((choiseInfo != "N") && (choiseInfo != "NO") && (choiseInfo != "n") && (choiseInfo != "no"));
+            //hien thi hoc sinh
             foreach (student hoc in hocsinh)
             {
                 hoc.show();
@@ -152,6 +155,7 @@ namespace ConsoleApp2
                     Console.WriteLine("mon hoc " + subject1.subject);
                 }
             }
+            // sap xep theo ten
             Console.WriteLine("sap sep theo ten");
             hocsinh = hocsinh.Where(h => h.zpoint.Average(x => x.point) > 6).ToList();
             hocsinh = hocsinh.OrderBy(p => p.name.Split(' ').Last()).ToList();
