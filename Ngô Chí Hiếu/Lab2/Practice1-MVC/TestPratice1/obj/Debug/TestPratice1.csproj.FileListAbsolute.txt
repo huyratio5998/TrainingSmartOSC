@@ -1,0 +1,7 @@
+C:\Users\admin\source\repos\Practice1\TestPratice1\obj\Debug\TestPratice1.csproj.CoreCompileInputs.cache
+C:\Users\admin\source\repos\Practice1\TestPratice1\bin\Debug\TestPratice1.exe.config
+C:\Users\admin\source\repos\Practice1\TestPratice1\bin\Debug\TestPratice1.exe
+C:\Users\admin\source\repos\Practice1\TestPratice1\bin\Debug\TestPratice1.pdb
+C:\Users\admin\source\repos\Practice1\TestPratice1\obj\Debug\TestPratice1.exe
+C:\Users\admin\source\repos\Practice1\TestPratice1\obj\Debug\TestPratice1.pdb
+C:\Users\admin\source\repos\Practice1\TestPratice1\obj\Debug\TestPratice1.csprojAssemblyReference.cache
