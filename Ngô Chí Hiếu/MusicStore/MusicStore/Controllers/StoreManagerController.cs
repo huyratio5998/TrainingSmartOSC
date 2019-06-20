@@ -15,24 +15,16 @@ namespace MusicStore.Controllers
         private MusicStoreEntities db = new MusicStoreEntities();
 
         // GET: StoreManager
-        public ActionResult Index()
+        public ViewResult Index()
         {
             var albums = db.Albums.Include(a => a.Artist).Include(a => a.Genre);
             return View(albums.ToList());
         }
 
         // GET: StoreManager/Details/5
-        public ActionResult Details(int? id)
+        public ViewResult Details(int id)
         {
-            if (id == null)
-            {
-                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
-            }
             Album album = db.Albums.Find(id);
-            if (album == null)
-            {
-                return HttpNotFound();
-            }
             return View(album);
         }
 
@@ -124,6 +116,9 @@ namespace MusicStore.Controllers
             return RedirectToAction("Index");
         }
 
+
+        //Giai phong bo nho
+        //dung ham Dispose entity ho tro
         protected override void Dispose(bool disposing)
         {
             if (disposing)
