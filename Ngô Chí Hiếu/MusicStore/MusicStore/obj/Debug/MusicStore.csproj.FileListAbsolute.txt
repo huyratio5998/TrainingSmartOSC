@@ -253,4 +253,3 @@ C:\Users\admin\Desktop\work\Ngô Chí Hiếu\MusicStore\MusicStore\bin\Microsoft
 C:\Users\admin\Desktop\work\Ngô Chí Hiếu\MusicStore\MusicStore\bin\Microsoft.AspNet.Identity.EntityFramework.dll
 C:\Users\admin\Desktop\work\Ngô Chí Hiếu\MusicStore\MusicStore\bin\Microsoft.AspNet.Identity.Core.xml
 C:\Users\admin\Desktop\work\Ngô Chí Hiếu\MusicStore\MusicStore\bin\Microsoft.AspNet.Identity.EntityFramework.xml
-C:\Users\admin\Desktop\work\Ngô Chí Hiếu\MusicStore\MusicStore\obj\Debug\MusicStore.csprojAssemblyReference.cache
