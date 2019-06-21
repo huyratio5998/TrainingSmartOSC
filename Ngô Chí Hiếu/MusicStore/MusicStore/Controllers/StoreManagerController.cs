@@ -81,7 +81,6 @@ namespace MusicStore.Controllers
         {
             if (ModelState.IsValid)
             {
-               var res = album.AlbumId
                 db.Entry(album).State = EntityState.Modified;
                 db.SaveChanges();
                 return RedirectToAction("Index");
