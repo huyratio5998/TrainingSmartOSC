@@ -245,8 +245,12 @@ C:\Users\admin\Desktop\work\Ngô Chí Hiếu\MusicStore\MusicStore\bin\Antlr3.Ru
 C:\Users\admin\Desktop\work\Ngô Chí Hiếu\MusicStore\MusicStore\bin\System.Diagnostics.DiagnosticSource.xml
 C:\Users\admin\Desktop\work\Ngô Chí Hiếu\MusicStore\MusicStore\bin\Microsoft.AspNet.TelemetryCorrelation.xml
 C:\Users\admin\Desktop\work\Ngô Chí Hiếu\MusicStore\MusicStore\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\admin\Desktop\work\Ngô Chí Hiếu\MusicStore\MusicStore\obj\Debug\MusicStore.csprojAssemblyReference.cache
 C:\Users\admin\Desktop\work\Ngô Chí Hiếu\MusicStore\MusicStore\obj\Debug\MusicStore.csproj.CoreCompileInputs.cache
 C:\Users\admin\Desktop\work\Ngô Chí Hiếu\MusicStore\MusicStore\obj\Debug\MusicStore.csproj.CopyComplete
 C:\Users\admin\Desktop\work\Ngô Chí Hiếu\MusicStore\MusicStore\obj\Debug\MusicStore.dll
 C:\Users\admin\Desktop\work\Ngô Chí Hiếu\MusicStore\MusicStore\obj\Debug\MusicStore.pdb
+C:\Users\admin\Desktop\work\Ngô Chí Hiếu\MusicStore\MusicStore\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\admin\Desktop\work\Ngô Chí Hiếu\MusicStore\MusicStore\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\admin\Desktop\work\Ngô Chí Hiếu\MusicStore\MusicStore\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\admin\Desktop\work\Ngô Chí Hiếu\MusicStore\MusicStore\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\admin\Desktop\work\Ngô Chí Hiếu\MusicStore\MusicStore\obj\Debug\MusicStore.csprojAssemblyReference.cache
