@@ -42,6 +42,10 @@ namespace StoreMusic.Controllers
                     {
                         return Redirect(returnUrl);
                     }
+                    else if (model.UserName.Equals("Admin") && model.Password.Equals("admin@gmail.com"))
+                    {
+                        return RedirectToAction("Index", "StoreManager");
+                    }
                     else
                     {
                         return RedirectToAction("Index", "Home");
