@@ -7,6 +7,9 @@ namespace MusicStore.Models
 {
     public class AccountEntities : DbContext
     {
+        public AccountEntities() : base()
+        {
+        }
         public DbSet<Account> Accounts { get; set; }
         public DbSet<AccountRole> Roles { get; set; }
     }

@@ -72,8 +72,7 @@ namespace MusicStore.Controllers
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "UserId,UserName,Password")] Account account)
+        public ActionResult Register([Bind(Include = "UserId,UserName,Password")] Account account)
         {
             if (ModelState.IsValid)
             {
