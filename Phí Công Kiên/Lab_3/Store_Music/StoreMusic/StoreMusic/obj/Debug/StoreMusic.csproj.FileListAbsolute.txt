@@ -240,3 +240,4 @@ C:\Users\drago\Desktop\TrainingSmartOSC\Phí Công Kiên\Lab_3\Store_Music\Store
 C:\Users\drago\Desktop\TrainingSmartOSC\Phí Công Kiên\Lab_3\Store_Music\StoreMusic\StoreMusic\obj\Debug\StoreMusic.pdb
 C:\Users\drago\Desktop\TrainingSmartOSC\Phí Công Kiên\Lab_3\Store_Music\StoreMusic\StoreMusic\obj\Debug\StoreMusic.Migrations.InitialCreate.resources
 C:\Users\drago\Desktop\TrainingSmartOSC\Phí Công Kiên\Lab_3\Store_Music\StoreMusic\StoreMusic\obj\Debug\StoreMusic.csproj.GenerateResource.cache
+C:\Users\drago\Desktop\TrainingSmartOSC\Phí Công Kiên\Lab_3\Store_Music\StoreMusic\StoreMusic\obj\Debug\StoreMusic.csprojAssemblyReference.cache
