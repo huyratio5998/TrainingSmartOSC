@@ -13,25 +13,26 @@ namespace Practice.Controllers
         public ActionResult Index()
         {
             var genres = storeDB.Genres.ToList();
-            //var genres = new List<Genre>
-            //{
-            //    new Genre{ Name="Nguyễn Văn Huy"},
-            //    new Genre{ Name="Kiên"},
-            //    new Genre{ Name="Hùng"},
-            //    new Genre{ Name="Lan Anh"}
-            //};
+            //var example = storeDB.Genres.Single(p => p.Name == "Disco");
+           
             return View(genres);
         }
-        public ActionResult Browse(string s)
+        public ActionResult Browser(string Genre)
         {
-            var genreModel = new Genre() { Name = s };
+            var genreModel = storeDB.Genres.Include("Albums").Single(p => p.Name == Genre);
             return View(genreModel);
         }
         public ActionResult Details(int id)
         {
-            var al = new Album { Title = "Album" + id };
-            return View(al);
+            var album = storeDB.Albums.Find(id);
+            return View(album);
         }
-            
+        [ChildActionOnly]
+        public ActionResult GenreMenu()
+        {
+            var genres = storeDB.Genres.ToList();
+            return PartialView(genres);
+        }
+
     }
 }

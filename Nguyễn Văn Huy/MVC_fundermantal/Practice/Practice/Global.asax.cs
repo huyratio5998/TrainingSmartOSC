@@ -12,7 +12,7 @@ namespace Practice
     {
         protected void Application_Start()
         {
-            System.Data.Entity.Database.SetInitializer(new Practice.Models.SampleData());
+            //System.Data.Entity.Database.SetInitializer(new Practice.Models.SampleData());
             AreaRegistration.RegisterAllAreas();
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);

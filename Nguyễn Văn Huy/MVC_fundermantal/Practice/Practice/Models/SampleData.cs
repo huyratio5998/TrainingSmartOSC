@@ -20,8 +20,11 @@ namespace Practice.Models
                 new Genre { Name = "Latin" },
                 new Genre { Name = "Reggae" },
                 new Genre { Name = "Pop" },
-                new Genre { Name = "Classical" }
+                new Genre { Name = "Classical" },
+
             };
+            context.Genres.AddRange(genres);
+            base.Seed(context);
             var artists = new List<Artist>
             {
                 new Artist { Name = "Aaron Copland & London Symphony Orchestra" },

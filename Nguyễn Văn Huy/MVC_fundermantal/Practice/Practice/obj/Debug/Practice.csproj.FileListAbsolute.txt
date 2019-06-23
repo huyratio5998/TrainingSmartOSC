@@ -166,3 +166,8 @@ A:\SmartOSC\Training\Nguyễn Văn Huy\MVC_fundermantal\Practice\Practice\obj\De
 A:\SmartOSC\Training\Nguyễn Văn Huy\MVC_fundermantal\Practice\Practice\obj\Debug\Practice.csproj.CopyComplete
 A:\SmartOSC\Training\Nguyễn Văn Huy\MVC_fundermantal\Practice\Practice\obj\Debug\Practice.dll
 A:\SmartOSC\Training\Nguyễn Văn Huy\MVC_fundermantal\Practice\Practice\obj\Debug\Practice.pdb
+A:\SmartOSC\Training\Nguyễn Văn Huy\MVC_fundermantal\Practice\Practice\obj\Debug\Practice.Migrations.InitialCreate.resources
+A:\SmartOSC\Training\Nguyễn Văn Huy\MVC_fundermantal\Practice\Practice\obj\Debug\Practice.csproj.GenerateResource.cache
+A:\SmartOSC\Training\Nguyễn Văn Huy\MVC_fundermantal\Practice\Practice\obj\Debug\Practice.Migrations.codeFirst_ver1.resources
+A:\SmartOSC\Training\Nguyễn Văn Huy\MVC_fundermantal\Practice\Practice\obj\Debug\Practice.Migrations.updatever2.resources
+A:\SmartOSC\Training\Nguyễn Văn Huy\MVC_fundermantal\Practice\Practice\obj\Debug\Practice.Migrations.update_data.resources
