@@ -9,7 +9,7 @@ using System.Web.Mvc;
 
 namespace Store_Music.Controllers
 {
-    [Authorize]
+    [Authorize(Users = "Admin@gmail.com")]
     public class StoreManagerController : Controller
     {
         private StoreMusicContext db = new StoreMusicContext();
