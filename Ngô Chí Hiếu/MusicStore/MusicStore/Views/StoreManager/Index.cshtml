@@ -8,7 +8,7 @@
     }
     else
     {
-        @input.Substring(0,length)<text>...</text>
+        @input.Substring(0, length)<text>...</text>
     }
 }
 
@@ -17,8 +17,13 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Index</h2>
 
+<ul id="navlist">
+    <li><a href="~/Accounts/LogIn">Log Out</a></li>
+    <li><a href="~/Accounts/LogIn">Change Password</a></li>
+</ul>
+
+<h1>Store Manage                                                                       Admin Mode</h1>
 <p>
     @Html.ActionLink("Create New", "Create")
 </p>
@@ -52,10 +57,10 @@
                 @Html.DisplayFor(modelItem => item.Genre.Name)
             </td>
             <td>
-                @Truncate(item.Artist.Name,25)
+                @Truncate(item.Artist.Name, 25)
             </td>
             <td>
-                @Truncate(item.Title,25)
+                @Truncate(item.Title, 25)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Price)
@@ -69,3 +74,5 @@
     }
 
 </table>
+
+
