@@ -217,3 +217,4 @@ C:\Users\PC_KIEN\Desktop\TrainingSmartOSC\Phí Công Kiên\Lab_3\Store_Music_230
 C:\Users\PC_KIEN\Desktop\TrainingSmartOSC\Phí Công Kiên\Lab_3\Store_Music_23062019_finish_full\Store_Music\Store_Music\obj\Debug\Store_Music.pdb
 C:\Users\PC_KIEN\Desktop\TrainingSmartOSC\Phí Công Kiên\Lab_3\Store_Music_23062019_finish_full\Store_Music\Store_Music\obj\Debug\Store_Music.Migrations.InitialCreate.resources
 C:\Users\PC_KIEN\Desktop\TrainingSmartOSC\Phí Công Kiên\Lab_3\Store_Music_23062019_finish_full\Store_Music\Store_Music\obj\Debug\Store_Music.csproj.GenerateResource.cache
+C:\Users\PC_KIEN\Desktop\TrainingSmartOSC\Phí Công Kiên\Lab_3\Store_Music_23062019_finish_full\Store_Music\Store_Music\obj\Debug\Store_Music.csprojAssemblyReference.cache
