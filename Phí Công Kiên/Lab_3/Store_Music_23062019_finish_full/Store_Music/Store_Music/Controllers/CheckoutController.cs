@@ -10,7 +10,7 @@ namespace Store_Music.Controllers
     [Authorize]
     public class CheckoutController : Controller
     {
-        StoreMusicContext storeDB = new StoreMusicContext();
+        ApplicationDbContext storeDB = new ApplicationDbContext();
 
         const string PromoCode = "FREE";
 

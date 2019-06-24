@@ -8,7 +8,7 @@ namespace Store_Music.Models
 {
     public partial class ShoppingCart
     {
-        StoreMusicContext storeDB = new StoreMusicContext();
+        ApplicationDbContext storeDB = new ApplicationDbContext();
 
         string ShoppingCartId { get; set; }
 

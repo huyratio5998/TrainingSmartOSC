@@ -10,7 +10,7 @@ namespace Store_Music.Controllers
 {
     public class ShoppingCartController : Controller
     {
-        StoreMusicContext storeDB = new StoreMusicContext();
+        ApplicationDbContext storeDB = new ApplicationDbContext();
 
         //
         // GET: /ShoppingCart/

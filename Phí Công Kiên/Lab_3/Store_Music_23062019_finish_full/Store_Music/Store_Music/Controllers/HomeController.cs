@@ -10,11 +10,11 @@ namespace Store_Music.Controllers
 {
     public class HomeController : Controller
     {
-        private StoreMusicContext storeDB;
+        private ApplicationDbContext storeDB;
 
         public HomeController()
         {
-            storeDB = new StoreMusicContext();
+            storeDB = new ApplicationDbContext();
         }
 
         public ActionResult Index(int? page)

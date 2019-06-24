@@ -12,7 +12,7 @@ namespace Store_Music.Controllers
     [Authorize(Users = "Admin@gmail.com")]
     public class StoreManagerController : Controller
     {
-        private StoreMusicContext db = new StoreMusicContext();
+        ApplicationDbContext db = new ApplicationDbContext();
 
         // GET: StoreManager
         public ActionResult Index()

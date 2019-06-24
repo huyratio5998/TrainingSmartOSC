@@ -211,8 +211,9 @@ C:\Users\PC_KIEN\Desktop\TrainingSmartOSC\Phí Công Kiên\Lab_3\Store_Music_230
 C:\Users\PC_KIEN\Desktop\TrainingSmartOSC\Phí Công Kiên\Lab_3\Store_Music_23062019_finish_full\Store_Music\Store_Music\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 C:\Users\PC_KIEN\Desktop\TrainingSmartOSC\Phí Công Kiên\Lab_3\Store_Music_23062019_finish_full\Store_Music\Store_Music\bin\Microsoft.Owin.Security.OAuth.xml
 C:\Users\PC_KIEN\Desktop\TrainingSmartOSC\Phí Công Kiên\Lab_3\Store_Music_23062019_finish_full\Store_Music\Store_Music\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\PC_KIEN\Desktop\TrainingSmartOSC\Phí Công Kiên\Lab_3\Store_Music_23062019_finish_full\Store_Music\Store_Music\obj\Debug\Store_Music.csprojAssemblyReference.cache
 C:\Users\PC_KIEN\Desktop\TrainingSmartOSC\Phí Công Kiên\Lab_3\Store_Music_23062019_finish_full\Store_Music\Store_Music\obj\Debug\Store_Music.csproj.CoreCompileInputs.cache
 C:\Users\PC_KIEN\Desktop\TrainingSmartOSC\Phí Công Kiên\Lab_3\Store_Music_23062019_finish_full\Store_Music\Store_Music\obj\Debug\Store_Music.csproj.CopyComplete
 C:\Users\PC_KIEN\Desktop\TrainingSmartOSC\Phí Công Kiên\Lab_3\Store_Music_23062019_finish_full\Store_Music\Store_Music\obj\Debug\Store_Music.dll
 C:\Users\PC_KIEN\Desktop\TrainingSmartOSC\Phí Công Kiên\Lab_3\Store_Music_23062019_finish_full\Store_Music\Store_Music\obj\Debug\Store_Music.pdb
+C:\Users\PC_KIEN\Desktop\TrainingSmartOSC\Phí Công Kiên\Lab_3\Store_Music_23062019_finish_full\Store_Music\Store_Music\obj\Debug\Store_Music.Migrations.InitialCreate.resources
+C:\Users\PC_KIEN\Desktop\TrainingSmartOSC\Phí Công Kiên\Lab_3\Store_Music_23062019_finish_full\Store_Music\Store_Music\obj\Debug\Store_Music.csproj.GenerateResource.cache

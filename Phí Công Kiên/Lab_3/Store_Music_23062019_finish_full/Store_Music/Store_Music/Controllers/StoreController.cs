@@ -11,7 +11,7 @@ namespace Store_Music.Controllers
 {
     public class StoreController : Controller
     {
-        private StoreMusicContext db = new StoreMusicContext();
+        ApplicationDbContext db = new ApplicationDbContext();
 
         // GET: Store
         public ActionResult Index()
