@@ -1,7 +1,0 @@
-C:\Users\admin\source\repos\Practice1\Pratice 1\bin\Debug\Pratice 1.exe.config
-C:\Users\admin\source\repos\Practice1\Pratice 1\bin\Debug\Pratice 1.exe
-C:\Users\admin\source\repos\Practice1\Pratice 1\bin\Debug\Pratice 1.pdb
-C:\Users\admin\source\repos\Practice1\Pratice 1\obj\Debug\Pratice 1.csproj.CoreCompileInputs.cache
-C:\Users\admin\source\repos\Practice1\Pratice 1\obj\Debug\Pratice 1.exe
-C:\Users\admin\source\repos\Practice1\Pratice 1\obj\Debug\Pratice 1.pdb
-C:\Users\admin\source\repos\Practice1\Pratice 1\obj\Debug\Pratice 1.csprojAssemblyReference.cache
