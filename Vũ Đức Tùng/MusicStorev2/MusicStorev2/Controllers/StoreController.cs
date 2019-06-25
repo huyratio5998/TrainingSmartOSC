@@ -29,19 +29,22 @@ namespace MusicStorev2.Controllers
         {
             var genreModel = storeDB.Genres.Include("Albums").Single(a=>a.Name== genre);
             return View(genreModel);
-        }
+        }
+
         //
         // GET: /Store/Details
         public ActionResult Details(int id)
         {
             var album = storeDB.Albums.Find(id);
             return View(album);
-        }        [ChildActionOnly]
+        }
+        [ChildActionOnly]
         public ActionResult GenreMenu()
         {
             var genres = storeDB.Genres.ToList();
 
             return PartialView(genres);
-        }
+        }
+
     }
 }
