@@ -1,7 +1,0 @@
-A:\SmartOSC\Training\OPP\Practical1\PracticalLap3\bin\Debug\PracticalLap3.exe.config
-A:\SmartOSC\Training\OPP\Practical1\PracticalLap3\bin\Debug\PracticalLap3.exe
-A:\SmartOSC\Training\OPP\Practical1\PracticalLap3\bin\Debug\PracticalLap3.pdb
-A:\SmartOSC\Training\OPP\Practical1\PracticalLap3\obj\Debug\PracticalLap3.csprojAssemblyReference.cache
-A:\SmartOSC\Training\OPP\Practical1\PracticalLap3\obj\Debug\PracticalLap3.csproj.CoreCompileInputs.cache
-A:\SmartOSC\Training\OPP\Practical1\PracticalLap3\obj\Debug\PracticalLap3.exe
-A:\SmartOSC\Training\OPP\Practical1\PracticalLap3\obj\Debug\PracticalLap3.pdb

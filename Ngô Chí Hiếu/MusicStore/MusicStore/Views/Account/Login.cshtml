@@ -1,15 +1,11 @@
-﻿@using MusicStore.Models
-@model  LoginViewModel
-
+﻿
+@model  MusicStore.Models.LoginViewModel
 
 @{
-    ViewBag.Title = "Login";
-    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Log On";
 }
 
-<h2>@ViewBag.Tittle</h2>
-
-<h2>Log In</h2>
+<h2>Log On</h2>
 <p>
     Please enter your user name and password. @Html.ActionLink("Register", "Register") if you don't have an account.
 </p>
@@ -26,11 +22,10 @@
             <legend>Account Information</legend>
 
             <div class="editor-label">
-                @Html.LabelFor(m => m.UserName)
+                @Html.LabelFor(m => m.Email)
             </div>
             <div class="editor-field">
-                @Html.TextBoxFor(m => m.UserName)
-                @Html.ValidationMessageFor(m => m.UserName)
+                @Html.TextBoxFor(m => m.Email)
             </div>
 
             <div class="editor-label">
@@ -38,12 +33,10 @@
             </div>
             <div class="editor-field">
                 @Html.PasswordFor(m => m.Password)
-                @Html.ValidationMessageFor(m => m.Password)
             </div>
 
             <div class="editor-label">
                 @Html.CheckBoxFor(m => m.RememberMe)
-                @Html.LabelFor(m => m.RememberMe)
             </div>
 
             <p>
@@ -52,4 +45,5 @@
         </fieldset>
     </div>
 }
+
 

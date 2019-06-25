@@ -10,7 +10,8 @@ using MusicStore.Models;
 
 namespace MusicStore.Controllers
 {
-    public class StoreManagerController : Controller
+    //[Authorize(Roles = "admin")]
+    public class StoreManagerController : Controller 
     {
         private MusicStoreEntities db = new MusicStoreEntities();
 

@@ -10,33 +10,34 @@ using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
 using MusicStore.App_Start;
 using MusicStore.Models;
-using static MusicStore.Models.IdentityModel;
+using Microsoft.Owin.Host.SystemWeb;
 
 namespace MusicStore.Controllers
 {
     public class AccountController : Controller
     {
+
         private ApplicationSignInManager _signInManager;
         private ApplicationUserManager _userManager;
 
-        // GET: Account
-        
 
+        //------------Constructor--------------
         public AccountController()
         {
-
         }
-        public AccountController(ApplicationUserManager usermanager,ApplicationSignInManager signinmanager)
+
+        public AccountController(ApplicationUserManager userManager, ApplicationSignInManager signInManager)
         {
-            this._signInManager = signinmanager;
-            this._userManager = usermanager;
+            _userManager = userManager;
+            _signInManager = signInManager;
         }
 
+        //-------------------Get------------Set----------------
         public ApplicationSignInManager SignInManager
         {
             get
             {
-                return _signInManager;
+                return _signInManager ?? HttpContext.GetOwinContext().Get<ApplicationSignInManager>();
             }
             private set
             {
@@ -47,7 +48,7 @@ namespace MusicStore.Controllers
         {
             get
             {
-                return _userManager;
+                return _userManager ?? HttpContext.GetOwinContext().GetUserManager<ApplicationUserManager>();
             }
             private set
             {
@@ -56,24 +57,30 @@ namespace MusicStore.Controllers
         }
 
 
-         
-        //Get Accout Login
-        [AllowAnonymous]
+
+
+
+
+        //-----------------------------------------------------Login------------------------------------------------
+        //GET : /Account/Login
         public ActionResult Login(string returnUrl)
         {
-            ViewBag.returnUrl = returnUrl;
+            ViewBag.ReturnUrl = returnUrl;
             return View();
         }
+        // POST: /Account/Login
         [HttpPost]
         [AllowAnonymous]
-        public async Task<ActionResult> Login(LoginViewModel model,string returnUrl)
+        public async Task<ActionResult> Login(LoginViewModel model, string returnUrl)
         {
             if (!ModelState.IsValid)
             {
                 return View(model);
             }
 
-            var result = await SignInManager.PasswordSignInAsync(model.UserName, model.Password, model.RememberMe, shouldLockout: false);
+            // This doesn't count login failures towards account lockout
+            // To enable password failures to trigger account lockout, change to shouldLockout: true
+            var result = await SignInManager.PasswordSignInAsync(model.Email, model.Password, model.RememberMe, shouldLockout: false);
             switch (result)
             {
                 case SignInStatus.Success:
@@ -81,10 +88,10 @@ namespace MusicStore.Controllers
                 case SignInStatus.LockedOut:
                     return View("Lockout");
                 case SignInStatus.RequiresVerification:
-                    return RedirectToAction("SendCode", new { ReturnUrl = returnUrl, Remember = model.RememberMe });
+                    return RedirectToAction("SendCode", new { ReturnUrl = returnUrl, RememberMe = model.RememberMe });
                 case SignInStatus.Failure:
                 default:
-                    ModelState.AddModelError("", "Invalid login attempt");
+                    ModelState.AddModelError("", "Invalid login attempt.");
                     return View(model);
             }
         }
@@ -94,34 +101,33 @@ namespace MusicStore.Controllers
             {
                 return Redirect(returnUrl);
             }
-            return RedirectToAction("Index", "Home");
+            return RedirectToAction("Index","StoreManager");
         }
+        //---------------------------------------End---------------Login--------------------------------------------------
 
-        [AllowAnonymous]
+
+
+
+        //-----------------------------------------------Register--------------------------------------------------------
+
+        //--------GET
         public ActionResult Register()
         {
             return View();
         }
-
+        //--------POST
 
         [HttpPost]
+        [AllowAnonymous]
         public async Task<ActionResult> Register(RegisterViewModel model)
         {
             if (ModelState.IsValid)
             {
-                var user = new ApplicationUser { UserName = model.UserName,Email = model.UserName  };
+                var user = new ApplicationUser { UserName = model.Email, Email = model.Email };
                 var result = await UserManager.CreateAsync(user, model.Password);
                 if (result.Succeeded)
                 {
-                    await SignInManager.SignInAsync(user, isPersistent: false, rememberBrowser: false);
-
-                    // For more information on how to enable account confirmation and password reset please visit https://go.microsoft.com/fwlink/?LinkID=320771
-                    // Send an email with this link
-                    // string code = await UserManager.GenerateEmailConfirmationTokenAsync(user.Id);
-                    // var callbackUrl = Url.Action("ConfirmEmail", "Account", new { userId = user.Id, code = code }, protocol: Request.Url.Scheme);
-                    // await UserManager.SendEmailAsync(user.Id, "Confirm your account", "Please confirm your account by clicking <a href=\"" + callbackUrl + "\">here</a>");
-
-                    return RedirectToAction("Index", "Home");
+                    return RedirectToAction("StoreManager/Index", "Index");
                 }
                 AddErrors(result);
             }
@@ -129,6 +135,7 @@ namespace MusicStore.Controllers
             // If we got this far, something failed, redisplay form
             return View(model);
         }
+
         private void AddErrors(IdentityResult result)
         {
             foreach (var error in result.Errors)
@@ -136,5 +143,13 @@ namespace MusicStore.Controllers
                 ModelState.AddModelError("", error);
             }
         }
+
+
+        //--------------------------------------End-------Register-------------------------------------------
+
+
+
     }
+
+
 }

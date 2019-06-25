@@ -1,38 +1,57 @@
-﻿using System;
+﻿using Microsoft.AspNet.Identity.EntityFramework;
 using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using System.ComponentModel.DataAnnotations;
+
 
 namespace MusicStore.Models
 {
     public class LoginViewModel
     {
         [Required]
-        [Display(Name = "User Name")]
-        public string UserName { get; set; }
+        [Display(Name = "Email")]
+        [EmailAddress]
+        public string Email { get; set; }
+
         [Required]
         [DataType(DataType.Password)]
         [Display(Name = "Password")]
         public string Password { get; set; }
-        
-        [Display(Name = "Remember Me")]
+
+        [Display(Name = "Remember me?")]
         public bool RememberMe { get; set; }
     }
-
     public class RegisterViewModel
     {
         [Required]
-        [Display(Name = "UserName")]
-        public string UserName { get; set; }
+        [EmailAddress]
+        [Display(Name = "User Name")]
+        public string Email { get; set; }
+
         [Required]
+        [StringLength(100, ErrorMessage = "The {0} must be at least {2} characters long.", MinimumLength = 6)]
         [DataType(DataType.Password)]
         [Display(Name = "Password")]
         public string Password { get; set; }
-        [Required]
+
         [DataType(DataType.Password)]
-        [Display(Name = "Confirm Password")]
-        [Compare("Password",ErrorMessage = "The password and confirmation password do not match.")]
+        [Display(Name = "Confirm password")]
+        [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
         public string ConfirmPassword { get; set; }
     }
+
+    public class AppUser : IdentityRole
+    {
+        public string MyExtraProperty { get; set; }
+    }
+
+    public class AppRole : IdentityRole
+    {
+        public AppRole() : base() {
+
+        }
+        public AppRole(string name) : base(name) {
+
+        }
+    }
+
 }
