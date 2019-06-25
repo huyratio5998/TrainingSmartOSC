@@ -107,3 +107,4 @@ C:\Users\vuduc\source\repos\MusicStorev2\MusicStorev2\obj\Debug\MusicStorev2.csp
 C:\Users\vuduc\source\repos\MusicStorev2\MusicStorev2\obj\Debug\MusicStorev2.Migrations.update.resources
 C:\Users\vuduc\source\repos\MusicStorev2\MusicStorev2\obj\Debug\MusicStorev2.csprojAssemblyReference.cache
 C:\Users\vuduc\source\repos\MusicStorev2\MusicStorev2\obj\Debug\MusicStorev2.Migrations.update1.resources
+C:\Users\vuduc\source\repos\MusicStorev2\MusicStorev2\obj\Debug\MusicStorev2.Migrations.update2.resources
