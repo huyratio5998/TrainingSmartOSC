@@ -36,7 +36,9 @@ namespace MusicStore.Controllers
             cart.AddToCart(addedAlbum);
             // Go back to the main store page for more shopping
             return RedirectToAction("Index");
-        }        [HttpPost]
+        }
+
+        [HttpPost]
         public ActionResult RemoveFromCart(int id)
         {
             // Remove the item from the cart
@@ -57,12 +59,16 @@ namespace MusicStore.Controllers
                 DeleteId = id
             };
             return Json(results);
-        }        [ChildActionOnly]
+        }
+
+
+        [ChildActionOnly]
         public ActionResult CartSummary()
         {
             var cart = ShoppingCart.GetCart(this.HttpContext);
             ViewData["CartCount"] = cart.GetCount();
             return PartialView("CartSummary");
-        }
+        }
+
     }
 }
