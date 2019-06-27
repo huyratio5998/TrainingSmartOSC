@@ -29,10 +29,6 @@ namespace Ajax.Controllers
         {
             return View();
         }
-        public ActionResult Block4()
-        {
-            return View();
-        }
 
         [HttpGet]
         public JsonResult Student()

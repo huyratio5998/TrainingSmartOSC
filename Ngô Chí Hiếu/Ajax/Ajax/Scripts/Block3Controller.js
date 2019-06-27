@@ -1,7 +1,7 @@
 ﻿var UserController = function () {
 
     this.intialize = function () {
-       
+
         registerEvent();
     }
 
@@ -13,7 +13,7 @@
             var passWord = $('#txtPassword').val();
             var fullName = $('#txtFullName').val();
             var genDer = $('#txtGender').val();
-             changeData(userName, passWord, fullName, genDer);
+            changeData(userName, passWord, fullName, genDer);
         });
     }
 
@@ -28,10 +28,10 @@
     function changeData(userName, passWord, fullName, genDer) {
 
         var user = {
-            UserName : userName,
-            Password : passWord,
-            FullName : fullName,
-            Gender : genDer
+            UserName: userName,
+            Password: passWord,
+            FullName: fullName,
+            Gender: genDer
         }
 
         $.ajax({
@@ -42,11 +42,16 @@
                 strUser: JSON.stringify(user)
             },
             success: function (re) {
-                if (re!=null) {
+                if (re != null) {
                     alert('Register Success !')
                     console.log(re.data.UserName);
-                    var str = "<tr><td>" + re.data.UserName + "</td><td>" + re.data.Password + "</td><td>" + re.data.FullName +"</td><td>" + re.data.Gender + "</td></tr>";
+                    var str = "<tr><td>" + re.data.UserName + "</td><td>" + re.data.Password + "</td><td>" + re.data.FullName + "</td><td>" + re.data.Gender + "</td></tr>";
                     $('#showUser').append(str);
+
+                    $('#txtUserName').val("");
+                    $('#txtPassword').val("");
+                    $('#txtFullName').val("");
+                    $('#txtGender').val("");
                 }
             }
         });
