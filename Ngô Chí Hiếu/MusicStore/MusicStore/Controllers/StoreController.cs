@@ -9,9 +9,9 @@ namespace MusicStore.Controllers
 {
     public class StoreController : Controller
     {
-        MusicStoreEntities storeDB = new MusicStoreEntities();
+        ApplicationDbContext storeDB = new ApplicationDbContext();
         // GET: Store
-        public ActionResult Index()
+        public ActionResult Index()                                 
         {
             // return "Hello from Store.Index()";\
             //var genres = new List<Genre>
@@ -45,6 +45,14 @@ namespace MusicStore.Controllers
             //var album = new Album { Title = "Album " + id };
             var album = storeDB.Albums.Find(id);
             return View();
+        }
+
+        [ChildActionOnly]
+        public ActionResult GenreMenu()
+        {
+            var genres = storeDB.Genres.ToList();
+
+            return PartialView(genres);
         }
 
     }

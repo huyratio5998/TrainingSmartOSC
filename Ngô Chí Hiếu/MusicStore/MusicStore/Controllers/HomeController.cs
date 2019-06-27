@@ -3,29 +3,29 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using MusicStore.Models;
 
 namespace MusicStore.Controllers
 {
     public class HomeController : Controller
     {
+        ApplicationDbContext storeDB = new ApplicationDbContext();
         public ActionResult Index()
         {
+            var albums = GetTopSellingAlbums(5);
             //return "Hello from Home"
-            return View();
+            return View(albums);
         }
 
-        public ActionResult About()
+        private List<Album> GetTopSellingAlbums(int count)
         {
-            ViewBag.Message = "Your application description page.";
+            // Group the order details by album and return
+            // the albums with the highest count
 
-            return View();
-        }
-
-        public ActionResult Contact()
-        {
-            ViewBag.Message = "Your contact page.";
-
-            return View();
+            return storeDB.Albums
+                .OrderByDescending(a => a.OrderDetails.Count())
+                .Take(count)
+                .ToList();
         }
     }
 }

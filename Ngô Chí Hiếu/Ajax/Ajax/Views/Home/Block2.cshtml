@@ -1,0 +1,56 @@
+﻿
+@{
+    ViewBag.Title = "Block2";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<script src="~/Scripts/jquery-3.3.1.min.js"></script>
+<script src="~/Scripts/mustache.min.js"></script>
+<script src="~/Scripts/Block2Controller.js"></script>
+
+<script>
+    var con = new StudentController();
+    con.initialize();
+</script>
+
+
+
+<h2>Block2</h2>
+
+<button id="noname">Show Data of Student from Table</button>
+
+
+<div class="row">
+    <div class="col-md-12">
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <td>Name</td>
+                    <td>Age</td>
+                    <td>Gender</td>
+                    <td>Email</td>
+                    <td>Phone</td>
+                </tr>
+            </thead>
+            <tbody id="tblData">
+
+           
+            </tbody>
+
+        </table>
+
+
+    </div>
+
+</div>
+<script id="data-template" type="x-tmpl-mustache">
+    <tr>
+        <td>{{Name}}</td>
+        <td>{{Age}}</td>
+        <td>{{Gender}}</td>
+        <td>{{Email}}</td>
+        <td>{{Phone}}</td>
+    </tr>
+</script>
+
+

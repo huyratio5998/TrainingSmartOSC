@@ -16,7 +16,7 @@ namespace MusicStore.Controllers
 {
     public class AccountController : Controller
     {
-
+        public string check;
         private ApplicationSignInManager _signInManager;
         private ApplicationUserManager _userManager;
 
@@ -95,6 +95,7 @@ namespace MusicStore.Controllers
                     return View(model);
             }
         }
+
         private ActionResult RedirectToLocal(string returnUrl)
         {
             if (Url.IsLocalUrl(returnUrl))
@@ -125,10 +126,13 @@ namespace MusicStore.Controllers
             {
                 var user = new ApplicationUser { UserName = model.Email, Email = model.Email };
                 var result = await UserManager.CreateAsync(user, model.Password);
+
+
                 if (result.Succeeded)
                 {
-                    return RedirectToAction("StoreManager/Index", "Index");
+                    return RedirectToAction("Index", "StoreManager");
                 }
+
                 AddErrors(result);
             }
 

@@ -266,7 +266,6 @@ C:\Users\admin\Desktop\work\Ngô Chí Hiếu\MusicStore\MusicStore\bin\Microsoft
 C:\Users\admin\Desktop\work\Ngô Chí Hiếu\MusicStore\MusicStore\bin\Microsoft.Owin.Security.OAuth.xml
 C:\Users\admin\Desktop\work\Ngô Chí Hiếu\MusicStore\MusicStore\bin\Microsoft.Owin.Host.SystemWeb.dll
 C:\Users\admin\Desktop\work\Ngô Chí Hiếu\MusicStore\MusicStore\bin\Microsoft.Owin.Host.SystemWeb.xml
-C:\Users\admin\Desktop\work\Ngô Chí Hiếu\MusicStore\MusicStore\obj\Debug\MusicStore.Migrations.DbAccount.resources
+C:\Users\admin\Desktop\work\Ngô Chí Hiếu\MusicStore\MusicStore\obj\Debug\MusicStore.Migrations.dbUpdate2.resources
 C:\Users\admin\Desktop\work\Ngô Chí Hiếu\MusicStore\MusicStore\obj\Debug\MusicStore.csproj.GenerateResource.cache
-C:\Users\admin\Desktop\work\Ngô Chí Hiếu\MusicStore\MusicStore\obj\Debug\MusicStore.Migrations.db1.resources
 C:\Users\admin\Desktop\work\Ngô Chí Hiếu\MusicStore\MusicStore\obj\Debug\MusicStore.csprojAssemblyReference.cache

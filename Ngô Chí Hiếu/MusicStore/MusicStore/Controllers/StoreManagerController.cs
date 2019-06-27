@@ -10,10 +10,11 @@ using MusicStore.Models;
 
 namespace MusicStore.Controllers
 {
-    //[Authorize(Roles = "admin")]
+
+    //[Authorize()]
     public class StoreManagerController : Controller 
     {
-        private MusicStoreEntities db = new MusicStoreEntities();
+        private ApplicationDbContext db = new ApplicationDbContext();
 
         // GET: StoreManager
         public ViewResult Index()
@@ -116,6 +117,9 @@ namespace MusicStore.Controllers
             db.SaveChanges();
             return RedirectToAction("Index");
         }
+
+
+
 
 
         //Giai phong bo nho

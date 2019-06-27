@@ -1,0 +1,24 @@
+﻿
+@{
+    ViewBag.Title = "Block1";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<script src="~/Scripts/jquery-3.3.1.min.js"></script>
+
+<script>
+    $(function () {
+        var html = "Text from Html <br/>";
+
+        $("button").click(function () {
+            $('#content').append(html)
+        })
+    })
+</script>
+
+<h2>Block1</h2>
+
+<button >Click to Show</button>
+
+<div id="content"></div>
+
+

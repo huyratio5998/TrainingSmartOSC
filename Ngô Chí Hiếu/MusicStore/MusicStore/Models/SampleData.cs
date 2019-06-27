@@ -7,9 +7,9 @@ using MusicStore.Models;
 
 namespace MusicStore.Models
 {
-    public class SampleData : DropCreateDatabaseIfModelChanges<MusicStoreEntities>
+    public class SampleData : DropCreateDatabaseIfModelChanges<ApplicationDbContext>
     {
-        protected override void Seed(MusicStoreEntities context)
+        protected override void Seed(ApplicationDbContext context)
         {
             var genres = new List<Genre>
             {

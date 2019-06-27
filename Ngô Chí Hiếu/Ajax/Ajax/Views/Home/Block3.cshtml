@@ -1,0 +1,19 @@
+﻿
+<h2>Block3</h2>
+<script src="~/Scripts/jquery-3.3.1.min.js"></script>
+<script src="~/Scripts/mustache.min.js"></script>
+<script src="~/Scripts/Block3Controller.js"></script>
+
+<script>
+    var con = new UserController();
+    con.intialize();
+</script>
+<h3>Please Input Infomation !</h3>
+<form>
+    <input id="txtUserName" type="text" name="UserName" placeholder="UserName: " />
+    <input id="txtPassword" type="password" name="Password" placeholder="Password: " />
+    <input id="txtFullName" type="text" name="FullName" placeholder="Full Name: " />
+    <input id="txtGender" type="text" name="Gender" placeholder="Email: " />
+    <input type="button" value="Register" id="Register1" />
+</form>
+<table id="showUser"></table>
