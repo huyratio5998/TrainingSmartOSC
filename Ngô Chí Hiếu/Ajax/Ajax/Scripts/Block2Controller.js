@@ -1,5 +1,4 @@
 ﻿
-
 var StudentController = function () {
 
     this.initialize = function () {

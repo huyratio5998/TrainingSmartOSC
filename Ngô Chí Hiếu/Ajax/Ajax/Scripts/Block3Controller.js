@@ -1,7 +1,4 @@
-﻿
-
-
-var UserController = function () {
+﻿var UserController = function () {
 
     this.intialize = function () {
        
@@ -16,13 +13,19 @@ var UserController = function () {
             var passWord = $('#txtPassword').val();
             var fullName = $('#txtFullName').val();
             var genDer = $('#txtGender').val();
-            saveData(userName, passWord, fullName, genDer);
-
+             changeData(userName, passWord, fullName, genDer);
         });
     }
 
+    //function saveData() {
+    //    $.ajax({
+    //        url: 'Home/takeData',
+    //        type: 'POST',
+    //        success : alert('Regestier success !')
+    //    })
+    //}
 
-    function saveData(userName, passWord, fullName, genDer) {
+    function changeData(userName, passWord, fullName, genDer) {
 
         var user = {
             UserName : userName,
@@ -32,21 +35,18 @@ var UserController = function () {
         }
 
         $.ajax({
-            url: '/Home/Block3',
+            url: '/Home/takeData',
             type: 'POST',
             dataType: 'json',
             data: {
                 strUser: JSON.stringify(user)
             },
-            success: function (response) {
-                if (response.status == true) {
+            success: function (re) {
+                if (re!=null) {
                     alert('Register Success !')
-                    $('#ShowUser').append("<tr>"
-                        + "<td>" + userName + "</td>" +
-                        +"<td>" + passWord + "</td>" +
-                        +"<td>" + fullName + "</td>" +
-                        +"<td>" + genDer + "</td>" +
-                        "</tr>")
+                    console.log(re.data.UserName);
+                    var str = "<tr><td>" + re.data.UserName + "</td><td>" + re.data.Password + "</td><td>" + re.data.FullName +"</td><td>" + re.data.Gender + "</td></tr>";
+                    $('#showUser').append(str);
                 }
             }
         });
