@@ -1,0 +1,85 @@
+﻿@model IEnumerable<AjaxDemov2.Models.Student>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<script src="~/Scripts/StudentsController/Controll.js"></script>
+<script src="~/Scripts/jquery-3.3.1.min.js"></script>
+<script src="~/Scripts/mustache.min.js"></script>
+<script>
+    var con = new StudentsContrller();
+    con.init();
+
+</script>
+<h2>Index</h2>
+<button id="btnAddNew222" class="btn btn-success pull-right">Add student</button>
+@*<p>
+        @Html.ActionLink("Create New", "Create")
+    </p>*@
+@*<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Local)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.StudentClass)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Local)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StudentClass)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.ID }) |
+                @Html.ActionLink("Details", "Details", new { id = item.ID }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.ID })
+            </td>
+        </tr>
+    }
+
+</table>*@
+<div class="row">
+    <div class="col-md-12">
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <td>ID</td>
+                    <td>Name</td>
+                    <td>local</td>
+                    <td>studentclass</td>
+                    <td>#</td>
+                </tr>
+            </thead>
+            <tbody id="tblData"></tbody>
+        </table>
+
+
+
+        <script id="data-template" type="x-tmpl-mustache">
+            <tr>
+                <td>{{ID}}</td>
+                <td>{{Name}}</td>
+                <td>{{Local}}</td>
+                <td>{{{studentclass}}}</td>
+                <td>
+                    <button class="btn btn-primary btn-edit" data-id="{{ID}}" id="EditPartial">Edit</button>
+                    <button class="btn btn-danger btn-delete" data-id="{{ID}}" id="Delete">Delete</button>
+                </td>
+            </tr>
+        </script>
+        @RenderPage("addStudentPartialView.cshtml")
+        @RenderPage("EditStudentPartialView.cshtml")
