@@ -8,15 +8,10 @@ namespace Lab2
 {
     class CurrentAccount : BankAccount
     {
-        public CurrentAccount()
+        public CurrentAccount(int accountID1, double balance1)
         {
-
-        }
-
-        public CurrentAccount(int accountID, double balance)
-        {
-            base.accountID = accountID;
-            base.balance = balance;
+            base.accountID = accountID1;
+            base.balance = balance1;
         }
 
         public void amountWithdrawn(double amount)

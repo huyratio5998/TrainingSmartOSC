@@ -15,7 +15,6 @@ namespace Lab2
         {
 
         }
-
         public BankAccount(int accountID, double balance)
         {
             this.accountID = accountID;

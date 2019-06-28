@@ -8,10 +8,6 @@ namespace Lab2
 {
     class SavingAccount : BankAccount
     {
-        public SavingAccount()
-        {
-
-        }
         public SavingAccount(int accountID, double balance)
         {
             base.accountID = accountID;
