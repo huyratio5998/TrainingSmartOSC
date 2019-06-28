@@ -25,20 +25,13 @@
         });
         $('body').on('click', '#Savechanges', function (e) {
             e.preventDefault();
-            //var id = $('#hidID').val();
+            var id = $('#txtid').val();
             var Name = $('#txtName').val();
             var Local = $('#txtLocal').val();
             var StudentClass = $('#txtStudentClass').val();
-            CreateStudent(Name, Local, StudentClass);
+            save(id,Name, Local, StudentClass);
         });
-        $('body').on('click', '#editSavechanges', function (e) {
-            e.preventDefault();
-            var id = $('#hidID').val();
-            var Name = $('#txtName').val();
-            var Local = $('#txtLocal').val();
-            var StudentClass = $('#txtStudentClass').val();
-            EditStudent(id, Name, Local, StudentClass);
-        });
+       
         $('body').on('click', '#Delete', function (e) {
             e.preventDefault();
             var id = $(this).data('id');
@@ -57,10 +50,12 @@
                 
                 if (response.status == true) {
                     var data = response.data;
-                    $('#txtName').val(data.ID);
+                   
+                    $('#txtid').val(data.ID);
+                    $('#txtName').val(data.Name);
                     $('#txtLocal').val(data.Local);
                     $('#txtStudentClass').val(data.StudentClass);
-                    $('#exampleModalEdit').modal('show');
+                    $('#exampleModal').modal('show');
                 }
 
             },
@@ -116,12 +111,12 @@
             })
         });
     }
-    function  CreateStudent (Name, Local, StudentClass) {
+    function save (id,Name, Local, StudentClass) {
         $.ajax({
 
-            url: '/Students/Create',
+            url: '/Students/save',
             data: {
-                //ID: id,
+                ID: id,
                 Name: Name,
                 Local: Local,
                 StudentClass: StudentClass
@@ -129,7 +124,7 @@
             type: 'POST',
             dataType: 'json',
             success: function (response) {
-                alert('create done');
+                alert('done');
                 
                 
                 loadData();
@@ -141,29 +136,8 @@
 
         
     }
-    function EditStudent(Name, Local, StudentClass) {
-        $.ajax({
-
-            url: '/Students/Edit',
-            data: {
-                
-                Name: Name,
-                Local: Local,
-                StudentClass: StudentClass
-            },
-            type: 'POST',
-            dataType: 'json',
-            success: function (response) {
-                alert('create done');
-
-                $('#exampleModalEdit').modal('show');
-                
-            },
-            error: function (err) {
-                alert('error')
-            }
-        });
+   
 
 
-    }
+    
 }

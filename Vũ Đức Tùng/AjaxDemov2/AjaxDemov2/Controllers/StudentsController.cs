@@ -42,47 +42,36 @@ namespace AjaxDemov2.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         
-        public ActionResult Create([Bind(Include = "Name,Local,StudentClass")] Student student)
+        public ActionResult save([Bind(Include = "ID,Name,Local,StudentClass")] Student student)
         {
             bool status = false;
-            if (ModelState.IsValid)
+            
+            if (student.ID == 0)
             {
                 db.Students.Add(student);
                 db.SaveChanges();
                 status = true;
-                return Json(new
-                {
-                    status = status
-                });
             }
-
+            else
+            {
+                db.Entry(student).State = EntityState.Modified;
+                db.SaveChanges();
+                status = true;
+            }
             return Json(new
             {
                 status = status
             });
         }
 
-        // GET: Students/Edit/5
-        //public ActionResult Edit(int? id)
-        //{
-        //    if (id == null)
-        //    {
-        //        return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
-        //    }
-        //    Student student = db.Students.Find(id);
-        //    if (student == null)
-        //    {
-        //        return HttpNotFound();
-        //    }
-        //    return View(student);
-        //}
+       
 
         // POST: Students/Edit/5
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         
-        public ActionResult Edit([Bind(Include = "ID,Name,Local,StudentClass")] Student student)
+        public ActionResult Edit([Bind(Include = "Name,Local,StudentClass")] Student student)
         {
             bool status = false;
             if (ModelState.IsValid)
@@ -103,22 +92,7 @@ namespace AjaxDemov2.Controllers
             });
         }
 
-        // GET: Students/Delete/5
-        //public ActionResult Delete(int? id)
-        //{
-        //    if (id == null)
-        //    {
-        //        return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
-        //    }
-        //    Student student = db.Students.Find(id);
-        //    if (student == null)
-        //    {
-        //        return HttpNotFound();
-        //    }
-        //    return View(student);
-        //}
-
-        // POST: Students/Delete/5
+      
         [HttpPost]
         
         public ActionResult Delete(int ID)
