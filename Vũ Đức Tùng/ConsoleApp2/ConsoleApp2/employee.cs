@@ -40,7 +40,27 @@ namespace ConsoleApp2
     //    public static void Main(string[] args)
     //    {
     //        hourlyEmployee tung = new hourlyEmployee();
-    //        tung.calculate("tung", 2028, 40);
+    //        string a, status = "";
+    //        int c, b;
+
+    //        do
+    //        {
+    //            Console.WriteLine("nhap ten nhan vien");
+
+    //            a = Convert.ToString(Console.ReadLine());
+    //            Console.WriteLine("nhap id nhan vien");
+    //            b = Convert.ToInt32(Console.ReadLine());
+    //            Console.WriteLine("nhap so gio lam");
+    //            c = Convert.ToInt32(Console.ReadLine());
+    //            if (c < 0)
+    //            {
+    //                Console.WriteLine("ban nhap sai");
+    //                continue;
+    //            }
+    //            Console.WriteLine("ban muon nhap nua khong Y/N");
+    //            status = Convert.ToString(Console.ReadLine());
+    //        } while ((status != "N") && (status != "n") && (status != "no") && (status != "NO"));
+    //        tung.calculate(a, b, c);
     //        Console.WriteLine("ten la " + tung.Name1);
     //        Console.WriteLine("so ID la" + tung.EmpID);
     //        Console.WriteLine("so luong la " + tung.calculate_result);

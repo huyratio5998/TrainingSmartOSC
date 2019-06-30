@@ -75,26 +75,39 @@ namespace ConsoleApp2
             Console.WriteLine("dientich " + computeArea());
         }
     }
-    //public class test
-    //{
-    //    public static void Main(string[] args)
-    //    {
-    //        cuboid hinhvuong = new cuboid();
-    //        hinhvuong.ShapeType = "hinh vuong";
-    //        hinhvuong.Height = 2;
-    //        hinhvuong.length = 2;
-    //        hinhvuong.width = 2;
-    //        hinhvuong.show();
-    //        Console.ReadKey();
-    //    }
-    //}
-    //public class test
-    //{
-    //    public static  void Main(string[] agrs)
-    //    {
-    //        GeometricShape hinh= new GeometricShape();
-    //        Console.WriteLine("area " + hinh.Area);
-    //        Console.ReadKey();
-    //    }
-    //}
+    public class test
+    {
+        public static void Main(string[] args)
+        {
+            cuboid hinhvuong = new cuboid();
+            string type,status="";
+            double h, l, w;
+            do
+            {
+                Console.WriteLine("nhap hinh dang");
+
+                type = Convert.ToString(Console.ReadLine());
+                Console.WriteLine("nhap chieu cao");
+                h = Convert.ToDouble(Console.ReadLine());
+                Console.WriteLine("nhap chieu dai");
+                l = Convert.ToDouble(Console.ReadLine());
+                Console.WriteLine("nhap chieu rong");
+                w = Convert.ToDouble(Console.ReadLine());
+                if ((h<0)||(l<0)||(w<0))
+                {
+                    Console.WriteLine("ban nhap sai");
+                    continue;
+                }
+                Console.WriteLine("ban muon nhap nua khong Y/N");
+                status = Convert.ToString(Console.ReadLine());
+            } while ((status != "N") && (status != "n") && (status != "no") && (status != "NO"));
+            hinhvuong.ShapeType = type;
+            hinhvuong.Height = h;
+            hinhvuong.length = l;
+            hinhvuong.width = w;
+            hinhvuong.show();
+            Console.ReadKey();
+        }
+    }
+   
 }

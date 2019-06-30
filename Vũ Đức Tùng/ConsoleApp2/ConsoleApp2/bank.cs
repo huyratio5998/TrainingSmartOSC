@@ -51,11 +51,24 @@ namespace ConsoleApp2
     //        savingsAccount tung = new savingsAccount();
     //        tung.AccountID = 123;
     //        tung.Balance = 50000;
-    //        tung.balanceInquiry();
-    //        tung.amountWithdrawn(46000);
-    //        tung.balanceInquiry();
-    //        tung.amountDeposit(40000);
-    //        tung.balanceInquiry();
+    //        int m;
+    //        string s="";
+    //        do
+    //        {
+    //            Console.WriteLine("nhap so tien can rut khach hang");
+                
+    //            m = Convert.ToInt32(Console.ReadLine());
+    //            if (m <= 0)
+    //            {
+    //                Console.WriteLine("ban nhap sai gia tri");
+    //                continue;
+    //            }
+    //            tung.amountWithdrawn(m);
+    //            tung.balanceInquiry();
+               
+    //            Console.WriteLine("ban muon nhap nua khong Y/N");
+    //            s = Convert.ToString(Console.ReadLine());
+    //        } while((s!="N")&&(s!="n"));
     //        Console.ReadKey();
     //    }
     //}
