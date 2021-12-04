@@ -1,0 +1,7 @@
+Strategy: 
+- define an algorithms, encapsulates and make them changeable. Let it vary independently on runtime.
+-=> seperate something vary => to an algorithm => an make it dynamic.
+eg: 
+Duck
+Fly behavior (algorithms)
+Quack behavior (algorithms).
